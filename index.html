@@ -310,7 +310,7 @@
             border-color: #c62828 !important;
             color: #ffffff !important;
             animation: shake 0.5s ease;
-            opacity: 0.65;
+            opacity: 0.88;
             cursor: not-allowed;
         }
         .option-btn.incorrect .option-badge {
@@ -343,7 +343,7 @@
 
         /* Feedback and Learning Card */
         .feedback-area {
-            min-height: 50px;
+            min-height: 52px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -352,12 +352,13 @@
         }
 
         .feedback-banner {
-            font-size: 1.6em;
+            font-size: 1.45em;
             font-weight: 900;
-            padding: 4px 20px;
+            padding: 4px 16px;
             border-radius: 12px;
             transition: all 0.3s;
             text-align: center;
+            line-height: 1.35;
         }
 
         .learning-card {
@@ -585,7 +586,7 @@
             }
 
             .feedback-banner {
-                font-size: 1.25em;
+                font-size: 1.15em;
             }
 
             .celebrate-buttons {
@@ -855,7 +856,7 @@
             loadNextQuestion();
         }
 
-        // Distractor choices generator (3 wrong choices with authentic audio)
+        // Distractor choices generator (3 wrong choices with authentic audio and Chinese meaning)
         function generateOptions(correctItem) {
             let wrongs = [];
             let seen = new Set();
@@ -886,12 +887,12 @@
                 }
             }
 
-            // Create 4 choices
+            // Create 4 choices carrying Chinese meaning
             const choices = [
-                { text: correctItem.bm, audio: correctItem.audio, isCorrect: true },
-                { text: wrongs[0].bm, audio: wrongs[0].audio, isCorrect: false },
-                { text: wrongs[1].bm, audio: wrongs[1].audio, isCorrect: false },
-                { text: wrongs[2].bm, audio: wrongs[2].audio, isCorrect: false }
+                { text: correctItem.bm, audio: correctItem.audio, isCorrect: true, chinese: correctItem.chinese },
+                { text: wrongs[0].bm, audio: wrongs[0].audio, isCorrect: false, chinese: wrongs[0].chinese },
+                { text: wrongs[1].bm, audio: wrongs[1].audio, isCorrect: false, chinese: wrongs[1].chinese },
+                { text: wrongs[2].bm, audio: wrongs[2].audio, isCorrect: false, chinese: wrongs[2].chinese }
             ];
 
             return shuffle(choices);
@@ -1006,8 +1007,16 @@
                     document.getElementById('score-s').textContent = scoreSalah;
                 }
 
-                banner.innerHTML = "❌ 不对哦，再试一次！(Cuba lagi ya!)";
+                // Show the exact Chinese meaning of the clicked wrong word!
+                // e.g.: ❌ 不对哦，“baju” 的意思是 “衣服” ！请再选一次！
+                banner.innerHTML = `❌ 不对哦，<strong>“${choice.text}”</strong> 的意思是 <strong>“${choice.chinese}”</strong> ！请再选一次！`;
                 banner.style.color = "#c62828";
+
+                // Also display the Chinese meaning directly inside the red button
+                const labelSpan = btn.querySelector('.option-label');
+                if (labelSpan) {
+                    labelSpan.innerHTML = `${choice.text} <span style="font-size: 0.8em; color: #ffebee; font-weight: normal; margin-left: 6px;">(${choice.chinese})</span>`;
+                }
             }
         }
 
