@@ -1,0 +1,1182 @@
+# -*- coding: utf-8 -*-
+import json
+import os
+
+vocabulary = [
+    # ---------------- 1. Kata Kerja (动词 / Perbuatan) ----------------
+    {
+        "chinese": "读书", "pinyin": "dú shū", "bm": "membaca", "category": "动词 / Kata Kerja",
+        "example_bm": "Ali suka membaca buku cerita pada masa lapang.",
+        "example_zh": "阿里喜欢在空闲时阅读故事书。"
+    },
+    {
+        "chinese": "写字", "pinyin": "xiě zì", "bm": "menulis", "category": "动词 / Kata Kerja",
+        "example_bm": "Adik sedang belajar menulis huruf abjad.",
+        "example_zh": "弟弟正在学习写字母。"
+    },
+    {
+        "chinese": "画画", "pinyin": "huà huà", "bm": "melukis", "category": "动词 / Kata Kerja",
+        "example_bm": "Mei Mei pandai melukis pemandangan kampung.",
+        "example_zh": "美美擅长画乡村的风景。"
+    },
+    {
+        "chinese": "唱歌", "pinyin": "chàng gē", "bm": "menyanyi", "category": "动词 / Kata Kerja",
+        "example_bm": "Murid-murid menyanyi lagu Negaraku dengan penuh semangat.",
+        "example_zh": "学生们精神饱满地唱国歌。"
+    },
+    {
+        "chinese": "跳舞", "pinyin": "tiào wǔ", "bm": "menari", "category": "动词 / Kata Kerja",
+        "example_bm": "Siti sedang menari tarian tradisional di atas pentas.",
+        "example_zh": "西蒂正在舞台上跳传统舞蹈。"
+    },
+    {
+        "chinese": "跑步", "pinyin": "pǎo bù", "bm": "berlari", "category": "动词 / Kata Kerja",
+        "example_bm": "Ahmad berlari dengan pantas di padang sekolah.",
+        "example_zh": "阿末在学校草场上快速奔跑。"
+    },
+    {
+        "chinese": "跳跃", "pinyin": "tiào yuè", "bm": "melompat", "category": "动词 / Kata Kerja",
+        "example_bm": "Katak itu melompat ke dalam kolam.",
+        "example_zh": "那只青蛙跳进了池塘里。"
+    },
+    {
+        "chinese": "走路", "pinyin": "zǒu lù", "bm": "berjalan", "category": "动词 / Kata Kerja",
+        "example_bm": "Kami berjalan kaki ke sekolah setiap pagi.",
+        "example_zh": "我们每天早晨步行去上学。"
+    },
+    {
+        "chinese": "游泳", "pinyin": "yóu yǒng", "bm": "berenang", "category": "动词 / Kata Kerja",
+        "example_bm": "Ikan-ikan itu berenang dengan bebas di dalam air.",
+        "example_zh": "鱼儿在水中自由自在地游泳。"
+    },
+    {
+        "chinese": "吃", "pinyin": "chī", "bm": "makan", "category": "动词 / Kata Kerja",
+        "example_bm": "Kami makan sarapan pagi bersama-sama di ruang makan.",
+        "example_zh": "我们一起在饭厅吃早餐。"
+    },
+    {
+        "chinese": "喝", "pinyin": "hē", "bm": "minum", "category": "动词 / Kata Kerja",
+        "example_bm": "Kita perlu minum air kosong secukupnya setiap hari.",
+        "example_zh": "我们每天都需要喝足够的白开水。"
+    },
+    {
+        "chinese": "睡觉", "pinyin": "shuì jiào", "bm": "tidur", "category": "动词 / Kata Kerja",
+        "example_bm": "Adik kecil sudah tidur lena di dalam buaian.",
+        "example_zh": "小弟弟已经在摇篮里熟睡了。"
+    },
+    {
+        "chinese": "洗澡", "pinyin": "xǐ zǎo", "bm": "mandi", "category": "动词 / Kata Kerja",
+        "example_bm": "Saya mandi dua kali sehari untuk menjaga kebersihan diri.",
+        "example_zh": "我每天洗澡两次以保持身体洁净。"
+    },
+    {
+        "chinese": "扫地", "pinyin": "sǎo dì", "bm": "menyapu sampah", "category": "动词 / Kata Kerja",
+        "example_bm": "Kakak menyapu sampah di halaman rumah sehingga bersih.",
+        "example_zh": "姐姐在庭院扫地，扫得干干净净。"
+    },
+    {
+        "chinese": "擦拭", "pinyin": "cā shì", "bm": "mengelap", "category": "动词 / Kata Kerja",
+        "example_bm": "Ibu mengelap meja makan menggunakan sehelai kain basah.",
+        "example_zh": "妈妈用一块湿布擦拭餐桌。"
+    },
+    {
+        "chinese": "洗涤 / 洗", "pinyin": "xǐ dí", "bm": "membasuh", "category": "动词 / Kata Kerja",
+        "example_bm": "Abang membasuh kasut sekolahnya pada hari Sabtu.",
+        "example_zh": "哥哥在星期六清洗他的校鞋。"
+    },
+    {
+        "chinese": "烹饪 / 煮", "pinyin": "pēng rèn", "bm": "memasak", "category": "动词 / Kata Kerja",
+        "example_bm": "Ibu sedang memasak lauk yang lazat di dapur.",
+        "example_zh": "妈妈正在厨房煮美味的菜肴。"
+    },
+    {
+        "chinese": "种植", "pinyin": "zhòng zhí", "bm": "menanam", "category": "动词 / Kata Kerja",
+        "example_bm": "Datuk menanam pokok cili di belakang rumah.",
+        "example_zh": "爷爷在屋后种植辣椒树。"
+    },
+    {
+        "chinese": "浇水", "pinyin": "jiāo shuǐ", "bm": "menyiram", "category": "动词 / Kata Kerja",
+        "example_bm": "Adik menolong ibu menyiram pokok bunga.",
+        "example_zh": "弟弟帮妈妈给花草浇水。"
+    },
+    {
+        "chinese": "帮助", "pinyin": "bāng zhù", "bm": "menolong", "category": "动词 / Kata Kerja",
+        "example_bm": "Kita haruslah menolong rakan yang berada dalam kesusahan.",
+        "example_zh": "我们应当帮助遇到困难的同学。"
+    },
+    {
+        "chinese": "玩耍", "pinyin": "wán shuǎ", "bm": "bermain", "category": "动词 / Kata Kerja",
+        "example_bm": "Kanak-kanak itu seronok bermain bola sepak di padang.",
+        "example_zh": "孩子们开心地在草场上踢足球玩耍。"
+    },
+    {
+        "chinese": "买", "pinyin": "mǎi", "bm": "membeli", "category": "动词 / Kata Kerja",
+        "example_bm": "Ayah membeli surat khabar dan roti di kedai runcit.",
+        "example_zh": "爸爸在杂货店买了报纸和面包。"
+    },
+    {
+        "chinese": "卖", "pinyin": "mài", "bm": "menjual", "category": "动词 / Kata Kerja",
+        "example_bm": "Pak Cik Hassan menjual pelbagai jenis buah-buahan segar.",
+        "example_zh": "哈山叔叔卖各种各样的新鲜水果。"
+    },
+    {
+        "chinese": "听", "pinyin": "tīng", "bm": "mendengar", "category": "动词 / Kata Kerja",
+        "example_bm": "Murid-murid mendengar nasihat guru dengan teliti.",
+        "example_zh": "学生们仔细聆听老师的谆谆教诲。"
+    },
+    {
+        "chinese": "看 / 观察", "pinyin": "kàn", "bm": "melihat", "category": "动词 / Kata Kerja",
+        "example_bm": "Kami melihat burung-burung berterbangan di udara.",
+        "example_zh": "我们看到鸟儿在空中飞翔。"
+    },
+    {
+        "chinese": "丢 / 扔", "pinyin": "diū", "bm": "membuang", "category": "动词 / Kata Kerja",
+        "example_bm": "Sila buang sampah ke dalam tong sampah.",
+        "example_zh": "请把垃圾丢进垃圾桶里。"
+    },
+    {
+        "chinese": "排列 / 整理", "pinyin": "pái liè", "bm": "menyusun", "category": "动词 / Kata Kerja",
+        "example_bm": "Murid bertugas menyusun meja dan kerusi sebelum pulang.",
+        "example_zh": "值日生在回家前整理排列桌椅。"
+    },
+    {
+        "chinese": "剪", "pinyin": "jiǎn", "bm": "menggunting", "category": "动词 / Kata Kerja",
+        "example_bm": "Mei Ling menggunting kertas warna untuk membuat kad hari jadi.",
+        "example_zh": "美玲剪彩纸来制作生日卡片。"
+    },
+    {
+        "chinese": "打开", "pinyin": "dǎ kāi", "bm": "membuka", "category": "动词 / Kata Kerja",
+        "example_bm": "Cikgu membuka pintu kelas dengan senyuman mesra.",
+        "example_zh": "老师带着和蔼的笑容打开教室门。"
+    },
+    {
+        "chinese": "关上", "pinyin": "guān shàng", "bm": "menutup", "category": "动词 / Kata Kerja",
+        "example_bm": "Sila tutup tingkap sebelum meninggalkan bilik darjah.",
+        "example_zh": "离开教室前请关好窗户。"
+    },
+    {
+        "chinese": "借", "pinyin": "jiè", "bm": "meminjam", "category": "动词 / Kata Kerja",
+        "example_bm": "Boleh saya meminjam pembaris kamu sebentar?",
+        "example_zh": "我可以借用一下你的尺吗？"
+    },
+    {
+        "chinese": "归还", "pinyin": "guī huán", "bm": "memulangkan", "category": "动词 / Kata Kerja",
+        "example_bm": "Saya memulangkan buku cerita ke perpustakaan tepat pada masanya.",
+        "example_zh": "我准时把故事书归还给图书馆。"
+    },
+    {
+        "chinese": "驾驶", "pinyin": "jià shǐ", "bm": "memandu", "category": "动词 / Kata Kerja",
+        "example_bm": "Ayah memandu kereta dengan cermat dan berhati-hati.",
+        "example_zh": "爸爸小心翼翼、谨慎地驾驶汽车。"
+    },
+    {
+        "chinese": "乘坐", "pinyin": "chéng zuò", "bm": "menaiki", "category": "动词 / Kata Kerja",
+        "example_bm": "Murid-murid menaiki bas sekolah untuk pergi ke sekolah.",
+        "example_zh": "学生们乘坐校车去上学。"
+    },
+    {
+        "chinese": "爬 / 攀登", "pinyin": "pá", "bm": "memanjat", "category": "动词 / Kata Kerja",
+        "example_bm": "Kucing yang comel itu memanjat pokok kelapa.",
+        "example_zh": "那只可爱的小猫爬上了椰子树。"
+    },
+    {
+        "chinese": "投掷 / 抛", "pinyin": "tóu zhì", "bm": "membaling", "category": "动词 / Kata Kerja",
+        "example_bm": "Ali membaling bola itu kepada rakannya.",
+        "example_zh": "阿里把球投掷给他的朋友。"
+    },
+    {
+        "chinese": "捕捉 / 接住", "pinyin": "bǔ zhuō", "bm": "menangkap", "category": "动词 / Kata Kerja",
+        "example_bm": "Penjaga gol berjaya menangkap bola dengan kemas.",
+        "example_zh": "守门员稳妥地接住了球。"
+    },
+    {
+        "chinese": "缝纫", "pinyin": "féng rèn", "bm": "menjahit", "category": "动词 / Kata Kerja",
+        "example_bm": "Nenek menjahit baju kurung yang cantik untuk kakak.",
+        "example_zh": "奶奶为姐姐缝制了一件漂亮的马来传统礼服。"
+    },
+    {
+        "chinese": "粉刷 / 上漆", "pinyin": "fěn shuā", "bm": "mengecat", "category": "动词 / Kata Kerja",
+        "example_bm": "Abang mengecat dinding pagar rumah sempena tahun baru.",
+        "example_zh": "哥哥趁着新年粉刷家里的围墙。"
+    },
+    {
+        "chinese": "钓鱼", "pinyin": "diào yú", "bm": "memancing", "category": "动词 / Kata Kerja",
+        "example_bm": "Pak Cik memancing ikan di tepi sungai yang tenang.",
+        "example_zh": "叔叔在宁静的河边钓鱼。"
+    },
+    {
+        "chinese": "刷牙", "pinyin": "shuā yá", "bm": "menggosok gigi", "category": "动词 / Kata Kerja",
+        "example_bm": "Kita perlu menggosok gigi sekurang-kurangnya dua kali sehari.",
+        "example_zh": "我们每天至少需要刷牙两次。"
+    },
+    {
+        "chinese": "捡拾", "pinyin": "jiǎn shí", "bm": "mengutip", "category": "动词 / Kata Kerja",
+        "example_bm": "Murid-murid mengutip daun-daun kering di tapak perhimpunan.",
+        "example_zh": "学生们在周会场地捡拾干枯的树叶。"
+    },
+    {
+        "chinese": "微笑", "pinyin": "wēi xiào", "bm": "tersenyum", "category": "动词 / Kata Kerja",
+        "example_bm": "Guru tersenyum manis apabila menyambut ketibaan murid-murid.",
+        "example_zh": "老师在迎接学生到校时露出了甜美的微笑。"
+    },
+    {
+        "chinese": "大笑", "pinyin": "dà xiào", "bm": "ketawa", "category": "动词 / Kata Kerja",
+        "example_bm": "Semua orang ketawa apabila mendengar jenaka yang lucu itu.",
+        "example_zh": "听到那个逗趣的笑话，大家都开怀大笑。"
+    },
+    {
+        "chinese": "哭泣", "pinyin": "kū qì", "bm": "menangis", "category": "动词 / Kata Kerja",
+        "example_bm": "Bayi itu menangis kerana berasa lapar dan mengantuk.",
+        "example_zh": "小婴儿因为感到饥饿和困倦而哭泣。"
+    },
+    {
+        "chinese": "排队", "pinyin": "pái duì", "bm": "beratur", "category": "动词 / Kata Kerja",
+        "example_bm": "Murid-murid beratur dengan tertib semasa membeli makanan di kantin.",
+        "example_zh": "学生们在食堂买食物时井井有条地排队。"
+    },
+    {
+        "chinese": "休息", "pinyin": "xiū xi", "bm": "berehat", "category": "动词 / Kata Kerja",
+        "example_bm": "Para petani berehat sebentar di bawah pokok yang rendang.",
+        "example_zh": "农夫们在茂密的大树下稍作休息。"
+    },
+    {
+        "chinese": "练习", "pinyin": "liàn xí", "bm": "berlatih", "category": "动词 / Kata Kerja",
+        "example_bm": "Pasukan bola sepak berlatih bersungguh-sungguh sebelum pertandingan.",
+        "example_zh": "足球队在比赛前刻苦练习。"
+    },
+    {
+        "chinese": "学习", "pinyin": "xué xí", "bm": "belajar", "category": "动词 / Kata Kerja",
+        "example_bm": "Kita mestilah rajin belajar demi masa depan yang cerah.",
+        "example_zh": "为了美好的未来，我们一定要勤奋学习。"
+    },
+    {
+        "chinese": "提问 / 询问", "pinyin": "tí wèn", "bm": "bertanya", "category": "动词 / Kata Kerja",
+        "example_bm": "Murid yang rajin selalu bertanya soalan kepada guru.",
+        "example_zh": "勤勉的学生总是向老师提问求教。"
+    },
+
+    # ---------------- 2. Kata Adjektif (形容词 / Sifat) ----------------
+    {
+        "chinese": "美丽 / 漂亮", "pinyin": "měi lì", "bm": "cantik", "category": "形容词 / Kata Adjektif",
+        "example_bm": "Bunga mawar yang mekar itu sungguh cantik warnanya.",
+        "example_zh": "那朵盛开的玫瑰花颜色真漂亮。"
+    },
+    {
+        "chinese": "英俊 / 帅气", "pinyin": "yīng jùn", "bm": "kacak", "category": "形容词 / Kata Adjektif",
+        "example_bm": "Abang kelihatan segak dan kacak memakai pakaian seragam.",
+        "example_zh": "哥哥身穿制服显得神气帅气。"
+    },
+    {
+        "chinese": "高", "pinyin": "gāo", "bm": "tinggi", "category": "形容词 / Kata Adjektif",
+        "example_bm": "Pokok kelapa itu sangat tinggi.",
+        "example_zh": "那棵椰树非常高。"
+    },
+    {
+        "chinese": "矮 / 低", "pinyin": "ǎi", "bm": "rendah", "category": "形容词 / Kata Adjektif",
+        "example_bm": "Pagar rumah kami agak rendah.",
+        "example_zh": "我们家的篱笆比较矮。"
+    },
+    {
+        "chinese": "肥胖", "pinyin": "féi pàng", "bm": "gemuk", "category": "形容词 / Kata Adjektif",
+        "example_bm": "Kucing peliharaan nenek sangat gemuk dan comel.",
+        "example_zh": "奶奶饲养的宠物猫非常肥胖且可爱。"
+    },
+    {
+        "chinese": "瘦", "pinyin": "shòu", "bm": "kurus", "category": "形容词 / Kata Adjektif",
+        "example_bm": "Budak yang kurus itu berlari dengan amat pantas.",
+        "example_zh": "那个精瘦的孩子跑得非常飞快。"
+    },
+    {
+        "chinese": "大", "pinyin": "dà", "bm": "besar", "category": "形容词 / Kata Adjektif",
+        "example_bm": "Gajah ialah haiwan darat yang paling besar.",
+        "example_zh": "大象是陆地上最大的动物。"
+    },
+    {
+        "chinese": "小", "pinyin": "xiǎo", "bm": "kecil", "category": "形容词 / Kata Adjektif",
+        "example_bm": "Semut ialah serangga kecil yang sangat rajin.",
+        "example_zh": "蚂蚁是一种非常勤劳的小昆虫。"
+    },
+    {
+        "chinese": "长", "pinyin": "cháng", "bm": "panjang", "category": "形容词 / Kata Adjektif",
+        "example_bm": "Ular sawa itu mempunyai badan yang sangat panjang.",
+        "example_zh": "那条蟒蛇有着长长的身体。"
+    },
+    {
+        "chinese": "短", "pinyin": "duǎn", "bm": "pendek", "category": "形容词 / Kata Adjektif",
+        "example_bm": "Pensel adik sudah menjadi pendek selepas diasah.",
+        "example_zh": "弟弟的铅笔经过削尖后已经变短了。"
+    },
+    {
+        "chinese": "干净", "pinyin": "gān jìng", "bm": "bersih", "category": "形容词 / Kata Adjektif",
+        "example_bm": "Bilik darjah kami sentiasa kemas dan bersih.",
+        "example_zh": "我们的教室总是整洁干净。"
+    },
+    {
+        "chinese": "肮脏", "pinyin": "āng zāng", "bm": "kotor", "category": "形容词 / Kata Adjektif",
+        "example_bm": "Jangan makan dengan tangan yang kotor.",
+        "example_zh": "不要用肮脏的手拿东西吃。"
+    },
+    {
+        "chinese": "芬芳 / 香", "pinyin": "fēn fāng", "bm": "wangi", "category": "形容词 / Kata Adjektif",
+        "example_bm": "Bunga melur ini mengeluarkan bau yang sangat wangi.",
+        "example_zh": "这朵茉莉花散发出极为芬芳的香气。"
+    },
+    {
+        "chinese": "发臭 / 臭", "pinyin": "fā chòu", "bm": "busuk", "category": "形容词 / Kata Adjektif",
+        "example_bm": "Sampah yang bertimbun itu berbau sangat busuk.",
+        "example_zh": "堆积如山的垃圾散发着难闻的臭味。"
+    },
+    {
+        "chinese": "勤劳", "pinyin": "qín láo", "bm": "rajin", "category": "形容词 / Kata Adjektif",
+        "example_bm": "Murid yang rajin pasti akan mencapai kejayaan cemerlang.",
+        "example_zh": "勤劳的学生必定能够取得卓越的成功。"
+    },
+    {
+        "chinese": "懒惰", "pinyin": "lǎn duò", "bm": "malas", "category": "形容词 / Kata Adjektif",
+        "example_bm": "Sikap malas akan merugikan diri sendiri.",
+        "example_zh": "懒惰的态度只会耽误并害了自己。"
+    },
+    {
+        "chinese": "聪明 / 敏捷", "pinyin": "cōng míng", "bm": "pandai", "category": "形容词 / Kata Adjektif",
+        "example_bm": "Kakak seorang yang pandai dalam mata pelajaran Sains.",
+        "example_zh": "姐姐在科学科目上表现非常聪明优秀。"
+    },
+    {
+        "chinese": "快乐 / 高兴", "pinyin": "kuài lè", "bm": "gembira", "category": "形容词 / Kata Adjektif",
+        "example_bm": "Kami berasa sungguh gembira dapat berkhemah bersama kawan-kawan.",
+        "example_zh": "能和朋友们一起露营，我们感到无比快乐。"
+    },
+    {
+        "chinese": "伤心 / 悲伤", "pinyin": "shāng xīn", "bm": "sedih", "category": "形容词 / Kata Adjektif",
+        "example_bm": "Adik berasa sedih kerana anak patungnya telah hilang.",
+        "example_zh": "弟弟/妹妹因为布偶不见了而十分伤心。"
+    },
+    {
+        "chinese": "生气 / 愤怒", "pinyin": "shēng qì", "bm": "marah", "category": "形容词 / Kata Adjektif",
+        "example_bm": "Ayah berasa marah apabila adik tidak mendengar nasihat.",
+        "example_zh": "当弟弟不听劝告时，爸爸感到生气。"
+    },
+    {
+        "chinese": "害怕", "pinyin": "hài pà", "bm": "takut", "category": "形容词 / Kata Adjektif",
+        "example_bm": "Kanak-kanak berasa takut apabila mendengar guruh berdentum.",
+        "example_zh": "孩子们听到雷声轰鸣时感到十分害怕。"
+    },
+    {
+        "chinese": "勇敢", "pinyin": "yǒng gǎn", "bm": "berani", "category": "形容词 / Kata Adjektif",
+        "example_bm": "Anggota bomba yang berani telah menyelamatkan mangsa kebakaran.",
+        "example_zh": "勇敢的消防员救出了火灾灾民。"
+    },
+    {
+        "chinese": "诚实", "pinyin": "chéng shí", "bm": "jujur", "category": "形容词 / Kata Adjektif",
+        "example_bm": "Sikap jujur Ali dipuji oleh guru besar.",
+        "example_zh": "阿里诚实的品德受到了校长的称赞。"
+    },
+    {
+        "chinese": "善良 / 好心", "pinyin": "shàn liáng", "bm": "baik hati", "category": "形容词 / Kata Adjektif",
+        "example_bm": "Jiran saya seorang yang baik hati dan suka menolong.",
+        "example_zh": "我的邻居是一个善良乐于助人的人。"
+    },
+    {
+        "chinese": "有礼貌", "pinyin": "yǒu lǐ mào", "bm": "sopan", "category": "形容词 / Kata Adjektif",
+        "example_bm": "Kita hendaklah bertutur dengan sopan kepada orang tua.",
+        "example_zh": "我们对待长辈说话必须要有礼貌。"
+    },
+    {
+        "chinese": "快 / 迅速", "pinyin": "kuài", "bm": "cepat", "category": "形容词 / Kata Adjektif",
+        "example_bm": "Kereta api moden bergerak dengan amat cepat.",
+        "example_zh": "现代化火车行驶得非常快速。"
+    },
+    {
+        "chinese": "慢", "pinyin": "màn", "bm": "lambat", "category": "形容词 / Kata Adjektif",
+        "example_bm": "Kura-kura berjalan dengan sangat lambat di atas tanah.",
+        "example_zh": "乌龟在陆地上缓慢地爬行。"
+    },
+    {
+        "chinese": "甜", "pinyin": "tián", "bm": "manis", "category": "形容词 / Kata Adjektif",
+        "example_bm": "Buah tembikai ini rasanya sangat manis dan segar.",
+        "example_zh": "这颗西瓜尝起来既甘甜又爽口。"
+    },
+    {
+        "chinese": "酸", "pinyin": "suān", "bm": "masam", "category": "形容词 / Kata Adjektif",
+        "example_bm": "Jus limau nipis ini berasa sangat masam.",
+        "example_zh": "这杯青柠汁味道酸溜溜的。"
+    },
+    {
+        "chinese": "辣", "pinyin": "là", "bm": "pedas", "category": "形容词 / Kata Adjektif",
+        "example_bm": "Sambal belacan itu berasa sangat pedas.",
+        "example_zh": "那个参巴辣椒酱吃起来特别辣。"
+    },
+    {
+        "chinese": "苦", "pinyin": "kǔ", "bm": "pahit", "category": "形容词 / Kata Adjektif",
+        "example_bm": "Ubat batuk ini pahit tetapi mujarab untuk menyembuhkan penyakit.",
+        "example_zh": "这止咳药虽苦，但治病却非常灵验。"
+    },
+    {
+        "chinese": "咸", "pinyin": "xián", "bm": "masin", "category": "形容词 / Kata Adjektif",
+        "example_bm": "Sup ini agak masin kerana terlebih garam.",
+        "example_zh": "这碗汤因为盐放多了而偏咸。"
+    },
+    {
+        "chinese": "热", "pinyin": "rè", "bm": "panas", "category": "形容词 / Kata Adjektif",
+        "example_bm": "Cuaca pada hari ini sangat panas terik.",
+        "example_zh": "今天的天气炎热无比。"
+    },
+    {
+        "chinese": "冷 / 凉", "pinyin": "lěng", "bm": "sejuk", "category": "形容词 / Kata Adjektif",
+        "example_bm": "Air ais ini sungguh sejuk dan menyegarkan tekak.",
+        "example_zh": "这杯冰水冰凉沁凉，清爽解渴。"
+    },
+    {
+        "chinese": "明亮 / 光亮", "pinyin": "míng liàng", "bm": "terang", "category": "形容词 / Kata Adjektif",
+        "example_bm": "Cahaya bulan malam ini sungguh terang benderang.",
+        "example_zh": "今晚的月光皎洁明亮。"
+    },
+    {
+        "chinese": "黑暗", "pinyin": "hēi àn", "bm": "gelap", "category": "形容词 / Kata Adjektif",
+        "example_bm": "Bilik ini menjadi gelap apabila bekalan elektrik terputus.",
+        "example_zh": "停电时这间房间顿时变得漆黑一片。"
+    },
+    {
+        "chinese": "锋利", "pinyin": "fēng lì", "bm": "tajam", "category": "形容词 / Kata Adjektif",
+        "example_bm": "Pisau dapur yang tajam hendaklah digunakan secara berhati-hati.",
+        "example_zh": "锋利的厨房刀具必须小心谨慎使用。"
+    },
+    {
+        "chinese": "钝 / 不锋利", "pinyin": "dùn", "bm": "tumpul", "category": "形容词 / Kata Adjektif",
+        "example_bm": "Pensel yang tumpul itu perlu diasah menggunakan pengasah pensel.",
+        "example_zh": "那支钝了的铅笔需要用卷笔刀削尖。"
+    },
+    {
+        "chinese": "光滑 / 滑", "pinyin": "guāng hua", "bm": "licin", "category": "形容词 / Kata Adjektif",
+        "example_bm": "Lantai bilik mandi itu licin kerana basah.",
+        "example_zh": "浴室的地板因潮湿而很滑。"
+    },
+    {
+        "chinese": "粗糙", "pinyin": "cū cāo", "bm": "kasar", "category": "形容词 / Kata Adjektif",
+        "example_bm": "Kulit buah durian berduri tajam dan terasa kasar.",
+        "example_zh": "榴莲的外壳长满利刺，摸起来很粗糙。"
+    },
+    {
+        "chinese": "重", "pinyin": "zhòng", "bm": "berat", "category": "形容词 / Kata Adjektif",
+        "example_bm": "Kotak yang penuh dengan buku itu sangat berat.",
+        "example_zh": "那个装满书本的箱子非常重。"
+    },
+    {
+        "chinese": "轻", "pinyin": "qīng", "bm": "ringan", "category": "形容词 / Kata Adjektif",
+        "example_bm": "Bulu burung sangat ringan dan mudah ditiup angin.",
+        "example_zh": "鸟羽非常轻盈，容易被风吹起。"
+    },
+    {
+        "chinese": "强壮 / 有力", "pinyin": "qiáng zhuàng", "bm": "kuat", "category": "形容词 / Kata Adjektif",
+        "example_bm": "Badan abang semakin sihat dan kuat kerana selalu bersenam.",
+        "example_zh": "因为经常做运动，哥哥的体魄越来越健壮有力。"
+    },
+    {
+        "chinese": "虚弱", "pinyin": "xū ruò", "bm": "lemah", "category": "形容词 / Kata Adjektif",
+        "example_bm": "Pesakit itu berasa lemah selepas beberapa hari demam.",
+        "example_zh": "那位病人在发烧几天后感觉身体有些虚弱。"
+    },
+
+    # ---------------- 3. Anggota Badan (身体部位) ----------------
+    {
+        "chinese": "头", "pinyin": "tóu", "bm": "kepala", "category": "身体部位 / Anggota Badan",
+        "example_bm": "Kita perlu memakai topi keledar untuk melindungi kepala.",
+        "example_zh": "我们必须戴头盔以保护头部。"
+    },
+    {
+        "chinese": "眼睛", "pinyin": "yǎn jīng", "bm": "mata", "category": "身体部位 / Anggota Badan",
+        "example_bm": "Kita menggunakan mata untuk melihat keindahan alam.",
+        "example_zh": "我们用双眼欣赏大自然的美好景色。"
+    },
+    {
+        "chinese": "耳朵", "pinyin": "ěr duo", "bm": "telinga", "category": "身体部位 / Anggota Badan",
+        "example_bm": "Telinga ialah organ pendengaran manusia.",
+        "example_zh": "耳朵是人类的听觉器官。"
+    },
+    {
+        "chinese": "鼻子", "pinyin": "bí zi", "bm": "hidung", "category": "身体部位 / Anggota Badan",
+        "example_bm": "Hidung digunakan untuk bernafas dan menghidu bau.",
+        "example_zh": "鼻子用于呼吸和嗅闻气味。"
+    },
+    {
+        "chinese": "嘴巴", "pinyin": "zuǐ ba", "bm": "mulut", "category": "身体部位 / Anggota Badan",
+        "example_bm": "Tutup mulut apabila kamu batuk atau bersin.",
+        "example_zh": "当你咳嗽或打喷嚏时要遮住嘴巴。"
+    },
+    {
+        "chinese": "牙齿", "pinyin": "yá chǐ", "bm": "gigi", "category": "身体部位 / Anggota Badan",
+        "example_bm": "Gosok gigi setiap hari agar gigi sentiasa putih dan sihat.",
+        "example_zh": "每天刷牙以确保牙齿洁白健康。"
+    },
+    {
+        "chinese": "舌头", "pinyin": "shé tou", "bm": "lidah", "category": "身体部位 / Anggota Badan",
+        "example_bm": "Lidah berfungsi untuk merasa pelbagai jenis makanan.",
+        "example_zh": "舌头的功能是品尝各种美味食物。"
+    },
+    {
+        "chinese": "手", "pinyin": "shǒu", "bm": "tangan", "category": "身体部位 / Anggota Badan",
+        "example_bm": "Basuh tangan dengan sabun sebelum dan selepas makan.",
+        "example_zh": "在进餐前后请用肥皂把手洗干净。"
+    },
+    {
+        "chinese": "脚 / 腿", "pinyin": "jiǎo", "bm": "kaki", "category": "身体部位 / Anggota Badan",
+        "example_bm": "Kaki digunakan untuk berjalan, berlari dan melompat.",
+        "example_zh": "脚用于行走、奔跑和跳跃。"
+    },
+    {
+        "chinese": "手指", "pinyin": "shǒu zhǐ", "bm": "jari", "category": "身体部位 / Anggota Badan",
+        "example_bm": "Kita mempunyai sepuluh jari tangan yang berguna.",
+        "example_zh": "我们拥有十根很有用处的手指。"
+    },
+    {
+        "chinese": "头发", "pinyin": "tóu fa", "bm": "rambut", "category": "身体部位 / Anggota Badan",
+        "example_bm": "Rambut Amin disikat dengan kemas dan rapi.",
+        "example_zh": "阿敏的头发梳理得十分整齐干练。"
+    },
+    {
+        "chinese": "脸", "pinyin": "liǎn", "bm": "muka", "category": "身体部位 / Anggota Badan",
+        "example_bm": "Cuci muka kamu dengan air bersih setiap pagi.",
+        "example_zh": "每天早晨用清水洗一把脸。"
+    },
+    {
+        "chinese": "脖子 / 颈项", "pinyin": "bó zi", "bm": "leher", "category": "身体部位 / Anggota Badan",
+        "example_bm": "Zirafah mempunyai leher yang sangat panjang.",
+        "example_zh": "长颈鹿拥有长长的脖子。"
+    },
+    {
+        "chinese": "肩膀", "pinyin": "jiān bǎng", "bm": "bahu", "category": "身体部位 / Anggota Badan",
+        "example_bm": "Ali menggalas beg sekolahnya di atas bahu.",
+        "example_zh": "阿里把书包挎在肩膀上。"
+    },
+    {
+        "chinese": "肚子", "pinyin": "dù zi", "bm": "perut", "category": "身体部位 / Anggota Badan",
+        "example_bm": "Adik berasa sakit perut kerana makan terlalu banyak gula-gula.",
+        "example_zh": "弟弟因为吃了太多糖果而感到肚子痛。"
+    },
+    {
+        "chinese": "膝盖", "pinyin": "xī gài", "bm": "lutut", "category": "身体部位 / Anggota Badan",
+        "example_bm": "Lutut budak itu luka kerana terjatuh dari basikal.",
+        "example_zh": "那男孩的膝盖因从自行车摔下而擦破了皮。"
+    },
+    {
+        "chinese": "指甲", "pinyin": "zhǐ jia", "bm": "kuku", "category": "身体部位 / Anggota Badan",
+        "example_bm": "Potong kuku yang panjang demi menjaga kebersihan.",
+        "example_zh": "把过长的指甲修剪整齐以维护卫生。"
+    },
+
+    # ---------------- 4. Keluarga & Manusia (家庭与人物) ----------------
+    {
+        "chinese": "父亲 / 爸爸", "pinyin": "bà ba", "bm": "bapa", "category": "家庭与人物 / Keluarga",
+        "example_bm": "Bapa bekerja keras untuk menyara kehidupan sekeluarga.",
+        "example_zh": "爸爸辛勤工作以维持全家的生活。"
+    },
+    {
+        "chinese": "母亲 / 妈妈", "pinyin": "mā ma", "bm": "ibu", "category": "家庭与人物 / Keluarga",
+        "example_bm": "Ibu memeluk anaknya dengan penuh kasih sayang.",
+        "example_zh": "妈妈满怀关爱地拥抱她的孩子。"
+    },
+    {
+        "chinese": "哥哥", "pinyin": "gē ge", "bm": "abang", "category": "家庭与人物 / Keluarga",
+        "example_bm": "Abang menunggang basikal bersama kawan-kawannya.",
+        "example_zh": "哥哥和他的朋友们一起骑脚踏车。"
+    },
+    {
+        "chinese": "姐姐", "pinyin": "jiě jie", "bm": "kakak", "category": "家庭与人物 / Keluarga",
+        "example_bm": "Kakak rajin membantu ibu menyediakan hidangan di dapur.",
+        "example_zh": "姐姐勤快地在厨房协助妈妈准备佳肴。"
+    },
+    {
+        "chinese": "弟弟 / 妹妹", "pinyin": "dì di", "bm": "adik", "category": "家庭与人物 / Keluarga",
+        "example_bm": "Adik sedang bermain dengan mainan baharunya di ruang tamu.",
+        "example_zh": "小弟小妹正在客厅里玩他们的新玩具。"
+    },
+    {
+        "chinese": "爷爷 / 外公", "pinyin": "yé ye", "bm": "datuk", "category": "家庭与人物 / Keluarga",
+        "example_bm": "Datuk suka membaca surat khabar di serambi rumah.",
+        "example_zh": "爷爷喜欢在屋前走廊看报纸。"
+    },
+    {
+        "chinese": "奶奶 / 外婆", "pinyin": "nǎi nai", "bm": "nenek", "category": "家庭与人物 / Keluarga",
+        "example_bm": "Nenek membuat kuih tradisional yang sangat enak.",
+        "example_zh": "奶奶亲手制作的传统糕点非常美味。"
+    },
+    {
+        "chinese": "邻居", "pinyin": "lín jū", "bm": "jiran", "category": "家庭与人物 / Keluarga",
+        "example_bm": "Semangat kejiranan memupuk keharmonian dalam masyarakat.",
+        "example_zh": "睦邻精神促进社会的和谐与团结。"
+    },
+    {
+        "chinese": "朋友 / 同学", "pinyin": "péng you", "bm": "kawan", "category": "家庭与人物 / Keluarga",
+        "example_bm": "Kawan yang sejati sentiasa ada di sisi pada masa susah dan senang.",
+        "example_zh": "真正的朋友在患难与共时总陪伴在侧。"
+    },
+    {
+        "chinese": "婴儿", "pinyin": "yīng ér", "bm": "bayi", "category": "家庭与人物 / Keluarga",
+        "example_bm": "Bayi yang montel itu tersenyum riang apabila diagah.",
+        "example_zh": "那个胖乎乎的婴儿被逗弄时笑得十分欢快。"
+    },
+    {
+        "chinese": "儿童 / 孩子", "pinyin": "ér tóng", "bm": "kanak-kanak", "category": "家庭与人物 / Keluarga",
+        "example_bm": "Kanak-kanak gemar bermain buaian di taman rekreasi.",
+        "example_zh": "孩子们很喜欢在游乐园荡秋千。"
+    },
+
+    # ---------------- 5. Pekerjaan (职业 / Pekerjaan) ----------------
+    {
+        "chinese": "老师", "pinyin": "lǎo shī", "bm": "guru", "category": "职业 / Pekerjaan",
+        "example_bm": "Guru mendidik murid-murid dengan sabar dan dedikasi.",
+        "example_zh": "老师耐心且尽心尽责地教导学生。"
+    },
+    {
+        "chinese": "医生", "pinyin": "yī shēng", "bm": "doktor", "category": "职业 / Pekerjaan",
+        "example_bm": "Doktor merawat pesakit yang cedera di hospital.",
+        "example_zh": "医生在医院为受伤的病人进行诊治。"
+    },
+    {
+        "chinese": "护士", "pinyin": "hù shi", "bm": "jururawat", "category": "职业 / Pekerjaan",
+        "example_bm": "Jururawat menjaga pesakit dengan penuh prihatin dan lemah lembut.",
+        "example_zh": "护士体贴温柔地悉心照料病人。"
+    },
+    {
+        "chinese": "警察", "pinyin": "jǐng chá", "bm": "polis", "category": "职业 / Pekerjaan",
+        "example_bm": "Polis bertugas menjaga keamanan dan ketenteraman negara.",
+        "example_zh": "警察的职责是维护国家的安宁与治安。"
+    },
+    {
+        "chinese": "消拯员 / 消防员", "pinyin": "xiāo fáng yuán", "bm": "ahli bomba", "category": "职业 / Pekerjaan",
+        "example_bm": "Ahli bomba bertungkus-lumus memadamkan kebakaran yang marak.",
+        "example_zh": "消防队员全力以赴扑灭熊熊烈火。"
+    },
+    {
+        "chinese": "邮递员", "pinyin": "yóu dì yuán", "bm": "posmen", "category": "职业 / Pekerjaan",
+        "example_bm": "Posmen menghantar surat dan bungkusan ke rumah penduduk.",
+        "example_zh": "邮递员把信件和包裹投递到居民家中。"
+    },
+    {
+        "chinese": "农夫", "pinyin": "nóng fū", "bm": "petani", "category": "职业 / Pekerjaan",
+        "example_bm": "Petani membanting tulang menuai padi di sawah.",
+        "example_zh": "农夫辛勤耕耘在稻田里收割稻谷。"
+    },
+    {
+        "chinese": "渔夫", "pinyin": "yú fū", "bm": "nelayan", "category": "职业 / Pekerjaan",
+        "example_bm": "Nelayan turun ke laut menangkap ikan menggunakan jala.",
+        "example_zh": "渔夫出海撒网捕鱼。"
+    },
+    {
+        "chinese": "园丁", "pinyin": "yuán dīng", "bm": "tukang kebun", "category": "职业 / Pekerjaan",
+        "example_bm": "Tukang kebun mencantas ranting pokok di halaman sekolah.",
+        "example_zh": "园丁在修剪学校庭院里的树枝。"
+    },
+    {
+        "chinese": "厨师", "pinyin": "chú shī", "bm": "tukang masak", "category": "职业 / Pekerjaan",
+        "example_bm": "Tukang masak di restoran itu mahir memasak masakan lazat.",
+        "example_zh": "那家餐馆的厨师非常精通烹饪各色美味佳肴。"
+    },
+    {
+        "chinese": "飞行员", "pinyin": "fēi xíng yuán", "bm": "juruterbang", "category": "职业 / Pekerjaan",
+        "example_bm": "Juruterbang memandu kapal terbang merentasi awan biru.",
+        "example_zh": "飞行员驾驶飞机穿梭在蔚蓝的云海中。"
+    },
+    {
+        "chinese": "司机", "pinyin": "sī jī", "bm": "pemandu", "category": "职业 / Pekerjaan",
+        "example_bm": "Pemandu bas memandu kenderaan dengan mematuhi had laju.",
+        "example_zh": "巴士司机遵守行车速度限制安全驾驶。"
+    },
+    {
+        "chinese": "商人", "pinyin": "shāng rén", "bm": "peniaga", "category": "职业 / Pekerjaan",
+        "example_bm": "Peniaga itu melayan pelanggannya dengan mesra dan jujur.",
+        "example_zh": "那位商人待客热情亲切又童叟无欺。"
+    },
+    {
+        "chinese": "军人", "pinyin": "jūn rén", "bm": "askar", "category": "职业 / Pekerjaan",
+        "example_bm": "Askar bersiap sedia mempertahankan kedaulatan tanah air.",
+        "example_zh": "军人严阵以待随时捍卫祖国的尊严。"
+    },
+
+    # ---------------- 6. Haiwan (动物 / Haiwan) ----------------
+    {
+        "chinese": "猫", "pinyin": "māo", "bm": "kucing", "category": "动物 / Haiwan",
+        "example_bm": "Kucing itu suka menangkap tikus di dapur.",
+        "example_zh": "那只猫喜欢在厨房捕捉老鼠。"
+    },
+    {
+        "chinese": "狗", "pinyin": "gǒu", "bm": "anjing", "category": "动物 / Haiwan",
+        "example_bm": "Anjing itu setia menjaga rumah tuannya.",
+        "example_zh": "那只狗忠心耿耿地看顾主人的家门。"
+    },
+    {
+        "chinese": "鸟", "pinyin": "niǎo", "bm": "burung", "category": "动物 / Haiwan",
+        "example_bm": "Burung berkicau riang di atas dahan pokok pada waktu pagi.",
+        "example_zh": "清晨鸟儿在树枝上欢快地啼叫。"
+    },
+    {
+        "chinese": "鱼", "pinyin": "yú", "bm": "ikan", "category": "动物 / Haiwan",
+        "example_bm": "Ikan emas berenang dengan lincah di dalam akuarium kaca.",
+        "example_zh": "金鱼在玻璃鱼缸里活泼地畅游。"
+    },
+    {
+        "chinese": "鸡", "pinyin": "jī", "bm": "ayam", "category": "动物 / Haiwan",
+        "example_bm": "Ayam jantan berkokok pada waktu fajar menyingsing.",
+        "example_zh": "雄鸡在破晓黎明时分引吭啼鸣。"
+    },
+    {
+        "chinese": "鸭", "pinyin": "yā", "bm": "itik", "category": "动物 / Haiwan",
+        "example_bm": "Anak-anak itik berenang di belakang ibu mereka di dalam kolam.",
+        "example_zh": "小鸭子们在池塘里跟着鸭妈妈身后游水。"
+    },
+    {
+        "chinese": "牛", "pinyin": "niú", "bm": "lembu", "category": "动物 / Haiwan",
+        "example_bm": "Lembu meragut rumput yang segar di padang ragut.",
+        "example_zh": "牛群在牧场上悠闲地嚼食鲜草。"
+    },
+    {
+        "chinese": "羊", "pinyin": "yáng", "bm": "kambing", "category": "动物 / Haiwan",
+        "example_bm": "Kambing itu mengembek memanggil anaknya.",
+        "example_zh": "那只羊咩咩叫着呼唤自己的羊羔。"
+    },
+    {
+        "chinese": "马", "pinyin": "mǎ", "bm": "kuda", "category": "动物 / Haiwan",
+        "example_bm": "Kuda berlari dengan pantas melintasi padang luas.",
+        "example_zh": "骏马奔驰迅速，掠过广阔的田野。"
+    },
+    {
+        "chinese": "大象", "pinyin": "dà xiàng", "bm": "gajah", "category": "动物 / Haiwan",
+        "example_bm": "Gajah mempunyai belalai yang panjang dan telinga yang lebar.",
+        "example_zh": "大象拥有长长的鼻子和宽大的耳朵。"
+    },
+    {
+        "chinese": "老虎", "pinyin": "lǎo hǔ", "bm": "harimau", "category": "动物 / Haiwan",
+        "example_bm": "Harimau belang dikenali sebagai raja rimba yang gagah.",
+        "example_zh": "条纹斑斓的老虎被誉为威猛的百兽之王。"
+    },
+    {
+        "chinese": "狮子", "pinyin": "shī zi", "bm": "singa", "category": "动物 / Haiwan",
+        "example_bm": "Singa jantan mempunyai surai yang lebat di sekeliling lehernya.",
+        "example_zh": "雄狮颈部周围长着浓密威风的鬃毛。"
+    },
+    {
+        "chinese": "猴子", "pinyin": "hóu zi", "bm": "monyet", "category": "动物 / Haiwan",
+        "example_bm": "Monyet itu bergayut dari sebatang dahan ke dahan yang lain.",
+        "example_zh": "那只猴子在树枝之间轻捷地荡来荡去。"
+    },
+    {
+        "chinese": "兔子", "pinyin": "tù zi", "bm": "arnab", "category": "动物 / Haiwan",
+        "example_bm": "Arnab mempunyai telinga yang panjang dan suka makan lobak merah.",
+        "example_zh": "兔子长着长长的耳朵，特别喜爱吃胡萝卜。"
+    },
+    {
+        "chinese": "乌龟", "pinyin": "wū guī", "bm": "kura-kura", "category": "动物 / Haiwan",
+        "example_bm": "Kura-kura mempunyai cangkerang yang keras untuk melindungi dirinya.",
+        "example_zh": "乌龟拥有坚硬的外壳用来保护自己。"
+    },
+    {
+        "chinese": "青蛙", "pinyin": "qīng wā", "bm": "katak", "category": "动物 / Haiwan",
+        "example_bm": "Katak melompat keluar dari semak lalu masuk ke dalam parit.",
+        "example_zh": "青蛙从草丛中跳出，跃入了沟渠里。"
+    },
+    {
+        "chinese": "蝴蝶", "pinyin": "hú dié", "bm": "rama-rama", "category": "动物 / Haiwan",
+        "example_bm": "Rama-rama yang berwarna-warni berterbangan di taman bunga.",
+        "example_zh": "色彩斑斓的蝴蝶在花园的花丛间飞舞。"
+    },
+    {
+        "chinese": "蜜蜂", "pinyin": "mì fēng", "bm": "lebah", "category": "动物 / Haiwan",
+        "example_bm": "Lebah menghisap madu daripada sari bunga yang mekar.",
+        "example_zh": "蜜蜂从绽放的花朵中吸取花蜜。"
+    },
+    {
+        "chinese": "蚂蚁", "pinyin": "mǎ yǐ", "bm": "semut", "category": "动物 / Haiwan",
+        "example_bm": "Semut bekerjasama mengangkut serpihan makanan ke sarang.",
+        "example_zh": "蚂蚁齐心协力将食物碎屑搬回蚁巢。"
+    },
+    {
+        "chinese": "蛇", "pinyin": "shé", "bm": "ular", "category": "动物 / Haiwan",
+        "example_bm": "Ular itu menyusur perlahan-lahan di celah-celah batu.",
+        "example_zh": "那条蛇在石缝之间缓缓地爬行。"
+    },
+    {
+        "chinese": "鳄鱼", "pinyin": "è yú", "bm": "buaya", "category": "动物 / Haiwan",
+        "example_bm": "Buaya berjemur di tebing sungai yang berpasir.",
+        "example_zh": "鳄鱼在沙质的河岸边晒太阳。"
+    },
+
+    # ---------------- 7. Buah & Sayur (水果与蔬菜) ----------------
+    {
+        "chinese": "苹果", "pinyin": "píng guǒ", "bm": "epal", "category": "水果蔬菜 / Buah & Sayur",
+        "example_bm": "Epal merah ini rasanya manis dan berkhasiat.",
+        "example_zh": "这个红苹果又甜又富有营养。"
+    },
+    {
+        "chinese": "香蕉", "pinyin": "xiāng jiāo", "bm": "pisang", "category": "水果蔬菜 / Buah & Sayur",
+        "example_bm": "Pisang yang masak berwarna kuning dan bertekstur lembut.",
+        "example_zh": "成熟的香蕉呈黄色，口感软糯香甜。"
+    },
+    {
+        "chinese": "橙 / 柑", "pinyin": "chéng", "bm": "oren", "category": "水果蔬菜 / Buah & Sayur",
+        "example_bm": "Buah oren mengandungi banyak vitamin C yang baik untuk kesihatan.",
+        "example_zh": "橙子含有丰富的维生素C，对健康非常有益。"
+    },
+    {
+        "chinese": "西瓜", "pinyin": "xī guā", "bm": "tembikai", "category": "水果蔬菜 / Buah & Sayur",
+        "example_bm": "Makan buah tembikai pada hari panas sangat menyegarkan.",
+        "example_zh": "在炎热的日子里吃西瓜非常清凉解暑。"
+    },
+    {
+        "chinese": "榴莲", "pinyin": "liú lián", "bm": "durian", "category": "水果蔬菜 / Buah & Sayur",
+        "example_bm": "Durian dikenali sebagai raja buah di Malaysia.",
+        "example_zh": "榴莲在马来西亚被尊称为果中之王。"
+    },
+    {
+        "chinese": "木瓜", "pinyin": "mù guā", "bm": "betik", "category": "水果蔬菜 / Buah & Sayur",
+        "example_bm": "Buah betik sedap dimakan begitu sahaja selepas dipotong.",
+        "example_zh": "木瓜切块后直接食用非常甜美可口。"
+    },
+    {
+        "chinese": "芒果", "pinyin": "máng guǒ", "bm": "mangga", "category": "水果蔬菜 / Buah & Sayur",
+        "example_bm": "Ibu memetik buah mangga yang masak daripada dahan pokok.",
+        "example_zh": "妈妈从树枝上摘下成熟的芒果。"
+    },
+    {
+        "chinese": "红毛丹", "pinyin": "hóng máo dān", "bm": "rambutan", "category": "水果蔬菜 / Buah & Sayur",
+        "example_bm": "Buah rambutan mempunyai isi putih yang manis dan berair.",
+        "example_zh": "红毛丹拥有白皙甘甜且多汁的果肉。"
+    },
+    {
+        "chinese": "黄梨 / 菠萝", "pinyin": "huáng lí", "bm": "nanas", "category": "水果蔬菜 / Buah & Sayur",
+        "example_bm": "Nanas yang manis ini dipetik dari ladang di Johor.",
+        "example_zh": "这粒香甜的黄梨是从柔佛的果园采摘的。"
+    },
+    {
+        "chinese": "葡萄", "pinyin": "pú tao", "bm": "anggur", "category": "水果蔬菜 / Buah & Sayur",
+        "example_bm": "Anggur ungu itu tergantung cantik pada junjungan di kebun.",
+        "example_zh": "紫色的葡萄串美丽地垂挂在果园的藤架上。"
+    },
+    {
+        "chinese": "草莓", "pinyin": "cǎo méi", "bm": "strawberi", "category": "水果蔬菜 / Buah & Sayur",
+        "example_bm": "Kami memetik buah strawberi yang segar di Cameron Highlands.",
+        "example_zh": "我们在金马仑高原采摘新鲜的草莓。"
+    },
+    {
+        "chinese": "胡萝卜 / 红萝卜", "pinyin": "hú luó bo", "bm": "lobak merah", "category": "水果蔬菜 / Buah & Sayur",
+        "example_bm": "Lobak merah sangat baik untuk kesihatan penglihatan mata.",
+        "example_zh": "胡萝卜富含营养，对眼睛视力极为有益。"
+    },
+    {
+        "chinese": "包菜 / 卷心菜", "pinyin": "bāo cài", "bm": "kubis", "category": "水果蔬菜 / Buah & Sayur",
+        "example_bm": "Ibu menggoreng sayur kubis bersama udang segar.",
+        "example_zh": "妈妈用新鲜虾仁翻炒爽脆的包菜。"
+    },
+    {
+        "chinese": "番茄 / 西红柿", "pinyin": "fān qié", "bm": "tomato", "category": "水果蔬菜 / Buah & Sayur",
+        "example_bm": "Tomato merah ini sedap dijadikan campuran salad sayuran.",
+        "example_zh": "红彤彤的番茄非常适宜拌入蔬菜沙拉中。"
+    },
+    {
+        "chinese": "黄瓜", "pinyin": "huáng guā", "bm": "timun", "category": "水果蔬菜 / Buah & Sayur",
+        "example_bm": "Potongan timun selalu dihidangkan bersama nasi lemak.",
+        "example_zh": "黄瓜切片经常作为椰浆饭的清爽配菜。"
+    },
+    {
+        "chinese": "辣椒", "pinyin": "là jiāo", "bm": "cili", "category": "水果蔬菜 / Buah & Sayur",
+        "example_bm": "Cili padi yang kecil mempunyai rasa yang sungguh pedas.",
+        "example_zh": "个头小小的指天椒辣味极其强劲。"
+    },
+    {
+        "chinese": "茄子", "pinyin": "qié zi", "bm": "terung", "category": "水果蔬菜 / Buah & Sayur",
+        "example_bm": "Sayur terung ungu itu dimasak kari oleh emak.",
+        "example_zh": "紫色的茄子被妈妈煮成了香浓可口的咖喱。"
+    },
+    {
+        "chinese": "洋葱", "pinyin": "yáng cōng", "bm": "bawang", "category": "水果蔬菜 / Buah & Sayur",
+        "example_bm": "Mata saya berair apabila memotong bawang merah di dapur.",
+        "example_zh": "在厨房切红洋葱时熏得我眼泪直流。"
+    },
+    {
+        "chinese": "马铃薯 / 土豆", "pinyin": "mǎ líng shǔ", "bm": "kentang", "category": "水果蔬菜 / Buah & Sayur",
+        "example_bm": "Kentang goreng kegemaran kanak-kanak berasa rangup dan lazat.",
+        "example_zh": "深得孩子们喜爱的小炸薯条金黄酥脆可口。"
+    },
+
+    # ---------------- 8. Benda Sekolah & Rumah (学校与日常用品) ----------------
+    {
+        "chinese": "书本", "pinyin": "shū běn", "bm": "buku", "category": "用品 / Benda",
+        "example_bm": "Buku ialah jambatan ilmu pengetahuan.",
+        "example_zh": "书籍是通往广博知识的坚实桥梁。"
+    },
+    {
+        "chinese": "铅笔", "pinyin": "qiān bǐ", "bm": "pensel", "category": "用品 / Benda",
+        "example_bm": "Gunakan pensel untuk melukis garis panduan sebelum mewarna.",
+        "example_zh": "在上色前先使用铅笔勾画轮廓线条。"
+    },
+    {
+        "chinese": "橡皮擦", "pinyin": "xiàng pí cā", "bm": "pemadam", "category": "用品 / Benda",
+        "example_bm": "Saya menggunakan pemadam untuk memadamkan tulisan yang salah.",
+        "example_zh": "我用橡皮擦擦掉写错的字迹。"
+    },
+    {
+        "chinese": "尺", "pinyin": "chǐ", "bm": "pembaris", "category": "用品 / Benda",
+        "example_bm": "Lukis garisan lurus dengan menggunakan pembaris yang panjang.",
+        "example_zh": "借助长尺画出一条平直工整的线条。"
+    },
+    {
+        "chinese": "书包", "pinyin": "shū bāo", "bm": "beg sekolah", "category": "用品 / Benda",
+        "example_bm": "Murid-murid menggalas beg sekolah yang berisi buku teks.",
+        "example_zh": "学生们背着装满课本的书包。"
+    },
+    {
+        "chinese": "桌子", "pinyin": "zhuō zi", "bm": "meja", "category": "用品 / Benda",
+        "example_bm": "Letakkan buku latihan kamu di atas meja guru.",
+        "example_zh": "把你的作业练习本整齐放在老师的桌上。"
+    },
+    {
+        "chinese": "椅子", "pinyin": "yǐ zi", "bm": "kerusi", "category": "用品 / Benda",
+        "example_bm": "Duduk di atas kerusi dengan postur yang betul.",
+        "example_zh": "坐在椅子上时请保持正确的坐姿。"
+    },
+    {
+        "chinese": "黑板 / 白板", "pinyin": "hēi bǎn", "bm": "papan hitam", "category": "用品 / Benda",
+        "example_bm": "Cikgu menulis nota penting di papan hitam.",
+        "example_zh": "老师在黑板上端正地书写重要笔记。"
+    },
+    {
+        "chinese": "钟 / 手表", "pinyin": "zhōng", "bm": "jam", "category": "用品 / Benda",
+        "example_bm": "Jam dinding menunjukkan tepat pada pukul lapan pagi.",
+        "example_zh": "墙上的壁钟指针正正指在早上八点。"
+    },
+    {
+        "chinese": "门", "pinyin": "mén", "bm": "pintu", "category": "用品 / Benda",
+        "example_bm": "Ketuk pintu sebelum melangkah masuk ke dalam bilik.",
+        "example_zh": "在步入房间前请礼貌地敲敲门。"
+    },
+    {
+        "chinese": "窗户", "pinyin": "chuāng hu", "bm": "tingkap", "category": "用品 / Benda",
+        "example_bm": "Buka tingkap supaya udara segar dapat masuk ke dalam bilik.",
+        "example_zh": "打开窗户让新鲜的清风徐徐吹进室内。"
+    },
+    {
+        "chinese": "电灯", "pinyin": "diàn dēng", "bm": "lampu", "category": "用品 / Benda",
+        "example_bm": "Padamkan lampu apabila kamu keluar dari bilik.",
+        "example_zh": "离开房间时随手关掉电灯以节约用电。"
+    },
+    {
+        "chinese": "风扇", "pinyin": "fēng shàn", "bm": "kipas", "category": "用品 / Benda",
+        "example_bm": "Kipas angin berpusing ligat menyejukkan suasana bilik.",
+        "example_zh": "电风扇飞快旋转，为房间送来阵阵凉意。"
+    },
+    {
+        "chinese": "衣服", "pinyin": "yī fu", "bm": "baju", "category": "用品 / Benda",
+        "example_bm": "Ibu melipat baju yang bersih lalu menyimpannya ke dalam almari.",
+        "example_zh": "妈妈折叠洗净的衣服并整齐收纳在衣柜里。"
+    },
+    {
+        "chinese": "裤子", "pinyin": "kù zi", "bm": "seluar", "category": "用品 / Benda",
+        "example_bm": "Ali memakai seluar sukan berwarna biru semasa latihan jasmani.",
+        "example_zh": "阿里在体育活动课时换上了一条蓝色的运动裤。"
+    },
+    {
+        "chinese": "鞋子", "pinyin": "xié zi", "bm": "kasut", "category": "用品 / Benda",
+        "example_bm": "Susun kasut sekolah kamu dengan kemas di atas rak kasut.",
+        "example_zh": "把校鞋整齐划一地摆放在鞋架上。"
+    },
+    {
+        "chinese": "袜子", "pinyin": "wà zi", "bm": "stoking", "category": "用品 / Benda",
+        "example_bm": "Pakai stoking yang bersih sebelum memakai kasut sekolah.",
+        "example_zh": "穿校鞋前先穿上一双干净舒适的袜子。"
+    },
+    {
+        "chinese": "雨伞", "pinyin": "yǔ sǎn", "bm": "payung", "category": "用品 / Benda",
+        "example_bm": "Bawa payung bersama kerana cuaca mendung hendak hujan.",
+        "example_zh": "天空乌云密布即将下雨，记得带上一把雨伞。"
+    },
+    {
+        "chinese": "盘子", "pinyin": "pán zi", "bm": "pinggan", "category": "用品 / Benda",
+        "example_bm": "Letakkan nasi goreng yang panas di atas pinggan seramik.",
+        "example_zh": "把热气腾腾的炒饭盛在陶瓷盘子里。"
+    },
+    {
+        "chinese": "碗", "pinyin": "wǎn", "bm": "mangkuk", "category": "用品 / Benda",
+        "example_bm": "Sup ayam yang enak dihidangkan di dalam sebuah mangkuk.",
+        "example_zh": "鲜美浓郁的鸡汤盛在了一只大瓷碗中。"
+    },
+    {
+        "chinese": "杯子", "pinyin": "bēi zi", "bm": "cawan", "category": "用品 / Benda",
+        "example_bm": "Ayah menuang teh suam ke dalam cawan kaca.",
+        "example_zh": "爸爸把温热的红茶倒入玻璃杯中。"
+    },
+    {
+        "chinese": "汤匙", "pinyin": "tāng chí", "bm": "sudu", "category": "用品 / Benda",
+        "example_bm": "Gunakan sudu untuk menyuap makanan ke dalam mulut.",
+        "example_zh": "使用汤匙把饭菜舀起送入口中。"
+    },
+    {
+        "chinese": "叉子", "pinyin": "chā zi", "bm": "garpu", "category": "用品 / Benda",
+        "example_bm": "Adik makan mi menggunakan garpu dan sudu.",
+        "example_zh": "弟弟用叉子和汤匙一起吃面条。"
+    },
+
+    # ---------------- 9. Tempat & Kenderaan (场所与交通工具) ----------------
+    {
+        "chinese": "学校", "pinyin": "xué xiào", "bm": "sekolah", "category": "场所与交通 / Tempat & Kenderaan",
+        "example_bm": "Sekolah tempat kita menimba ilmu dan berkawan.",
+        "example_zh": "学校是我们求取学问与结识朋友的好地方。"
+    },
+    {
+        "chinese": "教室 / 课室", "pinyin": "jiào shì", "bm": "bilik darjah", "category": "场所与交通 / Tempat & Kenderaan",
+        "example_bm": "Murid-murid belajar dengan tekun di dalam bilik darjah.",
+        "example_zh": "学生们在教室里专心致志地认真学习。"
+    },
+    {
+        "chinese": "图书馆", "pinyin": "tú shū guǎn", "bm": "perpustakaan", "category": "场所与交通 / Tempat & Kenderaan",
+        "example_bm": "Suasana di perpustakaan sangat sunyi dan tenteram.",
+        "example_zh": "图书馆内的环境非常安宁静谧。"
+    },
+    {
+        "chinese": "食堂", "pinyin": "shí táng", "bm": "kantin", "category": "场所与交通 / Tempat & Kenderaan",
+        "example_bm": "Murid-murid menikmati mi sup pada waktu rehat di kantin.",
+        "example_zh": "休息时间，学生们在食堂享用热腾腾的汤面。"
+    },
+    {
+        "chinese": "草场", "pinyin": "cǎo chǎng", "bm": "padang", "category": "场所与交通 / Tempat & Kenderaan",
+        "example_bm": "Padang sekolah yang luas dipenuhi murid-murid bersukan.",
+        "example_zh": "辽阔的校草场上满是进行体育锻炼的学生。"
+    },
+    {
+        "chinese": "房子 / 家", "pinyin": "fáng zi", "bm": "rumah", "category": "场所与交通 / Tempat & Kenderaan",
+        "example_bm": "Rumah saya terletak berhampiran dengan taman rekreasi.",
+        "example_zh": "我的家坐落在休闲公园的附近。"
+    },
+    {
+        "chinese": "医院", "pinyin": "yī yuàn", "bm": "hospital", "category": "场所与交通 / Tempat & Kenderaan",
+        "example_bm": "Doktor pakar bertugas siang dan malam di hospital.",
+        "example_zh": "专科医生在医院昼夜坚守岗位为病人服务。"
+    },
+    {
+        "chinese": "菜市 / 巴刹", "pinyin": "cài shì", "bm": "pasar", "category": "场所与交通 / Tempat & Kenderaan",
+        "example_bm": "Ibu membeli sayur-sayuran dan ikan segar di pasar pagi.",
+        "example_zh": "妈妈在早市菜场购买新鲜的蔬菜和鱼类。"
+    },
+    {
+        "chinese": "游乐场", "pinyin": "yóu lè chǎng", "bm": "taman permainan", "category": "场所与交通 / Tempat & Kenderaan",
+        "example_bm": "Kanak-kanak ketawa riang ketika bermain di taman permainan.",
+        "example_zh": "孩子们在游乐场玩耍时笑声清脆愉悦。"
+    },
+    {
+        "chinese": "汽车", "pinyin": "qì chē", "bm": "kereta", "category": "场所与交通 / Tempat & Kenderaan",
+        "example_bm": "Ayah mencuci kereta miliknya pada setiap hujung minggu.",
+        "example_zh": "爸爸每到周末都会亲手洗净自己的爱车。"
+    },
+    {
+        "chinese": "巴士 / 公交车", "pinyin": "bā shì", "bm": "bas", "category": "场所与交通 / Tempat & Kenderaan",
+        "example_bm": "Ramai penumpang menunggu bas tiba di perhentian bas.",
+        "example_zh": "许多乘客在巴士站耐心等待公车到来。"
+    },
+    {
+        "chinese": "自行车 / 脚踏车", "pinyin": "zì xíng chē", "bm": "basikal", "category": "场所与交通 / Tempat & Kenderaan",
+        "example_bm": "Ali mengayuh basikal dengan gembira ke taman permainan.",
+        "example_zh": "阿里开心地踩着自行车去游乐场。"
+    },
+    {
+        "chinese": "火车", "pinyin": "huǒ chē", "bm": "kereta api", "category": "场所与交通 / Tempat & Kenderaan",
+        "example_bm": "Kereta api elektrik bergerak laju di atas landasan besi.",
+        "example_zh": "电气化火车在铁轨上疾速奔驰穿行。"
+    },
+    {
+        "chinese": "飞机", "pinyin": "fēi jī", "bm": "kapal terbang", "category": "场所与交通 / Tempat & Kenderaan",
+        "example_bm": "Kapal terbang mendarat dengan selamat di landasan lapangan terbang.",
+        "example_zh": "飞机在机场跑道上安全平稳降落。"
+    },
+    {
+        "chinese": "船", "pinyin": "chuán", "bm": "kapal", "category": "场所与交通 / Tempat & Kenderaan",
+        "example_bm": "Kapal layar itu berlayar dengan megah merentasi lautan luas.",
+        "example_zh": "那艘帆船威武庄严地航行在广阔的大海上。"
+    },
+
+    # ---------------- 10. Nilai Murni & Alam (道德价值观与自然) ----------------
+    {
+        "chinese": "关爱 / 爱心", "pinyin": "guān ài", "bm": "kasih sayang", "category": "道德与自然 / Nilai & Alam",
+        "example_bm": "Ibu bapa melimpahkan kasih sayang yang tidak berbelah bahagi kepada anak-anak.",
+        "example_zh": "父母对孩子们倾注了毫无保留的深切关爱。"
+    },
+    {
+        "chinese": "互相帮助", "pinyin": "hù xiāng bāng zhù", "bm": "tolong-menolong", "category": "道德与自然 / Nilai & Alam",
+        "example_bm": "Amalan tolong-menolong dapat mengeratkan hubungan sesama manusia.",
+        "example_zh": "守望相助、互相帮助的品格能拉近人与人之间的距离。"
+    },
+    {
+        "chinese": "合作 / 齐心协力", "pinyin": "hé zuò", "bm": "bekerjasama", "category": "道德与自然 / Nilai & Alam",
+        "example_bm": "Penduduk kampung bekerjasama membersihkan balai raya sempena gotong-royong.",
+        "example_zh": "村民们在大扫除中齐心协力打扫民众会堂。"
+    },
+    {
+        "chinese": "感恩 / 感谢", "pinyin": "gǎn ēn", "bm": "bersyukur", "category": "道德与自然 / Nilai & Alam",
+        "example_bm": "Kita patut bersyukur atas segala nikmat dan keamanan yang dinikmati.",
+        "example_zh": "我们应当对所享受的丰足与和平心存感恩。"
+    },
+    {
+        "chinese": "尊敬 / 敬重", "pinyin": "zūn jìng", "bm": "menghormati", "category": "道德与自然 / Nilai & Alam",
+        "example_bm": "Murid-murid sentiasa menghormati para guru dan ibu bapa.",
+        "example_zh": "学生们时刻以诚挚的心敬重师长与父母。"
+    },
+    {
+        "chinese": "负责任", "pinyin": "fù zé rèn", "bm": "bertanggungjawab", "category": "道德与自然 / Nilai & Alam",
+        "example_bm": "Ketua darjah menjalankan tugas yang diamanahkan secara bertanggungjawab.",
+        "example_zh": "班长以高度负责任的态度履行所托付的职责。"
+    },
+    {
+        "chinese": "太阳", "pinyin": "tài yáng", "bm": "matahari", "category": "道德与自然 / Nilai & Alam",
+        "example_bm": "Matahari terbit dari sebelah timur pada waktu fajar.",
+        "example_zh": "太阳在清晨从东方冉冉升起。"
+    },
+    {
+        "chinese": "月亮", "pinyin": "yuè liang", "bm": "bulan", "category": "道德与自然 / Nilai & Alam",
+        "example_bm": "Bulan purnama menyinari alam malam dengan cahaya keperakan.",
+        "example_zh": "满月用柔和皎洁的银白色月辉照亮夜空。"
+    },
+    {
+        "chinese": "星星", "pinyin": "xīng xing", "bm": "bintang", "category": "道德与自然 / Nilai & Alam",
+        "example_bm": "Bintang-bintang berkelip-kelip indah di dada langit malam.",
+        "example_zh": "繁星在夜幕中一闪一闪美丽闪烁。"
+    },
+    {
+        "chinese": "云朵", "pinyin": "yún duǒ", "bm": "awan", "category": "道德与自然 / Nilai & Alam",
+        "example_bm": "Gumpalan awan putih berarak perlahan di langit biru.",
+        "example_zh": "朵朵白云在蔚蓝天际慢悠悠地飘移浮动。"
+    },
+    {
+        "chinese": "雨", "pinyin": "yǔ", "bm": "hujan", "category": "道德与自然 / Nilai & Alam",
+        "example_bm": "Hujan lebat membasahi bumi pada petang tadi.",
+        "example_zh": "倾盆大雨在午后滋润浸湿了大地。"
+    },
+    {
+        "chinese": "彩虹", "pinyin": "cǎi hóng", "bm": "pelangi", "category": "道德与自然 / Nilai & Alam",
+        "example_bm": "Pelangi tujuh warna muncul di angkasa selepas hujan reda.",
+        "example_zh": "雨过天晴后，七彩斑斓的彩虹挂在天边。"
+    },
+    {
+        "chinese": "河流", "pinyin": "hé liú", "bm": "sungai", "category": "道德与自然 / Nilai & Alam",
+        "example_bm": "Air sungai yang jernih mengalir tenang menuju ke laut.",
+        "example_zh": "清澈见底的河水静静流向浩瀚汪洋。"
+    },
+    {
+        "chinese": "大海 / 海洋", "pinyin": "dà hǎi", "bm": "laut", "category": "道德与自然 / Nilai & Alam",
+        "example_bm": "Ombak berbuih memukul pantai di tepi laut yang luas.",
+        "example_zh": "白色的浪花拍打着辽阔大海边的沙滩。"
+    },
+    {
+        "chinese": "树木", "pinyin": "shù mù", "bm": "pokok", "category": "道德与自然 / Nilai & Alam",
+        "example_bm": "Pokok-pokok hijau menghasilkan udara segar untuk hidupan bumi.",
+        "example_zh": "绿树为地球上的生命制造纯净清新的空气。"
+    },
+    {
+        "chinese": "花朵", "pinyin": "huā duǒ", "bm": "bunga", "category": "道德与自然 / Nilai & Alam",
+        "example_bm": "Bunga-bunga di taman mekar mekar dengan harum dan mempesonakan.",
+        "example_zh": "花园中的朵朵鲜花争相绽放，芳香迷人。"
+    }
+]
+
+# Write to perkataan_bm_data.json
+out_path = os.path.join(os.path.dirname(__file__), "perkataan_bm_data.json")
+with open(out_path, "w", encoding="utf-8") as f:
+    json.dump(vocabulary, f, ensure_ascii=False, indent=2)
+
+print(f"Successfully generated {len(vocabulary)} vocabulary words to {out_path}")
