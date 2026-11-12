@@ -46,8 +46,7 @@
             align-items: center;
             flex-wrap: wrap;
             gap: 10px;
-            padding-bottom: 12px;
-            border-bottom: 3px dashed #b2dfdb;
+            padding-bottom: 10px;
         }
 
         .level-badge {
@@ -117,10 +116,29 @@
             font-size: 0.92em;
         }
 
+        /* 20 Questions Progress Bar */
+        .progress-container {
+            width: 100%;
+            height: 9px;
+            background: #e0f2f1;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 8px;
+            border: 1px solid #b2dfdb;
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 5%;
+            background: linear-gradient(90deg, #4caf50 0%, #66bb6a 100%);
+            border-radius: 8px;
+            transition: width 0.4s ease;
+        }
+
         /* Instruction Header */
         .instruction-box {
             text-align: center;
-            margin-top: 10px;
+            margin-top: 5px;
             margin-bottom: 5px;
         }
 
@@ -141,7 +159,7 @@
         .question-card-container {
             display: flex;
             justify-content: center;
-            margin: 15px 0;
+            margin: 12px 0;
         }
 
         .question-card {
@@ -191,7 +209,7 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 16px;
-            margin: 15px 0;
+            margin: 12px 0;
         }
 
         .option-btn {
@@ -459,7 +477,7 @@
             display: none;
             position: absolute;
             top: 0; left: 0; right: 0; bottom: 0;
-            background: rgba(255, 255, 255, 0.96);
+            background: rgba(255, 255, 255, 0.97);
             border-radius: 18px;
             flex-direction: column;
             align-items: center;
@@ -474,17 +492,28 @@
             animation: bounce 1.2s infinite;
         }
 
-        .restart-btn {
-            background: #4caf50;
+        .celebrate-buttons {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .action-round-btn {
             color: white;
             border: none;
-            padding: 12px 36px;
-            font-size: 1.3em;
+            padding: 12px 28px;
+            font-size: 1.2em;
             font-weight: bold;
             border-radius: 25px;
             cursor: pointer;
-            margin-top: 20px;
-            box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .action-round-btn:hover {
+            transform: scale(1.05);
         }
 
         /* Responsive Mobile Layout */
@@ -558,6 +587,17 @@
             .feedback-banner {
                 font-size: 1.25em;
             }
+
+            .celebrate-buttons {
+                flex-direction: column;
+                width: 90%;
+            }
+
+            .action-round-btn {
+                width: 100%;
+                font-size: 1.05em;
+                padding: 10px 15px;
+            }
         }
     </style>
 </head>
@@ -581,7 +621,7 @@
         <!-- Top status bar -->
         <div class="top-bar">
             <div class="level-badge">
-                <span id="level-text">第 1 关</span>
+                <span id="level-text">第 1 题 / 共 20 题</span>
                 <div class="score-box">
                     <span class="score-item score-betul">✅ <span id="score-b">0</span></span>
                     <span class="score-item score-salah">❌ <span id="score-s">0</span></span>
@@ -589,7 +629,7 @@
             </div>
 
             <div class="control-buttons">
-                <select class="category-select" id="category-filter" onchange="changeCategory()">
+                <select class="category-select" id="category-filter" onchange="startNewSet()">
                     <option value="ALL">🌟 全部词汇 (Semua)</option>
                     <option value="动词 / Kata Kerja">🏃 动词 (Kata Kerja)</option>
                     <option value="形容词 / Kata Adjektif">✨ 形容词 (Kata Adjektif)</option>
@@ -606,6 +646,11 @@
                 <button class="top-btn" id="sfx-toggle-btn" onclick="toggleSFX()">🔊 音效</button>
                 <button class="top-btn" id="bgm-toggle-btn" onclick="toggleBGM()">🎵 音乐</button>
             </div>
+        </div>
+
+        <!-- 20 Questions Progress Bar -->
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
         </div>
 
         <!-- Instructions -->
@@ -649,17 +694,20 @@
             <button class="next-btn" id="next-btn" onclick="nextQuestion()">下一题 (Seterusnya) ➔</button>
         </div>
 
-        <!-- Game Completion Screen -->
+        <!-- Game Completion Screen (Finished 20 questions) -->
         <div class="celebrate-screen" id="celebrate-screen">
             <div class="celebrate-trophy">🏆🎉</div>
-            <h1 style="color: #2e7d32; margin: 10px 0;">Tahniah! 恭喜通关！</h1>
-            <p style="font-size: 1.3em; color: #424242; margin: 8px 0;">你已经完成了本单元的所有词汇练习！</p>
-            <div style="font-size: 1.2em; margin: 15px 0;">
-                <p>✅ 答对题数：<strong id="final-correct" style="color: #2e7d32;">0</strong></p>
+            <h1 style="color: #2e7d32; margin: 8px 0;">Tahniah! 恭喜完成本组练习！</h1>
+            <p style="font-size: 1.25em; color: #424242; margin: 6px 0;">你已经完成了本组 20 题国语词汇挑战！</p>
+            <div style="font-size: 1.2em; margin: 12px 0;">
+                <p>✅ 答对题数：<strong id="final-correct" style="color: #2e7d32;">0</strong> / <span id="final-total">20</span></p>
                 <p>❌ 答错次数：<strong id="final-wrong" style="color: #c62828;">0</strong></p>
                 <p>🎯 答题正确率：<strong id="final-accuracy" style="color: #1565c0;">100%</strong></p>
             </div>
-            <button class="restart-btn" onclick="restartGame()">再玩一次 (Main Semula) 🔄</button>
+            <div class="celebrate-buttons">
+                <button class="action-round-btn" style="background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);" onclick="startNewSet()">▶️ 开始新的一组 20 题 (Set Baharu)</button>
+                <button class="action-round-btn" style="background: linear-gradient(135deg, #4caf50 0%, #388e3c 100%);" onclick="repeatCurrentSet()">🔄 重温本组 20 题 (Ulang Set Ini)</button>
+            </div>
         </div>
     </div>
 
@@ -669,8 +717,11 @@
     </script>
 
     <script>
+        const QUESTIONS_PER_SET = 20;
+
         let allVocabulary = [];
         let activePool = [];
+        let savedCurrentSet = [];
         let currentIndex = 0;
         let currentQuestion = null;
         let gameActive = false;
@@ -763,18 +814,37 @@
                 allVocabulary = JSON.parse(embeddedTag.textContent);
             }
 
-            changeCategory();
+            startNewSet();
         }
 
-        function changeCategory() {
+        // Start a fresh set of 20 questions
+        function startNewSet() {
             const selectedCat = document.getElementById('category-filter').value;
+            let filtered = [];
             if (selectedCat === "ALL") {
-                activePool = shuffle(allVocabulary);
+                filtered = [...allVocabulary];
             } else {
-                const filtered = allVocabulary.filter(item => item.category === selectedCat);
-                activePool = shuffle(filtered);
+                filtered = allVocabulary.filter(item => item.category === selectedCat);
             }
 
+            const shuffled = shuffle(filtered);
+            const setLimit = Math.min(QUESTIONS_PER_SET, shuffled.length);
+            activePool = shuffled.slice(0, setLimit);
+            savedCurrentSet = [...activePool];
+
+            currentIndex = 0;
+            scoreBetul = 0;
+            scoreSalah = 0;
+            document.getElementById('score-b').textContent = "0";
+            document.getElementById('score-s').textContent = "0";
+            document.getElementById('celebrate-screen').style.display = 'none';
+
+            loadNextQuestion();
+        }
+
+        // Replay the current 20 questions
+        function repeatCurrentSet() {
+            activePool = shuffle([...savedCurrentSet]);
             currentIndex = 0;
             scoreBetul = 0;
             scoreSalah = 0;
@@ -843,8 +913,10 @@
             hasMadeMistakeThisRound = false;
             currentQuestion = activePool[currentIndex];
 
-            // Update Top Level Header
-            document.getElementById('level-text').textContent = `第 ${currentIndex + 1} 关 / 共 ${activePool.length} 关`;
+            // Update Level Header & Progress Bar
+            document.getElementById('level-text').textContent = `第 ${currentIndex + 1} 题 / 共 ${activePool.length} 题`;
+            const progressPct = ((currentIndex + 1) / activePool.length) * 100;
+            document.getElementById('progress-bar').style.width = `${progressPct}%`;
 
             // Update Question Box
             document.getElementById('cat-tag').textContent = currentQuestion.category;
@@ -956,15 +1028,12 @@
             gameActive = false;
             document.getElementById('celebrate-screen').style.display = 'flex';
             document.getElementById('final-correct').textContent = scoreBetul;
+            document.getElementById('final-total').textContent = activePool.length;
             document.getElementById('final-wrong').textContent = scoreSalah;
             const total = scoreBetul + scoreSalah;
             const acc = total > 0 ? Math.round((scoreBetul / total) * 100) : 100;
             document.getElementById('final-accuracy').textContent = acc + "%";
             playSound('sfx-correct');
-        }
-
-        function restartGame() {
-            changeCategory();
         }
 
         window.onload = () => {
