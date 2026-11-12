@@ -447,11 +447,11 @@
             color: #78909c;
         }
 
-        /* Next Button */
+        /* Next Button - Manual Click to Advance */
         .bottom-action-bar {
             display: flex;
             justify-content: center;
-            margin-top: 10px;
+            margin-top: 12px;
         }
 
         .next-btn {
@@ -459,18 +459,24 @@
             background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);
             color: #ffffff;
             border: none;
-            padding: 10px 32px;
-            border-radius: 25px;
-            font-size: 1.25em;
+            padding: 12px 38px;
+            border-radius: 30px;
+            font-size: 1.3em;
             font-weight: bold;
             cursor: pointer;
-            box-shadow: 0 4px 12px rgba(245, 124, 0, 0.4);
+            box-shadow: 0 4px 15px rgba(245, 124, 0, 0.45);
             transition: transform 0.2s, background 0.2s;
+            animation: pulseNext 1.6s infinite ease-in-out;
         }
 
         .next-btn:hover {
-            transform: scale(1.05);
+            transform: scale(1.06);
             background: linear-gradient(135deg, #ffa726 0%, #fb8c00 100%);
+        }
+
+        @keyframes pulseNext {
+            0%, 100% { transform: scale(1); box-shadow: 0 4px 14px rgba(245, 124, 0, 0.4); }
+            50% { transform: scale(1.04); box-shadow: 0 6px 20px rgba(245, 124, 0, 0.65); }
         }
 
         /* End Screen modal */
@@ -690,7 +696,7 @@
             </div>
         </div>
 
-        <!-- Next Question Action Button -->
+        <!-- Next Question Action Button (Manual Click) -->
         <div class="bottom-action-bar">
             <button class="next-btn" id="next-btn" onclick="nextQuestion()">下一题 (Seterusnya) ➔</button>
         </div>
@@ -726,7 +732,6 @@
         let currentIndex = 0;
         let currentQuestion = null;
         let gameActive = false;
-        let autoNextTimer = null;
         let currentVoiceAudio = null;
 
         let scoreBetul = 0;
@@ -899,7 +904,6 @@
         }
 
         function loadNextQuestion() {
-            if (autoNextTimer) clearTimeout(autoNextTimer);
             if (currentVoiceAudio) {
                 currentVoiceAudio.pause();
                 currentVoiceAudio.currentTime = 0;
@@ -988,13 +992,8 @@
                     playNativeBM(currentQuestion.audio);
                 }, 400);
 
-                // Show Next Button
+                // Show Next Button (Student clicks manually at their own pace)
                 document.getElementById('next-btn').style.display = "inline-block";
-
-                // Auto advance after 3.5 seconds
-                autoNextTimer = setTimeout(() => {
-                    nextQuestion();
-                }, 3500);
 
             } else {
                 playSound('sfx-wrong');
@@ -1028,7 +1027,6 @@
         }
 
         function nextQuestion() {
-            if (autoNextTimer) clearTimeout(autoNextTimer);
             currentIndex++;
             loadNextQuestion();
         }
