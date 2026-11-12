@@ -45,8 +45,8 @@
     "audio": "audio/menari.mp3"
   },
   {
-    "chinese": "跑步",
-    "pinyin": "pǎo bù",
+    "chinese": "跑",
+    "pinyin": "pǎo",
     "bm": "berlari",
     "category": "动词 / Kata Kerja",
     "example_bm": "Ahmad berlari dengan pantas di padang sekolah.",
@@ -136,7 +136,7 @@
   },
   {
     "chinese": "洗涤 / 洗",
-    "pinyin": "xǐ dí",
+    "pinyin": "xǐ dí / xǐ",
     "bm": "membasuh",
     "category": "动词 / Kata Kerja",
     "example_bm": "Abang membasuh kasut sekolahnya pada hari Sabtu.",
@@ -145,7 +145,7 @@
   },
   {
     "chinese": "烹饪 / 煮",
-    "pinyin": "pēng rèn",
+    "pinyin": "pēng rèn / zhǔ",
     "bm": "memasak",
     "category": "动词 / Kata Kerja",
     "example_bm": "Ibu sedang memasak lauk yang lazat di dapur.",
@@ -184,7 +184,7 @@
     "pinyin": "wán shuǎ",
     "bm": "bermain",
     "category": "动词 / Kata Kerja",
-    "example_bm": "Kanak-kanak itu seronok bermain bola sepak di padang.",
+    "example_bm": "Kanak-kanak itu bermain bola sepak di padang dengan gembira.",
     "example_zh": "孩子们开心地在草场上踢足球玩耍。",
     "audio": "audio/bermain.mp3"
   },
@@ -217,16 +217,16 @@
   },
   {
     "chinese": "看 / 观察",
-    "pinyin": "kàn",
+    "pinyin": "kàn / guān chá",
     "bm": "melihat",
     "category": "动词 / Kata Kerja",
-    "example_bm": "Kami melihat burung-burung berterbangan di udara.",
+    "example_bm": "Kami melihat burung-burung berterbangan di langit.",
     "example_zh": "我们看到鸟儿在空中飞翔。",
     "audio": "audio/melihat.mp3"
   },
   {
     "chinese": "丢 / 扔",
-    "pinyin": "diū",
+    "pinyin": "diū / rēng",
     "bm": "membuang",
     "category": "动词 / Kata Kerja",
     "example_bm": "Sila buang sampah ke dalam tong sampah.",
@@ -235,7 +235,7 @@
   },
   {
     "chinese": "排列 / 整理",
-    "pinyin": "pái liè",
+    "pinyin": "pái liè / zhěng lǐ",
     "bm": "menyusun",
     "category": "动词 / Kata Kerja",
     "example_bm": "Murid bertugas menyusun meja dan kerusi sebelum pulang.",
@@ -307,7 +307,7 @@
   },
   {
     "chinese": "爬 / 攀登",
-    "pinyin": "pá",
+    "pinyin": "pá / pān dēng",
     "bm": "memanjat",
     "category": "动词 / Kata Kerja",
     "example_bm": "Kucing yang comel itu memanjat pokok kelapa.",
@@ -316,7 +316,7 @@
   },
   {
     "chinese": "投掷 / 抛",
-    "pinyin": "tóu zhì",
+    "pinyin": "tóu zhì / pāo",
     "bm": "membaling",
     "category": "动词 / Kata Kerja",
     "example_bm": "Ali membaling bola itu kepada rakannya.",
@@ -325,7 +325,7 @@
   },
   {
     "chinese": "捕捉 / 接住",
-    "pinyin": "bǔ zhuō",
+    "pinyin": "bǔ zhuō / jiē zhù",
     "bm": "menangkap",
     "category": "动词 / Kata Kerja",
     "example_bm": "Penjaga gol berjaya menangkap bola dengan kemas.",
@@ -343,7 +343,7 @@
   },
   {
     "chinese": "粉刷 / 上漆",
-    "pinyin": "fěn shuā",
+    "pinyin": "fěn shuā / shàng qī",
     "bm": "mengecat",
     "category": "动词 / Kata Kerja",
     "example_bm": "Abang mengecat dinding pagar rumah sempena tahun baru.",
@@ -442,7 +442,7 @@
   },
   {
     "chinese": "提问 / 询问",
-    "pinyin": "tí wèn",
+    "pinyin": "tí wèn / xún wèn",
     "bm": "bertanya",
     "category": "动词 / Kata Kerja",
     "example_bm": "Murid yang rajin selalu bertanya soalan kepada guru.",
@@ -451,7 +451,7 @@
   },
   {
     "chinese": "美丽 / 漂亮",
-    "pinyin": "měi lì",
+    "pinyin": "měi lì / piào liang",
     "bm": "cantik",
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Bunga mawar yang mekar itu sungguh cantik warnanya.",
@@ -460,7 +460,7 @@
   },
   {
     "chinese": "英俊 / 帅气",
-    "pinyin": "yīng jùn",
+    "pinyin": "yīng jùn / shuài qì",
     "bm": "kacak",
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Abang kelihatan segak dan kacak memakai pakaian seragam.",
@@ -478,7 +478,7 @@
   },
   {
     "chinese": "矮 / 低",
-    "pinyin": "ǎi",
+    "pinyin": "ǎi / dī",
     "bm": "rendah",
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Pagar rumah kami agak rendah.",
@@ -559,7 +559,7 @@
   },
   {
     "chinese": "芬芳 / 香",
-    "pinyin": "fēn fāng",
+    "pinyin": "fēn fāng / xiāng",
     "bm": "wangi",
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Bunga melur ini mengeluarkan bau yang sangat wangi.",
@@ -568,7 +568,7 @@
   },
   {
     "chinese": "发臭 / 臭",
-    "pinyin": "fā chòu",
+    "pinyin": "fā chòu / chòu",
     "bm": "busuk",
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Sampah yang bertimbun itu berbau sangat busuk.",
@@ -595,7 +595,7 @@
   },
   {
     "chinese": "聪明 / 敏捷",
-    "pinyin": "cōng míng",
+    "pinyin": "cōng míng / mǐn jié",
     "bm": "pandai",
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Kakak seorang yang pandai dalam mata pelajaran Sains.",
@@ -604,7 +604,7 @@
   },
   {
     "chinese": "快乐 / 高兴",
-    "pinyin": "kuài lè",
+    "pinyin": "kuài lè / gāo xìng",
     "bm": "gembira",
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Kami berasa sungguh gembira dapat berkhemah bersama kawan-kawan.",
@@ -613,7 +613,7 @@
   },
   {
     "chinese": "伤心 / 悲伤",
-    "pinyin": "shāng xīn",
+    "pinyin": "shāng xīn / bēi shāng",
     "bm": "sedih",
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Adik berasa sedih kerana anak patungnya telah hilang.",
@@ -622,7 +622,7 @@
   },
   {
     "chinese": "生气 / 愤怒",
-    "pinyin": "shēng qì",
+    "pinyin": "shēng qì / fèn nù",
     "bm": "marah",
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Ayah berasa marah apabila adik tidak mendengar nasihat.",
@@ -658,7 +658,7 @@
   },
   {
     "chinese": "善良 / 好心",
-    "pinyin": "shàn liáng",
+    "pinyin": "shàn liáng / hǎo xīn",
     "bm": "baik hati",
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Jiran saya seorang yang baik hati dan suka menolong.",
@@ -676,7 +676,7 @@
   },
   {
     "chinese": "快 / 迅速",
-    "pinyin": "kuài",
+    "pinyin": "kuài / xùn sù",
     "bm": "cepat",
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Kereta api moden bergerak dengan amat cepat.",
@@ -748,7 +748,7 @@
   },
   {
     "chinese": "冷 / 凉",
-    "pinyin": "lěng",
+    "pinyin": "lěng / liáng",
     "bm": "sejuk",
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Air ais ini sungguh sejuk dan menyegarkan tekak.",
@@ -757,7 +757,7 @@
   },
   {
     "chinese": "明亮 / 光亮",
-    "pinyin": "míng liàng",
+    "pinyin": "míng liàng / guāng liàng",
     "bm": "terang",
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Cahaya bulan malam ini sungguh terang benderang.",
@@ -784,7 +784,7 @@
   },
   {
     "chinese": "钝 / 不锋利",
-    "pinyin": "dùn",
+    "pinyin": "dùn / bù fēng lì",
     "bm": "tumpul",
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Pensel yang tumpul itu perlu diasah menggunakan pengasah pensel.",
@@ -793,7 +793,7 @@
   },
   {
     "chinese": "光滑 / 滑",
-    "pinyin": "guāng hua",
+    "pinyin": "guāng huá / huá",
     "bm": "licin",
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Lantai bilik mandi itu licin kerana basah.",
@@ -829,7 +829,7 @@
   },
   {
     "chinese": "强壮 / 有力",
-    "pinyin": "qiáng zhuàng",
+    "pinyin": "qiáng zhuàng / yǒu lì",
     "bm": "kuat",
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Badan abang semakin sihat dan kuat kerana selalu bersenam.",
@@ -919,7 +919,7 @@
   },
   {
     "chinese": "脚 / 腿",
-    "pinyin": "jiǎo",
+    "pinyin": "jiǎo / tuǐ",
     "bm": "kaki",
     "category": "身体部位 / Anggota Badan",
     "example_bm": "Kaki digunakan untuk berjalan, berlari dan melompat.",
@@ -955,7 +955,7 @@
   },
   {
     "chinese": "脖子 / 颈项",
-    "pinyin": "bó zi",
+    "pinyin": "bó zi / jǐng xiàng",
     "bm": "leher",
     "category": "身体部位 / Anggota Badan",
     "example_bm": "Zirafah mempunyai leher yang sangat panjang.",
@@ -1000,7 +1000,7 @@
   },
   {
     "chinese": "父亲 / 爸爸",
-    "pinyin": "bà ba",
+    "pinyin": "fù qīn / bà ba",
     "bm": "bapa",
     "category": "家庭与人物 / Keluarga",
     "example_bm": "Bapa bekerja keras untuk menyara kehidupan sekeluarga.",
@@ -1009,7 +1009,7 @@
   },
   {
     "chinese": "母亲 / 妈妈",
-    "pinyin": "mā ma",
+    "pinyin": "mǔ qīn / mā ma",
     "bm": "ibu",
     "category": "家庭与人物 / Keluarga",
     "example_bm": "Ibu memeluk anaknya dengan penuh kasih sayang.",
@@ -1036,7 +1036,7 @@
   },
   {
     "chinese": "弟弟 / 妹妹",
-    "pinyin": "dì di",
+    "pinyin": "dì di / mèi mei",
     "bm": "adik",
     "category": "家庭与人物 / Keluarga",
     "example_bm": "Adik sedang bermain dengan mainan baharunya di ruang tamu.",
@@ -1045,7 +1045,7 @@
   },
   {
     "chinese": "爷爷 / 外公",
-    "pinyin": "yé ye",
+    "pinyin": "yé ye / wài gōng",
     "bm": "datuk",
     "category": "家庭与人物 / Keluarga",
     "example_bm": "Datuk suka membaca surat khabar di serambi rumah.",
@@ -1054,7 +1054,7 @@
   },
   {
     "chinese": "奶奶 / 外婆",
-    "pinyin": "nǎi nai",
+    "pinyin": "nǎi nai / wài pó",
     "bm": "nenek",
     "category": "家庭与人物 / Keluarga",
     "example_bm": "Nenek membuat kuih tradisional yang sangat enak.",
@@ -1072,7 +1072,7 @@
   },
   {
     "chinese": "朋友 / 同学",
-    "pinyin": "péng you",
+    "pinyin": "péng you / tóng xué",
     "bm": "kawan",
     "category": "家庭与人物 / Keluarga",
     "example_bm": "Kawan yang sejati sentiasa ada di sisi pada masa susah dan senang.",
@@ -1090,7 +1090,7 @@
   },
   {
     "chinese": "儿童 / 孩子",
-    "pinyin": "ér tóng",
+    "pinyin": "ér tóng / hái zi",
     "bm": "kanak-kanak",
     "category": "家庭与人物 / Keluarga",
     "example_bm": "Kanak-kanak gemar bermain buaian di taman rekreasi.",
@@ -1135,7 +1135,7 @@
   },
   {
     "chinese": "消拯员 / 消防员",
-    "pinyin": "xiāo fáng yuán",
+    "pinyin": "xiāo zhěng yuán / xiāo fáng yuán",
     "bm": "ahli bomba",
     "category": "职业 / Pekerjaan",
     "example_bm": "Ahli bomba bertungkus-lumus memadamkan kebakaran yang marak.",
@@ -1432,7 +1432,7 @@
   },
   {
     "chinese": "橙 / 柑",
-    "pinyin": "chéng",
+    "pinyin": "chéng / gān",
     "bm": "oren",
     "category": "水果蔬菜 / Buah & Sayur",
     "example_bm": "Buah oren mengandungi banyak vitamin C yang baik untuk kesihatan.",
@@ -1486,7 +1486,7 @@
   },
   {
     "chinese": "黄梨 / 菠萝",
-    "pinyin": "huáng lí",
+    "pinyin": "huáng lí / bō luó",
     "bm": "nanas",
     "category": "水果蔬菜 / Buah & Sayur",
     "example_bm": "Nanas yang manis ini dipetik dari ladang di Johor.",
@@ -1513,7 +1513,7 @@
   },
   {
     "chinese": "胡萝卜 / 红萝卜",
-    "pinyin": "hú luó bo",
+    "pinyin": "hú luó bo / hóng luó bo",
     "bm": "lobak merah",
     "category": "水果蔬菜 / Buah & Sayur",
     "example_bm": "Lobak merah sangat baik untuk kesihatan penglihatan mata.",
@@ -1522,7 +1522,7 @@
   },
   {
     "chinese": "包菜 / 卷心菜",
-    "pinyin": "bāo cài",
+    "pinyin": "bāo cài / juǎn xīn cài",
     "bm": "kubis",
     "category": "水果蔬菜 / Buah & Sayur",
     "example_bm": "Ibu menggoreng sayur kubis bersama udang segar.",
@@ -1531,7 +1531,7 @@
   },
   {
     "chinese": "番茄 / 西红柿",
-    "pinyin": "fān qié",
+    "pinyin": "fān qié / xī hóng shì",
     "bm": "tomato",
     "category": "水果蔬菜 / Buah & Sayur",
     "example_bm": "Tomato merah ini sedap dijadikan campuran salad sayuran.",
@@ -1576,7 +1576,7 @@
   },
   {
     "chinese": "马铃薯 / 土豆",
-    "pinyin": "mǎ líng shǔ",
+    "pinyin": "mǎ líng shǔ / tǔ dòu",
     "bm": "kentang",
     "category": "水果蔬菜 / Buah & Sayur",
     "example_bm": "Kentang goreng kegemaran kanak-kanak berasa rangup dan lazat.",
@@ -1648,7 +1648,7 @@
   },
   {
     "chinese": "黑板 / 白板",
-    "pinyin": "hēi bǎn",
+    "pinyin": "hēi bǎn / bái bǎn",
     "bm": "papan hitam",
     "category": "用品 / Benda",
     "example_bm": "Cikgu menulis nota penting di papan hitam.",
@@ -1657,7 +1657,7 @@
   },
   {
     "chinese": "钟 / 手表",
-    "pinyin": "zhōng",
+    "pinyin": "zhōng / shǒu biǎo",
     "bm": "jam",
     "category": "用品 / Benda",
     "example_bm": "Jam dinding menunjukkan tepat pada pukul lapan pagi.",
@@ -1801,7 +1801,7 @@
   },
   {
     "chinese": "教室 / 课室",
-    "pinyin": "jiào shì",
+    "pinyin": "jiào shì / kè shì",
     "bm": "bilik darjah",
     "category": "场所与交通 / Tempat & Kenderaan",
     "example_bm": "Murid-murid belajar dengan tekun di dalam bilik darjah.",
@@ -1837,7 +1837,7 @@
   },
   {
     "chinese": "房子 / 家",
-    "pinyin": "fáng zi",
+    "pinyin": "fáng zi / jiā",
     "bm": "rumah",
     "category": "场所与交通 / Tempat & Kenderaan",
     "example_bm": "Rumah saya terletak berhampiran dengan taman rekreasi.",
@@ -1855,7 +1855,7 @@
   },
   {
     "chinese": "菜市 / 巴刹",
-    "pinyin": "cài shì",
+    "pinyin": "cài shì / bā shā",
     "bm": "pasar",
     "category": "场所与交通 / Tempat & Kenderaan",
     "example_bm": "Ibu membeli sayur-sayuran dan ikan segar di pasar pagi.",
@@ -1882,7 +1882,7 @@
   },
   {
     "chinese": "巴士 / 公交车",
-    "pinyin": "bā shì",
+    "pinyin": "bā shì / gōng jiāo chē",
     "bm": "bas",
     "category": "场所与交通 / Tempat & Kenderaan",
     "example_bm": "Ramai penumpang menunggu bas tiba di perhentian bas.",
@@ -1891,7 +1891,7 @@
   },
   {
     "chinese": "自行车 / 脚踏车",
-    "pinyin": "zì xíng chē",
+    "pinyin": "zì xíng chē / jiǎo tà chē",
     "bm": "basikal",
     "category": "场所与交通 / Tempat & Kenderaan",
     "example_bm": "Ali mengayuh basikal dengan gembira ke taman permainan.",
@@ -1927,7 +1927,7 @@
   },
   {
     "chinese": "关爱 / 爱心",
-    "pinyin": "guān ài",
+    "pinyin": "guān ài / ài xīn",
     "bm": "kasih sayang",
     "category": "道德与自然 / Nilai & Alam",
     "example_bm": "Ibu bapa melimpahkan kasih sayang yang tidak berbelah bahagi kepada anak-anak.",
@@ -1945,7 +1945,7 @@
   },
   {
     "chinese": "合作 / 齐心协力",
-    "pinyin": "hé zuò",
+    "pinyin": "hé zuò / qí xīn xié lì",
     "bm": "bekerjasama",
     "category": "道德与自然 / Nilai & Alam",
     "example_bm": "Penduduk kampung bekerjasama membersihkan balai raya sempena gotong-royong.",
@@ -1954,7 +1954,7 @@
   },
   {
     "chinese": "感恩 / 感谢",
-    "pinyin": "gǎn ēn",
+    "pinyin": "gǎn ēn / gǎn xiè",
     "bm": "bersyukur",
     "category": "道德与自然 / Nilai & Alam",
     "example_bm": "Kita patut bersyukur atas segala nikmat dan keamanan yang dinikmati.",
@@ -1963,7 +1963,7 @@
   },
   {
     "chinese": "尊敬 / 敬重",
-    "pinyin": "zūn jìng",
+    "pinyin": "zūn jìng / jìng zhòng",
     "bm": "menghormati",
     "category": "道德与自然 / Nilai & Alam",
     "example_bm": "Murid-murid sentiasa menghormati para guru dan ibu bapa.",
@@ -2044,7 +2044,7 @@
   },
   {
     "chinese": "大海 / 海洋",
-    "pinyin": "dà hǎi",
+    "pinyin": "dà hǎi / hǎi yáng",
     "bm": "laut",
     "category": "道德与自然 / Nilai & Alam",
     "example_bm": "Ombak berbuih memukul pantai di tepi laut yang luas.",
