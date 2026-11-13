@@ -756,7 +756,7 @@
                 <div class="name-modal-icon">🌟</div>
                 <h2 class="name-modal-title">华小国语词汇连连乐</h2>
                 <p class="name-modal-subtitle">请先输入你的名字开始挑战！<br><span style="font-size: 0.9em; color: #777;">Sila masukkan nama anda untuk mula bermain:</span></p>
-                <input type="text" class="name-input-box" id="player-name-input" placeholder="输入你的名字 (例: 晓明 / Ali)..." maxlength="15" onkeydown="if(event.key==='Enter') confirmPlayerName()">
+                <input type="text" class="name-input-box" id="player-name-input" placeholder="输入你的名字 (例: Johnny / Ali)..." maxlength="15" onkeydown="if(event.key==='Enter') confirmPlayerName()">
                 <button class="start-challenge-btn" onclick="confirmPlayerName()">🚀 开始第一题 (Mula) ➔</button>
             </div>
         </div>
@@ -766,7 +766,7 @@
             <div class="level-wrapper">
                 <!-- User name displayed on top of 第一题 -->
                 <div class="user-name-tag" id="user-name-display" title="点击可修改名字" onclick="editUserName()">
-                    <span class="user-avatar">👤</span> <span id="display-user-name">小勇士</span>
+                    <span class="user-avatar">👤</span> <span id="display-user-name"></span>
                 </div>
                 <div class="level-badge">
                     <span id="level-text">第 1 题 / 共 20 题</span>
@@ -846,7 +846,7 @@
         <!-- Game Completion Screen (Finished 20 questions) -->
         <div class="celebrate-screen" id="celebrate-screen">
             <div class="celebrate-trophy">🏆🎉</div>
-            <div class="celebrate-player-name" id="celebrate-player-name" style="font-size: 2.2em; font-weight: 900; color: #d84315; margin: 6px 0 2px 0; text-shadow: 1px 1px 2px rgba(0,0,0,0.1);">小勇士</div>
+            <div class="celebrate-player-name" id="celebrate-player-name" style="font-size: 2.2em; font-weight: 900; color: #d84315; margin: 6px 0 2px 0; text-shadow: 1px 1px 2px rgba(0,0,0,0.1);"></div>
             <h1 style="color: #2e7d32; margin: 4px 0 8px 0; font-size: 2.1em;">Tahniah! 恭喜完成本组练习！</h1>
             <p style="font-size: 1.2em; color: #424242; margin: 4px 0;">你已经完成了本组 20 题国语词汇挑战！</p>
             <div style="font-size: 1.2em; margin: 12px 0;">
@@ -869,17 +869,13 @@
     <script>
         const QUESTIONS_PER_SET = 20;
 
-        let currentUserName = "小勇士 (Wira Cilik)";
+        let currentUserName = "";
         let isNameConfirmed = false;
 
         function confirmPlayerName() {
             const input = document.getElementById('player-name-input');
             const entered = input ? input.value.trim() : "";
-            if (entered) {
-                currentUserName = entered;
-            } else {
-                currentUserName = "小勇士 (Wira Cilik)";
-            }
+            currentUserName = entered || "同学 (Murid)";
             isNameConfirmed = true;
             updateUserNameDisplay();
             const modal = document.getElementById('name-modal-overlay');
@@ -892,20 +888,20 @@
         function updateUserNameDisplay() {
             const displayEl = document.getElementById('display-user-name');
             if (displayEl) {
-                displayEl.textContent = currentUserName;
+                displayEl.textContent = currentUserName || "同学 (Murid)";
             }
             const celebNameEl = document.getElementById('celebrate-player-name');
             if (celebNameEl) {
-                celebNameEl.textContent = currentUserName;
+                celebNameEl.textContent = currentUserName || "同学 (Murid)";
             }
             const finalNameEl = document.getElementById('final-user-name');
             if (finalNameEl) {
-                finalNameEl.textContent = currentUserName;
+                finalNameEl.textContent = currentUserName || "同学 (Murid)";
             }
         }
 
         function editUserName() {
-            const newName = prompt("请输入你的名字 / Sila masukkan nama anda:", currentUserName);
+            const newName = prompt("请输入你的名字 / Sila masukkan nama anda:", currentUserName || "");
             if (newName !== null && newName.trim()) {
                 currentUserName = newName.trim();
                 updateUserNameDisplay();
