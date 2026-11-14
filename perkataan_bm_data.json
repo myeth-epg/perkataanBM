@@ -2068,5 +2068,905 @@
     "example_bm": "Bunga-bunga di taman mekar mekar dengan harum dan mempesonakan.",
     "example_zh": "花园中的朵朵鲜花争相绽放，芳香迷人。",
     "audio": "audio/bunga.mp3"
+  },
+  {
+    "chinese": "教导",
+    "pinyin": "jiāo dǎo",
+    "bm": "mengajar",
+    "category": "动词 / Kata Kerja",
+    "example_bm": "Cikgu Lim mengajar murid-murid Bahasa Melayu dengan penuh sabar.",
+    "example_zh": "林老师耐心地教导学生们马来文。",
+    "audio": "audio/mengajar.mp3"
+  },
+  {
+    "chinese": "回答",
+    "pinyin": "huí dá",
+    "bm": "menjawab",
+    "category": "动词 / Kata Kerja",
+    "example_bm": "Siti mengangkat tangan untuk menjawab soalan guru.",
+    "example_zh": "西蒂举手回答老师的问题。",
+    "audio": "audio/menjawab.mp3"
+  },
+  {
+    "chinese": "说话 / 交谈",
+    "pinyin": "shuō huà / jiāo tán",
+    "bm": "bercakap",
+    "category": "动词 / Kata Kerja",
+    "example_bm": "Kita hendaklah bercakap dengan sopan kepada orang yang lebih tua.",
+    "example_zh": "我们和长辈说话时必须要有礼貌。",
+    "audio": "audio/bercakap.mp3"
+  },
+  {
+    "chinese": "坐",
+    "pinyin": "zuò",
+    "bm": "duduk",
+    "category": "动词 / Kata Kerja",
+    "example_bm": "Murid-murid duduk dengan tertib di dalam bilik darjah.",
+    "example_zh": "学生们在教室里整齐地坐好。",
+    "audio": "audio/duduk.mp3"
+  },
+  {
+    "chinese": "站立",
+    "pinyin": "zhàn lì",
+    "bm": "berdiri",
+    "category": "动词 / Kata Kerja",
+    "example_bm": "Semua murid berdiri tegak semasa menyanyikan lagu Negaraku.",
+    "example_zh": "唱国歌时，全体学生立正站好。",
+    "audio": "audio/berdiri.mp3"
+  },
+  {
+    "chinese": "起床 / 站起",
+    "pinyin": "qǐ chuáng / zhàn qǐ",
+    "bm": "bangun",
+    "category": "动词 / Kata Kerja",
+    "example_bm": "Saya bangun awal pada pukul enam pagi setiap hari persekolahan.",
+    "example_zh": "每个上学日我都在早上六点早早起床。",
+    "audio": "audio/bangun.mp3"
+  },
+  {
+    "chinese": "清洗",
+    "pinyin": "qīng xǐ",
+    "bm": "mencuci",
+    "category": "动词 / Kata Kerja",
+    "example_bm": "Kakak mencuci pinggan mangkuk selepas makan malam.",
+    "example_zh": "晚饭后姐姐清洗碗碟。",
+    "audio": "audio/mencuci.mp3"
+  },
+  {
+    "chinese": "晾晒",
+    "pinyin": "liàng shài",
+    "bm": "menjemur",
+    "category": "动词 / Kata Kerja",
+    "example_bm": "Ibu menjemur pakaian yang telah dibasuh di ampaian.",
+    "example_zh": "妈妈把洗好的衣服晾晒在晒衣架上。",
+    "audio": "audio/menjemur.mp3"
+  },
+  {
+    "chinese": "切 / 割",
+    "pinyin": "qiē / gē",
+    "bm": "memotong",
+    "category": "动词 / Kata Kerja",
+    "example_bm": "Nenek memotong buah tembikai menggunakan pisau yang tajam.",
+    "example_zh": "奶奶用锋利的刀切西瓜。",
+    "audio": "audio/memotong.mp3"
+  },
+  {
+    "chinese": "携带 / 拿",
+    "pinyin": "xié dài / ná",
+    "bm": "membawa",
+    "category": "动词 / Kata Kerja",
+    "example_bm": "Ali membawa botol air dan bekal makanan ke sekolah.",
+    "example_zh": "阿里带着水壶和便当去上学。",
+    "audio": "audio/membawa.mp3"
+  },
+  {
+    "chinese": "给予 / 送",
+    "pinyin": "jǐ yǔ / sòng",
+    "bm": "memberi",
+    "category": "动词 / Kata Kerja",
+    "example_bm": "Saya memberi hadiah kepada ibu sempena Hari Ibu.",
+    "example_zh": "我在母亲节送了一份礼物给妈妈。",
+    "audio": "audio/memberi.mp3"
+  },
+  {
+    "chinese": "收到 / 接受",
+    "pinyin": "shōu dào / jiē shòu",
+    "bm": "menerima",
+    "category": "动词 / Kata Kerja",
+    "example_bm": "Mei Ling gembira kerana menerima sijil penghargaan daripada guru besar.",
+    "example_zh": "美玲很高兴收到校长颁发的表扬状。",
+    "audio": "audio/menerima.mp3"
+  },
+  {
+    "chinese": "新的",
+    "pinyin": "xīn de",
+    "bm": "baharu",
+    "category": "形容词 / Kata Adjektif",
+    "example_bm": "Ayah membelikan saya sebuah beg sekolah yang baharu.",
+    "example_zh": "爸爸给我买了一个新书包。",
+    "audio": "audio/baharu.mp3"
+  },
+  {
+    "chinese": "旧的 / 久的",
+    "pinyin": "jiù de / jiǔ de",
+    "bm": "lama",
+    "category": "形容词 / Kata Adjektif",
+    "example_bm": "Rumah kayu yang lama itu masih kukuh dan cantik.",
+    "example_zh": "那间旧木屋依然坚固又漂亮。",
+    "audio": "audio/lama.mp3"
+  },
+  {
+    "chinese": "昂贵",
+    "pinyin": "áng guì",
+    "bm": "mahal",
+    "category": "形容词 / Kata Adjektif",
+    "example_bm": "Jam tangan emas itu dijual dengan harga yang sangat mahal.",
+    "example_zh": "那只金手表的售价非常昂贵。",
+    "audio": "audio/mahal.mp3"
+  },
+  {
+    "chinese": "便宜",
+    "pinyin": "pián yi",
+    "bm": "murah",
+    "category": "形容词 / Kata Adjektif",
+    "example_bm": "Sayur-sayuran di pasar pagi itu segar dan murah harganya.",
+    "example_zh": "早市里的蔬菜既新鲜又便宜。",
+    "audio": "audio/murah.mp3"
+  },
+  {
+    "chinese": "远",
+    "pinyin": "yuǎn",
+    "bm": "jauh",
+    "category": "形容词 / Kata Adjektif",
+    "example_bm": "Rumah datuk terletak jauh di kawasan kampung.",
+    "example_zh": "爷爷的家位于遥远的乡村地区。",
+    "audio": "audio/jauh.mp3"
+  },
+  {
+    "chinese": "近",
+    "pinyin": "jìn",
+    "bm": "dekat",
+    "category": "形容词 / Kata Adjektif",
+    "example_bm": "Sekolah kami sangat dekat dengan perpustakaan awam.",
+    "example_zh": "我们的学校离公共图书馆非常近。",
+    "audio": "audio/dekat.mp3"
+  },
+  {
+    "chinese": "宽阔",
+    "pinyin": "kuān kuò",
+    "bm": "luas",
+    "category": "形容词 / Kata Adjektif",
+    "example_bm": "Padang sekolah kami sangat luas untuk aktiviti sukan.",
+    "example_zh": "我们学校的草场非常宽阔，适合进行体育活动。",
+    "audio": "audio/luas.mp3"
+  },
+  {
+    "chinese": "狭窄",
+    "pinyin": "xiá zhǎi",
+    "bm": "sempit",
+    "category": "形容词 / Kata Adjektif",
+    "example_bm": "Jalan menuju ke kebun itu agak sempit dan berbatu.",
+    "example_zh": "通往那个果园的路比较狭窄且多石头。",
+    "audio": "audio/sempit.mp3"
+  },
+  {
+    "chinese": "厚",
+    "pinyin": "hòu",
+    "bm": "tebal",
+    "category": "形容词 / Kata Adjektif",
+    "example_bm": "Kamus Bahasa Melayu yang tebal itu mengandungi banyak perkataan.",
+    "example_zh": "那本厚厚的马来文词典收录了许多词汇。",
+    "audio": "audio/tebal.mp3"
+  },
+  {
+    "chinese": "薄",
+    "pinyin": "báo",
+    "bm": "nipis",
+    "category": "形容词 / Kata Adjektif",
+    "example_bm": "Adik melukis gambar bunga di atas sehelai kertas yang nipis.",
+    "example_zh": "弟弟在一张薄纸上画了一幅花朵图。",
+    "audio": "audio/nipis.mp3"
+  },
+  {
+    "chinese": "额头",
+    "pinyin": "é tóu",
+    "bm": "dahi",
+    "category": "身体部位 / Anggota Badan",
+    "example_bm": "Ibu menyentuh dahi adik untuk memeriksa suhu badannya.",
+    "example_zh": "妈妈摸了摸弟弟的额头以检查体温。",
+    "audio": "audio/dahi.mp3"
+  },
+  {
+    "chinese": "脸颊",
+    "pinyin": "liǎn jiá",
+    "bm": "pipi",
+    "category": "身体部位 / Anggota Badan",
+    "example_bm": "Pipi bayi yang comel itu kemerah-merahan apabila tersenyum.",
+    "example_zh": "那个可爱婴儿微笑时脸颊红扑扑的。",
+    "audio": "audio/pipi.mp3"
+  },
+  {
+    "chinese": "下巴",
+    "pinyin": "xià ba",
+    "bm": "dagu",
+    "category": "身体部位 / Anggota Badan",
+    "example_bm": "Datuk mempunyai janggut putih di bahagian dagu.",
+    "example_zh": "爷爷的下巴上长着白色的胡须。",
+    "audio": "audio/dagu.mp3"
+  },
+  {
+    "chinese": "眉毛",
+    "pinyin": "méi mao",
+    "bm": "kening",
+    "category": "身体部位 / Anggota Badan",
+    "example_bm": "Kening membantu menghalang peluh daripada masuk ke dalam mata.",
+    "example_zh": "眉毛有助于阻挡汗水流进眼睛里。",
+    "audio": "audio/kening.mp3"
+  },
+  {
+    "chinese": "嘴唇",
+    "pinyin": "zuǐ chún",
+    "bm": "bibir",
+    "category": "身体部位 / Anggota Badan",
+    "example_bm": "Minum air yang banyak supaya bibir tidak kering.",
+    "example_zh": "多喝水，以免嘴唇干燥。",
+    "audio": "audio/bibir.mp3"
+  },
+  {
+    "chinese": "手肘",
+    "pinyin": "shǒu zhǒu",
+    "bm": "siku",
+    "category": "身体部位 / Anggota Badan",
+    "example_bm": "Siku Ahmad luka sedikit kerana terjatuh semasa bermain.",
+    "example_zh": "阿末玩耍时摔倒，手肘受了一点轻伤。",
+    "audio": "audio/siku.mp3"
+  },
+  {
+    "chinese": "背部",
+    "pinyin": "bèi bù",
+    "bm": "belakang",
+    "category": "身体部位 / Anggota Badan",
+    "example_bm": "Duduk dengan tegak untuk menjaga kesihatan tulang belakang.",
+    "example_zh": "坐姿要端正以保护脊椎与背部的健康。",
+    "audio": "audio/belakang.mp3"
+  },
+  {
+    "chinese": "脚底",
+    "pinyin": "jiǎo dǐ",
+    "bm": "tapak kaki",
+    "category": "身体部位 / Anggota Badan",
+    "example_bm": "Pakailah selipar supaya tapak kaki tidak terpijak batu tajam.",
+    "example_zh": "请穿上拖鞋，以免脚底踩到尖锐的石头。",
+    "audio": "audio/tapak_kaki.mp3"
+  },
+  {
+    "chinese": "叔叔 / 伯伯",
+    "pinyin": "shū shu / bó bo",
+    "bm": "pak cik",
+    "category": "家庭与人物 / Keluarga",
+    "example_bm": "Pak cik saya bekerja sebagai pegawai polis di Kuala Lumpur.",
+    "example_zh": "我的叔叔在吉隆坡担任警官。",
+    "audio": "audio/pak_cik.mp3"
+  },
+  {
+    "chinese": "阿姨 / 婶婶",
+    "pinyin": "ā yí / shěn shen",
+    "bm": "mak cik",
+    "category": "家庭与人物 / Keluarga",
+    "example_bm": "Mak cik membawa sebakul buah mangga semasa melawat kami.",
+    "example_zh": "阿姨来探望我们时带来了一篮芒果。",
+    "audio": "audio/mak_cik.mp3"
+  },
+  {
+    "chinese": "堂/表兄弟姐妹",
+    "pinyin": "táng / biǎo xiōng dì jiě mèi",
+    "bm": "sepupu",
+    "category": "家庭与人物 / Keluarga",
+    "example_bm": "Saya dan sepupu bermain layang-layang di padang pada hujung minggu.",
+    "example_zh": "我和表兄弟在周末一起去草场放风筝。",
+    "audio": "audio/sepupu.mp3"
+  },
+  {
+    "chinese": "孙子 / 孙女",
+    "pinyin": "sūn zi / sūn nǚ",
+    "bm": "cucu",
+    "category": "家庭与人物 / Keluarga",
+    "example_bm": "Datuk dan nenek sangat menyayangi semua cucu mereka.",
+    "example_zh": "爷爷和奶奶非常疼爱他们所有的孙子孙女。",
+    "audio": "audio/cucu.mp3"
+  },
+  {
+    "chinese": "孩子 / 儿女",
+    "pinyin": "hái zi / ér nǚ",
+    "bm": "anak",
+    "category": "家庭与人物 / Keluarga",
+    "example_bm": "Anak yang baik sentiasa menghormati dan mendengar nasihat ibu bapa.",
+    "example_zh": "乖孩子总是尊重并听从父母的教诲。",
+    "audio": "audio/anak.mp3"
+  },
+  {
+    "chinese": "家庭 / 家人",
+    "pinyin": "jiā tíng / jiā rén",
+    "bm": "keluarga",
+    "category": "家庭与人物 / Keluarga",
+    "example_bm": "Keluarga saya suka berkelah di tepi pantai pada hari cuti.",
+    "example_zh": "我的家人喜欢在假期去海边野餐。",
+    "audio": "audio/keluarga.mp3"
+  },
+  {
+    "chinese": "学生",
+    "pinyin": "xué sheng",
+    "bm": "murid",
+    "category": "家庭与人物 / Keluarga",
+    "example_bm": "Semua murid berhimpun di dewan sekolah pada pagi Isnin.",
+    "example_zh": "星期一早上全体学生在学校礼堂集合。",
+    "audio": "audio/murid.mp3"
+  },
+  {
+    "chinese": "伙伴 / 同伴",
+    "pinyin": "huǒ bàn / tóng bàn",
+    "bm": "rakan",
+    "category": "家庭与人物 / Keluarga",
+    "example_bm": "Saya dan rakan sekelas bekerjasama membersihkan bilik darjah.",
+    "example_zh": "我和同班同学一起合作打扫教室。",
+    "audio": "audio/rakan.mp3"
+  },
+  {
+    "chinese": "客人",
+    "pinyin": "kè rén",
+    "bm": "tetamu",
+    "category": "家庭与人物 / Keluarga",
+    "example_bm": "Ibu menghidangkan air teh dan kuih-muih kepada tetamu.",
+    "example_zh": "妈妈端出茶水和糕点款待客人。",
+    "audio": "audio/tetamu.mp3"
+  },
+  {
+    "chinese": "班长",
+    "pinyin": "bān zhǎng",
+    "bm": "ketua kelas",
+    "category": "家庭与人物 / Keluarga",
+    "example_bm": "Ketua kelas membantu guru mengumpulkan buku latihan murid.",
+    "example_zh": "班长协助老师收集同学们的练习簿。",
+    "audio": "audio/ketua_kelas.mp3"
+  },
+  {
+    "chinese": "牙医",
+    "pinyin": "yá yī",
+    "bm": "doktor gigi",
+    "category": "职业 / Pekerjaan",
+    "example_bm": "Doktor gigi menasihati kami supaya menggosok gigi selepas makan.",
+    "example_zh": "牙医劝告我们在饭后要刷牙。",
+    "audio": "audio/doktor_gigi.mp3"
+  },
+  {
+    "chinese": "木匠",
+    "pinyin": "mù jiàng",
+    "bm": "tukang kayu",
+    "category": "职业 / Pekerjaan",
+    "example_bm": "Tukang kayu itu mahir membuat meja dan kerusi yang tahan lama.",
+    "example_zh": "那位木匠擅长制作耐用的桌子和椅子。",
+    "audio": "audio/tukang_kayu.mp3"
+  },
+  {
+    "chinese": "裁缝师",
+    "pinyin": "cái féng shī",
+    "bm": "tukang jahit",
+    "category": "职业 / Pekerjaan",
+    "example_bm": "Tukang jahit mengambil ukuran badan sebelum menjahit baju baharu.",
+    "example_zh": "裁缝师在缝制新衣服前先量好尺寸。",
+    "audio": "audio/tukang_jahit.mp3"
+  },
+  {
+    "chinese": "工程师",
+    "pinyin": "gōng chéng shī",
+    "bm": "jurutera",
+    "category": "职业 / Pekerjaan",
+    "example_bm": "Jurutera itu merancang pembinaan jambatan yang moden dan selamat.",
+    "example_zh": "那位工程师规划建造一座既现代又安全的桥梁。",
+    "audio": "audio/jurutera.mp3"
+  },
+  {
+    "chinese": "会计师",
+    "pinyin": "kuài jì shī",
+    "bm": "akauntan",
+    "category": "职业 / Pekerjaan",
+    "example_bm": "Kakak bercita-cita untuk menjadi seorang akauntan di bank.",
+    "example_zh": "姐姐立志成为银行的一名会计师。",
+    "audio": "audio/akauntan.mp3"
+  },
+  {
+    "chinese": "画家",
+    "pinyin": "huà jiā",
+    "bm": "pelukis",
+    "category": "职业 / Pekerjaan",
+    "example_bm": "Pelukis terkenal itu menghasilkan lukisan pemandangan yang indah.",
+    "example_zh": "那位著名画家创作了美丽的风景画。",
+    "audio": "audio/pelukis.mp3"
+  },
+  {
+    "chinese": "歌手",
+    "pinyin": "gē shǒu",
+    "bm": "penyanyi",
+    "category": "职业 / Pekerjaan",
+    "example_bm": "Penyanyi itu mempunyai suara yang sangat merdu.",
+    "example_zh": "那位歌手拥有非常动听的嗓音。",
+    "audio": "audio/penyanyi.mp3"
+  },
+  {
+    "chinese": "图书管理员",
+    "pinyin": "tú shū guǎn lǐ yuán",
+    "bm": "pustakawan",
+    "category": "职业 / Pekerjaan",
+    "example_bm": "Pustakawan menyusun buku-buku di rak mengikut nombor rujukan.",
+    "example_zh": "图书管理员按照编号把书本排列在书架上。",
+    "audio": "audio/pustakawan.mp3"
+  },
+  {
+    "chinese": "保安人员",
+    "pinyin": "bǎo ān rén yuán",
+    "bm": "pengawal keselamatan",
+    "category": "职业 / Pekerjaan",
+    "example_bm": "Pengawal keselamatan menjaga pintu pagar sekolah pada setiap hari.",
+    "example_zh": "保安人员每天看守着学校的大门。",
+    "audio": "audio/pengawal_keselamatan.mp3"
+  },
+  {
+    "chinese": "清洁工人",
+    "pinyin": "qīng jié gōng rén",
+    "bm": "pekerja pembersihan",
+    "category": "职业 / Pekerjaan",
+    "example_bm": "Kita patut menghargai jasa pekerja pembersihan yang menjaga kebersihan sekolah.",
+    "example_zh": "我们应该感激维护校园清洁的清洁工人。",
+    "audio": "audio/pekerja_pembersihan.mp3"
+  },
+  {
+    "chinese": "长颈鹿",
+    "pinyin": "cháng jǐng lù",
+    "bm": "zirafah",
+    "category": "动物 / Haiwan",
+    "example_bm": "Zirafah dapat makan daun di pucuk pokok kerana lehernya tinggi.",
+    "example_zh": "长颈鹿因为脖子长，可以吃到树顶上的叶子。",
+    "audio": "audio/zirafah.mp3"
+  },
+  {
+    "chinese": "熊",
+    "pinyin": "xióng",
+    "bm": "beruang",
+    "category": "动物 / Haiwan",
+    "example_bm": "Beruang matahari ialah salah satu haiwan yang dilindungi di Malaysia.",
+    "example_zh": "马来熊是马来西亚受保护的动物之一。",
+    "audio": "audio/beruang.mp3"
+  },
+  {
+    "chinese": "鹿",
+    "pinyin": "lù",
+    "bm": "rusa",
+    "category": "动物 / Haiwan",
+    "example_bm": "Rusa jantan mempunyai tanduk yang bercabang di atas kepalanya.",
+    "example_zh": "雄鹿头上长着分叉的鹿角。",
+    "audio": "audio/rusa.mp3"
+  },
+  {
+    "chinese": "水牛",
+    "pinyin": "shuǐ niú",
+    "bm": "kerbau",
+    "category": "动物 / Haiwan",
+    "example_bm": "Pada zaman dahulu, petani menggunakan kerbau untuk membajak sawah.",
+    "example_zh": "在过去，农夫用水牛来耕种稻田。",
+    "audio": "audio/kerbau.mp3"
+  },
+  {
+    "chinese": "老鼠",
+    "pinyin": "lǎo shǔ",
+    "bm": "tikus",
+    "category": "动物 / Haiwan",
+    "example_bm": "Tikus suka bersembunyi di tempat yang gelap dan kotor.",
+    "example_zh": "老鼠喜欢躲在阴暗肮脏的地方。",
+    "audio": "audio/tikus.mp3"
+  },
+  {
+    "chinese": "松鼠",
+    "pinyin": "sōng shǔ",
+    "bm": "tupai",
+    "category": "动物 / Haiwan",
+    "example_bm": "Tupai melompat dari dahan ke dahan untuk mencari buah-buahan.",
+    "example_zh": "松鼠在树枝间跳来跳去寻找果实。",
+    "audio": "audio/tupai.mp3"
+  },
+  {
+    "chinese": "蚊子",
+    "pinyin": "wén zi",
+    "bm": "nyamuk",
+    "category": "动物 / Haiwan",
+    "example_bm": "Nyamuk Aedes boleh menyebarkan penyakit demam denggi yang berbahaya.",
+    "example_zh": "黑斑蚊会传播危险的骨痛热症。",
+    "audio": "audio/nyamuk.mp3"
+  },
+  {
+    "chinese": "苍蝇",
+    "pinyin": "cāng ying",
+    "bm": "lalat",
+    "category": "动物 / Haiwan",
+    "example_bm": "Tutup makanan dengan tudung saji supaya tidak dihinggapi lalat.",
+    "example_zh": "请用食物罩盖好食物，以免苍蝇停留在上面。",
+    "audio": "audio/lalat.mp3"
+  },
+  {
+    "chinese": "螃蟹",
+    "pinyin": "páng xiè",
+    "bm": "ketam",
+    "category": "动物 / Haiwan",
+    "example_bm": "Ketam berjalan mengiring di atas pasir pantai.",
+    "example_zh": "螃蟹在海滩的沙地上横着走。",
+    "audio": "audio/ketam.mp3"
+  },
+  {
+    "chinese": "虾",
+    "pinyin": "xiā",
+    "bm": "udang",
+    "category": "动物 / Haiwan",
+    "example_bm": "Ibu membeli udang segar di pasar untuk dimasak kari.",
+    "example_zh": "妈妈在巴刹买了新鲜的虾来煮咖喱。",
+    "audio": "audio/udang.mp3"
+  },
+  {
+    "chinese": "山竹",
+    "pinyin": "shān zhú",
+    "bm": "manggis",
+    "category": "水果蔬菜 / Buah & Sayur",
+    "example_bm": "Buah manggis mempunyai kulit ungu dan isi putih yang manis.",
+    "example_zh": "山竹有着紫色的外壳和雪白甘甜的果肉。",
+    "audio": "audio/manggis.mp3"
+  },
+  {
+    "chinese": "番石榴",
+    "pinyin": "fān shí liu",
+    "bm": "jambu batu",
+    "category": "水果蔬菜 / Buah & Sayur",
+    "example_bm": "Jambu batu kaya dengan vitamin C dan sedap dimakan begitu sahaja.",
+    "example_zh": "番石榴富含维生素C，直接吃非常可口。",
+    "audio": "audio/jambu_batu.mp3"
+  },
+  {
+    "chinese": "椰子",
+    "pinyin": "yē zi",
+    "bm": "kelapa",
+    "category": "水果蔬菜 / Buah & Sayur",
+    "example_bm": "Air kelapa muda sungguh enak diminum pada hari yang panas.",
+    "example_zh": "在炎热的天气里喝嫩椰水真是美味极了。",
+    "audio": "audio/kelapa.mp3"
+  },
+  {
+    "chinese": "杨桃",
+    "pinyin": "yáng táo",
+    "bm": "belimbing",
+    "category": "水果蔬菜 / Buah & Sayur",
+    "example_bm": "Buah belimbing berbentuk seperti bintang apabila dipotong melintang.",
+    "example_zh": "杨桃横切开来时形状就像一颗星星。",
+    "audio": "audio/belimbing.mp3"
+  },
+  {
+    "chinese": "菠萝蜜",
+    "pinyin": "bō luó mì",
+    "bm": "nangka",
+    "category": "水果蔬菜 / Buah & Sayur",
+    "example_bm": "Buah nangka berbau harum dan berwarna kuning keemasan.",
+    "example_zh": "菠萝蜜散发出香甜的气味，果肉呈金黄色。",
+    "audio": "audio/nangka.mp3"
+  },
+  {
+    "chinese": "菜心",
+    "pinyin": "cài xīn",
+    "bm": "sawi",
+    "category": "水果蔬菜 / Buah & Sayur",
+    "example_bm": "Ibu menggoreng sayur sawi bersama bawang putih.",
+    "example_zh": "妈妈用蒜米清炒菜心。",
+    "audio": "audio/sawi.mp3"
+  },
+  {
+    "chinese": "菠菜",
+    "pinyin": "bō cài",
+    "bm": "bayam",
+    "category": "水果蔬菜 / Buah & Sayur",
+    "example_bm": "Kanak-kanak digalakkan makan bayam kerana mengandungi zat besi.",
+    "example_zh": "鼓励孩子们多吃菠菜，因为它含有丰富的铁质。",
+    "audio": "audio/bayam.mp3"
+  },
+  {
+    "chinese": "空心菜 / 蕹菜",
+    "pinyin": "kōng xīn cài / wèng cài",
+    "bm": "kangkung",
+    "category": "水果蔬菜 / Buah & Sayur",
+    "example_bm": "Kangkung goreng belacan ialah hidangan kegemaran keluarga kami.",
+    "example_zh": "马来风光（虾酱炒空心菜）是我们全家最爱吃的菜肴。",
+    "audio": "audio/kangkung.mp3"
+  },
+  {
+    "chinese": "玉米",
+    "pinyin": "yù mǐ",
+    "bm": "jagung",
+    "category": "水果蔬菜 / Buah & Sayur",
+    "example_bm": "Jagung rebus yang dijual di pasar malam sangat manis rasanya.",
+    "example_zh": "夜市里卖的水煮玉米味道非常香甜。",
+    "audio": "audio/jagung.mp3"
+  },
+  {
+    "chinese": "长豆",
+    "pinyin": "cháng dòu",
+    "bm": "kacang panjang",
+    "category": "水果蔬菜 / Buah & Sayur",
+    "example_bm": "Nenek memetik kacang panjang yang segar di kebun sayur.",
+    "example_zh": "奶奶在菜园里采摘新鲜的长豆。",
+    "audio": "audio/kacang_panjang.mp3"
+  },
+  {
+    "chinese": "钢笔 / 圆珠笔",
+    "pinyin": "gāng bǐ / yuán zhū bǐ",
+    "bm": "pen",
+    "category": "用品 / Benda",
+    "example_bm": "Cikgu menggunakan pen dakwat merah untuk menanda buku latihan.",
+    "example_zh": "老师用红墨水笔批改练习簿。",
+    "audio": "audio/pen.mp3"
+  },
+  {
+    "chinese": "剪刀",
+    "pinyin": "jiǎn dāo",
+    "bm": "gunting",
+    "category": "用品 / Benda",
+    "example_bm": "Berhati-hati semasa menggunakan gunting supaya jari tidak terluka.",
+    "example_zh": "使用剪刀时要小心，以免剪伤手指。",
+    "audio": "audio/gunting.mp3"
+  },
+  {
+    "chinese": "胶水",
+    "pinyin": "jiāo shuǐ",
+    "bm": "gam",
+    "category": "用品 / Benda",
+    "example_bm": "Wei Ming menggunakan gam untuk menampal gambar di dalam buku skrap.",
+    "example_zh": "伟明用胶水把图片贴在剪贴簿里。",
+    "audio": "audio/gam.mp3"
+  },
+  {
+    "chinese": "纸张",
+    "pinyin": "zhǐ zhāng",
+    "bm": "kertas",
+    "category": "用品 / Benda",
+    "example_bm": "Jangan membazirkan kertas kerana kertas diperbuat daripada pokok.",
+    "example_zh": "不要浪费纸张，因为纸是由树木制成的。",
+    "audio": "audio/kertas.mp3"
+  },
+  {
+    "chinese": "词典",
+    "pinyin": "cí diǎn",
+    "bm": "kamus",
+    "category": "用品 / Benda",
+    "example_bm": "Kita boleh merujuk kamus untuk mencari makna perkataan yang baharu.",
+    "example_zh": "我们可以查阅词典来寻找生字的意思。",
+    "audio": "audio/kamus.mp3"
+  },
+  {
+    "chinese": "电脑",
+    "pinyin": "diàn nǎo",
+    "bm": "komputer",
+    "category": "用品 / Benda",
+    "example_bm": "Murid-murid belajar menggunakan komputer di makmal ICT.",
+    "example_zh": "学生们在电脑室学习使用电脑。",
+    "audio": "audio/komputer.mp3"
+  },
+  {
+    "chinese": "电话",
+    "pinyin": "diàn huà",
+    "bm": "telefon",
+    "category": "用品 / Benda",
+    "example_bm": "Ayah menelefon datuk menggunakan telefon bimbit untuk bertanya khabar.",
+    "example_zh": "爸爸用手机打电话向爷爷问好。",
+    "audio": "audio/telefon.mp3"
+  },
+  {
+    "chinese": "床",
+    "pinyin": "chuáng",
+    "bm": "katil",
+    "category": "用品 / Benda",
+    "example_bm": "Saya mengemas katil sendiri setiap pagi selepas bangun tidur.",
+    "example_zh": "我每天早上起床后自己整理床铺。",
+    "audio": "audio/katil.mp3"
+  },
+  {
+    "chinese": "枕头",
+    "pinyin": "zhěn tou",
+    "bm": "bantal",
+    "category": "用品 / Benda",
+    "example_bm": "Bantal yang lembut itu membuatkan tidur adik lebih nyenyak.",
+    "example_zh": "那个柔软的枕头让弟弟睡得更香甜。",
+    "audio": "audio/bantal.mp3"
+  },
+  {
+    "chinese": "毛巾",
+    "pinyin": "máo jīn",
+    "bm": "tuala",
+    "category": "用品 / Benda",
+    "example_bm": "Selepas mandi, saya mengelap badan dengan tuala yang bersih.",
+    "example_zh": "洗完澡后，我用干净的毛巾擦干身体。",
+    "audio": "audio/tuala.mp3"
+  },
+  {
+    "chinese": "书店",
+    "pinyin": "shū diàn",
+    "bm": "kedai buku",
+    "category": "场所与交通 / Tempat & Kenderaan",
+    "example_bm": "Ibu menemani saya membeli buku rujukan di kedai buku.",
+    "example_zh": "妈妈陪我去书店买参考书。",
+    "audio": "audio/kedai_buku.mp3"
+  },
+  {
+    "chinese": "邮局",
+    "pinyin": "yóu jú",
+    "bm": "pejabat pos",
+    "category": "场所与交通 / Tempat & Kenderaan",
+    "example_bm": "Abang pergi ke pejabat pos untuk mengirim bungkusan kepada kawannya.",
+    "example_zh": "哥哥去邮局寄包裹给他的朋友。",
+    "audio": "audio/pejabat_pos.mp3"
+  },
+  {
+    "chinese": "警察局",
+    "pinyin": "jǐng chá jú",
+    "bm": "balai polis",
+    "category": "场所与交通 / Tempat & Kenderaan",
+    "example_bm": "Pemuda yang jujur itu menyerahkan dompet yang dijumpai ke balai polis.",
+    "example_zh": "那位诚实的青年把捡到的钱包交到警察局。",
+    "audio": "audio/balai_polis.mp3"
+  },
+  {
+    "chinese": "消防局",
+    "pinyin": "xiāo fáng jú",
+    "bm": "balai bomba",
+    "category": "场所与交通 / Tempat & Kenderaan",
+    "example_bm": "Murid-murid tahun empat mengadakan lawatan sambil belajar ke balai bomba.",
+    "example_zh": "四年级学生到消防局进行学习参观。",
+    "audio": "audio/balai_bomba.mp3"
+  },
+  {
+    "chinese": "飞机场",
+    "pinyin": "fēi jī chǎng",
+    "bm": "lapangan terbang",
+    "category": "场所与交通 / Tempat & Kenderaan",
+    "example_bm": "Kami menghantar pak cik ke lapangan terbang kerana beliau hendak ke luar negara.",
+    "example_zh": "我们送叔叔去飞机场，因为他要出国。",
+    "audio": "audio/lapangan_terbang.mp3"
+  },
+  {
+    "chinese": "巴士站",
+    "pinyin": "bā shì zhàn",
+    "bm": "stesen bas",
+    "category": "场所与交通 / Tempat & Kenderaan",
+    "example_bm": "Penumpang beratur dengan tertib semasa menunggu bas di stesen bas.",
+    "example_zh": "乘客们在巴士站井然有序地排队等巴士。",
+    "audio": "audio/stesen_bas.mp3"
+  },
+  {
+    "chinese": "摩托车",
+    "pinyin": "mó tuō chē",
+    "bm": "motosikal",
+    "category": "场所与交通 / Tempat & Kenderaan",
+    "example_bm": "Penunggang motosikal wajib memakai topi keledar demi keselamatan.",
+    "example_zh": "为了安全，摩托车骑士必须戴上头盔。",
+    "audio": "audio/motosikal.mp3"
+  },
+  {
+    "chinese": "客货车",
+    "pinyin": "kè huò chē",
+    "bm": "van",
+    "category": "场所与交通 / Tempat & Kenderaan",
+    "example_bm": "Setiap pagi saya menaiki van sekolah bersama kawan-kawan.",
+    "example_zh": "每天早上我和朋友们一起乘坐校车（客货车）。",
+    "audio": "audio/van.mp3"
+  },
+  {
+    "chinese": "罗厘 / 卡车",
+    "pinyin": "luó lí / kǎ chē",
+    "bm": "lori",
+    "category": "场所与交通 / Tempat & Kenderaan",
+    "example_bm": "Lori yang besar itu mengangkut buah kelapa sawit ke kilang.",
+    "example_zh": "那辆大罗厘把油棕果运送到工厂。",
+    "audio": "audio/lori.mp3"
+  },
+  {
+    "chinese": "救护车",
+    "pinyin": "jiù hù chē",
+    "bm": "ambulans",
+    "category": "场所与交通 / Tempat & Kenderaan",
+    "example_bm": "Ambulans membawa mangsa kemalangan ke hospital dengan segera.",
+    "example_zh": "救护车迅速将车祸伤者送往医院。",
+    "audio": "audio/ambulans.mp3"
+  },
+  {
+    "chinese": "山 / 高山",
+    "pinyin": "shān / gāo shān",
+    "bm": "gunung",
+    "category": "道德与自然 / Nilai & Alam",
+    "example_bm": "Gunung Kinabalu ialah gunung yang tertinggi di Malaysia.",
+    "example_zh": "神山（京那巴鲁山）是马来西亚最高的山。",
+    "audio": "audio/gunung.mp3"
+  },
+  {
+    "chinese": "山丘",
+    "pinyin": "shān qiū",
+    "bm": "bukit",
+    "category": "道德与自然 / Nilai & Alam",
+    "example_bm": "Pada hujung minggu, kami mendaki bukit untuk menikmati udara segar.",
+    "example_zh": "周末我们去爬山丘呼吸新鲜空气。",
+    "audio": "audio/bukit.mp3"
+  },
+  {
+    "chinese": "森林",
+    "pinyin": "sēn lín",
+    "bm": "hutan",
+    "category": "道德与自然 / Nilai & Alam",
+    "example_bm": "Hutan menjadi tempat tinggal pelbagai jenis flora dan fauna.",
+    "example_zh": "森林是各种动植物的栖息地。",
+    "audio": "audio/hutan.mp3"
+  },
+  {
+    "chinese": "海滩",
+    "pinyin": "hǎi tān",
+    "bm": "pantai",
+    "category": "道德与自然 / Nilai & Alam",
+    "example_bm": "Kanak-kanak membina istana pasir di tepi pantai yang bersih.",
+    "example_zh": "孩子们在干净的海滩边堆沙堡。",
+    "audio": "audio/pantai.mp3"
+  },
+  {
+    "chinese": "风",
+    "pinyin": "fēng",
+    "bm": "angin",
+    "category": "道德与自然 / Nilai & Alam",
+    "example_bm": "Angin bertiup sepoi-sepoi bahasa pada waktu petang.",
+    "example_zh": "傍晚时分微风轻轻吹拂。",
+    "audio": "audio/angin.mp3"
+  },
+  {
+    "chinese": "火",
+    "pinyin": "huǒ",
+    "bm": "api",
+    "category": "道德与自然 / Nilai & Alam",
+    "example_bm": "Kanak-kanak dilarang bermain api kerana sangat berbahaya.",
+    "example_zh": "禁止儿童玩火，因为这非常危险。",
+    "audio": "audio/api.mp3"
+  },
+  {
+    "chinese": "泥土 / 土地",
+    "pinyin": "ní tǔ / tǔ dì",
+    "bm": "tanah",
+    "category": "道德与自然 / Nilai & Alam",
+    "example_bm": "Tanah yang subur membolehkan pokok bunga tumbuh dengan sihat.",
+    "example_zh": "肥沃的泥土能让花树健康生长。",
+    "audio": "audio/tanah.mp3"
+  },
+  {
+    "chinese": "独立 / 自立",
+    "pinyin": "dú lì / zì lì",
+    "bm": "berdikari",
+    "category": "道德与自然 / Nilai & Alam",
+    "example_bm": "Murid harus belajar berdikari dengan menyiapkan kerja sekolah sendiri.",
+    "example_zh": "学生应该学会独立，自己完成功课。",
+    "audio": "audio/berdikari.mp3"
+  },
+  {
+    "chinese": "崇高品德",
+    "pinyin": "chóng gāo pǐn dé",
+    "bm": "hemah tinggi",
+    "category": "道德与自然 / Nilai & Alam",
+    "example_bm": "Sikap hemah tinggi menjadikan seseorang disukai oleh semua orang.",
+    "example_zh": "崇高的品德和礼貌让一个人受到大家的喜爱。",
+    "audio": "audio/hemah_tinggi.mp3"
+  },
+  {
+    "chinese": "忠实可靠 / 守信",
+    "pinyin": "zhōng shí kě kào / shǒu xìn",
+    "bm": "amanah",
+    "category": "道德与自然 / Nilai & Alam",
+    "example_bm": "Kita mestilah bersikap amanah apabila menjalankan tugas yang diberi.",
+    "example_zh": "在执行所托付的任务时，我们必须守信尽责。",
+    "audio": "audio/amanah.mp3"
   }
 ]
