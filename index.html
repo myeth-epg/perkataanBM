@@ -648,6 +648,157 @@
             box-shadow: 0 8px 22px rgba(46, 125, 50, 0.55);
         }
 
+        /* Auth Tabs & Inputs inside Welcome Modal */
+        .auth-tabs {
+            display: flex;
+            width: 100%;
+            background: #e8f5e9;
+            border-radius: 14px;
+            padding: 4px;
+            gap: 4px;
+            border: 2px solid #a5d6a7;
+        }
+        .auth-tab {
+            flex: 1;
+            border: none;
+            background: transparent;
+            padding: 8px 6px;
+            border-radius: 10px;
+            font-family: inherit;
+            font-weight: 800;
+            font-size: 0.92em;
+            color: #2e7d32;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .auth-tab.active {
+            background: #2e7d32;
+            color: #ffffff;
+            box-shadow: 0 2px 6px rgba(46, 125, 50, 0.3);
+        }
+        .auth-panel {
+            width: 100%;
+            display: none;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .auth-panel.active {
+            display: flex;
+        }
+        .auth-row {
+            display: flex;
+            gap: 8px;
+            width: 100%;
+        }
+        .auth-error {
+            color: #c62828;
+            font-size: 0.9em;
+            font-weight: bold;
+            min-height: 18px;
+        }
+        .cloud-status-badge {
+            margin-top: 8px;
+            padding: 6px 14px;
+            border-radius: 16px;
+            font-size: 0.95em;
+            font-weight: bold;
+            background: #e3f2fd;
+            color: #1565c0;
+            border: 1.5px solid #90caf9;
+        }
+
+        /* History & Progress Modal */
+        .history-modal-overlay {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0, 0, 0, 0.55);
+            border-radius: 18px;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 300;
+            padding: 16px;
+            backdrop-filter: blur(4px);
+        }
+        .history-modal-card {
+            background: #ffffff;
+            border: 5px solid #1e88e5;
+            border-radius: 22px;
+            padding: 22px 24px;
+            width: 95%;
+            max-width: 680px;
+            max-height: 88vh;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            box-shadow: 0 18px 45px rgba(0,0,0,0.3);
+        }
+        .history-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #e3f2fd;
+            padding-bottom: 10px;
+        }
+        .history-stats-row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .history-stat-box {
+            background: #f5f9ff;
+            border: 2px solid #bbdefb;
+            border-radius: 14px;
+            padding: 10px;
+            text-align: center;
+        }
+        .history-stat-val {
+            font-size: 1.5em;
+            font-weight: 900;
+            color: #1565c0;
+        }
+        .history-stat-lbl {
+            font-size: 0.82em;
+            color: #546e7a;
+            font-weight: bold;
+        }
+        .history-list {
+            overflow-y: auto;
+            max-height: 46vh;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding-right: 4px;
+        }
+        .history-item {
+            background: #fafafa;
+            border: 1.5px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 10px 14px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .history-item-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 6px;
+            font-weight: bold;
+        }
+        .wrong-word-pill {
+            display: inline-block;
+            background: #ffebee;
+            color: #c62828;
+            border: 1px solid #ef9a9a;
+            border-radius: 10px;
+            padding: 2px 8px;
+            font-size: 0.8em;
+            font-weight: bold;
+            margin: 2px 4px 0 0;
+        }
+
         /* Responsive Mobile Layout */
         @media (max-width: 768px) {
             body {
@@ -750,14 +901,76 @@
     </audio>
 
     <div class="game-area" id="game-area">
-        <!-- Welcome Name Input Modal (Prompted before first question) -->
+        <!-- Welcome / Login / Register Modal (Prompted before first question) -->
         <div class="name-modal-overlay" id="name-modal-overlay">
             <div class="name-modal-card">
                 <div class="name-modal-icon">🌟</div>
                 <h2 class="name-modal-title">华小国语词汇连连乐</h2>
-                <p class="name-modal-subtitle">请先输入你的名字开始挑战！<br><span style="font-size: 0.9em; color: #777;">Sila masukkan nama anda untuk mula bermain:</span></p>
-                <input type="text" class="name-input-box" id="player-name-input" placeholder="输入你的名字 (例: Johnny / Ali)..." maxlength="15" onkeydown="if(event.key==='Enter') confirmPlayerName()">
-                <button class="start-challenge-btn" onclick="confirmPlayerName()">🚀 开始第一题 (Mula) ➔</button>
+
+                <div class="auth-tabs">
+                    <button class="auth-tab active" id="tab-login" onclick="switchAuthTab('login')">🔑 登录</button>
+                    <button class="auth-tab" id="tab-register" onclick="switchAuthTab('register')">✨ 注册</button>
+                    <button class="auth-tab" id="tab-guest" onclick="switchAuthTab('guest')">🚀 游客试玩</button>
+                </div>
+
+                <!-- Tab 1: Login -->
+                <div class="auth-panel active" id="panel-login">
+                    <p class="name-modal-subtitle" style="font-size:0.95em;">输入名字与 4 位密码登录，自动保存学习记录！</p>
+                    <input type="text" class="name-input-box" id="login-name-input" placeholder="名字 / 用户名 (例: Johnny)" maxlength="20" onkeydown="if(event.key==='Enter') document.getElementById('login-pin-input').focus()">
+                    <input type="password" inputmode="numeric" class="name-input-box" id="login-pin-input" placeholder="4 位数字密码 (例: 1234)" maxlength="8" onkeydown="if(event.key==='Enter') loginStudent()">
+                    <div class="auth-error" id="login-error"></div>
+                    <button class="start-challenge-btn" id="btn-login-submit" onclick="loginStudent()">🔑 登录并开始第一题 ➔</button>
+                </div>
+
+                <!-- Tab 2: Register -->
+                <div class="auth-panel" id="panel-register">
+                    <p class="name-modal-subtitle" style="font-size:0.95em;">首次使用？10 秒注册即可记录每次成绩与错题！</p>
+                    <div class="auth-row">
+                        <input type="text" class="name-input-box" id="reg-name-input" placeholder="名字 (例: Johnny)" maxlength="20" style="flex:2;">
+                        <input type="text" class="name-input-box" id="reg-class-input" placeholder="班级 (例: 4A)" maxlength="10" style="flex:1;">
+                    </div>
+                    <input type="password" inputmode="numeric" class="name-input-box" id="reg-pin-input" placeholder="设定 4 位数字密码 (例: 1234)" maxlength="8" onkeydown="if(event.key==='Enter') registerStudent()">
+                    <div class="auth-error" id="reg-error"></div>
+                    <button class="start-challenge-btn" id="btn-reg-submit" onclick="registerStudent()">✨ 注册并开始第一题 ➔</button>
+                </div>
+
+                <!-- Tab 3: Guest -->
+                <div class="auth-panel" id="panel-guest">
+                    <p class="name-modal-subtitle" style="font-size:0.95em;">无需密码直接练习（不保存到云端记录）</p>
+                    <input type="text" class="name-input-box" id="player-name-input" placeholder="输入你的名字 (例: Johnny / Ali)..." maxlength="15" onkeydown="if(event.key==='Enter') confirmPlayerName()">
+                    <button class="start-challenge-btn" onclick="confirmPlayerName()">🚀 开始第一题 (Mula) ➔</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Student History & Progress Modal -->
+        <div class="history-modal-overlay" id="history-modal-overlay" onclick="if(event.target===this) closeHistoryModal()">
+            <div class="history-modal-card">
+                <div class="history-header">
+                    <h2 style="margin:0; color:#1565c0; font-size:1.3em;">📊 学习记录与错题本 (<span id="hist-player-title"></span>)</h2>
+                    <button class="top-btn" onclick="closeHistoryModal()">✖ 关闭</button>
+                </div>
+                <div class="history-stats-row">
+                    <div class="history-stat-box">
+                        <div class="history-stat-val" id="hist-total-rounds">0</div>
+                        <div class="history-stat-lbl">完成练习组数</div>
+                    </div>
+                    <div class="history-stat-box">
+                        <div class="history-stat-val" id="hist-avg-acc">0%</div>
+                        <div class="history-stat-lbl">平均正确率</div>
+                    </div>
+                    <div class="history-stat-box">
+                        <div class="history-stat-val" id="hist-total-correct">0</div>
+                        <div class="history-stat-lbl">累计答对题数</div>
+                    </div>
+                </div>
+                <div class="history-list" id="history-list">
+                    <p style="text-align:center; color:#777;">正在加载记录...</p>
+                </div>
+                <div style="display:flex; justify-content:space-between; align-items:center; padding-top:6px; border-top:1px solid #eee;">
+                    <span id="hist-account-mode" style="font-size:0.88em; color:#546e7a; font-weight:bold;"></span>
+                    <button class="top-btn" onclick="switchAccount()">🔄 切换账号 / 退出登录</button>
+                </div>
             </div>
         </div>
 
@@ -792,6 +1005,7 @@
                     <option value="道德与自然 / Nilai & Alam">🌈 道德与自然 (Nilai/Alam)</option>
                 </select>
 
+                <button class="top-btn" id="history-btn" onclick="openHistoryModal()">📊 记录</button>
                 <button class="top-btn" id="sfx-toggle-btn" onclick="toggleSFX()">🔊 音效</button>
                 <button class="top-btn" id="bgm-toggle-btn" onclick="toggleBGM()">🎵 音乐</button>
             </div>
@@ -854,9 +1068,11 @@
                 <p>❌ 答错次数：<strong id="final-wrong" style="color: #c62828;">0</strong></p>
                 <p>🎯 答题正确率：<strong id="final-accuracy" style="color: #1565c0;">100%</strong></p>
             </div>
+            <div class="cloud-status-badge" id="cloud-save-status">☁️ 正在同步成绩...</div>
             <div class="celebrate-buttons">
                 <button class="action-round-btn" style="background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);" onclick="startNewSet()">▶️ 开始新的一组 20 题 (Set Baharu)</button>
                 <button class="action-round-btn" style="background: linear-gradient(135deg, #4caf50 0%, #388e3c 100%);" onclick="repeatCurrentSet()">🔄 重温本组 20 题 (Ulang Set Ini)</button>
+                <button class="action-round-btn" style="background: linear-gradient(135deg, #1e88e5 0%, #1565c0 100%);" onclick="openHistoryModal()">📊 我的记录 (Rekod)</button>
             </div>
         </div>
     </div>
@@ -868,27 +1084,174 @@
 
     <script>
         const QUESTIONS_PER_SET = 20;
+        const SUPABASE_URL = "https://kuybhocpdsttmmjkihcv.supabase.co";
+        const SUPABASE_KEY = "sb_publishable_kdVxbLe5qMPNkjMhccq52w_ia8RseMQ";
 
+        let currentStudentId = null;
+        let currentUsername = "";
+        let currentClassName = "";
         let currentUserName = "";
         let isNameConfirmed = false;
+        let quizStartTime = Date.now();
+        let wrongWordsThisSet = [];
+        let sessionHistory = [];
+
+        async function sbFetch(path, options = {}) {
+            const headers = {
+                "apikey": SUPABASE_KEY,
+                "Authorization": "Bearer " + SUPABASE_KEY,
+                "Content-Type": "application/json",
+                ...(options.headers || {})
+            };
+            const res = await fetch(SUPABASE_URL + "/rest/v1/" + path, { ...options, headers });
+            const text = await res.text();
+            let data = null;
+            try { data = text ? JSON.parse(text) : null; } catch (e) { data = text; }
+            if (!res.ok) {
+                throw new Error((data && (data.message || data.hint || data.details)) || ("HTTP " + res.status));
+            }
+            return data;
+        }
+
+        function switchAuthTab(tab) {
+            ['login', 'register', 'guest'].forEach(t => {
+                document.getElementById('tab-' + t).classList.toggle('active', t === tab);
+                document.getElementById('panel-' + t).classList.toggle('active', t === tab);
+            });
+            document.getElementById('login-error').textContent = "";
+            document.getElementById('reg-error').textContent = "";
+            setTimeout(() => {
+                if (tab === 'login') document.getElementById('login-name-input').focus();
+                else if (tab === 'register') document.getElementById('reg-name-input').focus();
+                else document.getElementById('player-name-input').focus();
+            }, 50);
+        }
+
+        async function loginStudent() {
+            const nameRaw = document.getElementById('login-name-input').value.trim();
+            const pin = document.getElementById('login-pin-input').value.trim();
+            const errEl = document.getElementById('login-error');
+            const btn = document.getElementById('btn-login-submit');
+            errEl.textContent = "";
+
+            if (!nameRaw || !pin) {
+                errEl.textContent = "请输入名字和密码 / Sila isi nama dan PIN";
+                return;
+            }
+            const uname = nameRaw.toLowerCase();
+            btn.disabled = true;
+            btn.textContent = "⏳ 正在登录...";
+            try {
+                const rows = await sbFetch(`students?username=eq.${encodeURIComponent(uname)}&select=*`);
+                if (!rows || rows.length === 0) {
+                    errEl.textContent = "❌ 找不到该用户，请先点击「✨ 注册」";
+                    return;
+                }
+                const stu = rows[0];
+                if (stu.pin !== pin) {
+                    errEl.textContent = "❌ 密码错误 / PIN salah";
+                    return;
+                }
+                currentStudentId = stu.id;
+                currentUsername = stu.username;
+                currentUserName = stu.display_name;
+                currentClassName = stu.class_name || "";
+                sbFetch(`students?id=eq.${stu.id}`, {
+                    method: "PATCH",
+                    body: JSON.stringify({ last_login: new Date().toISOString() })
+                }).catch(() => {});
+                finishAuthAndStart();
+            } catch (err) {
+                errEl.textContent = "⚠️ 连接失败：" + err.message;
+            } finally {
+                btn.disabled = false;
+                btn.textContent = "🔑 登录并开始第一题 ➔";
+            }
+        }
+
+        async function registerStudent() {
+            const nameRaw = document.getElementById('reg-name-input').value.trim();
+            const cls = document.getElementById('reg-class-input').value.trim();
+            const pin = document.getElementById('reg-pin-input').value.trim();
+            const errEl = document.getElementById('reg-error');
+            const btn = document.getElementById('btn-reg-submit');
+            errEl.textContent = "";
+
+            if (!nameRaw) {
+                errEl.textContent = "请输入你的名字 / Sila masukkan nama";
+                return;
+            }
+            if (!pin || pin.length < 4) {
+                errEl.textContent = "请设定至少 4 位数字密码 / PIN minimum 4 digit";
+                return;
+            }
+            const uname = nameRaw.toLowerCase();
+            btn.disabled = true;
+            btn.textContent = "⏳ 正在注册...";
+            try {
+                const existing = await sbFetch(`students?username=eq.${encodeURIComponent(uname)}&select=id`);
+                if (existing && existing.length > 0) {
+                    errEl.textContent = "⚠️ 该名字已被注册，请直接「🔑 登录」或加班级区分";
+                    return;
+                }
+                const created = await sbFetch("students", {
+                    method: "POST",
+                    headers: { "Prefer": "return=representation" },
+                    body: JSON.stringify({
+                        username: uname,
+                        display_name: nameRaw,
+                        class_name: cls,
+                        pin: pin
+                    })
+                });
+                const stu = created[0];
+                currentStudentId = stu.id;
+                currentUsername = stu.username;
+                currentUserName = stu.display_name;
+                currentClassName = stu.class_name || "";
+                finishAuthAndStart();
+            } catch (err) {
+                errEl.textContent = "⚠️ 注册失败：" + err.message;
+            } finally {
+                btn.disabled = false;
+                btn.textContent = "✨ 注册并开始第一题 ➔";
+            }
+        }
 
         function confirmPlayerName() {
             const input = document.getElementById('player-name-input');
             const entered = input ? input.value.trim() : "";
+            currentStudentId = null;
+            currentUsername = "";
+            currentClassName = "";
             currentUserName = entered || "同学 (Murid)";
+            finishAuthAndStart();
+        }
+
+        function finishAuthAndStart() {
             isNameConfirmed = true;
             updateUserNameDisplay();
             const modal = document.getElementById('name-modal-overlay');
             if (modal) modal.style.display = 'none';
-
-            // Start the first question
             startNewSet();
         }
 
+        function switchAccount() {
+            closeHistoryModal();
+            currentStudentId = null;
+            currentUsername = "";
+            currentClassName = "";
+            document.getElementById('login-pin-input').value = "";
+            document.getElementById('reg-pin-input').value = "";
+            document.getElementById('name-modal-overlay').style.display = 'flex';
+            switchAuthTab('login');
+        }
+
         function updateUserNameDisplay() {
+            const label = currentClassName ? `${currentUserName} (${currentClassName})` : (currentUserName || "同学 (Murid)");
             const displayEl = document.getElementById('display-user-name');
             if (displayEl) {
-                displayEl.textContent = currentUserName || "同学 (Murid)";
+                displayEl.textContent = label;
             }
             const celebNameEl = document.getElementById('celebrate-player-name');
             if (celebNameEl) {
@@ -901,6 +1264,10 @@
         }
 
         function editUserName() {
+            if (currentStudentId) {
+                openHistoryModal();
+                return;
+            }
             const newName = prompt("请输入你的名字 / Sila masukkan nama anda:", currentUserName || "");
             if (newName !== null && newName.trim()) {
                 currentUserName = newName.trim();
@@ -1007,9 +1374,9 @@
                 allVocabulary = JSON.parse(embeddedTag.textContent);
             }
 
-            // Auto-focus on name input box
+            // Auto-focus on login name input box
             setTimeout(() => {
-                const inp = document.getElementById('player-name-input');
+                const inp = document.getElementById('login-name-input');
                 if (inp) inp.focus();
             }, 300);
         }
@@ -1032,6 +1399,8 @@
             currentIndex = 0;
             scoreBetul = 0;
             scoreSalah = 0;
+            quizStartTime = Date.now();
+            wrongWordsThisSet = [];
             document.getElementById('score-b').textContent = "0";
             document.getElementById('score-s').textContent = "0";
             document.getElementById('celebrate-screen').style.display = 'none';
@@ -1045,6 +1414,8 @@
             currentIndex = 0;
             scoreBetul = 0;
             scoreSalah = 0;
+            quizStartTime = Date.now();
+            wrongWordsThisSet = [];
             document.getElementById('score-b').textContent = "0";
             document.getElementById('score-s').textContent = "0";
             document.getElementById('celebrate-screen').style.display = 'none';
@@ -1195,6 +1566,7 @@
                     hasMadeMistakeThisRound = true;
                     scoreSalah++;
                     document.getElementById('score-s').textContent = scoreSalah;
+                    wrongWordsThisSet.push({ bm: currentQuestion.bm, chinese: currentQuestion.chinese });
                 }
 
                 // Show the exact Chinese meaning of the clicked wrong word!
@@ -1233,6 +1605,117 @@
             const acc = total > 0 ? Math.round((scoreBetul / total) * 100) : 100;
             document.getElementById('final-accuracy').textContent = acc + "%";
             playSound('sfx-correct');
+
+            const durationSec = Math.max(1, Math.round((Date.now() - quizStartTime) / 1000));
+            const cat = document.getElementById('category-filter').value;
+            const record = {
+                student_id: currentStudentId,
+                username: currentUsername || currentUserName,
+                display_name: currentUserName,
+                category: cat,
+                score_correct: scoreBetul,
+                score_wrong: scoreSalah,
+                total_questions: activePool.length,
+                accuracy: acc,
+                duration_seconds: durationSec,
+                wrong_words: wrongWordsThisSet,
+                played_at: new Date().toISOString()
+            };
+            sessionHistory.unshift(record);
+            saveQuizHistory(record);
+        }
+
+        async function saveQuizHistory(record) {
+            const statusEl = document.getElementById('cloud-save-status');
+            if (!currentStudentId) {
+                statusEl.textContent = "💡 游客模式：仅保存在本次页面（登录后可永久记录到云端）";
+                statusEl.style.background = "#fff8e1";
+                statusEl.style.color = "#f57c00";
+                statusEl.style.borderColor = "#ffe082";
+                return;
+            }
+            statusEl.textContent = "☁️ 正在上传成绩到云端...";
+            statusEl.style.background = "#e3f2fd";
+            statusEl.style.color = "#1565c0";
+            statusEl.style.borderColor = "#90caf9";
+            try {
+                await sbFetch("quiz_history", {
+                    method: "POST",
+                    body: JSON.stringify(record)
+                });
+                statusEl.textContent = "✅ 成绩与错题已成功保存至云端学习记录！";
+                statusEl.style.background = "#e8f5e9";
+                statusEl.style.color = "#2e7d32";
+                statusEl.style.borderColor = "#a5d6a7";
+            } catch (err) {
+                statusEl.textContent = "⚠️ 云端保存失败：" + err.message;
+                statusEl.style.background = "#ffebee";
+                statusEl.style.color = "#c62828";
+                statusEl.style.borderColor = "#ef9a9a";
+            }
+        }
+
+        function openHistoryModal() {
+            const label = currentClassName ? `${currentUserName} (${currentClassName})` : (currentUserName || "游客");
+            document.getElementById('hist-player-title').textContent = label;
+            document.getElementById('hist-account-mode').textContent = currentStudentId
+                ? `☁️ 已登录账号：${currentUsername}`
+                : "🚀 当前为游客模式（仅显示本次记录）";
+            document.getElementById('history-modal-overlay').style.display = 'flex';
+            loadStudentHistory();
+        }
+
+        function closeHistoryModal() {
+            document.getElementById('history-modal-overlay').style.display = 'none';
+        }
+
+        async function loadStudentHistory() {
+            const listEl = document.getElementById('history-list');
+            listEl.innerHTML = `<p style="text-align:center; color:#777;">⏳ 正在读取学习记录...</p>`;
+            let rows = [];
+            if (currentStudentId) {
+                try {
+                    rows = await sbFetch(`quiz_history?student_id=eq.${encodeURIComponent(currentStudentId)}&order=played_at.desc&limit=30`);
+                } catch (err) {
+                    listEl.innerHTML = `<p style="text-align:center; color:#c62828;">⚠️ 读取记录失败：${err.message}</p>`;
+                    return;
+                }
+            } else {
+                rows = sessionHistory;
+            }
+
+            document.getElementById('hist-total-rounds').textContent = rows.length;
+            const totalCorrect = rows.reduce((sum, r) => sum + (r.score_correct || 0), 0);
+            const avgAcc = rows.length ? Math.round(rows.reduce((sum, r) => sum + (r.accuracy || 0), 0) / rows.length) : 0;
+            document.getElementById('hist-total-correct').textContent = totalCorrect;
+            document.getElementById('hist-avg-acc').textContent = avgAcc + "%";
+
+            if (rows.length === 0) {
+                listEl.innerHTML = `<p style="text-align:center; color:#777; padding:24px;">暂无练习记录，完成一组 20 题后会自动出现在这里！</p>`;
+                return;
+            }
+
+            listEl.innerHTML = rows.map(r => {
+                const dt = r.played_at ? new Date(r.played_at).toLocaleString('zh-MY', { hour12: false }) : '';
+                const mins = Math.floor((r.duration_seconds || 0) / 60);
+                const secs = (r.duration_seconds || 0) % 60;
+                const dur = mins > 0 ? `${mins}分${secs}秒` : `${secs}秒`;
+                const wrongs = Array.isArray(r.wrong_words) ? r.wrong_words : [];
+                const wrongHtml = wrongs.length > 0
+                    ? `<div style="margin-top:4px;"><span style="font-size:0.82em; color:#666;">错题：</span>` +
+                      wrongs.map(w => `<span class="wrong-word-pill">${w.bm} (${w.chinese})</span>`).join('') + `</div>`
+                    : `<div style="font-size:0.82em; color:#2e7d32; font-weight:bold;">🌟 全对无错题！</div>`;
+                return `
+                    <div class="history-item">
+                        <div class="history-item-top">
+                            <span>📚 ${r.category === 'ALL' ? '全部词汇' : r.category}</span>
+                            <span style="color:#1565c0;">✅ ${r.score_correct}/${r.total_questions} · 🎯 ${r.accuracy}% · ⏱️ ${dur}</span>
+                        </div>
+                        <div style="font-size:0.8em; color:#78909c;">🕒 ${dt}</div>
+                        ${wrongHtml}
+                    </div>
+                `;
+            }).join('');
         }
 
         window.onload = () => {
