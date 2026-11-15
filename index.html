@@ -908,35 +908,22 @@
                 <h2 class="name-modal-title">华小国语词汇连连乐</h2>
 
                 <div class="auth-tabs">
-                    <button class="auth-tab active" id="tab-login" onclick="switchAuthTab('login')">🔑 登录</button>
-                    <button class="auth-tab" id="tab-register" onclick="switchAuthTab('register')">✨ 注册</button>
+                    <button class="auth-tab active" id="tab-login" onclick="switchAuthTab('login')">🔑 学生登录</button>
                     <button class="auth-tab" id="tab-guest" onclick="switchAuthTab('guest')">🚀 游客试玩</button>
                 </div>
 
                 <!-- Tab 1: Login -->
                 <div class="auth-panel active" id="panel-login">
-                    <p class="name-modal-subtitle" style="font-size:0.95em;">输入名字与 4 位密码登录，自动保存学习记录！</p>
-                    <input type="text" class="name-input-box" id="login-name-input" placeholder="名字 / 用户名 (例: Johnny)" maxlength="20" onkeydown="if(event.key==='Enter') document.getElementById('login-pin-input').focus()">
-                    <input type="password" inputmode="numeric" class="name-input-box" id="login-pin-input" placeholder="4 位数字密码 (例: 1234)" maxlength="8" onkeydown="if(event.key==='Enter') loginStudent()">
+                    <p class="name-modal-subtitle" style="font-size:0.95em;">请输入老师分配的账号与密码登录，自动保存学习记录！</p>
+                    <input type="text" class="name-input-box" id="login-name-input" placeholder="登录账号 (例: johnny)" maxlength="20" onkeydown="if(event.key==='Enter') document.getElementById('login-pin-input').focus()">
+                    <input type="password" inputmode="numeric" class="name-input-box" id="login-pin-input" placeholder="密码 / PIN (例: 1234)" maxlength="12" onkeydown="if(event.key==='Enter') loginStudent()">
                     <div class="auth-error" id="login-error"></div>
                     <button class="start-challenge-btn" id="btn-login-submit" onclick="loginStudent()">🔑 登录并开始第一题 ➔</button>
                 </div>
 
-                <!-- Tab 2: Register -->
-                <div class="auth-panel" id="panel-register">
-                    <p class="name-modal-subtitle" style="font-size:0.95em;">首次使用？10 秒注册即可记录每次成绩与错题！</p>
-                    <div class="auth-row">
-                        <input type="text" class="name-input-box" id="reg-name-input" placeholder="名字 (例: Johnny)" maxlength="20" style="flex:2;">
-                        <input type="text" class="name-input-box" id="reg-class-input" placeholder="班级 (例: 4A)" maxlength="10" style="flex:1;">
-                    </div>
-                    <input type="password" inputmode="numeric" class="name-input-box" id="reg-pin-input" placeholder="设定 4 位数字密码 (例: 1234)" maxlength="8" onkeydown="if(event.key==='Enter') registerStudent()">
-                    <div class="auth-error" id="reg-error"></div>
-                    <button class="start-challenge-btn" id="btn-reg-submit" onclick="registerStudent()">✨ 注册并开始第一题 ➔</button>
-                </div>
-
-                <!-- Tab 3: Guest -->
+                <!-- Tab 2: Guest -->
                 <div class="auth-panel" id="panel-guest">
-                    <p class="name-modal-subtitle" style="font-size:0.95em;">无需密码直接练习（不保存到云端记录）</p>
+                    <p class="name-modal-subtitle" style="font-size:0.95em;">无需账号直接练习（不保存到云端记录）</p>
                     <input type="text" class="name-input-box" id="player-name-input" placeholder="输入你的名字 (例: Johnny / Ali)..." maxlength="15" onkeydown="if(event.key==='Enter') confirmPlayerName()">
                     <button class="start-challenge-btn" onclick="confirmPlayerName()">🚀 开始第一题 (Mula) ➔</button>
                 </div>
@@ -1114,15 +1101,13 @@
         }
 
         function switchAuthTab(tab) {
-            ['login', 'register', 'guest'].forEach(t => {
+            ['login', 'guest'].forEach(t => {
                 document.getElementById('tab-' + t).classList.toggle('active', t === tab);
                 document.getElementById('panel-' + t).classList.toggle('active', t === tab);
             });
             document.getElementById('login-error').textContent = "";
-            document.getElementById('reg-error').textContent = "";
             setTimeout(() => {
                 if (tab === 'login') document.getElementById('login-name-input').focus();
-                else if (tab === 'register') document.getElementById('reg-name-input').focus();
                 else document.getElementById('player-name-input').focus();
             }, 50);
         }
@@ -1135,7 +1120,7 @@
             errEl.textContent = "";
 
             if (!nameRaw || !pin) {
-                errEl.textContent = "请输入名字和密码 / Sila isi nama dan PIN";
+                errEl.textContent = "请输入账号和密码 / Sila isi nama dan PIN";
                 return;
             }
             const uname = nameRaw.toLowerCase();
@@ -1144,7 +1129,7 @@
             try {
                 const rows = await sbFetch(`students?username=eq.${encodeURIComponent(uname)}&select=*`);
                 if (!rows || rows.length === 0) {
-                    errEl.textContent = "❌ 找不到该用户，请先点击「✨ 注册」";
+                    errEl.textContent = "❌ 找不到该账号，请向老师确认账号";
                     return;
                 }
                 const stu = rows[0];
@@ -1166,55 +1151,6 @@
             } finally {
                 btn.disabled = false;
                 btn.textContent = "🔑 登录并开始第一题 ➔";
-            }
-        }
-
-        async function registerStudent() {
-            const nameRaw = document.getElementById('reg-name-input').value.trim();
-            const cls = document.getElementById('reg-class-input').value.trim();
-            const pin = document.getElementById('reg-pin-input').value.trim();
-            const errEl = document.getElementById('reg-error');
-            const btn = document.getElementById('btn-reg-submit');
-            errEl.textContent = "";
-
-            if (!nameRaw) {
-                errEl.textContent = "请输入你的名字 / Sila masukkan nama";
-                return;
-            }
-            if (!pin || pin.length < 4) {
-                errEl.textContent = "请设定至少 4 位数字密码 / PIN minimum 4 digit";
-                return;
-            }
-            const uname = nameRaw.toLowerCase();
-            btn.disabled = true;
-            btn.textContent = "⏳ 正在注册...";
-            try {
-                const existing = await sbFetch(`students?username=eq.${encodeURIComponent(uname)}&select=id`);
-                if (existing && existing.length > 0) {
-                    errEl.textContent = "⚠️ 该名字已被注册，请直接「🔑 登录」或加班级区分";
-                    return;
-                }
-                const created = await sbFetch("students", {
-                    method: "POST",
-                    headers: { "Prefer": "return=representation" },
-                    body: JSON.stringify({
-                        username: uname,
-                        display_name: nameRaw,
-                        class_name: cls,
-                        pin: pin
-                    })
-                });
-                const stu = created[0];
-                currentStudentId = stu.id;
-                currentUsername = stu.username;
-                currentUserName = stu.display_name;
-                currentClassName = stu.class_name || "";
-                finishAuthAndStart();
-            } catch (err) {
-                errEl.textContent = "⚠️ 注册失败：" + err.message;
-            } finally {
-                btn.disabled = false;
-                btn.textContent = "✨ 注册并开始第一题 ➔";
             }
         }
 
@@ -1242,7 +1178,6 @@
             currentUsername = "";
             currentClassName = "";
             document.getElementById('login-pin-input').value = "";
-            document.getElementById('reg-pin-input').value = "";
             document.getElementById('name-modal-overlay').style.display = 'flex';
             switchAuthTab('login');
         }

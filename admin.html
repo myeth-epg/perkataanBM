@@ -378,23 +378,50 @@
             </div>
         </div>
 
-        <!-- Tab 2: Students Summary -->
+        <!-- Tab 2: Students Management & Summary -->
         <div class="panel" id="panel-students">
+            <!-- Admin Create Student Card -->
+            <div class="controls-bar" style="margin-bottom:14px; flex-direction:column; align-items:stretch;">
+                <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+                    <strong style="color:#60a5fa; font-size:1.02em;">➕ 管理员创建学生账号（学生不可自行注册）</strong>
+                    <button class="btn btn-outline" style="padding:5px 12px; font-size:0.84em;" onclick="toggleBulkBox()">📋 批量导入全班名单</button>
+                </div>
+                <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
+                    <input type="text" class="filter-input" id="new-stu-name" placeholder="学生姓名 (例: Johnny)" style="min-width:160px;">
+                    <input type="text" class="filter-input" id="new-stu-username" placeholder="登录账号 (例: johnny，留空则同姓名)" style="min-width:180px;">
+                    <input type="text" class="filter-input" id="new-stu-class" placeholder="班级 (例: 4A)" style="max-width:120px; min-width:100px;">
+                    <input type="text" class="filter-input" id="new-stu-pin" placeholder="密码 / PIN (例: 1234)" style="max-width:160px; min-width:130px;">
+                    <button class="btn btn-success" id="btn-create-stu" onclick="createStudent()">➕ 创建账号</button>
+                </div>
+                <div id="create-stu-msg" style="font-size:0.88em; font-weight:bold;"></div>
+
+                <!-- Collapsible Bulk Import -->
+                <div id="bulk-box" style="display:none; flex-direction:column; gap:8px; padding-top:10px; border-top:1px dashed var(--border);">
+                    <div style="font-size:0.85em; color:#94a3b8;">每行一个学生，格式：<code style="color:#93c5fd;">姓名, 班级, 密码</code>（或 <code style="color:#93c5fd;">姓名, 账号, 班级, 密码</code>）</div>
+                    <textarea id="bulk-textarea" class="filter-input" rows="4" placeholder="Johnny, 4A, 1234&#10;Mei Ling, 4A, 5678&#10;Ahmad, 4B, 1122" style="width:100%; font-family:Consolas, monospace;"></textarea>
+                    <div style="display:flex; gap:10px; align-items:center;">
+                        <button class="btn btn-primary" onclick="bulkCreateStudents()">🚀 批量创建</button>
+                        <span id="bulk-msg" style="font-size:0.86em; font-weight:bold;"></span>
+                    </div>
+                </div>
+            </div>
+
             <div class="table-wrap">
                 <table>
                     <thead>
                         <tr>
-                            <th>学生名字</th>
+                            <th>学生姓名</th>
+                            <th>登录账号</th>
+                            <th>密码 (PIN)</th>
                             <th>班级</th>
                             <th>完成组数</th>
                             <th>平均正确率</th>
-                            <th>最高正确率</th>
-                            <th>最后登录 / 活跃</th>
+                            <th>最后活跃</th>
                             <th>操作</th>
                         </tr>
                     </thead>
                     <tbody id="students-tbody">
-                        <tr><td colspan="7" class="empty-msg">⏳ 加载中...</td></tr>
+                        <tr><td colspan="8" class="empty-msg">⏳ 加载中...</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -429,15 +456,19 @@
         let allHistory = [];
         let filteredHistory = [];
 
-        async function sbFetch(path) {
-            const res = await fetch(SUPABASE_URL + "/rest/v1/" + path, {
-                headers: {
-                    "apikey": SUPABASE_KEY,
-                    "Authorization": "Bearer " + SUPABASE_KEY
-                }
-            });
-            if (!res.ok) throw new Error("HTTP " + res.status);
-            return await res.json();
+        async function sbFetch(path, options = {}) {
+            const headers = {
+                "apikey": SUPABASE_KEY,
+                "Authorization": "Bearer " + SUPABASE_KEY,
+                "Content-Type": "application/json",
+                ...(options.headers || {})
+            };
+            const res = await fetch(SUPABASE_URL + "/rest/v1/" + path, { ...options, headers });
+            const text = await res.text();
+            let data = null;
+            try { data = text ? JSON.parse(text) : null; } catch (e) { data = text; }
+            if (!res.ok) throw new Error((data && (data.message || data.hint || data.details)) || ("HTTP " + res.status));
+            return data;
         }
 
         function unlockAdmin() {
@@ -579,27 +610,134 @@
             });
 
             if (list.length === 0) {
-                tbody.innerHTML = `<tr><td colspan="7" class="empty-msg">暂无注册学生</td></tr>`;
+                tbody.innerHTML = `<tr><td colspan="8" class="empty-msg">暂无学生账号，请在上方创建</td></tr>`;
                 return;
             }
 
             tbody.innerHTML = list.map(s => {
                 const rounds = allHistory.filter(h => h.student_id === s.id);
                 const avg = rounds.length ? Math.round(rounds.reduce((sum, r) => sum + (r.accuracy || 0), 0) / rounds.length) : 0;
-                const best = rounds.length ? Math.max(...rounds.map(r => r.accuracy || 0)) : 0;
                 const lastDt = s.last_login ? new Date(s.last_login).toLocaleString('zh-MY', { hour12: false }) : '-';
                 return `
                     <tr>
                         <td><strong style="color:#fb923c;">${s.display_name}</strong></td>
+                        <td><code style="color:#93c5fd;">${s.username}</code></td>
+                        <td><code style="color:#fde047;">${s.pin}</code></td>
                         <td>${s.class_name || '—'}</td>
                         <td><strong>${rounds.length}</strong> 组</td>
                         <td><span class="${avg >= 80 ? 'pill-ok' : 'pill-warn'}">${avg}%</span></td>
-                        <td>${best}%</td>
                         <td style="color:#cbd5e1;">${lastDt}</td>
-                        <td><button class="btn btn-outline" style="padding:4px 10px; font-size:0.82em;" onclick="filterByStudent('${s.display_name.replace(/'/g, "\\'")}')">查看记录</button></td>
+                        <td style="white-space:nowrap;">
+                            <button class="btn btn-outline" style="padding:4px 8px; font-size:0.8em;" onclick="filterByStudent('${s.display_name.replace(/'/g, "\\'")}')">🔍 记录</button>
+                            <button class="btn btn-outline" style="padding:4px 8px; font-size:0.8em;" onclick="resetStudentPin('${s.id}', '${s.display_name.replace(/'/g, "\\'")}', '${s.pin}')">🔑 改密码</button>
+                            <button class="btn btn-outline" style="padding:4px 8px; font-size:0.8em; color:#fca5a5; border-color:#ef4444;" onclick="deleteStudent('${s.id}', '${s.display_name.replace(/'/g, "\\'")}')">🗑️</button>
+                        </td>
                     </tr>
                 `;
             }).join('');
+        }
+
+        function toggleBulkBox() {
+            const box = document.getElementById('bulk-box');
+            box.style.display = box.style.display === 'none' ? 'flex' : 'none';
+        }
+
+        async function createStudent() {
+            const name = document.getElementById('new-stu-name').value.trim();
+            const unameInput = document.getElementById('new-stu-username').value.trim();
+            const cls = document.getElementById('new-stu-class').value.trim();
+            const pin = document.getElementById('new-stu-pin').value.trim();
+            const msgEl = document.getElementById('create-stu-msg');
+            msgEl.textContent = "";
+
+            if (!name || !pin) {
+                msgEl.style.color = "#f87171";
+                msgEl.textContent = "⚠️ 请填写学生姓名和密码！";
+                return;
+            }
+            const uname = (unameInput || name).toLowerCase().replace(/\s+/g, '');
+            try {
+                await sbFetch("students", {
+                    method: "POST",
+                    headers: { "Prefer": "return=representation" },
+                    body: JSON.stringify({ username: uname, display_name: name, class_name: cls, pin: pin })
+                });
+                msgEl.style.color = "#4ade80";
+                msgEl.textContent = `✅ 已创建学生账号：${uname}（密码：${pin}）`;
+                document.getElementById('new-stu-name').value = "";
+                document.getElementById('new-stu-username').value = "";
+                document.getElementById('new-stu-pin').value = "";
+                loadAllData();
+            } catch (err) {
+                msgEl.style.color = "#f87171";
+                msgEl.textContent = "❌ 创建失败：" + err.message;
+            }
+        }
+
+        async function bulkCreateStudents() {
+            const raw = document.getElementById('bulk-textarea').value.trim();
+            const msgEl = document.getElementById('bulk-msg');
+            if (!raw) return;
+            const lines = raw.split(/\r?\n/).map(l => l.trim()).filter(Boolean);
+            let ok = 0, fail = 0;
+            msgEl.style.color = "#93c5fd";
+            msgEl.textContent = "⏳ 正在批量创建...";
+            for (const line of lines) {
+                const parts = line.split(/[,，\t]+/).map(p => p.trim());
+                let name = "", uname = "", cls = "", pin = "";
+                if (parts.length >= 4) {
+                    [name, uname, cls, pin] = parts;
+                } else if (parts.length === 3) {
+                    [name, cls, pin] = parts;
+                    uname = name;
+                } else if (parts.length === 2) {
+                    [name, pin] = parts;
+                    uname = name;
+                } else {
+                    fail++;
+                    continue;
+                }
+                uname = uname.toLowerCase().replace(/\s+/g, '');
+                try {
+                    await sbFetch("students", {
+                        method: "POST",
+                        body: JSON.stringify({ username: uname, display_name: name, class_name: cls, pin: pin })
+                    });
+                    ok++;
+                } catch (e) {
+                    fail++;
+                }
+            }
+            msgEl.style.color = ok > 0 ? "#4ade80" : "#f87171";
+            msgEl.textContent = `完成！成功创建 ${ok} 个账号${fail ? `，跳过/失败 ${fail} 个` : ''}`;
+            if (ok > 0) {
+                document.getElementById('bulk-textarea').value = "";
+                loadAllData();
+            }
+        }
+
+        async function resetStudentPin(id, name, oldPin) {
+            const newPin = prompt(`为「${name}」重设密码 / PIN：`, oldPin);
+            if (!newPin || !newPin.trim()) return;
+            try {
+                await sbFetch(`students?id=eq.${id}`, {
+                    method: "PATCH",
+                    body: JSON.stringify({ pin: newPin.trim() })
+                });
+                loadAllData();
+            } catch (err) {
+                alert("修改失败：" + err.message);
+            }
+        }
+
+        async function deleteStudent(id, name) {
+            if (!confirm(`确定删除学生「${name}」及其所有答题记录吗？`)) return;
+            try {
+                await sbFetch(`students?id=eq.${id}`, { method: "DELETE" });
+                loadAllData();
+            } catch (err) {
+                alert("删除失败（如提示权限不足，请在 Supabase SQL Editor 运行 DELETE 策略）：" + err.message);
+            }
         }
 
         function filterByStudent(name) {
