@@ -352,7 +352,7 @@
         <!-- View Tabs -->
         <div class="tabs-row">
             <button class="tab-btn active" id="tab-history" onclick="switchTab('history')">📋 最新答题记录</button>
-            <button class="tab-btn" id="tab-students" onclick="switchTab('students')">👩‍🎓 学生成绩汇总</button>
+            <button class="tab-btn" id="tab-students" onclick="switchTab('students')">👩‍🎓 学生账号管理</button>
             <button class="tab-btn" id="tab-wrong" onclick="switchTab('wrong')">❌ 高频错题排行榜</button>
         </div>
 
@@ -383,7 +383,7 @@
             <!-- Admin Create Student Card -->
             <div class="controls-bar" style="margin-bottom:14px; flex-direction:column; align-items:stretch;">
                 <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
-                    <strong style="color:#60a5fa; font-size:1.02em;">➕ 管理员创建学生账号（学生不可自行注册）</strong>
+                    <strong style="color:#60a5fa; font-size:1.02em;">➕ 新增学生账号 / Add New Student（学生不可自行注册）</strong>
                     <button class="btn btn-outline" style="padding:5px 12px; font-size:0.84em;" onclick="toggleBulkBox()">📋 批量导入全班名单</button>
                 </div>
                 <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
@@ -391,7 +391,7 @@
                     <input type="text" class="filter-input" id="new-stu-username" placeholder="登录账号 (例: johnny，留空则同姓名)" style="min-width:180px;">
                     <input type="text" class="filter-input" id="new-stu-class" placeholder="班级 (例: 4A)" style="max-width:120px; min-width:100px;">
                     <input type="text" class="filter-input" id="new-stu-pin" placeholder="密码 / PIN (例: 1234)" style="max-width:160px; min-width:130px;">
-                    <button class="btn btn-success" id="btn-create-stu" onclick="createStudent()">➕ 创建账号</button>
+                    <button class="btn btn-success" id="btn-create-stu" onclick="createStudent()">➕ Add New / 创建账号</button>
                 </div>
                 <div id="create-stu-msg" style="font-size:0.88em; font-weight:bold;"></div>
 
@@ -414,6 +414,7 @@
                             <th>登录账号</th>
                             <th>密码 (PIN)</th>
                             <th>班级</th>
+                            <th>状态</th>
                             <th>完成组数</th>
                             <th>平均正确率</th>
                             <th>最后活跃</th>
@@ -421,7 +422,7 @@
                         </tr>
                     </thead>
                     <tbody id="students-tbody">
-                        <tr><td colspan="8" class="empty-msg">⏳ 加载中...</td></tr>
+                        <tr><td colspan="9" class="empty-msg">⏳ 加载中...</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -553,9 +554,10 @@
 
         function renderStats(studentMap, cls) {
             const visibleStudents = cls === 'ALL' ? allStudents : allStudents.filter(s => (s.class_name || '').trim() === cls);
+            const inactiveCount = visibleStudents.filter(s => s.is_active === false).length;
             const classes = new Set(allStudents.map(s => (s.class_name || '').trim()).filter(Boolean));
-            document.getElementById('stat-students').textContent = visibleStudents.length;
-            document.getElementById('stat-classes').textContent = `涵盖 ${classes.size} 个班级`;
+            document.getElementById('stat-students').textContent = visibleStudents.length - inactiveCount;
+            document.getElementById('stat-classes').textContent = `涵盖 ${classes.size} 个班级` + (inactiveCount ? ` · 已停用 ${inactiveCount} 人` : '');
 
             document.getElementById('stat-rounds').textContent = filteredHistory.length;
             const todayStr = new Date().toISOString().slice(0, 10);
@@ -610,7 +612,7 @@
             });
 
             if (list.length === 0) {
-                tbody.innerHTML = `<tr><td colspan="8" class="empty-msg">暂无学生账号，请在上方创建</td></tr>`;
+                tbody.innerHTML = `<tr><td colspan="9" class="empty-msg">暂无学生账号，请在上方点击 Add New 创建</td></tr>`;
                 return;
             }
 
@@ -618,19 +620,27 @@
                 const rounds = allHistory.filter(h => h.student_id === s.id);
                 const avg = rounds.length ? Math.round(rounds.reduce((sum, r) => sum + (r.accuracy || 0), 0) / rounds.length) : 0;
                 const lastDt = s.last_login ? new Date(s.last_login).toLocaleString('zh-MY', { hour12: false }) : '-';
+                const isActive = s.is_active !== false;
+                const statusBadge = isActive
+                    ? `<span class="pill-ok">✅ 启用</span>`
+                    : `<span class="pill-err">⏸️ 已停用</span>`;
+                const toggleBtn = isActive
+                    ? `<button class="btn btn-outline" style="padding:4px 8px; font-size:0.8em; color:#fcd34d; border-color:#f59e0b;" onclick="toggleStudentActive('${s.id}', '${s.display_name.replace(/'/g, "\\'")}', true)">⏸️ 停用</button>`
+                    : `<button class="btn btn-outline" style="padding:4px 8px; font-size:0.8em; color:#86efac; border-color:#22c55e;" onclick="toggleStudentActive('${s.id}', '${s.display_name.replace(/'/g, "\\'")}', false)">▶️ 启用</button>`;
                 return `
-                    <tr>
+                    <tr style="${isActive ? '' : 'opacity:0.65;'}">
                         <td><strong style="color:#fb923c;">${s.display_name}</strong></td>
                         <td><code style="color:#93c5fd;">${s.username}</code></td>
                         <td><code style="color:#fde047;">${s.pin}</code></td>
                         <td>${s.class_name || '—'}</td>
+                        <td>${statusBadge}</td>
                         <td><strong>${rounds.length}</strong> 组</td>
                         <td><span class="${avg >= 80 ? 'pill-ok' : 'pill-warn'}">${avg}%</span></td>
                         <td style="color:#cbd5e1;">${lastDt}</td>
                         <td style="white-space:nowrap;">
                             <button class="btn btn-outline" style="padding:4px 8px; font-size:0.8em;" onclick="filterByStudent('${s.display_name.replace(/'/g, "\\'")}')">🔍 记录</button>
                             <button class="btn btn-outline" style="padding:4px 8px; font-size:0.8em;" onclick="resetStudentPin('${s.id}', '${s.display_name.replace(/'/g, "\\'")}', '${s.pin}')">🔑 改密码</button>
-                            <button class="btn btn-outline" style="padding:4px 8px; font-size:0.8em; color:#fca5a5; border-color:#ef4444;" onclick="deleteStudent('${s.id}', '${s.display_name.replace(/'/g, "\\'")}')">🗑️</button>
+                            ${toggleBtn}
                         </td>
                     </tr>
                 `;
@@ -730,13 +740,21 @@
             }
         }
 
-        async function deleteStudent(id, name) {
-            if (!confirm(`确定删除学生「${name}」及其所有答题记录吗？`)) return;
+        async function toggleStudentActive(id, name, currentlyActive) {
+            const actionLabel = currentlyActive ? "停用 (Inactivate)" : "重新启用 (Activate)";
+            if (!confirm(`确定要${actionLabel}学生「${name}」吗？`)) return;
             try {
-                await sbFetch(`students?id=eq.${id}`, { method: "DELETE" });
+                await sbFetch(`students?id=eq.${id}`, {
+                    method: "PATCH",
+                    body: JSON.stringify({ is_active: !currentlyActive })
+                });
                 loadAllData();
             } catch (err) {
-                alert("删除失败（如提示权限不足，请在 Supabase SQL Editor 运行 DELETE 策略）：" + err.message);
+                if ((err.message || '').includes('is_active')) {
+                    alert("Supabase 的 students 表尚未添加 is_active 字段！\n请先在 Supabase SQL Editor 运行：\nalter table public.students add column if not exists is_active boolean not null default true;");
+                } else {
+                    alert("操作失败：" + err.message);
+                }
             }
         }
 

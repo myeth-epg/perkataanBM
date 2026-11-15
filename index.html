@@ -1133,6 +1133,10 @@
                     return;
                 }
                 const stu = rows[0];
+                if (stu.is_active === false) {
+                    errEl.textContent = "⏸️ 该账号已被老师停用，请联系老师 / Akaun tidak aktif";
+                    return;
+                }
                 if (stu.pin !== pin) {
                     errEl.textContent = "❌ 密码错误 / PIN salah";
                     return;
