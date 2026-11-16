@@ -8,7 +8,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Ali suka membaca buku cerita pada masa lapang.",
     "example_zh": "阿里喜欢在空闲时阅读故事书。",
-    "audio": "audio/membaca.mp3"
+    "audio": "audio/membaca.mp3",
+    "audio_zh": "audio_zh/B001.mp3"
   },
   {
     "id": "B002",
@@ -19,7 +20,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Adik sedang belajar menulis huruf abjad.",
     "example_zh": "弟弟正在学习写字母。",
-    "audio": "audio/menulis.mp3"
+    "audio": "audio/menulis.mp3",
+    "audio_zh": "audio_zh/B002.mp3"
   },
   {
     "id": "B003",
@@ -30,7 +32,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Mei Mei pandai melukis pemandangan kampung.",
     "example_zh": "美美擅长画乡村的风景。",
-    "audio": "audio/melukis.mp3"
+    "audio": "audio/melukis.mp3",
+    "audio_zh": "audio_zh/B003.mp3"
   },
   {
     "id": "B004",
@@ -41,7 +44,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Murid-murid menyanyi lagu Negaraku dengan penuh semangat.",
     "example_zh": "学生们精神饱满地唱国歌。",
-    "audio": "audio/menyanyi.mp3"
+    "audio": "audio/menyanyi.mp3",
+    "audio_zh": "audio_zh/B004.mp3"
   },
   {
     "id": "B005",
@@ -52,7 +56,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Siti sedang menari tarian tradisional di atas pentas.",
     "example_zh": "西蒂正在舞台上跳传统舞蹈。",
-    "audio": "audio/menari.mp3"
+    "audio": "audio/menari.mp3",
+    "audio_zh": "audio_zh/B005.mp3"
   },
   {
     "id": "B006",
@@ -63,7 +68,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Ahmad berlari dengan pantas di padang sekolah.",
     "example_zh": "阿末在学校草场上快速奔跑。",
-    "audio": "audio/berlari.mp3"
+    "audio": "audio/berlari.mp3",
+    "audio_zh": "audio_zh/B006.mp3"
   },
   {
     "id": "B007",
@@ -74,7 +80,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Katak itu melompat ke dalam kolam.",
     "example_zh": "那只青蛙跳进了池塘里。",
-    "audio": "audio/melompat.mp3"
+    "audio": "audio/melompat.mp3",
+    "audio_zh": "audio_zh/B007.mp3"
   },
   {
     "id": "B008",
@@ -85,7 +92,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Kami berjalan kaki ke sekolah setiap pagi.",
     "example_zh": "我们每天早晨步行去上学。",
-    "audio": "audio/berjalan.mp3"
+    "audio": "audio/berjalan.mp3",
+    "audio_zh": "audio_zh/B008.mp3"
   },
   {
     "id": "B009",
@@ -96,7 +104,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Ikan-ikan itu berenang dengan bebas di dalam air.",
     "example_zh": "鱼儿在水中自由自在地游泳。",
-    "audio": "audio/berenang.mp3"
+    "audio": "audio/berenang.mp3",
+    "audio_zh": "audio_zh/B009.mp3"
   },
   {
     "id": "B010",
@@ -107,7 +116,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Kami makan sarapan pagi bersama-sama di ruang makan.",
     "example_zh": "我们一起在饭厅吃早餐。",
-    "audio": "audio/makan.mp3"
+    "audio": "audio/makan.mp3",
+    "audio_zh": "audio_zh/B010.mp3"
   },
   {
     "id": "B011",
@@ -118,7 +128,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Kita perlu minum air kosong secukupnya setiap hari.",
     "example_zh": "我们每天都需要喝足够的白开水。",
-    "audio": "audio/minum.mp3"
+    "audio": "audio/minum.mp3",
+    "audio_zh": "audio_zh/B011.mp3"
   },
   {
     "id": "B012",
@@ -129,7 +140,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Adik kecil sudah tidur lena di dalam buaian.",
     "example_zh": "小弟弟已经在摇篮里熟睡了。",
-    "audio": "audio/tidur.mp3"
+    "audio": "audio/tidur.mp3",
+    "audio_zh": "audio_zh/B012.mp3"
   },
   {
     "id": "B013",
@@ -140,7 +152,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Saya mandi dua kali sehari untuk menjaga kebersihan diri.",
     "example_zh": "我每天洗澡两次以保持身体洁净。",
-    "audio": "audio/mandi.mp3"
+    "audio": "audio/mandi.mp3",
+    "audio_zh": "audio_zh/B013.mp3"
   },
   {
     "id": "B014",
@@ -151,7 +164,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Kakak menyapu sampah di halaman rumah sehingga bersih.",
     "example_zh": "姐姐在庭院扫地，扫得干干净净。",
-    "audio": "audio/menyapu_sampah.mp3"
+    "audio": "audio/menyapu_sampah.mp3",
+    "audio_zh": "audio_zh/B014.mp3"
   },
   {
     "id": "B015",
@@ -162,7 +176,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Ibu mengelap meja makan menggunakan sehelai kain basah.",
     "example_zh": "妈妈用一块湿布擦拭餐桌。",
-    "audio": "audio/mengelap.mp3"
+    "audio": "audio/mengelap.mp3",
+    "audio_zh": "audio_zh/B015.mp3"
   },
   {
     "id": "B016",
@@ -173,7 +188,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Abang membasuh kasut sekolahnya pada hari Sabtu.",
     "example_zh": "哥哥在星期六清洗他的校鞋。",
-    "audio": "audio/membasuh.mp3"
+    "audio": "audio/membasuh.mp3",
+    "audio_zh": "audio_zh/B016.mp3"
   },
   {
     "id": "B017",
@@ -184,7 +200,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Ibu sedang memasak lauk yang lazat di dapur.",
     "example_zh": "妈妈正在厨房煮美味的菜肴。",
-    "audio": "audio/memasak.mp3"
+    "audio": "audio/memasak.mp3",
+    "audio_zh": "audio_zh/B017.mp3"
   },
   {
     "id": "B018",
@@ -195,7 +212,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Datuk menanam pokok cili di belakang rumah.",
     "example_zh": "爷爷在屋后种植辣椒树。",
-    "audio": "audio/menanam.mp3"
+    "audio": "audio/menanam.mp3",
+    "audio_zh": "audio_zh/B018.mp3"
   },
   {
     "id": "B019",
@@ -206,7 +224,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Adik menolong ibu menyiram pokok bunga.",
     "example_zh": "弟弟帮妈妈给花草浇水。",
-    "audio": "audio/menyiram.mp3"
+    "audio": "audio/menyiram.mp3",
+    "audio_zh": "audio_zh/B019.mp3"
   },
   {
     "id": "B020",
@@ -217,7 +236,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Kita haruslah menolong rakan yang berada dalam kesusahan.",
     "example_zh": "我们应当帮助遇到困难的同学。",
-    "audio": "audio/menolong.mp3"
+    "audio": "audio/menolong.mp3",
+    "audio_zh": "audio_zh/B020.mp3"
   },
   {
     "id": "B021",
@@ -228,7 +248,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Kanak-kanak itu bermain bola sepak di padang dengan gembira.",
     "example_zh": "孩子们开心地在草场上踢足球玩耍。",
-    "audio": "audio/bermain.mp3"
+    "audio": "audio/bermain.mp3",
+    "audio_zh": "audio_zh/B021.mp3"
   },
   {
     "id": "B022",
@@ -239,7 +260,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Ayah membeli surat khabar dan roti di kedai runcit.",
     "example_zh": "爸爸在杂货店买了报纸和面包。",
-    "audio": "audio/membeli.mp3"
+    "audio": "audio/membeli.mp3",
+    "audio_zh": "audio_zh/B022.mp3"
   },
   {
     "id": "B023",
@@ -250,7 +272,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Pak Cik Hassan menjual pelbagai jenis buah-buahan segar.",
     "example_zh": "哈山叔叔卖各种各样的新鲜水果。",
-    "audio": "audio/menjual.mp3"
+    "audio": "audio/menjual.mp3",
+    "audio_zh": "audio_zh/B023.mp3"
   },
   {
     "id": "B024",
@@ -261,7 +284,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Murid-murid mendengar nasihat guru dengan teliti.",
     "example_zh": "学生们仔细聆听老师的谆谆教诲。",
-    "audio": "audio/mendengar.mp3"
+    "audio": "audio/mendengar.mp3",
+    "audio_zh": "audio_zh/B024.mp3"
   },
   {
     "id": "B025",
@@ -272,7 +296,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Kami melihat burung-burung berterbangan di langit.",
     "example_zh": "我们看到鸟儿在空中飞翔。",
-    "audio": "audio/melihat.mp3"
+    "audio": "audio/melihat.mp3",
+    "audio_zh": "audio_zh/B025.mp3"
   },
   {
     "id": "B026",
@@ -283,7 +308,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Sila buang sampah ke dalam tong sampah.",
     "example_zh": "请把垃圾丢进垃圾桶里。",
-    "audio": "audio/membuang.mp3"
+    "audio": "audio/membuang.mp3",
+    "audio_zh": "audio_zh/B026.mp3"
   },
   {
     "id": "B027",
@@ -294,7 +320,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Murid bertugas menyusun meja dan kerusi sebelum pulang.",
     "example_zh": "值日生在回家前整理排列桌椅。",
-    "audio": "audio/menyusun.mp3"
+    "audio": "audio/menyusun.mp3",
+    "audio_zh": "audio_zh/B027.mp3"
   },
   {
     "id": "B028",
@@ -305,7 +332,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Mei Ling menggunting kertas warna untuk membuat kad hari jadi.",
     "example_zh": "美玲剪彩纸来制作生日卡片。",
-    "audio": "audio/menggunting.mp3"
+    "audio": "audio/menggunting.mp3",
+    "audio_zh": "audio_zh/B028.mp3"
   },
   {
     "id": "B029",
@@ -316,7 +344,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Cikgu membuka pintu kelas dengan senyuman mesra.",
     "example_zh": "老师带着和蔼的笑容打开教室门。",
-    "audio": "audio/membuka.mp3"
+    "audio": "audio/membuka.mp3",
+    "audio_zh": "audio_zh/B029.mp3"
   },
   {
     "id": "B030",
@@ -327,7 +356,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Sila tutup tingkap sebelum meninggalkan bilik darjah.",
     "example_zh": "离开教室前请关好窗户。",
-    "audio": "audio/menutup.mp3"
+    "audio": "audio/menutup.mp3",
+    "audio_zh": "audio_zh/B030.mp3"
   },
   {
     "id": "B031",
@@ -338,7 +368,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Boleh saya meminjam pembaris kamu sebentar?",
     "example_zh": "我可以借用一下你的尺吗？",
-    "audio": "audio/meminjam.mp3"
+    "audio": "audio/meminjam.mp3",
+    "audio_zh": "audio_zh/B031.mp3"
   },
   {
     "id": "B032",
@@ -349,7 +380,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Saya memulangkan buku cerita ke perpustakaan tepat pada masanya.",
     "example_zh": "我准时把故事书归还给图书馆。",
-    "audio": "audio/memulangkan.mp3"
+    "audio": "audio/memulangkan.mp3",
+    "audio_zh": "audio_zh/B032.mp3"
   },
   {
     "id": "B033",
@@ -360,7 +392,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Ayah memandu kereta dengan cermat dan berhati-hati.",
     "example_zh": "爸爸小心翼翼、谨慎地驾驶汽车。",
-    "audio": "audio/memandu.mp3"
+    "audio": "audio/memandu.mp3",
+    "audio_zh": "audio_zh/B033.mp3"
   },
   {
     "id": "B034",
@@ -371,7 +404,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Murid-murid menaiki bas sekolah untuk pergi ke sekolah.",
     "example_zh": "学生们乘坐校车去上学。",
-    "audio": "audio/menaiki.mp3"
+    "audio": "audio/menaiki.mp3",
+    "audio_zh": "audio_zh/B034.mp3"
   },
   {
     "id": "B035",
@@ -382,7 +416,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Kucing yang comel itu memanjat pokok kelapa.",
     "example_zh": "那只可爱的小猫爬上了椰子树。",
-    "audio": "audio/memanjat.mp3"
+    "audio": "audio/memanjat.mp3",
+    "audio_zh": "audio_zh/B035.mp3"
   },
   {
     "id": "B036",
@@ -393,7 +428,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Ali membaling bola itu kepada rakannya.",
     "example_zh": "阿里把球投掷给他的朋友。",
-    "audio": "audio/membaling.mp3"
+    "audio": "audio/membaling.mp3",
+    "audio_zh": "audio_zh/B036.mp3"
   },
   {
     "id": "B037",
@@ -404,7 +440,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Penjaga gol berjaya menangkap bola dengan kemas.",
     "example_zh": "守门员稳妥地接住了球。",
-    "audio": "audio/menangkap.mp3"
+    "audio": "audio/menangkap.mp3",
+    "audio_zh": "audio_zh/B037.mp3"
   },
   {
     "id": "B038",
@@ -415,7 +452,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Nenek menjahit baju kurung yang cantik untuk kakak.",
     "example_zh": "奶奶为姐姐缝制了一件漂亮的马来传统礼服。",
-    "audio": "audio/menjahit.mp3"
+    "audio": "audio/menjahit.mp3",
+    "audio_zh": "audio_zh/B038.mp3"
   },
   {
     "id": "B039",
@@ -426,7 +464,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Abang mengecat dinding pagar rumah sempena tahun baru.",
     "example_zh": "哥哥趁着新年粉刷家里的围墙。",
-    "audio": "audio/mengecat.mp3"
+    "audio": "audio/mengecat.mp3",
+    "audio_zh": "audio_zh/B039.mp3"
   },
   {
     "id": "B040",
@@ -437,7 +476,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Pak Cik memancing ikan di tepi sungai yang tenang.",
     "example_zh": "叔叔在宁静的河边钓鱼。",
-    "audio": "audio/memancing.mp3"
+    "audio": "audio/memancing.mp3",
+    "audio_zh": "audio_zh/B040.mp3"
   },
   {
     "id": "B041",
@@ -448,7 +488,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Kita perlu menggosok gigi sekurang-kurangnya dua kali sehari.",
     "example_zh": "我们每天至少需要刷牙两次。",
-    "audio": "audio/menggosok_gigi.mp3"
+    "audio": "audio/menggosok_gigi.mp3",
+    "audio_zh": "audio_zh/B041.mp3"
   },
   {
     "id": "B042",
@@ -459,7 +500,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Murid-murid mengutip daun-daun kering di tapak perhimpunan.",
     "example_zh": "学生们在周会场地捡拾干枯的树叶。",
-    "audio": "audio/mengutip.mp3"
+    "audio": "audio/mengutip.mp3",
+    "audio_zh": "audio_zh/B042.mp3"
   },
   {
     "id": "B043",
@@ -470,7 +512,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Guru tersenyum manis apabila menyambut ketibaan murid-murid.",
     "example_zh": "老师在迎接学生到校时露出了甜美的微笑。",
-    "audio": "audio/tersenyum.mp3"
+    "audio": "audio/tersenyum.mp3",
+    "audio_zh": "audio_zh/B043.mp3"
   },
   {
     "id": "B044",
@@ -481,7 +524,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Semua orang ketawa apabila mendengar jenaka yang lucu itu.",
     "example_zh": "听到那个逗趣的笑话，大家都开怀大笑。",
-    "audio": "audio/ketawa.mp3"
+    "audio": "audio/ketawa.mp3",
+    "audio_zh": "audio_zh/B044.mp3"
   },
   {
     "id": "B045",
@@ -492,7 +536,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Bayi itu menangis kerana berasa lapar dan mengantuk.",
     "example_zh": "小婴儿因为感到饥饿和困倦而哭泣。",
-    "audio": "audio/menangis.mp3"
+    "audio": "audio/menangis.mp3",
+    "audio_zh": "audio_zh/B045.mp3"
   },
   {
     "id": "B046",
@@ -503,7 +548,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Murid-murid beratur dengan tertib semasa membeli makanan di kantin.",
     "example_zh": "学生们在食堂买食物时井井有条地排队。",
-    "audio": "audio/beratur.mp3"
+    "audio": "audio/beratur.mp3",
+    "audio_zh": "audio_zh/B046.mp3"
   },
   {
     "id": "B047",
@@ -514,7 +560,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Para petani berehat sebentar di bawah pokok yang rendang.",
     "example_zh": "农夫们在茂密的大树下稍作休息。",
-    "audio": "audio/berehat.mp3"
+    "audio": "audio/berehat.mp3",
+    "audio_zh": "audio_zh/B047.mp3"
   },
   {
     "id": "B048",
@@ -525,7 +572,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Pasukan bola sepak berlatih bersungguh-sungguh sebelum pertandingan.",
     "example_zh": "足球队在比赛前刻苦练习。",
-    "audio": "audio/berlatih.mp3"
+    "audio": "audio/berlatih.mp3",
+    "audio_zh": "audio_zh/B048.mp3"
   },
   {
     "id": "B049",
@@ -536,7 +584,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Kita mestilah rajin belajar demi masa depan yang cerah.",
     "example_zh": "为了美好的未来，我们一定要勤奋学习。",
-    "audio": "audio/belajar.mp3"
+    "audio": "audio/belajar.mp3",
+    "audio_zh": "audio_zh/B049.mp3"
   },
   {
     "id": "B050",
@@ -547,7 +596,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Murid yang rajin selalu bertanya soalan kepada guru.",
     "example_zh": "勤勉的学生总是向老师提问求教。",
-    "audio": "audio/bertanya.mp3"
+    "audio": "audio/bertanya.mp3",
+    "audio_zh": "audio_zh/B050.mp3"
   },
   {
     "id": "B051",
@@ -558,7 +608,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Bunga mawar yang mekar itu sungguh cantik warnanya.",
     "example_zh": "那朵盛开的玫瑰花颜色真漂亮。",
-    "audio": "audio/cantik.mp3"
+    "audio": "audio/cantik.mp3",
+    "audio_zh": "audio_zh/B051.mp3"
   },
   {
     "id": "B052",
@@ -569,7 +620,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Abang kelihatan segak dan kacak memakai pakaian seragam.",
     "example_zh": "哥哥身穿制服显得神气帅气。",
-    "audio": "audio/kacak.mp3"
+    "audio": "audio/kacak.mp3",
+    "audio_zh": "audio_zh/B052.mp3"
   },
   {
     "id": "B053",
@@ -580,7 +632,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Pokok kelapa itu sangat tinggi.",
     "example_zh": "那棵椰树非常高。",
-    "audio": "audio/tinggi.mp3"
+    "audio": "audio/tinggi.mp3",
+    "audio_zh": "audio_zh/B053.mp3"
   },
   {
     "id": "B054",
@@ -591,7 +644,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Pagar rumah kami agak rendah.",
     "example_zh": "我们家的篱笆比较矮。",
-    "audio": "audio/rendah.mp3"
+    "audio": "audio/rendah.mp3",
+    "audio_zh": "audio_zh/B054.mp3"
   },
   {
     "id": "B055",
@@ -602,7 +656,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Kucing peliharaan nenek sangat gemuk dan comel.",
     "example_zh": "奶奶饲养的宠物猫非常肥胖且可爱。",
-    "audio": "audio/gemuk.mp3"
+    "audio": "audio/gemuk.mp3",
+    "audio_zh": "audio_zh/B055.mp3"
   },
   {
     "id": "B056",
@@ -613,7 +668,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Budak yang kurus itu berlari dengan amat pantas.",
     "example_zh": "那个精瘦的孩子跑得非常飞快。",
-    "audio": "audio/kurus.mp3"
+    "audio": "audio/kurus.mp3",
+    "audio_zh": "audio_zh/B056.mp3"
   },
   {
     "id": "B057",
@@ -624,7 +680,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Gajah ialah haiwan darat yang paling besar.",
     "example_zh": "大象是陆地上最大的动物。",
-    "audio": "audio/besar.mp3"
+    "audio": "audio/besar.mp3",
+    "audio_zh": "audio_zh/B057.mp3"
   },
   {
     "id": "B058",
@@ -635,7 +692,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Semut ialah serangga kecil yang sangat rajin.",
     "example_zh": "蚂蚁是一种非常勤劳的小昆虫。",
-    "audio": "audio/kecil.mp3"
+    "audio": "audio/kecil.mp3",
+    "audio_zh": "audio_zh/B058.mp3"
   },
   {
     "id": "B059",
@@ -646,7 +704,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Ular sawa itu mempunyai badan yang sangat panjang.",
     "example_zh": "那条蟒蛇有着长长的身体。",
-    "audio": "audio/panjang.mp3"
+    "audio": "audio/panjang.mp3",
+    "audio_zh": "audio_zh/B059.mp3"
   },
   {
     "id": "B060",
@@ -657,7 +716,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Pensel adik sudah menjadi pendek selepas diasah.",
     "example_zh": "弟弟的铅笔经过削尖后已经变短了。",
-    "audio": "audio/pendek.mp3"
+    "audio": "audio/pendek.mp3",
+    "audio_zh": "audio_zh/B060.mp3"
   },
   {
     "id": "B061",
@@ -668,7 +728,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Bilik darjah kami sentiasa kemas dan bersih.",
     "example_zh": "我们的教室总是整洁干净。",
-    "audio": "audio/bersih.mp3"
+    "audio": "audio/bersih.mp3",
+    "audio_zh": "audio_zh/B061.mp3"
   },
   {
     "id": "B062",
@@ -679,7 +740,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Jangan makan dengan tangan yang kotor.",
     "example_zh": "不要用肮脏的手拿东西吃。",
-    "audio": "audio/kotor.mp3"
+    "audio": "audio/kotor.mp3",
+    "audio_zh": "audio_zh/B062.mp3"
   },
   {
     "id": "B063",
@@ -690,7 +752,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Bunga melur ini mengeluarkan bau yang sangat wangi.",
     "example_zh": "这朵茉莉花散发出极为芬芳的香气。",
-    "audio": "audio/wangi.mp3"
+    "audio": "audio/wangi.mp3",
+    "audio_zh": "audio_zh/B063.mp3"
   },
   {
     "id": "B064",
@@ -701,7 +764,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Sampah yang bertimbun itu berbau sangat busuk.",
     "example_zh": "堆积如山的垃圾散发着难闻的臭味。",
-    "audio": "audio/busuk.mp3"
+    "audio": "audio/busuk.mp3",
+    "audio_zh": "audio_zh/B064.mp3"
   },
   {
     "id": "B065",
@@ -712,7 +776,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Murid yang rajin pasti akan mencapai kejayaan cemerlang.",
     "example_zh": "勤劳的学生必定能够取得卓越的成功。",
-    "audio": "audio/rajin.mp3"
+    "audio": "audio/rajin.mp3",
+    "audio_zh": "audio_zh/B065.mp3"
   },
   {
     "id": "B066",
@@ -723,7 +788,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Sikap malas akan merugikan diri sendiri.",
     "example_zh": "懒惰的态度只会耽误并害了自己。",
-    "audio": "audio/malas.mp3"
+    "audio": "audio/malas.mp3",
+    "audio_zh": "audio_zh/B066.mp3"
   },
   {
     "id": "B067",
@@ -734,7 +800,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Kakak seorang yang pandai dalam mata pelajaran Sains.",
     "example_zh": "姐姐在科学科目上表现非常聪明优秀。",
-    "audio": "audio/pandai.mp3"
+    "audio": "audio/pandai.mp3",
+    "audio_zh": "audio_zh/B067.mp3"
   },
   {
     "id": "B068",
@@ -745,7 +812,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Kami berasa sungguh gembira dapat berkhemah bersama kawan-kawan.",
     "example_zh": "能和朋友们一起露营，我们感到无比快乐。",
-    "audio": "audio/gembira.mp3"
+    "audio": "audio/gembira.mp3",
+    "audio_zh": "audio_zh/B068.mp3"
   },
   {
     "id": "B069",
@@ -756,7 +824,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Adik berasa sedih kerana anak patungnya telah hilang.",
     "example_zh": "弟弟/妹妹因为布偶不见了而十分伤心。",
-    "audio": "audio/sedih.mp3"
+    "audio": "audio/sedih.mp3",
+    "audio_zh": "audio_zh/B069.mp3"
   },
   {
     "id": "B070",
@@ -767,7 +836,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Ayah berasa marah apabila adik tidak mendengar nasihat.",
     "example_zh": "当弟弟不听劝告时，爸爸感到生气。",
-    "audio": "audio/marah.mp3"
+    "audio": "audio/marah.mp3",
+    "audio_zh": "audio_zh/B070.mp3"
   },
   {
     "id": "B071",
@@ -778,7 +848,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Kanak-kanak berasa takut apabila mendengar guruh berdentum.",
     "example_zh": "孩子们听到雷声轰鸣时感到十分害怕。",
-    "audio": "audio/takut.mp3"
+    "audio": "audio/takut.mp3",
+    "audio_zh": "audio_zh/B071.mp3"
   },
   {
     "id": "B072",
@@ -789,7 +860,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Anggota bomba yang berani telah menyelamatkan mangsa kebakaran.",
     "example_zh": "勇敢的消防员救出了火灾灾民。",
-    "audio": "audio/berani.mp3"
+    "audio": "audio/berani.mp3",
+    "audio_zh": "audio_zh/B072.mp3"
   },
   {
     "id": "B073",
@@ -800,7 +872,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Sikap jujur Ali dipuji oleh guru besar.",
     "example_zh": "阿里诚实的品德受到了校长的称赞。",
-    "audio": "audio/jujur.mp3"
+    "audio": "audio/jujur.mp3",
+    "audio_zh": "audio_zh/B073.mp3"
   },
   {
     "id": "B074",
@@ -811,7 +884,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Jiran saya seorang yang baik hati dan suka menolong.",
     "example_zh": "我的邻居是一个善良乐于助人的人。",
-    "audio": "audio/baik_hati.mp3"
+    "audio": "audio/baik_hati.mp3",
+    "audio_zh": "audio_zh/B074.mp3"
   },
   {
     "id": "B075",
@@ -822,7 +896,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Kita hendaklah bertutur dengan sopan kepada orang tua.",
     "example_zh": "我们对待长辈说话必须要有礼貌。",
-    "audio": "audio/sopan.mp3"
+    "audio": "audio/sopan.mp3",
+    "audio_zh": "audio_zh/B075.mp3"
   },
   {
     "id": "B076",
@@ -833,7 +908,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Kereta api moden bergerak dengan amat cepat.",
     "example_zh": "现代化火车行驶得非常快速。",
-    "audio": "audio/cepat.mp3"
+    "audio": "audio/cepat.mp3",
+    "audio_zh": "audio_zh/B076.mp3"
   },
   {
     "id": "B077",
@@ -844,7 +920,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Kura-kura berjalan dengan sangat lambat di atas tanah.",
     "example_zh": "乌龟在陆地上缓慢地爬行。",
-    "audio": "audio/lambat.mp3"
+    "audio": "audio/lambat.mp3",
+    "audio_zh": "audio_zh/B077.mp3"
   },
   {
     "id": "B078",
@@ -855,7 +932,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Buah tembikai ini rasanya sangat manis dan segar.",
     "example_zh": "这颗西瓜尝起来既甘甜又爽口。",
-    "audio": "audio/manis.mp3"
+    "audio": "audio/manis.mp3",
+    "audio_zh": "audio_zh/B078.mp3"
   },
   {
     "id": "B079",
@@ -866,7 +944,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Jus limau nipis ini berasa sangat masam.",
     "example_zh": "这杯青柠汁味道酸溜溜的。",
-    "audio": "audio/masam.mp3"
+    "audio": "audio/masam.mp3",
+    "audio_zh": "audio_zh/B079.mp3"
   },
   {
     "id": "B080",
@@ -877,7 +956,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Sambal belacan itu berasa sangat pedas.",
     "example_zh": "那个参巴辣椒酱吃起来特别辣。",
-    "audio": "audio/pedas.mp3"
+    "audio": "audio/pedas.mp3",
+    "audio_zh": "audio_zh/B080.mp3"
   },
   {
     "id": "B081",
@@ -888,7 +968,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Ubat batuk ini pahit tetapi mujarab untuk menyembuhkan penyakit.",
     "example_zh": "这止咳药虽苦，但治病却非常灵验。",
-    "audio": "audio/pahit.mp3"
+    "audio": "audio/pahit.mp3",
+    "audio_zh": "audio_zh/B081.mp3"
   },
   {
     "id": "B082",
@@ -899,7 +980,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Sup ini agak masin kerana terlebih garam.",
     "example_zh": "这碗汤因为盐放多了而偏咸。",
-    "audio": "audio/masin.mp3"
+    "audio": "audio/masin.mp3",
+    "audio_zh": "audio_zh/B082.mp3"
   },
   {
     "id": "B083",
@@ -910,7 +992,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Cuaca pada hari ini sangat panas terik.",
     "example_zh": "今天的天气炎热无比。",
-    "audio": "audio/panas.mp3"
+    "audio": "audio/panas.mp3",
+    "audio_zh": "audio_zh/B083.mp3"
   },
   {
     "id": "B084",
@@ -921,7 +1004,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Air ais ini sungguh sejuk dan menyegarkan tekak.",
     "example_zh": "这杯冰水冰凉沁凉，清爽解渴。",
-    "audio": "audio/sejuk.mp3"
+    "audio": "audio/sejuk.mp3",
+    "audio_zh": "audio_zh/B084.mp3"
   },
   {
     "id": "B085",
@@ -932,7 +1016,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Cahaya bulan malam ini sungguh terang benderang.",
     "example_zh": "今晚的月光皎洁明亮。",
-    "audio": "audio/terang.mp3"
+    "audio": "audio/terang.mp3",
+    "audio_zh": "audio_zh/B085.mp3"
   },
   {
     "id": "B086",
@@ -943,7 +1028,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Bilik ini menjadi gelap apabila bekalan elektrik terputus.",
     "example_zh": "停电时这间房间顿时变得漆黑一片。",
-    "audio": "audio/gelap.mp3"
+    "audio": "audio/gelap.mp3",
+    "audio_zh": "audio_zh/B086.mp3"
   },
   {
     "id": "B087",
@@ -954,7 +1040,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Pisau dapur yang tajam hendaklah digunakan secara berhati-hati.",
     "example_zh": "锋利的厨房刀具必须小心谨慎使用。",
-    "audio": "audio/tajam.mp3"
+    "audio": "audio/tajam.mp3",
+    "audio_zh": "audio_zh/B087.mp3"
   },
   {
     "id": "B088",
@@ -965,7 +1052,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Pensel yang tumpul itu perlu diasah menggunakan pengasah pensel.",
     "example_zh": "那支钝了的铅笔需要用卷笔刀削尖。",
-    "audio": "audio/tumpul.mp3"
+    "audio": "audio/tumpul.mp3",
+    "audio_zh": "audio_zh/B088.mp3"
   },
   {
     "id": "B089",
@@ -976,7 +1064,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Lantai bilik mandi itu licin kerana basah.",
     "example_zh": "浴室的地板因潮湿而很滑。",
-    "audio": "audio/licin.mp3"
+    "audio": "audio/licin.mp3",
+    "audio_zh": "audio_zh/B089.mp3"
   },
   {
     "id": "B090",
@@ -987,7 +1076,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Kulit buah durian berduri tajam dan terasa kasar.",
     "example_zh": "榴莲的外壳长满利刺，摸起来很粗糙。",
-    "audio": "audio/kasar.mp3"
+    "audio": "audio/kasar.mp3",
+    "audio_zh": "audio_zh/B090.mp3"
   },
   {
     "id": "B091",
@@ -998,7 +1088,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Kotak yang penuh dengan buku itu sangat berat.",
     "example_zh": "那个装满书本的箱子非常重。",
-    "audio": "audio/berat.mp3"
+    "audio": "audio/berat.mp3",
+    "audio_zh": "audio_zh/B091.mp3"
   },
   {
     "id": "B092",
@@ -1009,7 +1100,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Bulu burung sangat ringan dan mudah ditiup angin.",
     "example_zh": "鸟羽非常轻盈，容易被风吹起。",
-    "audio": "audio/ringan.mp3"
+    "audio": "audio/ringan.mp3",
+    "audio_zh": "audio_zh/B092.mp3"
   },
   {
     "id": "B093",
@@ -1020,7 +1112,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Badan abang semakin sihat dan kuat kerana selalu bersenam.",
     "example_zh": "因为经常做运动，哥哥的体魄越来越健壮有力。",
-    "audio": "audio/kuat.mp3"
+    "audio": "audio/kuat.mp3",
+    "audio_zh": "audio_zh/B093.mp3"
   },
   {
     "id": "B094",
@@ -1031,7 +1124,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Pesakit itu berasa lemah selepas beberapa hari demam.",
     "example_zh": "那位病人在发烧几天后感觉身体有些虚弱。",
-    "audio": "audio/lemah.mp3"
+    "audio": "audio/lemah.mp3",
+    "audio_zh": "audio_zh/B094.mp3"
   },
   {
     "id": "B095",
@@ -1042,7 +1136,8 @@
     "category": "身体部位 / Anggota Badan",
     "example_bm": "Kita perlu memakai topi keledar untuk melindungi kepala.",
     "example_zh": "我们必须戴头盔以保护头部。",
-    "audio": "audio/kepala.mp3"
+    "audio": "audio/kepala.mp3",
+    "audio_zh": "audio_zh/B095.mp3"
   },
   {
     "id": "B096",
@@ -1053,7 +1148,8 @@
     "category": "身体部位 / Anggota Badan",
     "example_bm": "Kita menggunakan mata untuk melihat keindahan alam.",
     "example_zh": "我们用双眼欣赏大自然的美好景色。",
-    "audio": "audio/mata.mp3"
+    "audio": "audio/mata.mp3",
+    "audio_zh": "audio_zh/B096.mp3"
   },
   {
     "id": "B097",
@@ -1064,7 +1160,8 @@
     "category": "身体部位 / Anggota Badan",
     "example_bm": "Telinga ialah organ pendengaran manusia.",
     "example_zh": "耳朵是人类的听觉器官。",
-    "audio": "audio/telinga.mp3"
+    "audio": "audio/telinga.mp3",
+    "audio_zh": "audio_zh/B097.mp3"
   },
   {
     "id": "B098",
@@ -1075,7 +1172,8 @@
     "category": "身体部位 / Anggota Badan",
     "example_bm": "Hidung digunakan untuk bernafas dan menghidu bau.",
     "example_zh": "鼻子用于呼吸和嗅闻气味。",
-    "audio": "audio/hidung.mp3"
+    "audio": "audio/hidung.mp3",
+    "audio_zh": "audio_zh/B098.mp3"
   },
   {
     "id": "B099",
@@ -1086,7 +1184,8 @@
     "category": "身体部位 / Anggota Badan",
     "example_bm": "Tutup mulut apabila kamu batuk atau bersin.",
     "example_zh": "当你咳嗽或打喷嚏时要遮住嘴巴。",
-    "audio": "audio/mulut.mp3"
+    "audio": "audio/mulut.mp3",
+    "audio_zh": "audio_zh/B099.mp3"
   },
   {
     "id": "B100",
@@ -1097,7 +1196,8 @@
     "category": "身体部位 / Anggota Badan",
     "example_bm": "Gosok gigi setiap hari agar gigi sentiasa putih dan sihat.",
     "example_zh": "每天刷牙以确保牙齿洁白健康。",
-    "audio": "audio/gigi.mp3"
+    "audio": "audio/gigi.mp3",
+    "audio_zh": "audio_zh/B100.mp3"
   },
   {
     "id": "B101",
@@ -1108,7 +1208,8 @@
     "category": "身体部位 / Anggota Badan",
     "example_bm": "Lidah berfungsi untuk merasa pelbagai jenis makanan.",
     "example_zh": "舌头的功能是品尝各种美味食物。",
-    "audio": "audio/lidah.mp3"
+    "audio": "audio/lidah.mp3",
+    "audio_zh": "audio_zh/B101.mp3"
   },
   {
     "id": "B102",
@@ -1119,7 +1220,8 @@
     "category": "身体部位 / Anggota Badan",
     "example_bm": "Basuh tangan dengan sabun sebelum dan selepas makan.",
     "example_zh": "在进餐前后请用肥皂把手洗干净。",
-    "audio": "audio/tangan.mp3"
+    "audio": "audio/tangan.mp3",
+    "audio_zh": "audio_zh/B102.mp3"
   },
   {
     "id": "B103",
@@ -1130,7 +1232,8 @@
     "category": "身体部位 / Anggota Badan",
     "example_bm": "Kaki digunakan untuk berjalan, berlari dan melompat.",
     "example_zh": "脚用于行走、奔跑和跳跃。",
-    "audio": "audio/kaki.mp3"
+    "audio": "audio/kaki.mp3",
+    "audio_zh": "audio_zh/B103.mp3"
   },
   {
     "id": "B104",
@@ -1141,7 +1244,8 @@
     "category": "身体部位 / Anggota Badan",
     "example_bm": "Kita mempunyai sepuluh jari tangan yang berguna.",
     "example_zh": "我们拥有十根很有用处的手指。",
-    "audio": "audio/jari.mp3"
+    "audio": "audio/jari.mp3",
+    "audio_zh": "audio_zh/B104.mp3"
   },
   {
     "id": "B105",
@@ -1152,7 +1256,8 @@
     "category": "身体部位 / Anggota Badan",
     "example_bm": "Rambut Amin disikat dengan kemas dan rapi.",
     "example_zh": "阿敏的头发梳理得十分整齐干练。",
-    "audio": "audio/rambut.mp3"
+    "audio": "audio/rambut.mp3",
+    "audio_zh": "audio_zh/B105.mp3"
   },
   {
     "id": "B106",
@@ -1163,7 +1268,8 @@
     "category": "身体部位 / Anggota Badan",
     "example_bm": "Cuci muka kamu dengan air bersih setiap pagi.",
     "example_zh": "每天早晨用清水洗一把脸。",
-    "audio": "audio/muka.mp3"
+    "audio": "audio/muka.mp3",
+    "audio_zh": "audio_zh/B106.mp3"
   },
   {
     "id": "B107",
@@ -1174,7 +1280,8 @@
     "category": "身体部位 / Anggota Badan",
     "example_bm": "Zirafah mempunyai leher yang sangat panjang.",
     "example_zh": "长颈鹿拥有长长的脖子。",
-    "audio": "audio/leher.mp3"
+    "audio": "audio/leher.mp3",
+    "audio_zh": "audio_zh/B107.mp3"
   },
   {
     "id": "B108",
@@ -1185,7 +1292,8 @@
     "category": "身体部位 / Anggota Badan",
     "example_bm": "Ali menggalas beg sekolahnya di atas bahu.",
     "example_zh": "阿里把书包挎在肩膀上。",
-    "audio": "audio/bahu.mp3"
+    "audio": "audio/bahu.mp3",
+    "audio_zh": "audio_zh/B108.mp3"
   },
   {
     "id": "B109",
@@ -1196,7 +1304,8 @@
     "category": "身体部位 / Anggota Badan",
     "example_bm": "Adik berasa sakit perut kerana makan terlalu banyak gula-gula.",
     "example_zh": "弟弟因为吃了太多糖果而感到肚子痛。",
-    "audio": "audio/perut.mp3"
+    "audio": "audio/perut.mp3",
+    "audio_zh": "audio_zh/B109.mp3"
   },
   {
     "id": "B110",
@@ -1207,7 +1316,8 @@
     "category": "身体部位 / Anggota Badan",
     "example_bm": "Lutut budak itu luka kerana terjatuh dari basikal.",
     "example_zh": "那男孩的膝盖因从自行车摔下而擦破了皮。",
-    "audio": "audio/lutut.mp3"
+    "audio": "audio/lutut.mp3",
+    "audio_zh": "audio_zh/B110.mp3"
   },
   {
     "id": "B111",
@@ -1218,7 +1328,8 @@
     "category": "身体部位 / Anggota Badan",
     "example_bm": "Potong kuku yang panjang demi menjaga kebersihan.",
     "example_zh": "把过长的指甲修剪整齐以维护卫生。",
-    "audio": "audio/kuku.mp3"
+    "audio": "audio/kuku.mp3",
+    "audio_zh": "audio_zh/B111.mp3"
   },
   {
     "id": "B112",
@@ -1229,7 +1340,8 @@
     "category": "家庭与人物 / Keluarga",
     "example_bm": "Bapa bekerja keras untuk menyara kehidupan sekeluarga.",
     "example_zh": "爸爸辛勤工作以维持全家的生活。",
-    "audio": "audio/bapa.mp3"
+    "audio": "audio/bapa.mp3",
+    "audio_zh": "audio_zh/B112.mp3"
   },
   {
     "id": "B113",
@@ -1240,7 +1352,8 @@
     "category": "家庭与人物 / Keluarga",
     "example_bm": "Ibu memeluk anaknya dengan penuh kasih sayang.",
     "example_zh": "妈妈满怀关爱地拥抱她的孩子。",
-    "audio": "audio/ibu.mp3"
+    "audio": "audio/ibu.mp3",
+    "audio_zh": "audio_zh/B113.mp3"
   },
   {
     "id": "B114",
@@ -1251,7 +1364,8 @@
     "category": "家庭与人物 / Keluarga",
     "example_bm": "Abang menunggang basikal bersama kawan-kawannya.",
     "example_zh": "哥哥和他的朋友们一起骑脚踏车。",
-    "audio": "audio/abang.mp3"
+    "audio": "audio/abang.mp3",
+    "audio_zh": "audio_zh/B114.mp3"
   },
   {
     "id": "B115",
@@ -1262,7 +1376,8 @@
     "category": "家庭与人物 / Keluarga",
     "example_bm": "Kakak rajin membantu ibu menyediakan hidangan di dapur.",
     "example_zh": "姐姐勤快地在厨房协助妈妈准备佳肴。",
-    "audio": "audio/kakak.mp3"
+    "audio": "audio/kakak.mp3",
+    "audio_zh": "audio_zh/B115.mp3"
   },
   {
     "id": "B116",
@@ -1273,7 +1388,8 @@
     "category": "家庭与人物 / Keluarga",
     "example_bm": "Adik sedang bermain dengan mainan baharunya di ruang tamu.",
     "example_zh": "小弟小妹正在客厅里玩他们的新玩具。",
-    "audio": "audio/adik.mp3"
+    "audio": "audio/adik.mp3",
+    "audio_zh": "audio_zh/B116.mp3"
   },
   {
     "id": "B117",
@@ -1284,7 +1400,8 @@
     "category": "家庭与人物 / Keluarga",
     "example_bm": "Datuk suka membaca surat khabar di serambi rumah.",
     "example_zh": "爷爷喜欢在屋前走廊看报纸。",
-    "audio": "audio/datuk.mp3"
+    "audio": "audio/datuk.mp3",
+    "audio_zh": "audio_zh/B117.mp3"
   },
   {
     "id": "B118",
@@ -1295,7 +1412,8 @@
     "category": "家庭与人物 / Keluarga",
     "example_bm": "Nenek membuat kuih tradisional yang sangat enak.",
     "example_zh": "奶奶亲手制作的传统糕点非常美味。",
-    "audio": "audio/nenek.mp3"
+    "audio": "audio/nenek.mp3",
+    "audio_zh": "audio_zh/B118.mp3"
   },
   {
     "id": "B119",
@@ -1306,7 +1424,8 @@
     "category": "家庭与人物 / Keluarga",
     "example_bm": "Semangat kejiranan memupuk keharmonian dalam masyarakat.",
     "example_zh": "睦邻精神促进社会的和谐与团结。",
-    "audio": "audio/jiran.mp3"
+    "audio": "audio/jiran.mp3",
+    "audio_zh": "audio_zh/B119.mp3"
   },
   {
     "id": "B120",
@@ -1317,7 +1436,8 @@
     "category": "家庭与人物 / Keluarga",
     "example_bm": "Kawan yang sejati sentiasa ada di sisi pada masa susah dan senang.",
     "example_zh": "真正的朋友在患难与共时总陪伴在侧。",
-    "audio": "audio/kawan.mp3"
+    "audio": "audio/kawan.mp3",
+    "audio_zh": "audio_zh/B120.mp3"
   },
   {
     "id": "B121",
@@ -1328,7 +1448,8 @@
     "category": "家庭与人物 / Keluarga",
     "example_bm": "Bayi yang montel itu tersenyum riang apabila diagah.",
     "example_zh": "那个胖乎乎的婴儿被逗弄时笑得十分欢快。",
-    "audio": "audio/bayi.mp3"
+    "audio": "audio/bayi.mp3",
+    "audio_zh": "audio_zh/B121.mp3"
   },
   {
     "id": "B122",
@@ -1339,7 +1460,8 @@
     "category": "家庭与人物 / Keluarga",
     "example_bm": "Kanak-kanak gemar bermain buaian di taman rekreasi.",
     "example_zh": "孩子们很喜欢在游乐园荡秋千。",
-    "audio": "audio/kanak_kanak.mp3"
+    "audio": "audio/kanak_kanak.mp3",
+    "audio_zh": "audio_zh/B122.mp3"
   },
   {
     "id": "B123",
@@ -1350,7 +1472,8 @@
     "category": "职业 / Pekerjaan",
     "example_bm": "Guru mendidik murid-murid dengan sabar dan dedikasi.",
     "example_zh": "老师耐心且尽心尽责地教导学生。",
-    "audio": "audio/guru.mp3"
+    "audio": "audio/guru.mp3",
+    "audio_zh": "audio_zh/B123.mp3"
   },
   {
     "id": "B124",
@@ -1361,7 +1484,8 @@
     "category": "职业 / Pekerjaan",
     "example_bm": "Doktor merawat pesakit yang cedera di hospital.",
     "example_zh": "医生在医院为受伤的病人进行诊治。",
-    "audio": "audio/doktor.mp3"
+    "audio": "audio/doktor.mp3",
+    "audio_zh": "audio_zh/B124.mp3"
   },
   {
     "id": "B125",
@@ -1372,7 +1496,8 @@
     "category": "职业 / Pekerjaan",
     "example_bm": "Jururawat menjaga pesakit dengan penuh prihatin dan lemah lembut.",
     "example_zh": "护士体贴温柔地悉心照料病人。",
-    "audio": "audio/jururawat.mp3"
+    "audio": "audio/jururawat.mp3",
+    "audio_zh": "audio_zh/B125.mp3"
   },
   {
     "id": "B126",
@@ -1383,7 +1508,8 @@
     "category": "职业 / Pekerjaan",
     "example_bm": "Polis bertugas menjaga keamanan dan ketenteraman negara.",
     "example_zh": "警察的职责是维护国家的安宁与治安。",
-    "audio": "audio/polis.mp3"
+    "audio": "audio/polis.mp3",
+    "audio_zh": "audio_zh/B126.mp3"
   },
   {
     "id": "B127",
@@ -1394,7 +1520,8 @@
     "category": "职业 / Pekerjaan",
     "example_bm": "Ahli bomba bertungkus-lumus memadamkan kebakaran yang marak.",
     "example_zh": "消防队员全力以赴扑灭熊熊烈火。",
-    "audio": "audio/ahli_bomba.mp3"
+    "audio": "audio/ahli_bomba.mp3",
+    "audio_zh": "audio_zh/B127.mp3"
   },
   {
     "id": "B128",
@@ -1405,7 +1532,8 @@
     "category": "职业 / Pekerjaan",
     "example_bm": "Posmen menghantar surat dan bungkusan ke rumah penduduk.",
     "example_zh": "邮递员把信件和包裹投递到居民家中。",
-    "audio": "audio/posmen.mp3"
+    "audio": "audio/posmen.mp3",
+    "audio_zh": "audio_zh/B128.mp3"
   },
   {
     "id": "B129",
@@ -1416,7 +1544,8 @@
     "category": "职业 / Pekerjaan",
     "example_bm": "Petani membanting tulang menuai padi di sawah.",
     "example_zh": "农夫辛勤耕耘在稻田里收割稻谷。",
-    "audio": "audio/petani.mp3"
+    "audio": "audio/petani.mp3",
+    "audio_zh": "audio_zh/B129.mp3"
   },
   {
     "id": "B130",
@@ -1427,7 +1556,8 @@
     "category": "职业 / Pekerjaan",
     "example_bm": "Nelayan turun ke laut menangkap ikan menggunakan jala.",
     "example_zh": "渔夫出海撒网捕鱼。",
-    "audio": "audio/nelayan.mp3"
+    "audio": "audio/nelayan.mp3",
+    "audio_zh": "audio_zh/B130.mp3"
   },
   {
     "id": "B131",
@@ -1438,7 +1568,8 @@
     "category": "职业 / Pekerjaan",
     "example_bm": "Tukang kebun mencantas ranting pokok di halaman sekolah.",
     "example_zh": "园丁在修剪学校庭院里的树枝。",
-    "audio": "audio/tukang_kebun.mp3"
+    "audio": "audio/tukang_kebun.mp3",
+    "audio_zh": "audio_zh/B131.mp3"
   },
   {
     "id": "B132",
@@ -1449,7 +1580,8 @@
     "category": "职业 / Pekerjaan",
     "example_bm": "Tukang masak di restoran itu mahir memasak masakan lazat.",
     "example_zh": "那家餐馆的厨师非常精通烹饪各色美味佳肴。",
-    "audio": "audio/tukang_masak.mp3"
+    "audio": "audio/tukang_masak.mp3",
+    "audio_zh": "audio_zh/B132.mp3"
   },
   {
     "id": "B133",
@@ -1460,7 +1592,8 @@
     "category": "职业 / Pekerjaan",
     "example_bm": "Juruterbang memandu kapal terbang merentasi awan biru.",
     "example_zh": "飞行员驾驶飞机穿梭在蔚蓝的云海中。",
-    "audio": "audio/juruterbang.mp3"
+    "audio": "audio/juruterbang.mp3",
+    "audio_zh": "audio_zh/B133.mp3"
   },
   {
     "id": "B134",
@@ -1471,7 +1604,8 @@
     "category": "职业 / Pekerjaan",
     "example_bm": "Pemandu bas memandu kenderaan dengan mematuhi had laju.",
     "example_zh": "巴士司机遵守行车速度限制安全驾驶。",
-    "audio": "audio/pemandu.mp3"
+    "audio": "audio/pemandu.mp3",
+    "audio_zh": "audio_zh/B134.mp3"
   },
   {
     "id": "B135",
@@ -1482,7 +1616,8 @@
     "category": "职业 / Pekerjaan",
     "example_bm": "Peniaga itu melayan pelanggannya dengan mesra dan jujur.",
     "example_zh": "那位商人待客热情亲切又童叟无欺。",
-    "audio": "audio/peniaga.mp3"
+    "audio": "audio/peniaga.mp3",
+    "audio_zh": "audio_zh/B135.mp3"
   },
   {
     "id": "B136",
@@ -1493,7 +1628,8 @@
     "category": "职业 / Pekerjaan",
     "example_bm": "Askar bersiap sedia mempertahankan kedaulatan tanah air.",
     "example_zh": "军人严阵以待随时捍卫祖国的尊严。",
-    "audio": "audio/askar.mp3"
+    "audio": "audio/askar.mp3",
+    "audio_zh": "audio_zh/B136.mp3"
   },
   {
     "id": "B137",
@@ -1504,7 +1640,8 @@
     "category": "动物 / Haiwan",
     "example_bm": "Kucing itu suka menangkap tikus di dapur.",
     "example_zh": "那只猫喜欢在厨房捕捉老鼠。",
-    "audio": "audio/kucing.mp3"
+    "audio": "audio/kucing.mp3",
+    "audio_zh": "audio_zh/B137.mp3"
   },
   {
     "id": "B138",
@@ -1515,7 +1652,8 @@
     "category": "动物 / Haiwan",
     "example_bm": "Anjing itu setia menjaga rumah tuannya.",
     "example_zh": "那只狗忠心耿耿地看顾主人的家门。",
-    "audio": "audio/anjing.mp3"
+    "audio": "audio/anjing.mp3",
+    "audio_zh": "audio_zh/B138.mp3"
   },
   {
     "id": "B139",
@@ -1526,7 +1664,8 @@
     "category": "动物 / Haiwan",
     "example_bm": "Burung berkicau riang di atas dahan pokok pada waktu pagi.",
     "example_zh": "清晨鸟儿在树枝上欢快地啼叫。",
-    "audio": "audio/burung.mp3"
+    "audio": "audio/burung.mp3",
+    "audio_zh": "audio_zh/B139.mp3"
   },
   {
     "id": "B140",
@@ -1537,7 +1676,8 @@
     "category": "动物 / Haiwan",
     "example_bm": "Ikan emas berenang dengan lincah di dalam akuarium kaca.",
     "example_zh": "金鱼在玻璃鱼缸里活泼地畅游。",
-    "audio": "audio/ikan.mp3"
+    "audio": "audio/ikan.mp3",
+    "audio_zh": "audio_zh/B140.mp3"
   },
   {
     "id": "B141",
@@ -1548,7 +1688,8 @@
     "category": "动物 / Haiwan",
     "example_bm": "Ayam jantan berkokok pada waktu fajar menyingsing.",
     "example_zh": "雄鸡在破晓黎明时分引吭啼鸣。",
-    "audio": "audio/ayam.mp3"
+    "audio": "audio/ayam.mp3",
+    "audio_zh": "audio_zh/B141.mp3"
   },
   {
     "id": "B142",
@@ -1559,7 +1700,8 @@
     "category": "动物 / Haiwan",
     "example_bm": "Anak-anak itik berenang di belakang ibu mereka di dalam kolam.",
     "example_zh": "小鸭子们在池塘里跟着鸭妈妈身后游水。",
-    "audio": "audio/itik.mp3"
+    "audio": "audio/itik.mp3",
+    "audio_zh": "audio_zh/B142.mp3"
   },
   {
     "id": "B143",
@@ -1570,7 +1712,8 @@
     "category": "动物 / Haiwan",
     "example_bm": "Lembu meragut rumput yang segar di padang ragut.",
     "example_zh": "牛群在牧场上悠闲地嚼食鲜草。",
-    "audio": "audio/lembu.mp3"
+    "audio": "audio/lembu.mp3",
+    "audio_zh": "audio_zh/B143.mp3"
   },
   {
     "id": "B144",
@@ -1581,7 +1724,8 @@
     "category": "动物 / Haiwan",
     "example_bm": "Kambing itu mengembek memanggil anaknya.",
     "example_zh": "那只羊咩咩叫着呼唤自己的羊羔。",
-    "audio": "audio/kambing.mp3"
+    "audio": "audio/kambing.mp3",
+    "audio_zh": "audio_zh/B144.mp3"
   },
   {
     "id": "B145",
@@ -1592,7 +1736,8 @@
     "category": "动物 / Haiwan",
     "example_bm": "Kuda berlari dengan pantas melintasi padang luas.",
     "example_zh": "骏马奔驰迅速，掠过广阔的田野。",
-    "audio": "audio/kuda.mp3"
+    "audio": "audio/kuda.mp3",
+    "audio_zh": "audio_zh/B145.mp3"
   },
   {
     "id": "B146",
@@ -1603,7 +1748,8 @@
     "category": "动物 / Haiwan",
     "example_bm": "Gajah mempunyai belalai yang panjang dan telinga yang lebar.",
     "example_zh": "大象拥有长长的鼻子和宽大的耳朵。",
-    "audio": "audio/gajah.mp3"
+    "audio": "audio/gajah.mp3",
+    "audio_zh": "audio_zh/B146.mp3"
   },
   {
     "id": "B147",
@@ -1614,7 +1760,8 @@
     "category": "动物 / Haiwan",
     "example_bm": "Harimau belang dikenali sebagai raja rimba yang gagah.",
     "example_zh": "条纹斑斓的老虎被誉为威猛的百兽之王。",
-    "audio": "audio/harimau.mp3"
+    "audio": "audio/harimau.mp3",
+    "audio_zh": "audio_zh/B147.mp3"
   },
   {
     "id": "B148",
@@ -1625,7 +1772,8 @@
     "category": "动物 / Haiwan",
     "example_bm": "Singa jantan mempunyai surai yang lebat di sekeliling lehernya.",
     "example_zh": "雄狮颈部周围长着浓密威风的鬃毛。",
-    "audio": "audio/singa.mp3"
+    "audio": "audio/singa.mp3",
+    "audio_zh": "audio_zh/B148.mp3"
   },
   {
     "id": "B149",
@@ -1636,7 +1784,8 @@
     "category": "动物 / Haiwan",
     "example_bm": "Monyet itu bergayut dari sebatang dahan ke dahan yang lain.",
     "example_zh": "那只猴子在树枝之间轻捷地荡来荡去。",
-    "audio": "audio/monyet.mp3"
+    "audio": "audio/monyet.mp3",
+    "audio_zh": "audio_zh/B149.mp3"
   },
   {
     "id": "B150",
@@ -1647,7 +1796,8 @@
     "category": "动物 / Haiwan",
     "example_bm": "Arnab mempunyai telinga yang panjang dan suka makan lobak merah.",
     "example_zh": "兔子长着长长的耳朵，特别喜爱吃胡萝卜。",
-    "audio": "audio/arnab.mp3"
+    "audio": "audio/arnab.mp3",
+    "audio_zh": "audio_zh/B150.mp3"
   },
   {
     "id": "B151",
@@ -1658,7 +1808,8 @@
     "category": "动物 / Haiwan",
     "example_bm": "Kura-kura mempunyai cangkerang yang keras untuk melindungi dirinya.",
     "example_zh": "乌龟拥有坚硬的外壳用来保护自己。",
-    "audio": "audio/kura_kura.mp3"
+    "audio": "audio/kura_kura.mp3",
+    "audio_zh": "audio_zh/B151.mp3"
   },
   {
     "id": "B152",
@@ -1669,7 +1820,8 @@
     "category": "动物 / Haiwan",
     "example_bm": "Katak melompat keluar dari semak lalu masuk ke dalam parit.",
     "example_zh": "青蛙从草丛中跳出，跃入了沟渠里。",
-    "audio": "audio/katak.mp3"
+    "audio": "audio/katak.mp3",
+    "audio_zh": "audio_zh/B152.mp3"
   },
   {
     "id": "B153",
@@ -1680,7 +1832,8 @@
     "category": "动物 / Haiwan",
     "example_bm": "Rama-rama yang berwarna-warni berterbangan di taman bunga.",
     "example_zh": "色彩斑斓的蝴蝶在花园的花丛间飞舞。",
-    "audio": "audio/rama_rama.mp3"
+    "audio": "audio/rama_rama.mp3",
+    "audio_zh": "audio_zh/B153.mp3"
   },
   {
     "id": "B154",
@@ -1691,7 +1844,8 @@
     "category": "动物 / Haiwan",
     "example_bm": "Lebah menghisap madu daripada sari bunga yang mekar.",
     "example_zh": "蜜蜂从绽放的花朵中吸取花蜜。",
-    "audio": "audio/lebah.mp3"
+    "audio": "audio/lebah.mp3",
+    "audio_zh": "audio_zh/B154.mp3"
   },
   {
     "id": "B155",
@@ -1702,7 +1856,8 @@
     "category": "动物 / Haiwan",
     "example_bm": "Semut bekerjasama mengangkut serpihan makanan ke sarang.",
     "example_zh": "蚂蚁齐心协力将食物碎屑搬回蚁巢。",
-    "audio": "audio/semut.mp3"
+    "audio": "audio/semut.mp3",
+    "audio_zh": "audio_zh/B155.mp3"
   },
   {
     "id": "B156",
@@ -1713,7 +1868,8 @@
     "category": "动物 / Haiwan",
     "example_bm": "Ular itu menyusur perlahan-lahan di celah-celah batu.",
     "example_zh": "那条蛇在石缝之间缓缓地爬行。",
-    "audio": "audio/ular.mp3"
+    "audio": "audio/ular.mp3",
+    "audio_zh": "audio_zh/B156.mp3"
   },
   {
     "id": "B157",
@@ -1724,7 +1880,8 @@
     "category": "动物 / Haiwan",
     "example_bm": "Buaya berjemur di tebing sungai yang berpasir.",
     "example_zh": "鳄鱼在沙质的河岸边晒太阳。",
-    "audio": "audio/buaya.mp3"
+    "audio": "audio/buaya.mp3",
+    "audio_zh": "audio_zh/B157.mp3"
   },
   {
     "id": "B158",
@@ -1735,7 +1892,8 @@
     "category": "水果蔬菜 / Buah & Sayur",
     "example_bm": "Epal merah ini rasanya manis dan berkhasiat.",
     "example_zh": "这个红苹果又甜又富有营养。",
-    "audio": "audio/epal.mp3"
+    "audio": "audio/epal.mp3",
+    "audio_zh": "audio_zh/B158.mp3"
   },
   {
     "id": "B159",
@@ -1746,7 +1904,8 @@
     "category": "水果蔬菜 / Buah & Sayur",
     "example_bm": "Pisang yang masak berwarna kuning dan bertekstur lembut.",
     "example_zh": "成熟的香蕉呈黄色，口感软糯香甜。",
-    "audio": "audio/pisang.mp3"
+    "audio": "audio/pisang.mp3",
+    "audio_zh": "audio_zh/B159.mp3"
   },
   {
     "id": "B160",
@@ -1757,7 +1916,8 @@
     "category": "水果蔬菜 / Buah & Sayur",
     "example_bm": "Buah oren mengandungi banyak vitamin C yang baik untuk kesihatan.",
     "example_zh": "橙子含有丰富的维生素C，对健康非常有益。",
-    "audio": "audio/oren.mp3"
+    "audio": "audio/oren.mp3",
+    "audio_zh": "audio_zh/B160.mp3"
   },
   {
     "id": "B161",
@@ -1768,7 +1928,8 @@
     "category": "水果蔬菜 / Buah & Sayur",
     "example_bm": "Makan buah tembikai pada hari panas sangat menyegarkan.",
     "example_zh": "在炎热的日子里吃西瓜非常清凉解暑。",
-    "audio": "audio/tembikai.mp3"
+    "audio": "audio/tembikai.mp3",
+    "audio_zh": "audio_zh/B161.mp3"
   },
   {
     "id": "B162",
@@ -1779,7 +1940,8 @@
     "category": "水果蔬菜 / Buah & Sayur",
     "example_bm": "Durian dikenali sebagai raja buah di Malaysia.",
     "example_zh": "榴莲在马来西亚被尊称为果中之王。",
-    "audio": "audio/durian.mp3"
+    "audio": "audio/durian.mp3",
+    "audio_zh": "audio_zh/B162.mp3"
   },
   {
     "id": "B163",
@@ -1790,7 +1952,8 @@
     "category": "水果蔬菜 / Buah & Sayur",
     "example_bm": "Buah betik sedap dimakan begitu sahaja selepas dipotong.",
     "example_zh": "木瓜切块后直接食用非常甜美可口。",
-    "audio": "audio/betik.mp3"
+    "audio": "audio/betik.mp3",
+    "audio_zh": "audio_zh/B163.mp3"
   },
   {
     "id": "B164",
@@ -1801,7 +1964,8 @@
     "category": "水果蔬菜 / Buah & Sayur",
     "example_bm": "Ibu memetik buah mangga yang masak daripada dahan pokok.",
     "example_zh": "妈妈从树枝上摘下成熟的芒果。",
-    "audio": "audio/mangga.mp3"
+    "audio": "audio/mangga.mp3",
+    "audio_zh": "audio_zh/B164.mp3"
   },
   {
     "id": "B165",
@@ -1812,7 +1976,8 @@
     "category": "水果蔬菜 / Buah & Sayur",
     "example_bm": "Buah rambutan mempunyai isi putih yang manis dan berair.",
     "example_zh": "红毛丹拥有白皙甘甜且多汁的果肉。",
-    "audio": "audio/rambutan.mp3"
+    "audio": "audio/rambutan.mp3",
+    "audio_zh": "audio_zh/B165.mp3"
   },
   {
     "id": "B166",
@@ -1823,7 +1988,8 @@
     "category": "水果蔬菜 / Buah & Sayur",
     "example_bm": "Nanas yang manis ini dipetik dari ladang di Johor.",
     "example_zh": "这粒香甜的黄梨是从柔佛的果园采摘的。",
-    "audio": "audio/nanas.mp3"
+    "audio": "audio/nanas.mp3",
+    "audio_zh": "audio_zh/B166.mp3"
   },
   {
     "id": "B167",
@@ -1834,7 +2000,8 @@
     "category": "水果蔬菜 / Buah & Sayur",
     "example_bm": "Anggur ungu itu tergantung cantik pada junjungan di kebun.",
     "example_zh": "紫色的葡萄串美丽地垂挂在果园的藤架上。",
-    "audio": "audio/anggur.mp3"
+    "audio": "audio/anggur.mp3",
+    "audio_zh": "audio_zh/B167.mp3"
   },
   {
     "id": "B168",
@@ -1845,7 +2012,8 @@
     "category": "水果蔬菜 / Buah & Sayur",
     "example_bm": "Kami memetik buah strawberi yang segar di Cameron Highlands.",
     "example_zh": "我们在金马仑高原采摘新鲜的草莓。",
-    "audio": "audio/strawberi.mp3"
+    "audio": "audio/strawberi.mp3",
+    "audio_zh": "audio_zh/B168.mp3"
   },
   {
     "id": "B169",
@@ -1856,7 +2024,8 @@
     "category": "水果蔬菜 / Buah & Sayur",
     "example_bm": "Lobak merah sangat baik untuk kesihatan penglihatan mata.",
     "example_zh": "胡萝卜富含营养，对眼睛视力极为有益。",
-    "audio": "audio/lobak_merah.mp3"
+    "audio": "audio/lobak_merah.mp3",
+    "audio_zh": "audio_zh/B169.mp3"
   },
   {
     "id": "B170",
@@ -1867,7 +2036,8 @@
     "category": "水果蔬菜 / Buah & Sayur",
     "example_bm": "Ibu menggoreng sayur kubis bersama udang segar.",
     "example_zh": "妈妈用新鲜虾仁翻炒爽脆的包菜。",
-    "audio": "audio/kubis.mp3"
+    "audio": "audio/kubis.mp3",
+    "audio_zh": "audio_zh/B170.mp3"
   },
   {
     "id": "B171",
@@ -1878,7 +2048,8 @@
     "category": "水果蔬菜 / Buah & Sayur",
     "example_bm": "Tomato merah ini sedap dijadikan campuran salad sayuran.",
     "example_zh": "红彤彤的番茄非常适宜拌入蔬菜沙拉中。",
-    "audio": "audio/tomato.mp3"
+    "audio": "audio/tomato.mp3",
+    "audio_zh": "audio_zh/B171.mp3"
   },
   {
     "id": "B172",
@@ -1889,7 +2060,8 @@
     "category": "水果蔬菜 / Buah & Sayur",
     "example_bm": "Potongan timun selalu dihidangkan bersama nasi lemak.",
     "example_zh": "黄瓜切片经常作为椰浆饭的清爽配菜。",
-    "audio": "audio/timun.mp3"
+    "audio": "audio/timun.mp3",
+    "audio_zh": "audio_zh/B172.mp3"
   },
   {
     "id": "B173",
@@ -1900,7 +2072,8 @@
     "category": "水果蔬菜 / Buah & Sayur",
     "example_bm": "Cili padi yang kecil mempunyai rasa yang sungguh pedas.",
     "example_zh": "个头小小的指天椒辣味极其强劲。",
-    "audio": "audio/cili.mp3"
+    "audio": "audio/cili.mp3",
+    "audio_zh": "audio_zh/B173.mp3"
   },
   {
     "id": "B174",
@@ -1911,7 +2084,8 @@
     "category": "水果蔬菜 / Buah & Sayur",
     "example_bm": "Sayur terung ungu itu dimasak kari oleh emak.",
     "example_zh": "紫色的茄子被妈妈煮成了香浓可口的咖喱。",
-    "audio": "audio/terung.mp3"
+    "audio": "audio/terung.mp3",
+    "audio_zh": "audio_zh/B174.mp3"
   },
   {
     "id": "B175",
@@ -1922,7 +2096,8 @@
     "category": "水果蔬菜 / Buah & Sayur",
     "example_bm": "Mata saya berair apabila memotong bawang merah di dapur.",
     "example_zh": "在厨房切红洋葱时熏得我眼泪直流。",
-    "audio": "audio/bawang.mp3"
+    "audio": "audio/bawang.mp3",
+    "audio_zh": "audio_zh/B175.mp3"
   },
   {
     "id": "B176",
@@ -1933,7 +2108,8 @@
     "category": "水果蔬菜 / Buah & Sayur",
     "example_bm": "Kentang goreng kegemaran kanak-kanak berasa rangup dan lazat.",
     "example_zh": "深得孩子们喜爱的小炸薯条金黄酥脆可口。",
-    "audio": "audio/kentang.mp3"
+    "audio": "audio/kentang.mp3",
+    "audio_zh": "audio_zh/B176.mp3"
   },
   {
     "id": "B177",
@@ -1944,7 +2120,8 @@
     "category": "用品 / Benda",
     "example_bm": "Buku ialah jambatan ilmu pengetahuan.",
     "example_zh": "书籍是通往广博知识的坚实桥梁。",
-    "audio": "audio/buku.mp3"
+    "audio": "audio/buku.mp3",
+    "audio_zh": "audio_zh/B177.mp3"
   },
   {
     "id": "B178",
@@ -1955,7 +2132,8 @@
     "category": "用品 / Benda",
     "example_bm": "Gunakan pensel untuk melukis garis panduan sebelum mewarna.",
     "example_zh": "在上色前先使用铅笔勾画轮廓线条。",
-    "audio": "audio/pensel.mp3"
+    "audio": "audio/pensel.mp3",
+    "audio_zh": "audio_zh/B178.mp3"
   },
   {
     "id": "B179",
@@ -1966,7 +2144,8 @@
     "category": "用品 / Benda",
     "example_bm": "Saya menggunakan pemadam untuk memadamkan tulisan yang salah.",
     "example_zh": "我用橡皮擦擦掉写错的字迹。",
-    "audio": "audio/pemadam.mp3"
+    "audio": "audio/pemadam.mp3",
+    "audio_zh": "audio_zh/B179.mp3"
   },
   {
     "id": "B180",
@@ -1977,7 +2156,8 @@
     "category": "用品 / Benda",
     "example_bm": "Lukis garisan lurus dengan menggunakan pembaris yang panjang.",
     "example_zh": "借助长尺画出一条平直工整的线条。",
-    "audio": "audio/pembaris.mp3"
+    "audio": "audio/pembaris.mp3",
+    "audio_zh": "audio_zh/B180.mp3"
   },
   {
     "id": "B181",
@@ -1988,7 +2168,8 @@
     "category": "用品 / Benda",
     "example_bm": "Murid-murid menggalas beg sekolah yang berisi buku teks.",
     "example_zh": "学生们背着装满课本的书包。",
-    "audio": "audio/beg_sekolah.mp3"
+    "audio": "audio/beg_sekolah.mp3",
+    "audio_zh": "audio_zh/B181.mp3"
   },
   {
     "id": "B182",
@@ -1999,7 +2180,8 @@
     "category": "用品 / Benda",
     "example_bm": "Letakkan buku latihan kamu di atas meja guru.",
     "example_zh": "把你的作业练习本整齐放在老师的桌上。",
-    "audio": "audio/meja.mp3"
+    "audio": "audio/meja.mp3",
+    "audio_zh": "audio_zh/B182.mp3"
   },
   {
     "id": "B183",
@@ -2010,7 +2192,8 @@
     "category": "用品 / Benda",
     "example_bm": "Duduk di atas kerusi dengan postur yang betul.",
     "example_zh": "坐在椅子上时请保持正确的坐姿。",
-    "audio": "audio/kerusi.mp3"
+    "audio": "audio/kerusi.mp3",
+    "audio_zh": "audio_zh/B183.mp3"
   },
   {
     "id": "B184",
@@ -2021,7 +2204,8 @@
     "category": "用品 / Benda",
     "example_bm": "Cikgu menulis nota penting di papan hitam.",
     "example_zh": "老师在黑板上端正地书写重要笔记。",
-    "audio": "audio/papan_hitam.mp3"
+    "audio": "audio/papan_hitam.mp3",
+    "audio_zh": "audio_zh/B184.mp3"
   },
   {
     "id": "B185",
@@ -2032,7 +2216,8 @@
     "category": "用品 / Benda",
     "example_bm": "Jam dinding menunjukkan tepat pada pukul lapan pagi.",
     "example_zh": "墙上的壁钟指针正正指在早上八点。",
-    "audio": "audio/jam.mp3"
+    "audio": "audio/jam.mp3",
+    "audio_zh": "audio_zh/B185.mp3"
   },
   {
     "id": "B186",
@@ -2043,7 +2228,8 @@
     "category": "用品 / Benda",
     "example_bm": "Ketuk pintu sebelum melangkah masuk ke dalam bilik.",
     "example_zh": "在步入房间前请礼貌地敲敲门。",
-    "audio": "audio/pintu.mp3"
+    "audio": "audio/pintu.mp3",
+    "audio_zh": "audio_zh/B186.mp3"
   },
   {
     "id": "B187",
@@ -2054,7 +2240,8 @@
     "category": "用品 / Benda",
     "example_bm": "Buka tingkap supaya udara segar dapat masuk ke dalam bilik.",
     "example_zh": "打开窗户让新鲜的清风徐徐吹进室内。",
-    "audio": "audio/tingkap.mp3"
+    "audio": "audio/tingkap.mp3",
+    "audio_zh": "audio_zh/B187.mp3"
   },
   {
     "id": "B188",
@@ -2065,7 +2252,8 @@
     "category": "用品 / Benda",
     "example_bm": "Padamkan lampu apabila kamu keluar dari bilik.",
     "example_zh": "离开房间时随手关掉电灯以节约用电。",
-    "audio": "audio/lampu.mp3"
+    "audio": "audio/lampu.mp3",
+    "audio_zh": "audio_zh/B188.mp3"
   },
   {
     "id": "B189",
@@ -2076,7 +2264,8 @@
     "category": "用品 / Benda",
     "example_bm": "Kipas angin berpusing ligat menyejukkan suasana bilik.",
     "example_zh": "电风扇飞快旋转，为房间送来阵阵凉意。",
-    "audio": "audio/kipas.mp3"
+    "audio": "audio/kipas.mp3",
+    "audio_zh": "audio_zh/B189.mp3"
   },
   {
     "id": "B190",
@@ -2087,7 +2276,8 @@
     "category": "用品 / Benda",
     "example_bm": "Ibu melipat baju yang bersih lalu menyimpannya ke dalam almari.",
     "example_zh": "妈妈折叠洗净的衣服并整齐收纳在衣柜里。",
-    "audio": "audio/baju.mp3"
+    "audio": "audio/baju.mp3",
+    "audio_zh": "audio_zh/B190.mp3"
   },
   {
     "id": "B191",
@@ -2098,7 +2288,8 @@
     "category": "用品 / Benda",
     "example_bm": "Ali memakai seluar sukan berwarna biru semasa latihan jasmani.",
     "example_zh": "阿里在体育活动课时换上了一条蓝色的运动裤。",
-    "audio": "audio/seluar.mp3"
+    "audio": "audio/seluar.mp3",
+    "audio_zh": "audio_zh/B191.mp3"
   },
   {
     "id": "B192",
@@ -2109,7 +2300,8 @@
     "category": "用品 / Benda",
     "example_bm": "Susun kasut sekolah kamu dengan kemas di atas rak kasut.",
     "example_zh": "把校鞋整齐划一地摆放在鞋架上。",
-    "audio": "audio/kasut.mp3"
+    "audio": "audio/kasut.mp3",
+    "audio_zh": "audio_zh/B192.mp3"
   },
   {
     "id": "B193",
@@ -2120,7 +2312,8 @@
     "category": "用品 / Benda",
     "example_bm": "Pakai stoking yang bersih sebelum memakai kasut sekolah.",
     "example_zh": "穿校鞋前先穿上一双干净舒适的袜子。",
-    "audio": "audio/stoking.mp3"
+    "audio": "audio/stoking.mp3",
+    "audio_zh": "audio_zh/B193.mp3"
   },
   {
     "id": "B194",
@@ -2131,7 +2324,8 @@
     "category": "用品 / Benda",
     "example_bm": "Bawa payung bersama kerana cuaca mendung hendak hujan.",
     "example_zh": "天空乌云密布即将下雨，记得带上一把雨伞。",
-    "audio": "audio/payung.mp3"
+    "audio": "audio/payung.mp3",
+    "audio_zh": "audio_zh/B194.mp3"
   },
   {
     "id": "B195",
@@ -2142,7 +2336,8 @@
     "category": "用品 / Benda",
     "example_bm": "Letakkan nasi goreng yang panas di atas pinggan seramik.",
     "example_zh": "把热气腾腾的炒饭盛在陶瓷盘子里。",
-    "audio": "audio/pinggan.mp3"
+    "audio": "audio/pinggan.mp3",
+    "audio_zh": "audio_zh/B195.mp3"
   },
   {
     "id": "B196",
@@ -2153,7 +2348,8 @@
     "category": "用品 / Benda",
     "example_bm": "Sup ayam yang enak dihidangkan di dalam sebuah mangkuk.",
     "example_zh": "鲜美浓郁的鸡汤盛在了一只大瓷碗中。",
-    "audio": "audio/mangkuk.mp3"
+    "audio": "audio/mangkuk.mp3",
+    "audio_zh": "audio_zh/B196.mp3"
   },
   {
     "id": "B197",
@@ -2164,7 +2360,8 @@
     "category": "用品 / Benda",
     "example_bm": "Ayah menuang teh suam ke dalam cawan kaca.",
     "example_zh": "爸爸把温热的红茶倒入玻璃杯中。",
-    "audio": "audio/cawan.mp3"
+    "audio": "audio/cawan.mp3",
+    "audio_zh": "audio_zh/B197.mp3"
   },
   {
     "id": "B198",
@@ -2175,7 +2372,8 @@
     "category": "用品 / Benda",
     "example_bm": "Gunakan sudu untuk menyuap makanan ke dalam mulut.",
     "example_zh": "使用汤匙把饭菜舀起送入口中。",
-    "audio": "audio/sudu.mp3"
+    "audio": "audio/sudu.mp3",
+    "audio_zh": "audio_zh/B198.mp3"
   },
   {
     "id": "B199",
@@ -2186,7 +2384,8 @@
     "category": "用品 / Benda",
     "example_bm": "Adik makan mi menggunakan garpu dan sudu.",
     "example_zh": "弟弟用叉子和汤匙一起吃面条。",
-    "audio": "audio/garpu.mp3"
+    "audio": "audio/garpu.mp3",
+    "audio_zh": "audio_zh/B199.mp3"
   },
   {
     "id": "B200",
@@ -2197,7 +2396,8 @@
     "category": "场所与交通 / Tempat & Kenderaan",
     "example_bm": "Sekolah tempat kita menimba ilmu dan berkawan.",
     "example_zh": "学校是我们求取学问与结识朋友的好地方。",
-    "audio": "audio/sekolah.mp3"
+    "audio": "audio/sekolah.mp3",
+    "audio_zh": "audio_zh/B200.mp3"
   },
   {
     "id": "B201",
@@ -2208,7 +2408,8 @@
     "category": "场所与交通 / Tempat & Kenderaan",
     "example_bm": "Murid-murid belajar dengan tekun di dalam bilik darjah.",
     "example_zh": "学生们在教室里专心致志地认真学习。",
-    "audio": "audio/bilik_darjah.mp3"
+    "audio": "audio/bilik_darjah.mp3",
+    "audio_zh": "audio_zh/B201.mp3"
   },
   {
     "id": "B202",
@@ -2219,7 +2420,8 @@
     "category": "场所与交通 / Tempat & Kenderaan",
     "example_bm": "Suasana di perpustakaan sangat sunyi dan tenteram.",
     "example_zh": "图书馆内的环境非常安宁静谧。",
-    "audio": "audio/perpustakaan.mp3"
+    "audio": "audio/perpustakaan.mp3",
+    "audio_zh": "audio_zh/B202.mp3"
   },
   {
     "id": "B203",
@@ -2230,7 +2432,8 @@
     "category": "场所与交通 / Tempat & Kenderaan",
     "example_bm": "Murid-murid menikmati mi sup pada waktu rehat di kantin.",
     "example_zh": "休息时间，学生们在食堂享用热腾腾的汤面。",
-    "audio": "audio/kantin.mp3"
+    "audio": "audio/kantin.mp3",
+    "audio_zh": "audio_zh/B203.mp3"
   },
   {
     "id": "B204",
@@ -2241,7 +2444,8 @@
     "category": "场所与交通 / Tempat & Kenderaan",
     "example_bm": "Padang sekolah yang luas dipenuhi murid-murid bersukan.",
     "example_zh": "辽阔的校草场上满是进行体育锻炼的学生。",
-    "audio": "audio/padang.mp3"
+    "audio": "audio/padang.mp3",
+    "audio_zh": "audio_zh/B204.mp3"
   },
   {
     "id": "B205",
@@ -2252,7 +2456,8 @@
     "category": "场所与交通 / Tempat & Kenderaan",
     "example_bm": "Rumah saya terletak berhampiran dengan taman rekreasi.",
     "example_zh": "我的家坐落在休闲公园的附近。",
-    "audio": "audio/rumah.mp3"
+    "audio": "audio/rumah.mp3",
+    "audio_zh": "audio_zh/B205.mp3"
   },
   {
     "id": "B206",
@@ -2263,7 +2468,8 @@
     "category": "场所与交通 / Tempat & Kenderaan",
     "example_bm": "Doktor pakar bertugas siang dan malam di hospital.",
     "example_zh": "专科医生在医院昼夜坚守岗位为病人服务。",
-    "audio": "audio/hospital.mp3"
+    "audio": "audio/hospital.mp3",
+    "audio_zh": "audio_zh/B206.mp3"
   },
   {
     "id": "B207",
@@ -2274,7 +2480,8 @@
     "category": "场所与交通 / Tempat & Kenderaan",
     "example_bm": "Ibu membeli sayur-sayuran dan ikan segar di pasar pagi.",
     "example_zh": "妈妈在早市菜场购买新鲜的蔬菜和鱼类。",
-    "audio": "audio/pasar.mp3"
+    "audio": "audio/pasar.mp3",
+    "audio_zh": "audio_zh/B207.mp3"
   },
   {
     "id": "B208",
@@ -2285,7 +2492,8 @@
     "category": "场所与交通 / Tempat & Kenderaan",
     "example_bm": "Kanak-kanak ketawa riang ketika bermain di taman permainan.",
     "example_zh": "孩子们在游乐场玩耍时笑声清脆愉悦。",
-    "audio": "audio/taman_permainan.mp3"
+    "audio": "audio/taman_permainan.mp3",
+    "audio_zh": "audio_zh/B208.mp3"
   },
   {
     "id": "B209",
@@ -2296,7 +2504,8 @@
     "category": "场所与交通 / Tempat & Kenderaan",
     "example_bm": "Ayah mencuci kereta miliknya pada setiap hujung minggu.",
     "example_zh": "爸爸每到周末都会亲手洗净自己的爱车。",
-    "audio": "audio/kereta.mp3"
+    "audio": "audio/kereta.mp3",
+    "audio_zh": "audio_zh/B209.mp3"
   },
   {
     "id": "B210",
@@ -2307,7 +2516,8 @@
     "category": "场所与交通 / Tempat & Kenderaan",
     "example_bm": "Ramai penumpang menunggu bas tiba di perhentian bas.",
     "example_zh": "许多乘客在巴士站耐心等待公车到来。",
-    "audio": "audio/bas.mp3"
+    "audio": "audio/bas.mp3",
+    "audio_zh": "audio_zh/B210.mp3"
   },
   {
     "id": "B211",
@@ -2318,7 +2528,8 @@
     "category": "场所与交通 / Tempat & Kenderaan",
     "example_bm": "Ali mengayuh basikal dengan gembira ke taman permainan.",
     "example_zh": "阿里开心地踩着自行车去游乐场。",
-    "audio": "audio/basikal.mp3"
+    "audio": "audio/basikal.mp3",
+    "audio_zh": "audio_zh/B211.mp3"
   },
   {
     "id": "B212",
@@ -2329,7 +2540,8 @@
     "category": "场所与交通 / Tempat & Kenderaan",
     "example_bm": "Kereta api elektrik bergerak laju di atas landasan besi.",
     "example_zh": "电气化火车在铁轨上疾速奔驰穿行。",
-    "audio": "audio/kereta_api.mp3"
+    "audio": "audio/kereta_api.mp3",
+    "audio_zh": "audio_zh/B212.mp3"
   },
   {
     "id": "B213",
@@ -2340,7 +2552,8 @@
     "category": "场所与交通 / Tempat & Kenderaan",
     "example_bm": "Kapal terbang mendarat dengan selamat di landasan lapangan terbang.",
     "example_zh": "飞机在机场跑道上安全平稳降落。",
-    "audio": "audio/kapal_terbang.mp3"
+    "audio": "audio/kapal_terbang.mp3",
+    "audio_zh": "audio_zh/B213.mp3"
   },
   {
     "id": "B214",
@@ -2351,7 +2564,8 @@
     "category": "场所与交通 / Tempat & Kenderaan",
     "example_bm": "Kapal layar itu berlayar dengan megah merentasi lautan luas.",
     "example_zh": "那艘帆船威武庄严地航行在广阔的大海上。",
-    "audio": "audio/kapal.mp3"
+    "audio": "audio/kapal.mp3",
+    "audio_zh": "audio_zh/B214.mp3"
   },
   {
     "id": "B215",
@@ -2362,7 +2576,8 @@
     "category": "道德与自然 / Nilai & Alam",
     "example_bm": "Ibu bapa melimpahkan kasih sayang yang tidak berbelah bahagi kepada anak-anak.",
     "example_zh": "父母对孩子们倾注了毫无保留的深切关爱。",
-    "audio": "audio/kasih_sayang.mp3"
+    "audio": "audio/kasih_sayang.mp3",
+    "audio_zh": "audio_zh/B215.mp3"
   },
   {
     "id": "B216",
@@ -2373,7 +2588,8 @@
     "category": "道德与自然 / Nilai & Alam",
     "example_bm": "Amalan tolong-menolong dapat mengeratkan hubungan sesama manusia.",
     "example_zh": "守望相助、互相帮助的品格能拉近人与人之间的距离。",
-    "audio": "audio/tolong_menolong.mp3"
+    "audio": "audio/tolong_menolong.mp3",
+    "audio_zh": "audio_zh/B216.mp3"
   },
   {
     "id": "B217",
@@ -2384,7 +2600,8 @@
     "category": "道德与自然 / Nilai & Alam",
     "example_bm": "Penduduk kampung bekerjasama membersihkan balai raya sempena gotong-royong.",
     "example_zh": "村民们在大扫除中齐心协力打扫民众会堂。",
-    "audio": "audio/bekerjasama.mp3"
+    "audio": "audio/bekerjasama.mp3",
+    "audio_zh": "audio_zh/B217.mp3"
   },
   {
     "id": "B218",
@@ -2395,7 +2612,8 @@
     "category": "道德与自然 / Nilai & Alam",
     "example_bm": "Kita patut bersyukur atas segala nikmat dan keamanan yang dinikmati.",
     "example_zh": "我们应当对所享受的丰足与和平心存感恩。",
-    "audio": "audio/bersyukur.mp3"
+    "audio": "audio/bersyukur.mp3",
+    "audio_zh": "audio_zh/B218.mp3"
   },
   {
     "id": "B219",
@@ -2406,7 +2624,8 @@
     "category": "道德与自然 / Nilai & Alam",
     "example_bm": "Murid-murid sentiasa menghormati para guru dan ibu bapa.",
     "example_zh": "学生们时刻以诚挚的心敬重师长与父母。",
-    "audio": "audio/menghormati.mp3"
+    "audio": "audio/menghormati.mp3",
+    "audio_zh": "audio_zh/B219.mp3"
   },
   {
     "id": "B220",
@@ -2417,7 +2636,8 @@
     "category": "道德与自然 / Nilai & Alam",
     "example_bm": "Ketua darjah menjalankan tugas yang diamanahkan secara bertanggungjawab.",
     "example_zh": "班长以高度负责任的态度履行所托付的职责。",
-    "audio": "audio/bertanggungjawab.mp3"
+    "audio": "audio/bertanggungjawab.mp3",
+    "audio_zh": "audio_zh/B220.mp3"
   },
   {
     "id": "B221",
@@ -2428,7 +2648,8 @@
     "category": "道德与自然 / Nilai & Alam",
     "example_bm": "Matahari terbit dari sebelah timur pada waktu fajar.",
     "example_zh": "太阳在清晨从东方冉冉升起。",
-    "audio": "audio/matahari.mp3"
+    "audio": "audio/matahari.mp3",
+    "audio_zh": "audio_zh/B221.mp3"
   },
   {
     "id": "B222",
@@ -2439,7 +2660,8 @@
     "category": "道德与自然 / Nilai & Alam",
     "example_bm": "Bulan purnama menyinari alam malam dengan cahaya keperakan.",
     "example_zh": "满月用柔和皎洁的银白色月辉照亮夜空。",
-    "audio": "audio/bulan.mp3"
+    "audio": "audio/bulan.mp3",
+    "audio_zh": "audio_zh/B222.mp3"
   },
   {
     "id": "B223",
@@ -2450,7 +2672,8 @@
     "category": "道德与自然 / Nilai & Alam",
     "example_bm": "Bintang-bintang berkelip-kelip indah di dada langit malam.",
     "example_zh": "繁星在夜幕中一闪一闪美丽闪烁。",
-    "audio": "audio/bintang.mp3"
+    "audio": "audio/bintang.mp3",
+    "audio_zh": "audio_zh/B223.mp3"
   },
   {
     "id": "B224",
@@ -2461,7 +2684,8 @@
     "category": "道德与自然 / Nilai & Alam",
     "example_bm": "Gumpalan awan putih berarak perlahan di langit biru.",
     "example_zh": "朵朵白云在蔚蓝天际慢悠悠地飘移浮动。",
-    "audio": "audio/awan.mp3"
+    "audio": "audio/awan.mp3",
+    "audio_zh": "audio_zh/B224.mp3"
   },
   {
     "id": "B225",
@@ -2472,7 +2696,8 @@
     "category": "道德与自然 / Nilai & Alam",
     "example_bm": "Hujan lebat membasahi bumi pada petang tadi.",
     "example_zh": "倾盆大雨在午后滋润浸湿了大地。",
-    "audio": "audio/hujan.mp3"
+    "audio": "audio/hujan.mp3",
+    "audio_zh": "audio_zh/B225.mp3"
   },
   {
     "id": "B226",
@@ -2483,7 +2708,8 @@
     "category": "道德与自然 / Nilai & Alam",
     "example_bm": "Pelangi tujuh warna muncul di angkasa selepas hujan reda.",
     "example_zh": "雨过天晴后，七彩斑斓的彩虹挂在天边。",
-    "audio": "audio/pelangi.mp3"
+    "audio": "audio/pelangi.mp3",
+    "audio_zh": "audio_zh/B226.mp3"
   },
   {
     "id": "B227",
@@ -2494,7 +2720,8 @@
     "category": "道德与自然 / Nilai & Alam",
     "example_bm": "Air sungai yang jernih mengalir tenang menuju ke laut.",
     "example_zh": "清澈见底的河水静静流向浩瀚汪洋。",
-    "audio": "audio/sungai.mp3"
+    "audio": "audio/sungai.mp3",
+    "audio_zh": "audio_zh/B227.mp3"
   },
   {
     "id": "B228",
@@ -2505,7 +2732,8 @@
     "category": "道德与自然 / Nilai & Alam",
     "example_bm": "Ombak berbuih memukul pantai di tepi laut yang luas.",
     "example_zh": "白色的浪花拍打着辽阔大海边的沙滩。",
-    "audio": "audio/laut.mp3"
+    "audio": "audio/laut.mp3",
+    "audio_zh": "audio_zh/B228.mp3"
   },
   {
     "id": "B229",
@@ -2516,7 +2744,8 @@
     "category": "道德与自然 / Nilai & Alam",
     "example_bm": "Pokok-pokok hijau menghasilkan udara segar untuk hidupan bumi.",
     "example_zh": "绿树为地球上的生命制造纯净清新的空气。",
-    "audio": "audio/pokok.mp3"
+    "audio": "audio/pokok.mp3",
+    "audio_zh": "audio_zh/B229.mp3"
   },
   {
     "id": "B230",
@@ -2527,7 +2756,8 @@
     "category": "道德与自然 / Nilai & Alam",
     "example_bm": "Bunga-bunga di taman mekar mekar dengan harum dan mempesonakan.",
     "example_zh": "花园中的朵朵鲜花争相绽放，芳香迷人。",
-    "audio": "audio/bunga.mp3"
+    "audio": "audio/bunga.mp3",
+    "audio_zh": "audio_zh/B230.mp3"
   },
   {
     "id": "B231",
@@ -2538,7 +2768,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Cikgu Lim mengajar murid-murid Bahasa Melayu dengan penuh sabar.",
     "example_zh": "林老师耐心地教导学生们马来文。",
-    "audio": "audio/mengajar.mp3"
+    "audio": "audio/mengajar.mp3",
+    "audio_zh": "audio_zh/B231.mp3"
   },
   {
     "id": "B232",
@@ -2549,7 +2780,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Siti mengangkat tangan untuk menjawab soalan guru.",
     "example_zh": "西蒂举手回答老师的问题。",
-    "audio": "audio/menjawab.mp3"
+    "audio": "audio/menjawab.mp3",
+    "audio_zh": "audio_zh/B232.mp3"
   },
   {
     "id": "B233",
@@ -2560,7 +2792,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Kita hendaklah bercakap dengan sopan kepada orang yang lebih tua.",
     "example_zh": "我们和长辈说话时必须要有礼貌。",
-    "audio": "audio/bercakap.mp3"
+    "audio": "audio/bercakap.mp3",
+    "audio_zh": "audio_zh/B233.mp3"
   },
   {
     "id": "B234",
@@ -2571,7 +2804,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Murid-murid duduk dengan tertib di dalam bilik darjah.",
     "example_zh": "学生们在教室里整齐地坐好。",
-    "audio": "audio/duduk.mp3"
+    "audio": "audio/duduk.mp3",
+    "audio_zh": "audio_zh/B234.mp3"
   },
   {
     "id": "B235",
@@ -2582,7 +2816,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Semua murid berdiri tegak semasa menyanyikan lagu Negaraku.",
     "example_zh": "唱国歌时，全体学生立正站好。",
-    "audio": "audio/berdiri.mp3"
+    "audio": "audio/berdiri.mp3",
+    "audio_zh": "audio_zh/B235.mp3"
   },
   {
     "id": "B236",
@@ -2593,7 +2828,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Saya bangun awal pada pukul enam pagi setiap hari persekolahan.",
     "example_zh": "每个上学日我都在早上六点早早起床。",
-    "audio": "audio/bangun.mp3"
+    "audio": "audio/bangun.mp3",
+    "audio_zh": "audio_zh/B236.mp3"
   },
   {
     "id": "B237",
@@ -2604,7 +2840,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Kakak mencuci pinggan mangkuk selepas makan malam.",
     "example_zh": "晚饭后姐姐清洗碗碟。",
-    "audio": "audio/mencuci.mp3"
+    "audio": "audio/mencuci.mp3",
+    "audio_zh": "audio_zh/B237.mp3"
   },
   {
     "id": "B238",
@@ -2615,7 +2852,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Ibu menjemur pakaian yang telah dibasuh di ampaian.",
     "example_zh": "妈妈把洗好的衣服晾晒在晒衣架上。",
-    "audio": "audio/menjemur.mp3"
+    "audio": "audio/menjemur.mp3",
+    "audio_zh": "audio_zh/B238.mp3"
   },
   {
     "id": "B239",
@@ -2626,7 +2864,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Nenek memotong buah tembikai menggunakan pisau yang tajam.",
     "example_zh": "奶奶用锋利的刀切西瓜。",
-    "audio": "audio/memotong.mp3"
+    "audio": "audio/memotong.mp3",
+    "audio_zh": "audio_zh/B239.mp3"
   },
   {
     "id": "B240",
@@ -2637,7 +2876,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Ali membawa botol air dan bekal makanan ke sekolah.",
     "example_zh": "阿里带着水壶和便当去上学。",
-    "audio": "audio/membawa.mp3"
+    "audio": "audio/membawa.mp3",
+    "audio_zh": "audio_zh/B240.mp3"
   },
   {
     "id": "B241",
@@ -2648,7 +2888,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Saya memberi hadiah kepada ibu sempena Hari Ibu.",
     "example_zh": "我在母亲节送了一份礼物给妈妈。",
-    "audio": "audio/memberi.mp3"
+    "audio": "audio/memberi.mp3",
+    "audio_zh": "audio_zh/B241.mp3"
   },
   {
     "id": "B242",
@@ -2659,7 +2900,8 @@
     "category": "动词 / Kata Kerja",
     "example_bm": "Mei Ling gembira kerana menerima sijil penghargaan daripada guru besar.",
     "example_zh": "美玲很高兴收到校长颁发的表扬状。",
-    "audio": "audio/menerima.mp3"
+    "audio": "audio/menerima.mp3",
+    "audio_zh": "audio_zh/B242.mp3"
   },
   {
     "id": "B243",
@@ -2670,7 +2912,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Ayah membelikan saya sebuah beg sekolah yang baharu.",
     "example_zh": "爸爸给我买了一个新书包。",
-    "audio": "audio/baharu.mp3"
+    "audio": "audio/baharu.mp3",
+    "audio_zh": "audio_zh/B243.mp3"
   },
   {
     "id": "B244",
@@ -2681,7 +2924,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Rumah kayu yang lama itu masih kukuh dan cantik.",
     "example_zh": "那间旧木屋依然坚固又漂亮。",
-    "audio": "audio/lama.mp3"
+    "audio": "audio/lama.mp3",
+    "audio_zh": "audio_zh/B244.mp3"
   },
   {
     "id": "B245",
@@ -2692,7 +2936,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Jam tangan emas itu dijual dengan harga yang sangat mahal.",
     "example_zh": "那只金手表的售价非常昂贵。",
-    "audio": "audio/mahal.mp3"
+    "audio": "audio/mahal.mp3",
+    "audio_zh": "audio_zh/B245.mp3"
   },
   {
     "id": "B246",
@@ -2703,7 +2948,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Sayur-sayuran di pasar pagi itu segar dan murah harganya.",
     "example_zh": "早市里的蔬菜既新鲜又便宜。",
-    "audio": "audio/murah.mp3"
+    "audio": "audio/murah.mp3",
+    "audio_zh": "audio_zh/B246.mp3"
   },
   {
     "id": "B247",
@@ -2714,7 +2960,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Rumah datuk terletak jauh di kawasan kampung.",
     "example_zh": "爷爷的家位于遥远的乡村地区。",
-    "audio": "audio/jauh.mp3"
+    "audio": "audio/jauh.mp3",
+    "audio_zh": "audio_zh/B247.mp3"
   },
   {
     "id": "B248",
@@ -2725,7 +2972,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Sekolah kami sangat dekat dengan perpustakaan awam.",
     "example_zh": "我们的学校离公共图书馆非常近。",
-    "audio": "audio/dekat.mp3"
+    "audio": "audio/dekat.mp3",
+    "audio_zh": "audio_zh/B248.mp3"
   },
   {
     "id": "B249",
@@ -2736,7 +2984,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Padang sekolah kami sangat luas untuk aktiviti sukan.",
     "example_zh": "我们学校的草场非常宽阔，适合进行体育活动。",
-    "audio": "audio/luas.mp3"
+    "audio": "audio/luas.mp3",
+    "audio_zh": "audio_zh/B249.mp3"
   },
   {
     "id": "B250",
@@ -2747,7 +2996,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Jalan menuju ke kebun itu agak sempit dan berbatu.",
     "example_zh": "通往那个果园的路比较狭窄且多石头。",
-    "audio": "audio/sempit.mp3"
+    "audio": "audio/sempit.mp3",
+    "audio_zh": "audio_zh/B250.mp3"
   },
   {
     "id": "B251",
@@ -2758,7 +3008,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Kamus Bahasa Melayu yang tebal itu mengandungi banyak perkataan.",
     "example_zh": "那本厚厚的马来文词典收录了许多词汇。",
-    "audio": "audio/tebal.mp3"
+    "audio": "audio/tebal.mp3",
+    "audio_zh": "audio_zh/B251.mp3"
   },
   {
     "id": "B252",
@@ -2769,7 +3020,8 @@
     "category": "形容词 / Kata Adjektif",
     "example_bm": "Adik melukis gambar bunga di atas sehelai kertas yang nipis.",
     "example_zh": "弟弟在一张薄纸上画了一幅花朵图。",
-    "audio": "audio/nipis.mp3"
+    "audio": "audio/nipis.mp3",
+    "audio_zh": "audio_zh/B252.mp3"
   },
   {
     "id": "B253",
@@ -2780,7 +3032,8 @@
     "category": "身体部位 / Anggota Badan",
     "example_bm": "Ibu menyentuh dahi adik untuk memeriksa suhu badannya.",
     "example_zh": "妈妈摸了摸弟弟的额头以检查体温。",
-    "audio": "audio/dahi.mp3"
+    "audio": "audio/dahi.mp3",
+    "audio_zh": "audio_zh/B253.mp3"
   },
   {
     "id": "B254",
@@ -2791,7 +3044,8 @@
     "category": "身体部位 / Anggota Badan",
     "example_bm": "Pipi bayi yang comel itu kemerah-merahan apabila tersenyum.",
     "example_zh": "那个可爱婴儿微笑时脸颊红扑扑的。",
-    "audio": "audio/pipi.mp3"
+    "audio": "audio/pipi.mp3",
+    "audio_zh": "audio_zh/B254.mp3"
   },
   {
     "id": "B255",
@@ -2802,7 +3056,8 @@
     "category": "身体部位 / Anggota Badan",
     "example_bm": "Datuk mempunyai janggut putih di bahagian dagu.",
     "example_zh": "爷爷的下巴上长着白色的胡须。",
-    "audio": "audio/dagu.mp3"
+    "audio": "audio/dagu.mp3",
+    "audio_zh": "audio_zh/B255.mp3"
   },
   {
     "id": "B256",
@@ -2813,7 +3068,8 @@
     "category": "身体部位 / Anggota Badan",
     "example_bm": "Kening membantu menghalang peluh daripada masuk ke dalam mata.",
     "example_zh": "眉毛有助于阻挡汗水流进眼睛里。",
-    "audio": "audio/kening.mp3"
+    "audio": "audio/kening.mp3",
+    "audio_zh": "audio_zh/B256.mp3"
   },
   {
     "id": "B257",
@@ -2824,7 +3080,8 @@
     "category": "身体部位 / Anggota Badan",
     "example_bm": "Minum air yang banyak supaya bibir tidak kering.",
     "example_zh": "多喝水，以免嘴唇干燥。",
-    "audio": "audio/bibir.mp3"
+    "audio": "audio/bibir.mp3",
+    "audio_zh": "audio_zh/B257.mp3"
   },
   {
     "id": "B258",
@@ -2835,7 +3092,8 @@
     "category": "身体部位 / Anggota Badan",
     "example_bm": "Siku Ahmad luka sedikit kerana terjatuh semasa bermain.",
     "example_zh": "阿末玩耍时摔倒，手肘受了一点轻伤。",
-    "audio": "audio/siku.mp3"
+    "audio": "audio/siku.mp3",
+    "audio_zh": "audio_zh/B258.mp3"
   },
   {
     "id": "B259",
@@ -2846,7 +3104,8 @@
     "category": "身体部位 / Anggota Badan",
     "example_bm": "Duduk dengan tegak untuk menjaga kesihatan tulang belakang.",
     "example_zh": "坐姿要端正以保护脊椎与背部的健康。",
-    "audio": "audio/belakang.mp3"
+    "audio": "audio/belakang.mp3",
+    "audio_zh": "audio_zh/B259.mp3"
   },
   {
     "id": "B260",
@@ -2857,7 +3116,8 @@
     "category": "身体部位 / Anggota Badan",
     "example_bm": "Pakailah selipar supaya tapak kaki tidak terpijak batu tajam.",
     "example_zh": "请穿上拖鞋，以免脚底踩到尖锐的石头。",
-    "audio": "audio/tapak_kaki.mp3"
+    "audio": "audio/tapak_kaki.mp3",
+    "audio_zh": "audio_zh/B260.mp3"
   },
   {
     "id": "B261",
@@ -2868,7 +3128,8 @@
     "category": "家庭与人物 / Keluarga",
     "example_bm": "Pak cik saya bekerja sebagai pegawai polis di Kuala Lumpur.",
     "example_zh": "我的叔叔在吉隆坡担任警官。",
-    "audio": "audio/pak_cik.mp3"
+    "audio": "audio/pak_cik.mp3",
+    "audio_zh": "audio_zh/B261.mp3"
   },
   {
     "id": "B262",
@@ -2879,7 +3140,8 @@
     "category": "家庭与人物 / Keluarga",
     "example_bm": "Mak cik membawa sebakul buah mangga semasa melawat kami.",
     "example_zh": "阿姨来探望我们时带来了一篮芒果。",
-    "audio": "audio/mak_cik.mp3"
+    "audio": "audio/mak_cik.mp3",
+    "audio_zh": "audio_zh/B262.mp3"
   },
   {
     "id": "B263",
@@ -2890,7 +3152,8 @@
     "category": "家庭与人物 / Keluarga",
     "example_bm": "Saya dan sepupu bermain layang-layang di padang pada hujung minggu.",
     "example_zh": "我和表兄弟在周末一起去草场放风筝。",
-    "audio": "audio/sepupu.mp3"
+    "audio": "audio/sepupu.mp3",
+    "audio_zh": "audio_zh/B263.mp3"
   },
   {
     "id": "B264",
@@ -2901,7 +3164,8 @@
     "category": "家庭与人物 / Keluarga",
     "example_bm": "Datuk dan nenek sangat menyayangi semua cucu mereka.",
     "example_zh": "爷爷和奶奶非常疼爱他们所有的孙子孙女。",
-    "audio": "audio/cucu.mp3"
+    "audio": "audio/cucu.mp3",
+    "audio_zh": "audio_zh/B264.mp3"
   },
   {
     "id": "B265",
@@ -2912,7 +3176,8 @@
     "category": "家庭与人物 / Keluarga",
     "example_bm": "Anak yang baik sentiasa menghormati dan mendengar nasihat ibu bapa.",
     "example_zh": "乖孩子总是尊重并听从父母的教诲。",
-    "audio": "audio/anak.mp3"
+    "audio": "audio/anak.mp3",
+    "audio_zh": "audio_zh/B265.mp3"
   },
   {
     "id": "B266",
@@ -2923,7 +3188,8 @@
     "category": "家庭与人物 / Keluarga",
     "example_bm": "Keluarga saya suka berkelah di tepi pantai pada hari cuti.",
     "example_zh": "我的家人喜欢在假期去海边野餐。",
-    "audio": "audio/keluarga.mp3"
+    "audio": "audio/keluarga.mp3",
+    "audio_zh": "audio_zh/B266.mp3"
   },
   {
     "id": "B267",
@@ -2934,7 +3200,8 @@
     "category": "家庭与人物 / Keluarga",
     "example_bm": "Semua murid berhimpun di dewan sekolah pada pagi Isnin.",
     "example_zh": "星期一早上全体学生在学校礼堂集合。",
-    "audio": "audio/murid.mp3"
+    "audio": "audio/murid.mp3",
+    "audio_zh": "audio_zh/B267.mp3"
   },
   {
     "id": "B268",
@@ -2945,7 +3212,8 @@
     "category": "家庭与人物 / Keluarga",
     "example_bm": "Saya dan rakan sekelas bekerjasama membersihkan bilik darjah.",
     "example_zh": "我和同班同学一起合作打扫教室。",
-    "audio": "audio/rakan.mp3"
+    "audio": "audio/rakan.mp3",
+    "audio_zh": "audio_zh/B268.mp3"
   },
   {
     "id": "B269",
@@ -2956,7 +3224,8 @@
     "category": "家庭与人物 / Keluarga",
     "example_bm": "Ibu menghidangkan air teh dan kuih-muih kepada tetamu.",
     "example_zh": "妈妈端出茶水和糕点款待客人。",
-    "audio": "audio/tetamu.mp3"
+    "audio": "audio/tetamu.mp3",
+    "audio_zh": "audio_zh/B269.mp3"
   },
   {
     "id": "B270",
@@ -2967,7 +3236,8 @@
     "category": "家庭与人物 / Keluarga",
     "example_bm": "Ketua kelas membantu guru mengumpulkan buku latihan murid.",
     "example_zh": "班长协助老师收集同学们的练习簿。",
-    "audio": "audio/ketua_kelas.mp3"
+    "audio": "audio/ketua_kelas.mp3",
+    "audio_zh": "audio_zh/B270.mp3"
   },
   {
     "id": "B271",
@@ -2978,7 +3248,8 @@
     "category": "职业 / Pekerjaan",
     "example_bm": "Doktor gigi menasihati kami supaya menggosok gigi selepas makan.",
     "example_zh": "牙医劝告我们在饭后要刷牙。",
-    "audio": "audio/doktor_gigi.mp3"
+    "audio": "audio/doktor_gigi.mp3",
+    "audio_zh": "audio_zh/B271.mp3"
   },
   {
     "id": "B272",
@@ -2989,7 +3260,8 @@
     "category": "职业 / Pekerjaan",
     "example_bm": "Tukang kayu itu mahir membuat meja dan kerusi yang tahan lama.",
     "example_zh": "那位木匠擅长制作耐用的桌子和椅子。",
-    "audio": "audio/tukang_kayu.mp3"
+    "audio": "audio/tukang_kayu.mp3",
+    "audio_zh": "audio_zh/B272.mp3"
   },
   {
     "id": "B273",
@@ -3000,7 +3272,8 @@
     "category": "职业 / Pekerjaan",
     "example_bm": "Tukang jahit mengambil ukuran badan sebelum menjahit baju baharu.",
     "example_zh": "裁缝师在缝制新衣服前先量好尺寸。",
-    "audio": "audio/tukang_jahit.mp3"
+    "audio": "audio/tukang_jahit.mp3",
+    "audio_zh": "audio_zh/B273.mp3"
   },
   {
     "id": "B274",
@@ -3011,7 +3284,8 @@
     "category": "职业 / Pekerjaan",
     "example_bm": "Jurutera itu merancang pembinaan jambatan yang moden dan selamat.",
     "example_zh": "那位工程师规划建造一座既现代又安全的桥梁。",
-    "audio": "audio/jurutera.mp3"
+    "audio": "audio/jurutera.mp3",
+    "audio_zh": "audio_zh/B274.mp3"
   },
   {
     "id": "B275",
@@ -3022,7 +3296,8 @@
     "category": "职业 / Pekerjaan",
     "example_bm": "Kakak bercita-cita untuk menjadi seorang akauntan di bank.",
     "example_zh": "姐姐立志成为银行的一名会计师。",
-    "audio": "audio/akauntan.mp3"
+    "audio": "audio/akauntan.mp3",
+    "audio_zh": "audio_zh/B275.mp3"
   },
   {
     "id": "B276",
@@ -3033,7 +3308,8 @@
     "category": "职业 / Pekerjaan",
     "example_bm": "Pelukis terkenal itu menghasilkan lukisan pemandangan yang indah.",
     "example_zh": "那位著名画家创作了美丽的风景画。",
-    "audio": "audio/pelukis.mp3"
+    "audio": "audio/pelukis.mp3",
+    "audio_zh": "audio_zh/B276.mp3"
   },
   {
     "id": "B277",
@@ -3044,7 +3320,8 @@
     "category": "职业 / Pekerjaan",
     "example_bm": "Penyanyi itu mempunyai suara yang sangat merdu.",
     "example_zh": "那位歌手拥有非常动听的嗓音。",
-    "audio": "audio/penyanyi.mp3"
+    "audio": "audio/penyanyi.mp3",
+    "audio_zh": "audio_zh/B277.mp3"
   },
   {
     "id": "B278",
@@ -3055,7 +3332,8 @@
     "category": "职业 / Pekerjaan",
     "example_bm": "Pustakawan menyusun buku-buku di rak mengikut nombor rujukan.",
     "example_zh": "图书管理员按照编号把书本排列在书架上。",
-    "audio": "audio/pustakawan.mp3"
+    "audio": "audio/pustakawan.mp3",
+    "audio_zh": "audio_zh/B278.mp3"
   },
   {
     "id": "B279",
@@ -3066,7 +3344,8 @@
     "category": "职业 / Pekerjaan",
     "example_bm": "Pengawal keselamatan menjaga pintu pagar sekolah pada setiap hari.",
     "example_zh": "保安人员每天看守着学校的大门。",
-    "audio": "audio/pengawal_keselamatan.mp3"
+    "audio": "audio/pengawal_keselamatan.mp3",
+    "audio_zh": "audio_zh/B279.mp3"
   },
   {
     "id": "B280",
@@ -3077,7 +3356,8 @@
     "category": "职业 / Pekerjaan",
     "example_bm": "Kita patut menghargai jasa pekerja pembersihan yang menjaga kebersihan sekolah.",
     "example_zh": "我们应该感激维护校园清洁的清洁工人。",
-    "audio": "audio/pekerja_pembersihan.mp3"
+    "audio": "audio/pekerja_pembersihan.mp3",
+    "audio_zh": "audio_zh/B280.mp3"
   },
   {
     "id": "B281",
@@ -3088,7 +3368,8 @@
     "category": "动物 / Haiwan",
     "example_bm": "Zirafah dapat makan daun di pucuk pokok kerana lehernya tinggi.",
     "example_zh": "长颈鹿因为脖子长，可以吃到树顶上的叶子。",
-    "audio": "audio/zirafah.mp3"
+    "audio": "audio/zirafah.mp3",
+    "audio_zh": "audio_zh/B281.mp3"
   },
   {
     "id": "B282",
@@ -3099,7 +3380,8 @@
     "category": "动物 / Haiwan",
     "example_bm": "Beruang matahari ialah salah satu haiwan yang dilindungi di Malaysia.",
     "example_zh": "马来熊是马来西亚受保护的动物之一。",
-    "audio": "audio/beruang.mp3"
+    "audio": "audio/beruang.mp3",
+    "audio_zh": "audio_zh/B282.mp3"
   },
   {
     "id": "B283",
@@ -3110,7 +3392,8 @@
     "category": "动物 / Haiwan",
     "example_bm": "Rusa jantan mempunyai tanduk yang bercabang di atas kepalanya.",
     "example_zh": "雄鹿头上长着分叉的鹿角。",
-    "audio": "audio/rusa.mp3"
+    "audio": "audio/rusa.mp3",
+    "audio_zh": "audio_zh/B283.mp3"
   },
   {
     "id": "B284",
@@ -3121,7 +3404,8 @@
     "category": "动物 / Haiwan",
     "example_bm": "Pada zaman dahulu, petani menggunakan kerbau untuk membajak sawah.",
     "example_zh": "在过去，农夫用水牛来耕种稻田。",
-    "audio": "audio/kerbau.mp3"
+    "audio": "audio/kerbau.mp3",
+    "audio_zh": "audio_zh/B284.mp3"
   },
   {
     "id": "B285",
@@ -3132,7 +3416,8 @@
     "category": "动物 / Haiwan",
     "example_bm": "Tikus suka bersembunyi di tempat yang gelap dan kotor.",
     "example_zh": "老鼠喜欢躲在阴暗肮脏的地方。",
-    "audio": "audio/tikus.mp3"
+    "audio": "audio/tikus.mp3",
+    "audio_zh": "audio_zh/B285.mp3"
   },
   {
     "id": "B286",
@@ -3143,7 +3428,8 @@
     "category": "动物 / Haiwan",
     "example_bm": "Tupai melompat dari dahan ke dahan untuk mencari buah-buahan.",
     "example_zh": "松鼠在树枝间跳来跳去寻找果实。",
-    "audio": "audio/tupai.mp3"
+    "audio": "audio/tupai.mp3",
+    "audio_zh": "audio_zh/B286.mp3"
   },
   {
     "id": "B287",
@@ -3154,7 +3440,8 @@
     "category": "动物 / Haiwan",
     "example_bm": "Nyamuk Aedes boleh menyebarkan penyakit demam denggi yang berbahaya.",
     "example_zh": "黑斑蚊会传播危险的骨痛热症。",
-    "audio": "audio/nyamuk.mp3"
+    "audio": "audio/nyamuk.mp3",
+    "audio_zh": "audio_zh/B287.mp3"
   },
   {
     "id": "B288",
@@ -3165,7 +3452,8 @@
     "category": "动物 / Haiwan",
     "example_bm": "Tutup makanan dengan tudung saji supaya tidak dihinggapi lalat.",
     "example_zh": "请用食物罩盖好食物，以免苍蝇停留在上面。",
-    "audio": "audio/lalat.mp3"
+    "audio": "audio/lalat.mp3",
+    "audio_zh": "audio_zh/B288.mp3"
   },
   {
     "id": "B289",
@@ -3176,7 +3464,8 @@
     "category": "动物 / Haiwan",
     "example_bm": "Ketam berjalan mengiring di atas pasir pantai.",
     "example_zh": "螃蟹在海滩的沙地上横着走。",
-    "audio": "audio/ketam.mp3"
+    "audio": "audio/ketam.mp3",
+    "audio_zh": "audio_zh/B289.mp3"
   },
   {
     "id": "B290",
@@ -3187,7 +3476,8 @@
     "category": "动物 / Haiwan",
     "example_bm": "Ibu membeli udang segar di pasar untuk dimasak kari.",
     "example_zh": "妈妈在巴刹买了新鲜的虾来煮咖喱。",
-    "audio": "audio/udang.mp3"
+    "audio": "audio/udang.mp3",
+    "audio_zh": "audio_zh/B290.mp3"
   },
   {
     "id": "B291",
@@ -3198,7 +3488,8 @@
     "category": "水果蔬菜 / Buah & Sayur",
     "example_bm": "Buah manggis mempunyai kulit ungu dan isi putih yang manis.",
     "example_zh": "山竹有着紫色的外壳和雪白甘甜的果肉。",
-    "audio": "audio/manggis.mp3"
+    "audio": "audio/manggis.mp3",
+    "audio_zh": "audio_zh/B291.mp3"
   },
   {
     "id": "B292",
@@ -3209,7 +3500,8 @@
     "category": "水果蔬菜 / Buah & Sayur",
     "example_bm": "Jambu batu kaya dengan vitamin C dan sedap dimakan begitu sahaja.",
     "example_zh": "番石榴富含维生素C，直接吃非常可口。",
-    "audio": "audio/jambu_batu.mp3"
+    "audio": "audio/jambu_batu.mp3",
+    "audio_zh": "audio_zh/B292.mp3"
   },
   {
     "id": "B293",
@@ -3220,7 +3512,8 @@
     "category": "水果蔬菜 / Buah & Sayur",
     "example_bm": "Air kelapa muda sungguh enak diminum pada hari yang panas.",
     "example_zh": "在炎热的天气里喝嫩椰水真是美味极了。",
-    "audio": "audio/kelapa.mp3"
+    "audio": "audio/kelapa.mp3",
+    "audio_zh": "audio_zh/B293.mp3"
   },
   {
     "id": "B294",
@@ -3231,7 +3524,8 @@
     "category": "水果蔬菜 / Buah & Sayur",
     "example_bm": "Buah belimbing berbentuk seperti bintang apabila dipotong melintang.",
     "example_zh": "杨桃横切开来时形状就像一颗星星。",
-    "audio": "audio/belimbing.mp3"
+    "audio": "audio/belimbing.mp3",
+    "audio_zh": "audio_zh/B294.mp3"
   },
   {
     "id": "B295",
@@ -3242,7 +3536,8 @@
     "category": "水果蔬菜 / Buah & Sayur",
     "example_bm": "Buah nangka berbau harum dan berwarna kuning keemasan.",
     "example_zh": "菠萝蜜散发出香甜的气味，果肉呈金黄色。",
-    "audio": "audio/nangka.mp3"
+    "audio": "audio/nangka.mp3",
+    "audio_zh": "audio_zh/B295.mp3"
   },
   {
     "id": "B296",
@@ -3253,7 +3548,8 @@
     "category": "水果蔬菜 / Buah & Sayur",
     "example_bm": "Ibu menggoreng sayur sawi bersama bawang putih.",
     "example_zh": "妈妈用蒜米清炒菜心。",
-    "audio": "audio/sawi.mp3"
+    "audio": "audio/sawi.mp3",
+    "audio_zh": "audio_zh/B296.mp3"
   },
   {
     "id": "B297",
@@ -3264,7 +3560,8 @@
     "category": "水果蔬菜 / Buah & Sayur",
     "example_bm": "Kanak-kanak digalakkan makan bayam kerana mengandungi zat besi.",
     "example_zh": "鼓励孩子们多吃菠菜，因为它含有丰富的铁质。",
-    "audio": "audio/bayam.mp3"
+    "audio": "audio/bayam.mp3",
+    "audio_zh": "audio_zh/B297.mp3"
   },
   {
     "id": "B298",
@@ -3275,7 +3572,8 @@
     "category": "水果蔬菜 / Buah & Sayur",
     "example_bm": "Kangkung goreng belacan ialah hidangan kegemaran keluarga kami.",
     "example_zh": "马来风光（虾酱炒空心菜）是我们全家最爱吃的菜肴。",
-    "audio": "audio/kangkung.mp3"
+    "audio": "audio/kangkung.mp3",
+    "audio_zh": "audio_zh/B298.mp3"
   },
   {
     "id": "B299",
@@ -3286,7 +3584,8 @@
     "category": "水果蔬菜 / Buah & Sayur",
     "example_bm": "Jagung rebus yang dijual di pasar malam sangat manis rasanya.",
     "example_zh": "夜市里卖的水煮玉米味道非常香甜。",
-    "audio": "audio/jagung.mp3"
+    "audio": "audio/jagung.mp3",
+    "audio_zh": "audio_zh/B299.mp3"
   },
   {
     "id": "B300",
@@ -3297,7 +3596,8 @@
     "category": "水果蔬菜 / Buah & Sayur",
     "example_bm": "Nenek memetik kacang panjang yang segar di kebun sayur.",
     "example_zh": "奶奶在菜园里采摘新鲜的长豆。",
-    "audio": "audio/kacang_panjang.mp3"
+    "audio": "audio/kacang_panjang.mp3",
+    "audio_zh": "audio_zh/B300.mp3"
   },
   {
     "id": "B301",
@@ -3308,7 +3608,8 @@
     "category": "用品 / Benda",
     "example_bm": "Cikgu menggunakan pen dakwat merah untuk menanda buku latihan.",
     "example_zh": "老师用红墨水笔批改练习簿。",
-    "audio": "audio/pen.mp3"
+    "audio": "audio/pen.mp3",
+    "audio_zh": "audio_zh/B301.mp3"
   },
   {
     "id": "B302",
@@ -3319,7 +3620,8 @@
     "category": "用品 / Benda",
     "example_bm": "Berhati-hati semasa menggunakan gunting supaya jari tidak terluka.",
     "example_zh": "使用剪刀时要小心，以免剪伤手指。",
-    "audio": "audio/gunting.mp3"
+    "audio": "audio/gunting.mp3",
+    "audio_zh": "audio_zh/B302.mp3"
   },
   {
     "id": "B303",
@@ -3330,7 +3632,8 @@
     "category": "用品 / Benda",
     "example_bm": "Wei Ming menggunakan gam untuk menampal gambar di dalam buku skrap.",
     "example_zh": "伟明用胶水把图片贴在剪贴簿里。",
-    "audio": "audio/gam.mp3"
+    "audio": "audio/gam.mp3",
+    "audio_zh": "audio_zh/B303.mp3"
   },
   {
     "id": "B304",
@@ -3341,7 +3644,8 @@
     "category": "用品 / Benda",
     "example_bm": "Jangan membazirkan kertas kerana kertas diperbuat daripada pokok.",
     "example_zh": "不要浪费纸张，因为纸是由树木制成的。",
-    "audio": "audio/kertas.mp3"
+    "audio": "audio/kertas.mp3",
+    "audio_zh": "audio_zh/B304.mp3"
   },
   {
     "id": "B305",
@@ -3352,7 +3656,8 @@
     "category": "用品 / Benda",
     "example_bm": "Kita boleh merujuk kamus untuk mencari makna perkataan yang baharu.",
     "example_zh": "我们可以查阅词典来寻找生字的意思。",
-    "audio": "audio/kamus.mp3"
+    "audio": "audio/kamus.mp3",
+    "audio_zh": "audio_zh/B305.mp3"
   },
   {
     "id": "B306",
@@ -3363,7 +3668,8 @@
     "category": "用品 / Benda",
     "example_bm": "Murid-murid belajar menggunakan komputer di makmal ICT.",
     "example_zh": "学生们在电脑室学习使用电脑。",
-    "audio": "audio/komputer.mp3"
+    "audio": "audio/komputer.mp3",
+    "audio_zh": "audio_zh/B306.mp3"
   },
   {
     "id": "B307",
@@ -3374,7 +3680,8 @@
     "category": "用品 / Benda",
     "example_bm": "Ayah menelefon datuk menggunakan telefon bimbit untuk bertanya khabar.",
     "example_zh": "爸爸用手机打电话向爷爷问好。",
-    "audio": "audio/telefon.mp3"
+    "audio": "audio/telefon.mp3",
+    "audio_zh": "audio_zh/B307.mp3"
   },
   {
     "id": "B308",
@@ -3385,7 +3692,8 @@
     "category": "用品 / Benda",
     "example_bm": "Saya mengemas katil sendiri setiap pagi selepas bangun tidur.",
     "example_zh": "我每天早上起床后自己整理床铺。",
-    "audio": "audio/katil.mp3"
+    "audio": "audio/katil.mp3",
+    "audio_zh": "audio_zh/B308.mp3"
   },
   {
     "id": "B309",
@@ -3396,7 +3704,8 @@
     "category": "用品 / Benda",
     "example_bm": "Bantal yang lembut itu membuatkan tidur adik lebih nyenyak.",
     "example_zh": "那个柔软的枕头让弟弟睡得更香甜。",
-    "audio": "audio/bantal.mp3"
+    "audio": "audio/bantal.mp3",
+    "audio_zh": "audio_zh/B309.mp3"
   },
   {
     "id": "B310",
@@ -3407,7 +3716,8 @@
     "category": "用品 / Benda",
     "example_bm": "Selepas mandi, saya mengelap badan dengan tuala yang bersih.",
     "example_zh": "洗完澡后，我用干净的毛巾擦干身体。",
-    "audio": "audio/tuala.mp3"
+    "audio": "audio/tuala.mp3",
+    "audio_zh": "audio_zh/B310.mp3"
   },
   {
     "id": "B311",
@@ -3418,7 +3728,8 @@
     "category": "场所与交通 / Tempat & Kenderaan",
     "example_bm": "Ibu menemani saya membeli buku rujukan di kedai buku.",
     "example_zh": "妈妈陪我去书店买参考书。",
-    "audio": "audio/kedai_buku.mp3"
+    "audio": "audio/kedai_buku.mp3",
+    "audio_zh": "audio_zh/B311.mp3"
   },
   {
     "id": "B312",
@@ -3429,7 +3740,8 @@
     "category": "场所与交通 / Tempat & Kenderaan",
     "example_bm": "Abang pergi ke pejabat pos untuk mengirim bungkusan kepada kawannya.",
     "example_zh": "哥哥去邮局寄包裹给他的朋友。",
-    "audio": "audio/pejabat_pos.mp3"
+    "audio": "audio/pejabat_pos.mp3",
+    "audio_zh": "audio_zh/B312.mp3"
   },
   {
     "id": "B313",
@@ -3440,7 +3752,8 @@
     "category": "场所与交通 / Tempat & Kenderaan",
     "example_bm": "Pemuda yang jujur itu menyerahkan dompet yang dijumpai ke balai polis.",
     "example_zh": "那位诚实的青年把捡到的钱包交到警察局。",
-    "audio": "audio/balai_polis.mp3"
+    "audio": "audio/balai_polis.mp3",
+    "audio_zh": "audio_zh/B313.mp3"
   },
   {
     "id": "B314",
@@ -3451,7 +3764,8 @@
     "category": "场所与交通 / Tempat & Kenderaan",
     "example_bm": "Murid-murid tahun empat mengadakan lawatan sambil belajar ke balai bomba.",
     "example_zh": "四年级学生到消防局进行学习参观。",
-    "audio": "audio/balai_bomba.mp3"
+    "audio": "audio/balai_bomba.mp3",
+    "audio_zh": "audio_zh/B314.mp3"
   },
   {
     "id": "B315",
@@ -3462,7 +3776,8 @@
     "category": "场所与交通 / Tempat & Kenderaan",
     "example_bm": "Kami menghantar pak cik ke lapangan terbang kerana beliau hendak ke luar negara.",
     "example_zh": "我们送叔叔去飞机场，因为他要出国。",
-    "audio": "audio/lapangan_terbang.mp3"
+    "audio": "audio/lapangan_terbang.mp3",
+    "audio_zh": "audio_zh/B315.mp3"
   },
   {
     "id": "B316",
@@ -3473,7 +3788,8 @@
     "category": "场所与交通 / Tempat & Kenderaan",
     "example_bm": "Penumpang beratur dengan tertib semasa menunggu bas di stesen bas.",
     "example_zh": "乘客们在巴士站井然有序地排队等巴士。",
-    "audio": "audio/stesen_bas.mp3"
+    "audio": "audio/stesen_bas.mp3",
+    "audio_zh": "audio_zh/B316.mp3"
   },
   {
     "id": "B317",
@@ -3484,7 +3800,8 @@
     "category": "场所与交通 / Tempat & Kenderaan",
     "example_bm": "Penunggang motosikal wajib memakai topi keledar demi keselamatan.",
     "example_zh": "为了安全，摩托车骑士必须戴上头盔。",
-    "audio": "audio/motosikal.mp3"
+    "audio": "audio/motosikal.mp3",
+    "audio_zh": "audio_zh/B317.mp3"
   },
   {
     "id": "B318",
@@ -3495,7 +3812,8 @@
     "category": "场所与交通 / Tempat & Kenderaan",
     "example_bm": "Setiap pagi saya menaiki van sekolah bersama kawan-kawan.",
     "example_zh": "每天早上我和朋友们一起乘坐校车（客货车）。",
-    "audio": "audio/van.mp3"
+    "audio": "audio/van.mp3",
+    "audio_zh": "audio_zh/B318.mp3"
   },
   {
     "id": "B319",
@@ -3506,7 +3824,8 @@
     "category": "场所与交通 / Tempat & Kenderaan",
     "example_bm": "Lori yang besar itu mengangkut buah kelapa sawit ke kilang.",
     "example_zh": "那辆大罗厘把油棕果运送到工厂。",
-    "audio": "audio/lori.mp3"
+    "audio": "audio/lori.mp3",
+    "audio_zh": "audio_zh/B319.mp3"
   },
   {
     "id": "B320",
@@ -3517,7 +3836,8 @@
     "category": "场所与交通 / Tempat & Kenderaan",
     "example_bm": "Ambulans membawa mangsa kemalangan ke hospital dengan segera.",
     "example_zh": "救护车迅速将车祸伤者送往医院。",
-    "audio": "audio/ambulans.mp3"
+    "audio": "audio/ambulans.mp3",
+    "audio_zh": "audio_zh/B320.mp3"
   },
   {
     "id": "B321",
@@ -3528,7 +3848,8 @@
     "category": "道德与自然 / Nilai & Alam",
     "example_bm": "Gunung Kinabalu ialah gunung yang tertinggi di Malaysia.",
     "example_zh": "神山（京那巴鲁山）是马来西亚最高的山。",
-    "audio": "audio/gunung.mp3"
+    "audio": "audio/gunung.mp3",
+    "audio_zh": "audio_zh/B321.mp3"
   },
   {
     "id": "B322",
@@ -3539,7 +3860,8 @@
     "category": "道德与自然 / Nilai & Alam",
     "example_bm": "Pada hujung minggu, kami mendaki bukit untuk menikmati udara segar.",
     "example_zh": "周末我们去爬山丘呼吸新鲜空气。",
-    "audio": "audio/bukit.mp3"
+    "audio": "audio/bukit.mp3",
+    "audio_zh": "audio_zh/B322.mp3"
   },
   {
     "id": "B323",
@@ -3550,7 +3872,8 @@
     "category": "道德与自然 / Nilai & Alam",
     "example_bm": "Hutan menjadi tempat tinggal pelbagai jenis flora dan fauna.",
     "example_zh": "森林是各种动植物的栖息地。",
-    "audio": "audio/hutan.mp3"
+    "audio": "audio/hutan.mp3",
+    "audio_zh": "audio_zh/B323.mp3"
   },
   {
     "id": "B324",
@@ -3561,7 +3884,8 @@
     "category": "道德与自然 / Nilai & Alam",
     "example_bm": "Kanak-kanak membina istana pasir di tepi pantai yang bersih.",
     "example_zh": "孩子们在干净的海滩边堆沙堡。",
-    "audio": "audio/pantai.mp3"
+    "audio": "audio/pantai.mp3",
+    "audio_zh": "audio_zh/B324.mp3"
   },
   {
     "id": "B325",
@@ -3572,7 +3896,8 @@
     "category": "道德与自然 / Nilai & Alam",
     "example_bm": "Angin bertiup sepoi-sepoi bahasa pada waktu petang.",
     "example_zh": "傍晚时分微风轻轻吹拂。",
-    "audio": "audio/angin.mp3"
+    "audio": "audio/angin.mp3",
+    "audio_zh": "audio_zh/B325.mp3"
   },
   {
     "id": "B326",
@@ -3583,7 +3908,8 @@
     "category": "道德与自然 / Nilai & Alam",
     "example_bm": "Kanak-kanak dilarang bermain api kerana sangat berbahaya.",
     "example_zh": "禁止儿童玩火，因为这非常危险。",
-    "audio": "audio/api.mp3"
+    "audio": "audio/api.mp3",
+    "audio_zh": "audio_zh/B326.mp3"
   },
   {
     "id": "B327",
@@ -3594,7 +3920,8 @@
     "category": "道德与自然 / Nilai & Alam",
     "example_bm": "Tanah yang subur membolehkan pokok bunga tumbuh dengan sihat.",
     "example_zh": "肥沃的泥土能让花树健康生长。",
-    "audio": "audio/tanah.mp3"
+    "audio": "audio/tanah.mp3",
+    "audio_zh": "audio_zh/B327.mp3"
   },
   {
     "id": "B328",
@@ -3605,7 +3932,8 @@
     "category": "道德与自然 / Nilai & Alam",
     "example_bm": "Murid harus belajar berdikari dengan menyiapkan kerja sekolah sendiri.",
     "example_zh": "学生应该学会独立，自己完成功课。",
-    "audio": "audio/berdikari.mp3"
+    "audio": "audio/berdikari.mp3",
+    "audio_zh": "audio_zh/B328.mp3"
   },
   {
     "id": "B329",
@@ -3616,7 +3944,8 @@
     "category": "道德与自然 / Nilai & Alam",
     "example_bm": "Sikap hemah tinggi menjadikan seseorang disukai oleh semua orang.",
     "example_zh": "崇高的品德和礼貌让一个人受到大家的喜爱。",
-    "audio": "audio/hemah_tinggi.mp3"
+    "audio": "audio/hemah_tinggi.mp3",
+    "audio_zh": "audio_zh/B329.mp3"
   },
   {
     "id": "B330",
@@ -3627,7 +3956,8 @@
     "category": "道德与自然 / Nilai & Alam",
     "example_bm": "Kita mestilah bersikap amanah apabila menjalankan tugas yang diberi.",
     "example_zh": "在执行所托付的任务时，我们必须守信尽责。",
-    "audio": "audio/amanah.mp3"
+    "audio": "audio/amanah.mp3",
+    "audio_zh": "audio_zh/B330.mp3"
   },
   {
     "id": "A101",
@@ -3638,7 +3968,8 @@
     "category": "A1 · Unit 1 Keluarga Tersayang",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/anggota_keluarga.mp3"
+    "audio": "audio/anggota_keluarga.mp3",
+    "audio_zh": "audio_zh/A101.mp3"
   },
   {
     "id": "A102",
@@ -3649,7 +3980,8 @@
     "category": "A1 · Unit 1 Keluarga Tersayang",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/anak_sulung.mp3"
+    "audio": "audio/anak_sulung.mp3",
+    "audio_zh": "audio_zh/A102.mp3"
   },
   {
     "id": "A103",
@@ -3660,7 +3992,8 @@
     "category": "A1 · Unit 1 Keluarga Tersayang",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/anak_bongsu.mp3"
+    "audio": "audio/anak_bongsu.mp3",
+    "audio_zh": "audio_zh/A103.mp3"
   },
   {
     "id": "A104",
@@ -3671,7 +4004,8 @@
     "category": "A1 · Unit 1 Keluarga Tersayang",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/anak_emas.mp3"
+    "audio": "audio/anak_emas.mp3",
+    "audio_zh": "audio_zh/A104.mp3"
   },
   {
     "id": "A105",
@@ -3682,7 +4016,8 @@
     "category": "A1 · Unit 1 Keluarga Tersayang",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/ada_bakat.mp3"
+    "audio": "audio/ada_bakat.mp3",
+    "audio_zh": "audio_zh/A105.mp3"
   },
   {
     "id": "A106",
@@ -3693,7 +4028,8 @@
     "category": "A1 · Unit 1 Keluarga Tersayang",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/ambil_berat.mp3"
+    "audio": "audio/ambil_berat.mp3",
+    "audio_zh": "audio_zh/A106.mp3"
   },
   {
     "id": "A107",
@@ -3704,7 +4040,8 @@
     "category": "A1 · Unit 1 Keluarga Tersayang",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/ambil_hati.mp3"
+    "audio": "audio/ambil_hati.mp3",
+    "audio_zh": "audio_zh/A107.mp3"
   },
   {
     "id": "A108",
@@ -3715,7 +4052,8 @@
     "category": "A1 · Unit 1 Keluarga Tersayang",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/bangga.mp3"
+    "audio": "audio/bangga.mp3",
+    "audio_zh": "audio_zh/A108.mp3"
   },
   {
     "id": "A109",
@@ -3726,7 +4064,8 @@
     "category": "A1 · Unit 1 Keluarga Tersayang",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/tayar.mp3"
+    "audio": "audio/tayar.mp3",
+    "audio_zh": "audio_zh/A109.mp3"
   },
   {
     "id": "A110",
@@ -3737,7 +4076,8 @@
     "category": "A1 · Unit 1 Keluarga Tersayang",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/berwarna_warni.mp3"
+    "audio": "audio/berwarna_warni.mp3",
+    "audio_zh": "audio_zh/A110.mp3"
   },
   {
     "id": "A201",
@@ -3748,7 +4088,8 @@
     "category": "A2 · Unit 2 Hubungan Erat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/memancing_ikan.mp3"
+    "audio": "audio/memancing_ikan.mp3",
+    "audio_zh": "audio_zh/A201.mp3"
   },
   {
     "id": "A202",
@@ -3759,7 +4100,8 @@
     "category": "A2 · Unit 2 Hubungan Erat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/memetik_sayur.mp3"
+    "audio": "audio/memetik_sayur.mp3",
+    "audio_zh": "audio_zh/A202.mp3"
   },
   {
     "id": "A203",
@@ -3770,7 +4112,8 @@
     "category": "A2 · Unit 2 Hubungan Erat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/mendirikan_khemah.mp3"
+    "audio": "audio/mendirikan_khemah.mp3",
+    "audio_zh": "audio_zh/A203.mp3"
   },
   {
     "id": "A204",
@@ -3781,7 +4124,8 @@
     "category": "A2 · Unit 2 Hubungan Erat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/air_terjun.mp3"
+    "audio": "audio/air_terjun.mp3",
+    "audio_zh": "audio_zh/A204.mp3"
   },
   {
     "id": "A205",
@@ -3792,7 +4136,8 @@
     "category": "A2 · Unit 2 Hubungan Erat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/kenangan_manis.mp3"
+    "audio": "audio/kenangan_manis.mp3",
+    "audio_zh": "audio_zh/A205.mp3"
   },
   {
     "id": "A206",
@@ -3803,7 +4148,8 @@
     "category": "A2 · Unit 2 Hubungan Erat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/berkongsi_minat.mp3"
+    "audio": "audio/berkongsi_minat.mp3",
+    "audio_zh": "audio_zh/A206.mp3"
   },
   {
     "id": "A207",
@@ -3814,7 +4160,8 @@
     "category": "A2 · Unit 2 Hubungan Erat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/menjalani_pemeriksaan.mp3"
+    "audio": "audio/menjalani_pemeriksaan.mp3",
+    "audio_zh": "audio_zh/A207.mp3"
   },
   {
     "id": "A208",
@@ -3825,7 +4172,8 @@
     "category": "A2 · Unit 2 Hubungan Erat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/cara_cara_penjagaan.mp3"
+    "audio": "audio/cara_cara_penjagaan.mp3",
+    "audio_zh": "audio_zh/A208.mp3"
   },
   {
     "id": "A301",
@@ -3836,7 +4184,8 @@
     "category": "A3 · Unit 3 Keluarga Prihatin",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/sarung_bantal.mp3"
+    "audio": "audio/sarung_bantal.mp3",
+    "audio_zh": "audio_zh/A301.mp3"
   },
   {
     "id": "A302",
@@ -3847,7 +4196,8 @@
     "category": "A3 · Unit 3 Keluarga Prihatin",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/bekal_makanan.mp3"
+    "audio": "audio/bekal_makanan.mp3",
+    "audio_zh": "audio_zh/A302.mp3"
   },
   {
     "id": "A303",
@@ -3858,7 +4208,8 @@
     "category": "A3 · Unit 3 Keluarga Prihatin",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/bagasi.mp3"
+    "audio": "audio/bagasi.mp3",
+    "audio_zh": "audio_zh/A303.mp3"
   },
   {
     "id": "A304",
@@ -3869,7 +4220,8 @@
     "category": "A3 · Unit 3 Keluarga Prihatin",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/pendidikan_khas.mp3"
+    "audio": "audio/pendidikan_khas.mp3",
+    "audio_zh": "audio_zh/A304.mp3"
   },
   {
     "id": "A305",
@@ -3880,7 +4232,8 @@
     "category": "A3 · Unit 3 Keluarga Prihatin",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/bahasa_isyarat_tangan.mp3"
+    "audio": "audio/bahasa_isyarat_tangan.mp3",
+    "audio_zh": "audio_zh/A305.mp3"
   },
   {
     "id": "A306",
@@ -3891,7 +4244,8 @@
     "category": "A3 · Unit 3 Keluarga Prihatin",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/berkomunikasi.mp3"
+    "audio": "audio/berkomunikasi.mp3",
+    "audio_zh": "audio_zh/A306.mp3"
   },
   {
     "id": "A307",
@@ -3902,7 +4256,8 @@
     "category": "A3 · Unit 3 Keluarga Prihatin",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/membimbing.mp3"
+    "audio": "audio/membimbing.mp3",
+    "audio_zh": "audio_zh/A307.mp3"
   },
   {
     "id": "A308",
@@ -3913,7 +4268,8 @@
     "category": "A3 · Unit 3 Keluarga Prihatin",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/menyayangi.mp3"
+    "audio": "audio/menyayangi.mp3",
+    "audio_zh": "audio_zh/A308.mp3"
   },
   {
     "id": "A309",
@@ -3924,7 +4280,8 @@
     "category": "A3 · Unit 3 Keluarga Prihatin",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/teruja.mp3"
+    "audio": "audio/teruja.mp3",
+    "audio_zh": "audio_zh/A309.mp3"
   },
   {
     "id": "A310",
@@ -3935,7 +4292,8 @@
     "category": "A3 · Unit 3 Keluarga Prihatin",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/menjahit_kostum.mp3"
+    "audio": "audio/menjahit_kostum.mp3",
+    "audio_zh": "audio_zh/A310.mp3"
   },
   {
     "id": "A311",
@@ -3946,7 +4304,8 @@
     "category": "A3 · Unit 3 Keluarga Prihatin",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/menyaksikan.mp3"
+    "audio": "audio/menyaksikan.mp3",
+    "audio_zh": "audio_zh/A311.mp3"
   },
   {
     "id": "A312",
@@ -3957,7 +4316,8 @@
     "category": "A3 · Unit 3 Keluarga Prihatin",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/memberikan_sokongan.mp3"
+    "audio": "audio/memberikan_sokongan.mp3",
+    "audio_zh": "audio_zh/A312.mp3"
   },
   {
     "id": "A313",
@@ -3968,7 +4328,8 @@
     "category": "A3 · Unit 3 Keluarga Prihatin",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/lawatan_sambil_belajar.mp3"
+    "audio": "audio/lawatan_sambil_belajar.mp3",
+    "audio_zh": "audio_zh/A313.mp3"
   },
   {
     "id": "A314",
@@ -3979,7 +4340,8 @@
     "category": "A3 · Unit 3 Keluarga Prihatin",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/menyediakan_sarapan.mp3"
+    "audio": "audio/menyediakan_sarapan.mp3",
+    "audio_zh": "audio_zh/A314.mp3"
   },
   {
     "id": "A315",
@@ -3990,7 +4352,8 @@
     "category": "A3 · Unit 3 Keluarga Prihatin",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/mendengar_taklimat.mp3"
+    "audio": "audio/mendengar_taklimat.mp3",
+    "audio_zh": "audio_zh/A315.mp3"
   },
   {
     "id": "A316",
@@ -4001,7 +4364,8 @@
     "category": "A3 · Unit 3 Keluarga Prihatin",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/jaga_diri.mp3"
+    "audio": "audio/jaga_diri.mp3",
+    "audio_zh": "audio_zh/A316.mp3"
   },
   {
     "id": "A317",
@@ -4012,7 +4376,8 @@
     "category": "A3 · Unit 3 Keluarga Prihatin",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/mendengar_arahan.mp3"
+    "audio": "audio/mendengar_arahan.mp3",
+    "audio_zh": "audio_zh/A317.mp3"
   },
   {
     "id": "A318",
@@ -4023,7 +4388,8 @@
     "category": "A3 · Unit 3 Keluarga Prihatin",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/sebuah_kerusi_rehat.mp3"
+    "audio": "audio/sebuah_kerusi_rehat.mp3",
+    "audio_zh": "audio_zh/A318.mp3"
   },
   {
     "id": "A319",
@@ -4034,7 +4400,8 @@
     "category": "A3 · Unit 3 Keluarga Prihatin",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/sepasang_cermin_mata.mp3"
+    "audio": "audio/sepasang_cermin_mata.mp3",
+    "audio_zh": "audio_zh/A319.mp3"
   },
   {
     "id": "A320",
@@ -4045,7 +4412,8 @@
     "category": "A3 · Unit 3 Keluarga Prihatin",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/senaskhah_surat_khabar.mp3"
+    "audio": "audio/senaskhah_surat_khabar.mp3",
+    "audio_zh": "audio_zh/A320.mp3"
   },
   {
     "id": "A321",
@@ -4056,7 +4424,8 @@
     "category": "A3 · Unit 3 Keluarga Prihatin",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/beberapa_potong_buah_betik.mp3"
+    "audio": "audio/beberapa_potong_buah_betik.mp3",
+    "audio_zh": "audio_zh/A321.mp3"
   },
   {
     "id": "A322",
@@ -4067,7 +4436,8 @@
     "category": "A3 · Unit 3 Keluarga Prihatin",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/sekaki_payung.mp3"
+    "audio": "audio/sekaki_payung.mp3",
+    "audio_zh": "audio_zh/A322.mp3"
   },
   {
     "id": "A401",
@@ -4078,7 +4448,8 @@
     "category": "A4 · Unit 4 Amalan Pemakanan Sihat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/amalan.mp3"
+    "audio": "audio/amalan.mp3",
+    "audio_zh": "audio_zh/A401.mp3"
   },
   {
     "id": "A402",
@@ -4089,7 +4460,8 @@
     "category": "A4 · Unit 4 Amalan Pemakanan Sihat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/makanan_seimbang.mp3"
+    "audio": "audio/makanan_seimbang.mp3",
+    "audio_zh": "audio_zh/A402.mp3"
   },
   {
     "id": "A403",
@@ -4100,7 +4472,8 @@
     "category": "A4 · Unit 4 Amalan Pemakanan Sihat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/membekalkan.mp3"
+    "audio": "audio/membekalkan.mp3",
+    "audio_zh": "audio_zh/A403.mp3"
   },
   {
     "id": "A404",
@@ -4111,7 +4484,8 @@
     "category": "A4 · Unit 4 Amalan Pemakanan Sihat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/festival.mp3"
+    "audio": "audio/festival.mp3",
+    "audio_zh": "audio_zh/A404.mp3"
   },
   {
     "id": "A405",
@@ -4122,7 +4496,8 @@
     "category": "A4 · Unit 4 Amalan Pemakanan Sihat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/berkhasiat.mp3"
+    "audio": "audio/berkhasiat.mp3",
+    "audio_zh": "audio_zh/A405.mp3"
   },
   {
     "id": "A406",
@@ -4133,7 +4508,8 @@
     "category": "A4 · Unit 4 Amalan Pemakanan Sihat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/snek.mp3"
+    "audio": "audio/snek.mp3",
+    "audio_zh": "audio_zh/A406.mp3"
   },
   {
     "id": "A407",
@@ -4144,7 +4520,8 @@
     "category": "A4 · Unit 4 Amalan Pemakanan Sihat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/manis_macam_gula.mp3"
+    "audio": "audio/manis_macam_gula.mp3",
+    "audio_zh": "audio_zh/A407.mp3"
   },
   {
     "id": "A408",
@@ -4155,7 +4532,8 @@
     "category": "A4 · Unit 4 Amalan Pemakanan Sihat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/masin_macam_garam.mp3"
+    "audio": "audio/masin_macam_garam.mp3",
+    "audio_zh": "audio_zh/A408.mp3"
   },
   {
     "id": "A409",
@@ -4166,7 +4544,8 @@
     "category": "A4 · Unit 4 Amalan Pemakanan Sihat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/pahit_macam_hempedu.mp3"
+    "audio": "audio/pahit_macam_hempedu.mp3",
+    "audio_zh": "audio_zh/A409.mp3"
   },
   {
     "id": "A410",
@@ -4177,7 +4556,8 @@
     "category": "A4 · Unit 4 Amalan Pemakanan Sihat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/berat_macam_batu.mp3"
+    "audio": "audio/berat_macam_batu.mp3",
+    "audio_zh": "audio_zh/A410.mp3"
   },
   {
     "id": "A411",
@@ -4188,7 +4568,8 @@
     "category": "A4 · Unit 4 Amalan Pemakanan Sihat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/kerepek.mp3"
+    "audio": "audio/kerepek.mp3",
+    "audio_zh": "audio_zh/A411.mp3"
   },
   {
     "id": "A412",
@@ -4199,7 +4580,8 @@
     "category": "A4 · Unit 4 Amalan Pemakanan Sihat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/peria.mp3"
+    "audio": "audio/peria.mp3",
+    "audio_zh": "audio_zh/A412.mp3"
   },
   {
     "id": "A413",
@@ -4210,7 +4592,8 @@
     "category": "A4 · Unit 4 Amalan Pemakanan Sihat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/memanggang.mp3"
+    "audio": "audio/memanggang.mp3",
+    "audio_zh": "audio_zh/A413.mp3"
   },
   {
     "id": "A414",
@@ -4221,7 +4604,8 @@
     "category": "A4 · Unit 4 Amalan Pemakanan Sihat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/mengukus.mp3"
+    "audio": "audio/mengukus.mp3",
+    "audio_zh": "audio_zh/A414.mp3"
   },
   {
     "id": "A501",
@@ -4232,7 +4616,8 @@
     "category": "A5 · Unit 5 Utamakan Kebersihan",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/kesayangan.mp3"
+    "audio": "audio/kesayangan.mp3",
+    "audio_zh": "audio_zh/A501.mp3"
   },
   {
     "id": "A502",
@@ -4243,7 +4628,8 @@
     "category": "A5 · Unit 5 Utamakan Kebersihan",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/memelihara.mp3"
+    "audio": "audio/memelihara.mp3",
+    "audio_zh": "audio_zh/A502.mp3"
   },
   {
     "id": "A503",
@@ -4254,7 +4640,8 @@
     "category": "A5 · Unit 5 Utamakan Kebersihan",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/cangkerang.mp3"
+    "audio": "audio/cangkerang.mp3",
+    "audio_zh": "audio_zh/A503.mp3"
   },
   {
     "id": "A504",
@@ -4265,7 +4652,8 @@
     "category": "A5 · Unit 5 Utamakan Kebersihan",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/lumut.mp3"
+    "audio": "audio/lumut.mp3",
+    "audio_zh": "audio_zh/A504.mp3"
   },
   {
     "id": "A505",
@@ -4276,7 +4664,8 @@
     "category": "A5 · Unit 5 Utamakan Kebersihan",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/tertumpah.mp3"
+    "audio": "audio/tertumpah.mp3",
+    "audio_zh": "audio_zh/A505.mp3"
   },
   {
     "id": "A506",
@@ -4287,7 +4676,8 @@
     "category": "A5 · Unit 5 Utamakan Kebersihan",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/mengotorkan.mp3"
+    "audio": "audio/mengotorkan.mp3",
+    "audio_zh": "audio_zh/A506.mp3"
   },
   {
     "id": "A507",
@@ -4298,7 +4688,8 @@
     "category": "A5 · Unit 5 Utamakan Kebersihan",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/meludah.mp3"
+    "audio": "audio/meludah.mp3",
+    "audio_zh": "audio_zh/A507.mp3"
   },
   {
     "id": "A508",
@@ -4309,7 +4700,8 @@
     "category": "A5 · Unit 5 Utamakan Kebersihan",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/hampir.mp3"
+    "audio": "audio/hampir.mp3",
+    "audio_zh": "audio_zh/A508.mp3"
   },
   {
     "id": "A509",
@@ -4320,7 +4712,8 @@
     "category": "A5 · Unit 5 Utamakan Kebersihan",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/dekat.mp3"
+    "audio": "audio/dekat.mp3",
+    "audio_zh": "audio_zh/A509.mp3"
   },
   {
     "id": "A510",
@@ -4331,7 +4724,8 @@
     "category": "A5 · Unit 5 Utamakan Kebersihan",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/rapat.mp3"
+    "audio": "audio/rapat.mp3",
+    "audio_zh": "audio_zh/A510.mp3"
   },
   {
     "id": "A511",
@@ -4342,7 +4736,8 @@
     "category": "A5 · Unit 5 Utamakan Kebersihan",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/jauh.mp3"
+    "audio": "audio/jauh.mp3",
+    "audio_zh": "audio_zh/A511.mp3"
   },
   {
     "id": "A601",
@@ -4353,7 +4748,8 @@
     "category": "A6 · Unit 6 Sihat dan Cergas",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/senamrobik.mp3"
+    "audio": "audio/senamrobik.mp3",
+    "audio_zh": "audio_zh/A601.mp3"
   },
   {
     "id": "A602",
@@ -4364,7 +4760,8 @@
     "category": "A6 · Unit 6 Sihat dan Cergas",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/beriadah.mp3"
+    "audio": "audio/beriadah.mp3",
+    "audio_zh": "audio_zh/A602.mp3"
   },
   {
     "id": "A603",
@@ -4375,7 +4772,8 @@
     "category": "A6 · Unit 6 Sihat dan Cergas",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/merehatkan_minda.mp3"
+    "audio": "audio/merehatkan_minda.mp3",
+    "audio_zh": "audio_zh/A603.mp3"
   },
   {
     "id": "A604",
@@ -4386,7 +4784,8 @@
     "category": "A6 · Unit 6 Sihat dan Cergas",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/karnival.mp3"
+    "audio": "audio/karnival.mp3",
+    "audio_zh": "audio_zh/A604.mp3"
   },
   {
     "id": "A605",
@@ -4397,7 +4796,8 @@
     "category": "A6 · Unit 6 Sihat dan Cergas",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/tembok.mp3"
+    "audio": "audio/tembok.mp3",
+    "audio_zh": "audio_zh/A605.mp3"
   },
   {
     "id": "A606",
@@ -4408,7 +4808,8 @@
     "category": "A6 · Unit 6 Sihat dan Cergas",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/abah_abah.mp3"
+    "audio": "audio/abah_abah.mp3",
+    "audio_zh": "audio_zh/A606.mp3"
   },
   {
     "id": "A607",
@@ -4419,7 +4820,8 @@
     "category": "A6 · Unit 6 Sihat dan Cergas",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/tebal.mp3"
+    "audio": "audio/tebal.mp3",
+    "audio_zh": "audio_zh/A607.mp3"
   },
   {
     "id": "A608",
@@ -4430,7 +4832,8 @@
     "category": "A6 · Unit 6 Sihat dan Cergas",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/riuh.mp3"
+    "audio": "audio/riuh.mp3",
+    "audio_zh": "audio_zh/A608.mp3"
   },
   {
     "id": "A609",
@@ -4441,7 +4844,8 @@
     "category": "A6 · Unit 6 Sihat dan Cergas",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/halus.mp3"
+    "audio": "audio/halus.mp3",
+    "audio_zh": "audio_zh/A609.mp3"
   },
   {
     "id": "A610",
@@ -4452,7 +4856,8 @@
     "category": "A6 · Unit 6 Sihat dan Cergas",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/lazat.mp3"
+    "audio": "audio/lazat.mp3",
+    "audio_zh": "audio_zh/A610.mp3"
   },
   {
     "id": "A611",
@@ -4463,7 +4868,8 @@
     "category": "A6 · Unit 6 Sihat dan Cergas",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/nyaman.mp3"
+    "audio": "audio/nyaman.mp3",
+    "audio_zh": "audio_zh/A611.mp3"
   },
   {
     "id": "A701",
@@ -4474,7 +4880,8 @@
     "category": "A7 · Unit 7 Fikirkan Keselamatan",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/pitam.mp3"
+    "audio": "audio/pitam.mp3",
+    "audio_zh": "audio_zh/A701.mp3"
   },
   {
     "id": "A702",
@@ -4485,7 +4892,8 @@
     "category": "A7 · Unit 7 Fikirkan Keselamatan",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/dusun.mp3"
+    "audio": "audio/dusun.mp3",
+    "audio_zh": "audio_zh/A702.mp3"
   },
   {
     "id": "A703",
@@ -4496,7 +4904,8 @@
     "category": "A7 · Unit 7 Fikirkan Keselamatan",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/kerengga.mp3"
+    "audio": "audio/kerengga.mp3",
+    "audio_zh": "audio_zh/A703.mp3"
   },
   {
     "id": "A704",
@@ -4507,7 +4916,8 @@
     "category": "A7 · Unit 7 Fikirkan Keselamatan",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/ganggu.mp3"
+    "audio": "audio/ganggu.mp3",
+    "audio_zh": "audio_zh/A704.mp3"
   },
   {
     "id": "A705",
@@ -4518,7 +4928,8 @@
     "category": "A7 · Unit 7 Fikirkan Keselamatan",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/berbisa.mp3"
+    "audio": "audio/berbisa.mp3",
+    "audio_zh": "audio_zh/A705.mp3"
   },
   {
     "id": "A706",
@@ -4529,7 +4940,8 @@
     "category": "A7 · Unit 7 Fikirkan Keselamatan",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/pelawat.mp3"
+    "audio": "audio/pelawat.mp3",
+    "audio_zh": "audio_zh/A706.mp3"
   },
   {
     "id": "A707",
@@ -4540,7 +4952,8 @@
     "category": "A7 · Unit 7 Fikirkan Keselamatan",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/mendaftarkan_diri.mp3"
+    "audio": "audio/mendaftarkan_diri.mp3",
+    "audio_zh": "audio_zh/A707.mp3"
   },
   {
     "id": "A708",
@@ -4551,7 +4964,8 @@
     "category": "A7 · Unit 7 Fikirkan Keselamatan",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/selimut_api.mp3"
+    "audio": "audio/selimut_api.mp3",
+    "audio_zh": "audio_zh/A708.mp3"
   },
   {
     "id": "A709",
@@ -4562,7 +4976,8 @@
     "category": "A7 · Unit 7 Fikirkan Keselamatan",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/memadamkan_kebakaran.mp3"
+    "audio": "audio/memadamkan_kebakaran.mp3",
+    "audio_zh": "audio_zh/A709.mp3"
   },
   {
     "id": "A710",
@@ -4573,7 +4988,8 @@
     "category": "A7 · Unit 7 Fikirkan Keselamatan",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/berani.mp3"
+    "audio": "audio/berani.mp3",
+    "audio_zh": "audio_zh/A710.mp3"
   },
   {
     "id": "A711",
@@ -4584,7 +5000,8 @@
     "category": "A7 · Unit 7 Fikirkan Keselamatan",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/tewas.mp3"
+    "audio": "audio/tewas.mp3",
+    "audio_zh": "audio_zh/A711.mp3"
   },
   {
     "id": "A712",
@@ -4595,7 +5012,8 @@
     "category": "A7 · Unit 7 Fikirkan Keselamatan",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/bersyukur.mp3"
+    "audio": "audio/bersyukur.mp3",
+    "audio_zh": "audio_zh/A712.mp3"
   },
   {
     "id": "A713",
@@ -4606,7 +5024,8 @@
     "category": "A7 · Unit 7 Fikirkan Keselamatan",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/peralatan_elektrik.mp3"
+    "audio": "audio/peralatan_elektrik.mp3",
+    "audio_zh": "audio_zh/A713.mp3"
   },
   {
     "id": "A714",
@@ -4617,7 +5036,8 @@
     "category": "A7 · Unit 7 Fikirkan Keselamatan",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/menggosok_baju.mp3"
+    "audio": "audio/menggosok_baju.mp3",
+    "audio_zh": "audio_zh/A714.mp3"
   },
   {
     "id": "A715",
@@ -4628,7 +5048,8 @@
     "category": "A7 · Unit 7 Fikirkan Keselamatan",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/seterika.mp3"
+    "audio": "audio/seterika.mp3",
+    "audio_zh": "audio_zh/A715.mp3"
   },
   {
     "id": "A716",
@@ -4639,7 +5060,8 @@
     "category": "A7 · Unit 7 Fikirkan Keselamatan",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/cuai.mp3"
+    "audio": "audio/cuai.mp3",
+    "audio_zh": "audio_zh/A716.mp3"
   },
   {
     "id": "A717",
@@ -4650,7 +5072,8 @@
     "category": "A7 · Unit 7 Fikirkan Keselamatan",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/mengelakkan.mp3"
+    "audio": "audio/mengelakkan.mp3",
+    "audio_zh": "audio_zh/A717.mp3"
   },
   {
     "id": "A801",
@@ -4661,7 +5084,8 @@
     "category": "A8 · Unit 8 Pastikan Murid Selamat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/acara.mp3"
+    "audio": "audio/acara.mp3",
+    "audio_zh": "audio_zh/A801.mp3"
   },
   {
     "id": "A802",
@@ -4672,7 +5096,8 @@
     "category": "A8 · Unit 8 Pastikan Murid Selamat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/bergurau.mp3"
+    "audio": "audio/bergurau.mp3",
+    "audio_zh": "audio_zh/A802.mp3"
   },
   {
     "id": "A803",
@@ -4683,7 +5108,8 @@
     "category": "A8 · Unit 8 Pastikan Murid Selamat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/gelagat.mp3"
+    "audio": "audio/gelagat.mp3",
+    "audio_zh": "audio_zh/A803.mp3"
   },
   {
     "id": "A804",
@@ -4694,7 +5120,8 @@
     "category": "A8 · Unit 8 Pastikan Murid Selamat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/berkejar_kejaran.mp3"
+    "audio": "audio/berkejar_kejaran.mp3",
+    "audio_zh": "audio_zh/A804.mp3"
   },
   {
     "id": "A805",
@@ -4705,7 +5132,8 @@
     "category": "A8 · Unit 8 Pastikan Murid Selamat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/ditegur.mp3"
+    "audio": "audio/ditegur.mp3",
+    "audio_zh": "audio_zh/A805.mp3"
   },
   {
     "id": "A806",
@@ -4716,7 +5144,8 @@
     "category": "A8 · Unit 8 Pastikan Murid Selamat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/perbuatan.mp3"
+    "audio": "audio/perbuatan.mp3",
+    "audio_zh": "audio_zh/A806.mp3"
   },
   {
     "id": "A807",
@@ -4727,7 +5156,8 @@
     "category": "A8 · Unit 8 Pastikan Murid Selamat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/menunggu.mp3"
+    "audio": "audio/menunggu.mp3",
+    "audio_zh": "audio_zh/A807.mp3"
   },
   {
     "id": "A808",
@@ -4738,7 +5168,8 @@
     "category": "A8 · Unit 8 Pastikan Murid Selamat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/pondok_pengawal.mp3"
+    "audio": "audio/pondok_pengawal.mp3",
+    "audio_zh": "audio_zh/A808.mp3"
   },
   {
     "id": "A809",
@@ -4749,7 +5180,8 @@
     "category": "A8 · Unit 8 Pastikan Murid Selamat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/cemas.mp3"
+    "audio": "audio/cemas.mp3",
+    "audio_zh": "audio_zh/A809.mp3"
   },
   {
     "id": "A810",
@@ -4760,7 +5192,8 @@
     "category": "A8 · Unit 8 Pastikan Murid Selamat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/takut.mp3"
+    "audio": "audio/takut.mp3",
+    "audio_zh": "audio_zh/A810.mp3"
   },
   {
     "id": "A811",
@@ -4771,7 +5204,8 @@
     "category": "A8 · Unit 8 Pastikan Murid Selamat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/pulang.mp3"
+    "audio": "audio/pulang.mp3",
+    "audio_zh": "audio_zh/A811.mp3"
   },
   {
     "id": "A812",
@@ -4782,7 +5216,8 @@
     "category": "A8 · Unit 8 Pastikan Murid Selamat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/pesanan.mp3"
+    "audio": "audio/pesanan.mp3",
+    "audio_zh": "audio_zh/A812.mp3"
   },
   {
     "id": "A813",
@@ -4793,7 +5228,8 @@
     "category": "A8 · Unit 8 Pastikan Murid Selamat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/tindakan.mp3"
+    "audio": "audio/tindakan.mp3",
+    "audio_zh": "audio_zh/A813.mp3"
   },
   {
     "id": "A814",
@@ -4804,7 +5240,8 @@
     "category": "A8 · Unit 8 Pastikan Murid Selamat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/mengadukan.mp3"
+    "audio": "audio/mengadukan.mp3",
+    "audio_zh": "audio_zh/A814.mp3"
   },
   {
     "id": "A815",
@@ -4815,7 +5252,8 @@
     "category": "A8 · Unit 8 Pastikan Murid Selamat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/menghubungi.mp3"
+    "audio": "audio/menghubungi.mp3",
+    "audio_zh": "audio_zh/A815.mp3"
   },
   {
     "id": "A816",
@@ -4826,7 +5264,8 @@
     "category": "A8 · Unit 8 Pastikan Murid Selamat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/sudut.mp3"
+    "audio": "audio/sudut.mp3",
+    "audio_zh": "audio_zh/A816.mp3"
   },
   {
     "id": "A817",
@@ -4837,7 +5276,8 @@
     "category": "A8 · Unit 8 Pastikan Murid Selamat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/antara.mp3"
+    "audio": "audio/antara.mp3",
+    "audio_zh": "audio_zh/A817.mp3"
   },
   {
     "id": "A818",
@@ -4848,7 +5288,8 @@
     "category": "A8 · Unit 8 Pastikan Murid Selamat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/sebelah.mp3"
+    "audio": "audio/sebelah.mp3",
+    "audio_zh": "audio_zh/A818.mp3"
   },
   {
     "id": "A819",
@@ -4859,7 +5300,8 @@
     "category": "A8 · Unit 8 Pastikan Murid Selamat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/berjerebu.mp3"
+    "audio": "audio/berjerebu.mp3",
+    "audio_zh": "audio_zh/A819.mp3"
   },
   {
     "id": "A820",
@@ -4870,7 +5312,8 @@
     "category": "A8 · Unit 8 Pastikan Murid Selamat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/pengesan_asap.mp3"
+    "audio": "audio/pengesan_asap.mp3",
+    "audio_zh": "audio_zh/A820.mp3"
   },
   {
     "id": "A821",
@@ -4881,7 +5324,8 @@
     "category": "A8 · Unit 8 Pastikan Murid Selamat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/mencegah.mp3"
+    "audio": "audio/mencegah.mp3",
+    "audio_zh": "audio_zh/A821.mp3"
   },
   {
     "id": "A822",
@@ -4892,7 +5336,8 @@
     "category": "A8 · Unit 8 Pastikan Murid Selamat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/kecemasan.mp3"
+    "audio": "audio/kecemasan.mp3",
+    "audio_zh": "audio_zh/A822.mp3"
   },
   {
     "id": "A901",
@@ -4903,7 +5348,8 @@
     "category": "A9 · Unit 9 Berhemah di Jalan Raya",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/bersabar.mp3"
+    "audio": "audio/bersabar.mp3",
+    "audio_zh": "audio_zh/A901.mp3"
   },
   {
     "id": "A902",
@@ -4914,7 +5360,8 @@
     "category": "A9 · Unit 9 Berhemah di Jalan Raya",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/terburu_buru.mp3"
+    "audio": "audio/terburu_buru.mp3",
+    "audio_zh": "audio_zh/A902.mp3"
   },
   {
     "id": "A903",
@@ -4925,7 +5372,8 @@
     "category": "A9 · Unit 9 Berhemah di Jalan Raya",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/lorong_kecemasan.mp3"
+    "audio": "audio/lorong_kecemasan.mp3",
+    "audio_zh": "audio_zh/A903.mp3"
   },
   {
     "id": "A904",
@@ -4936,7 +5384,8 @@
     "category": "A9 · Unit 9 Berhemah di Jalan Raya",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/bimbang.mp3"
+    "audio": "audio/bimbang.mp3",
+    "audio_zh": "audio_zh/A904.mp3"
   },
   {
     "id": "A905",
@@ -4947,7 +5396,8 @@
     "category": "A9 · Unit 9 Berhemah di Jalan Raya",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/pemantul_cahaya.mp3"
+    "audio": "audio/pemantul_cahaya.mp3",
+    "audio_zh": "audio_zh/A905.mp3"
   },
   {
     "id": "A906",
@@ -4958,7 +5408,8 @@
     "category": "A9 · Unit 9 Berhemah di Jalan Raya",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/rim_basikal.mp3"
+    "audio": "audio/rim_basikal.mp3",
+    "audio_zh": "audio_zh/A906.mp3"
   },
   {
     "id": "A907",
@@ -4969,7 +5420,8 @@
     "category": "A9 · Unit 9 Berhemah di Jalan Raya",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/pengguna_jalan_raya.mp3"
+    "audio": "audio/pengguna_jalan_raya.mp3",
+    "audio_zh": "audio_zh/A907.mp3"
   },
   {
     "id": "A908",
@@ -4980,7 +5432,8 @@
     "category": "A9 · Unit 9 Berhemah di Jalan Raya",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/berhemah.mp3"
+    "audio": "audio/berhemah.mp3",
+    "audio_zh": "audio_zh/A908.mp3"
   },
   {
     "id": "A909",
@@ -4991,7 +5444,8 @@
     "category": "A9 · Unit 9 Berhemah di Jalan Raya",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/membrek.mp3"
+    "audio": "audio/membrek.mp3",
+    "audio_zh": "audio_zh/A909.mp3"
   },
   {
     "id": "A910",
@@ -5002,7 +5456,8 @@
     "category": "A9 · Unit 9 Berhemah di Jalan Raya",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/warden_trafik.mp3"
+    "audio": "audio/warden_trafik.mp3",
+    "audio_zh": "audio_zh/A910.mp3"
   },
   {
     "id": "A911",
@@ -5013,7 +5468,8 @@
     "category": "A9 · Unit 9 Berhemah di Jalan Raya",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/penting.mp3"
+    "audio": "audio/penting.mp3",
+    "audio_zh": "audio_zh/A911.mp3"
   },
   {
     "id": "A912",
@@ -5024,7 +5480,8 @@
     "category": "A9 · Unit 9 Berhemah di Jalan Raya",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/bertanggungjawab.mp3"
+    "audio": "audio/bertanggungjawab.mp3",
+    "audio_zh": "audio_zh/A912.mp3"
   },
   {
     "id": "A913",
@@ -5035,7 +5492,8 @@
     "category": "A9 · Unit 9 Berhemah di Jalan Raya",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/papan_tanda.mp3"
+    "audio": "audio/papan_tanda.mp3",
+    "audio_zh": "audio_zh/A913.mp3"
   },
   {
     "id": "A914",
@@ -5046,7 +5504,8 @@
     "category": "A9 · Unit 9 Berhemah di Jalan Raya",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/maksud.mp3"
+    "audio": "audio/maksud.mp3",
+    "audio_zh": "audio_zh/A914.mp3"
   },
   {
     "id": "A915",
@@ -5057,7 +5516,8 @@
     "category": "A9 · Unit 9 Berhemah di Jalan Raya",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/penunggang_basikal.mp3"
+    "audio": "audio/penunggang_basikal.mp3",
+    "audio_zh": "audio_zh/A915.mp3"
   },
   {
     "id": "A1001",
@@ -5068,7 +5528,8 @@
     "category": "A10 · Unit 10 Rakan Karib",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/memasang_muzik.mp3"
+    "audio": "audio/memasang_muzik.mp3",
+    "audio_zh": "audio_zh/A1001.mp3"
   },
   {
     "id": "A1002",
@@ -5079,7 +5540,8 @@
     "category": "A10 · Unit 10 Rakan Karib",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/baik_hati.mp3"
+    "audio": "audio/baik_hati.mp3",
+    "audio_zh": "audio_zh/A1002.mp3"
   },
   {
     "id": "A1003",
@@ -5090,7 +5552,8 @@
     "category": "A10 · Unit 10 Rakan Karib",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/ringan_tulang.mp3"
+    "audio": "audio/ringan_tulang.mp3",
+    "audio_zh": "audio_zh/A1003.mp3"
   },
   {
     "id": "A1004",
@@ -5101,7 +5564,8 @@
     "category": "A10 · Unit 10 Rakan Karib",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/kesusahan.mp3"
+    "audio": "audio/kesusahan.mp3",
+    "audio_zh": "audio_zh/A1004.mp3"
   },
   {
     "id": "A1005",
@@ -5112,7 +5576,8 @@
     "category": "A10 · Unit 10 Rakan Karib",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/berbincang.mp3"
+    "audio": "audio/berbincang.mp3",
+    "audio_zh": "audio_zh/A1005.mp3"
   },
   {
     "id": "A1006",
@@ -5123,7 +5588,8 @@
     "category": "A10 · Unit 10 Rakan Karib",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/senggang.mp3"
+    "audio": "audio/senggang.mp3",
+    "audio_zh": "audio_zh/A1006.mp3"
   },
   {
     "id": "A1007",
@@ -5134,7 +5600,8 @@
     "category": "A10 · Unit 10 Rakan Karib",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/tewas.mp3"
+    "audio": "audio/tewas.mp3",
+    "audio_zh": "audio_zh/A1007.mp3"
   },
   {
     "id": "A1008",
@@ -5145,7 +5612,8 @@
     "category": "A10 · Unit 10 Rakan Karib",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/mengagihkan_tugas.mp3"
+    "audio": "audio/mengagihkan_tugas.mp3",
+    "audio_zh": "audio_zh/A1008.mp3"
   },
   {
     "id": "A1009",
@@ -5156,7 +5624,8 @@
     "category": "A10 · Unit 10 Rakan Karib",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/simpati.mp3"
+    "audio": "audio/simpati.mp3",
+    "audio_zh": "audio_zh/A1009.mp3"
   },
   {
     "id": "A1101",
@@ -5167,7 +5636,8 @@
     "category": "A11 · Unit 11 Hidup Bermasyarakat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/lembap.mp3"
+    "audio": "audio/lembap.mp3",
+    "audio_zh": "audio_zh/A1101.mp3"
   },
   {
     "id": "A1102",
@@ -5178,7 +5648,8 @@
     "category": "A11 · Unit 11 Hidup Bermasyarakat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/berkenalan.mp3"
+    "audio": "audio/berkenalan.mp3",
+    "audio_zh": "audio_zh/A1102.mp3"
   },
   {
     "id": "A1103",
@@ -5189,7 +5660,8 @@
     "category": "A11 · Unit 11 Hidup Bermasyarakat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/menikmati_makanan.mp3"
+    "audio": "audio/menikmati_makanan.mp3",
+    "audio_zh": "audio_zh/A1103.mp3"
   },
   {
     "id": "A1104",
@@ -5200,7 +5672,8 @@
     "category": "A11 · Unit 11 Hidup Bermasyarakat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/demam.mp3"
+    "audio": "audio/demam.mp3",
+    "audio_zh": "audio_zh/A1104.mp3"
   },
   {
     "id": "A1105",
@@ -5211,7 +5684,8 @@
     "category": "A11 · Unit 11 Hidup Bermasyarakat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/penyayang.mp3"
+    "audio": "audio/penyayang.mp3",
+    "audio_zh": "audio_zh/A1105.mp3"
   },
   {
     "id": "A1106",
@@ -5222,7 +5696,8 @@
     "category": "A11 · Unit 11 Hidup Bermasyarakat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/berteduh.mp3"
+    "audio": "audio/berteduh.mp3",
+    "audio_zh": "audio_zh/A1106.mp3"
   },
   {
     "id": "A1107",
@@ -5233,7 +5708,8 @@
     "category": "A11 · Unit 11 Hidup Bermasyarakat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/hujan_renyai_renyai.mp3"
+    "audio": "audio/hujan_renyai_renyai.mp3",
+    "audio_zh": "audio_zh/A1107.mp3"
   },
   {
     "id": "A1108",
@@ -5244,7 +5720,8 @@
     "category": "A11 · Unit 11 Hidup Bermasyarakat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/menghirup.mp3"
+    "audio": "audio/menghirup.mp3",
+    "audio_zh": "audio_zh/A1108.mp3"
   },
   {
     "id": "A1109",
@@ -5255,7 +5732,8 @@
     "category": "A11 · Unit 11 Hidup Bermasyarakat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/menjiruskan_air.mp3"
+    "audio": "audio/menjiruskan_air.mp3",
+    "audio_zh": "audio_zh/A1109.mp3"
   },
   {
     "id": "A1201",
@@ -5266,7 +5744,8 @@
     "category": "A12 · Unit 12 Kejayaan Milik Kita",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/membahagikan_masa.mp3"
+    "audio": "audio/membahagikan_masa.mp3",
+    "audio_zh": "audio_zh/A1201.mp3"
   },
   {
     "id": "A1202",
@@ -5277,7 +5756,8 @@
     "category": "A12 · Unit 12 Kejayaan Milik Kita",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/berkongsi.mp3"
+    "audio": "audio/berkongsi.mp3",
+    "audio_zh": "audio_zh/A1202.mp3"
   },
   {
     "id": "A1203",
@@ -5288,7 +5768,8 @@
     "category": "A12 · Unit 12 Kejayaan Milik Kita",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/otak_cair.mp3"
+    "audio": "audio/otak_cair.mp3",
+    "audio_zh": "audio_zh/A1203.mp3"
   },
   {
     "id": "A1204",
@@ -5299,7 +5780,8 @@
     "category": "A12 · Unit 12 Kejayaan Milik Kita",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/bersepakat.mp3"
+    "audio": "audio/bersepakat.mp3",
+    "audio_zh": "audio_zh/A1204.mp3"
   },
   {
     "id": "A1205",
@@ -5310,7 +5792,8 @@
     "category": "A12 · Unit 12 Kejayaan Milik Kita",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/rujukan.mp3"
+    "audio": "audio/rujukan.mp3",
+    "audio_zh": "audio_zh/A1205.mp3"
   },
   {
     "id": "A1206",
@@ -5321,7 +5804,8 @@
     "category": "A12 · Unit 12 Kejayaan Milik Kita",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/berganding_bahu.mp3"
+    "audio": "audio/berganding_bahu.mp3",
+    "audio_zh": "audio_zh/A1206.mp3"
   },
   {
     "id": "A1207",
@@ -5332,7 +5816,8 @@
     "category": "A12 · Unit 12 Kejayaan Milik Kita",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/cemerlang.mp3"
+    "audio": "audio/cemerlang.mp3",
+    "audio_zh": "audio_zh/A1207.mp3"
   },
   {
     "id": "A1208",
@@ -5343,7 +5828,8 @@
     "category": "A12 · Unit 12 Kejayaan Milik Kita",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/ikut_jejak.mp3"
+    "audio": "audio/ikut_jejak.mp3",
+    "audio_zh": "audio_zh/A1208.mp3"
   },
   {
     "id": "A1209",
@@ -5354,7 +5840,8 @@
     "category": "A12 · Unit 12 Kejayaan Milik Kita",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/buah_fikiran.mp3"
+    "audio": "audio/buah_fikiran.mp3",
+    "audio_zh": "audio_zh/A1209.mp3"
   },
   {
     "id": "A1210",
@@ -5365,7 +5852,8 @@
     "category": "A12 · Unit 12 Kejayaan Milik Kita",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/melayari_internet.mp3"
+    "audio": "audio/melayari_internet.mp3",
+    "audio_zh": "audio_zh/A1210.mp3"
   },
   {
     "id": "A1211",
@@ -5376,7 +5864,8 @@
     "category": "A12 · Unit 12 Kejayaan Milik Kita",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/selesai.mp3"
+    "audio": "audio/selesai.mp3",
+    "audio_zh": "audio_zh/A1211.mp3"
   },
   {
     "id": "A1212",
@@ -5387,7 +5876,8 @@
     "category": "A12 · Unit 12 Kejayaan Milik Kita",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/memuji.mp3"
+    "audio": "audio/memuji.mp3",
+    "audio_zh": "audio_zh/A1212.mp3"
   },
   {
     "id": "A1213",
@@ -5398,7 +5888,8 @@
     "category": "A12 · Unit 12 Kejayaan Milik Kita",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/luntur.mp3"
+    "audio": "audio/luntur.mp3",
+    "audio_zh": "audio_zh/A1213.mp3"
   },
   {
     "id": "A1214",
@@ -5409,7 +5900,8 @@
     "category": "A12 · Unit 12 Kejayaan Milik Kita",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/lukis_mural.mp3"
+    "audio": "audio/lukis_mural.mp3",
+    "audio_zh": "audio_zh/A1214.mp3"
   },
   {
     "id": "A1215",
@@ -5420,7 +5912,8 @@
     "category": "A12 · Unit 12 Kejayaan Milik Kita",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/meja_makan.mp3"
+    "audio": "audio/meja_makan.mp3",
+    "audio_zh": "audio_zh/A1215.mp3"
   },
   {
     "id": "A1216",
@@ -5431,7 +5924,8 @@
     "category": "A12 · Unit 12 Kejayaan Milik Kita",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/lantai_simen.mp3"
+    "audio": "audio/lantai_simen.mp3",
+    "audio_zh": "audio_zh/A1216.mp3"
   },
   {
     "id": "A1217",
@@ -5442,7 +5936,8 @@
     "category": "A12 · Unit 12 Kejayaan Milik Kita",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/pembesar_suara.mp3"
+    "audio": "audio/pembesar_suara.mp3",
+    "audio_zh": "audio_zh/A1217.mp3"
   },
   {
     "id": "A1218",
@@ -5453,7 +5948,8 @@
     "category": "A12 · Unit 12 Kejayaan Milik Kita",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/bulu_tangkis.mp3"
+    "audio": "audio/bulu_tangkis.mp3",
+    "audio_zh": "audio_zh/A1218.mp3"
   },
   {
     "id": "A1219",
@@ -5464,7 +5960,8 @@
     "category": "A12 · Unit 12 Kejayaan Milik Kita",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/ruang_legar.mp3"
+    "audio": "audio/ruang_legar.mp3",
+    "audio_zh": "audio_zh/A1219.mp3"
   },
   {
     "id": "A1301",
@@ -5475,7 +5972,8 @@
     "category": "A13 · Unit 13 Raikan Tetamu",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/melayan.mp3"
+    "audio": "audio/melayan.mp3",
+    "audio_zh": "audio_zh/A1301.mp3"
   },
   {
     "id": "A1302",
@@ -5486,7 +5984,8 @@
     "category": "A13 · Unit 13 Raikan Tetamu",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/bertanya_khabar.mp3"
+    "audio": "audio/bertanya_khabar.mp3",
+    "audio_zh": "audio_zh/A1302.mp3"
   },
   {
     "id": "A1303",
@@ -5497,7 +5996,8 @@
     "category": "A13 · Unit 13 Raikan Tetamu",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/menyambut.mp3"
+    "audio": "audio/menyambut.mp3",
+    "audio_zh": "audio_zh/A1303.mp3"
   },
   {
     "id": "A1304",
@@ -5508,7 +6008,8 @@
     "category": "A13 · Unit 13 Raikan Tetamu",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/dibancuh.mp3"
+    "audio": "audio/dibancuh.mp3",
+    "audio_zh": "audio_zh/A1304.mp3"
   },
   {
     "id": "A1305",
@@ -5519,7 +6020,8 @@
     "category": "A13 · Unit 13 Raikan Tetamu",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/teko.mp3"
+    "audio": "audio/teko.mp3",
+    "audio_zh": "audio_zh/A1305.mp3"
   },
   {
     "id": "A1306",
@@ -5530,7 +6032,8 @@
     "category": "A13 · Unit 13 Raikan Tetamu",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/mencium.mp3"
+    "audio": "audio/mencium.mp3",
+    "audio_zh": "audio_zh/A1306.mp3"
   },
   {
     "id": "A1307",
@@ -5541,7 +6044,8 @@
     "category": "A13 · Unit 13 Raikan Tetamu",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/aroma.mp3"
+    "audio": "audio/aroma.mp3",
+    "audio_zh": "audio_zh/A1307.mp3"
   },
   {
     "id": "A1308",
@@ -5552,7 +6056,8 @@
     "category": "A13 · Unit 13 Raikan Tetamu",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/bunga_malai.mp3"
+    "audio": "audio/bunga_malai.mp3",
+    "audio_zh": "audio_zh/A1308.mp3"
   },
   {
     "id": "A1309",
@@ -5563,7 +6068,8 @@
     "category": "A13 · Unit 13 Raikan Tetamu",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/popular.mp3"
+    "audio": "audio/popular.mp3",
+    "audio_zh": "audio_zh/A1309.mp3"
   },
   {
     "id": "A1310",
@@ -5574,7 +6080,8 @@
     "category": "A13 · Unit 13 Raikan Tetamu",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/upacara.mp3"
+    "audio": "audio/upacara.mp3",
+    "audio_zh": "audio_zh/A1310.mp3"
   },
   {
     "id": "A1311",
@@ -5585,7 +6092,8 @@
     "category": "A13 · Unit 13 Raikan Tetamu",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/dikalungkan.mp3"
+    "audio": "audio/dikalungkan.mp3",
+    "audio_zh": "audio_zh/A1311.mp3"
   },
   {
     "id": "A1312",
@@ -5596,7 +6104,8 @@
     "category": "A13 · Unit 13 Raikan Tetamu",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/tanda_penghormatan.mp3"
+    "audio": "audio/tanda_penghormatan.mp3",
+    "audio_zh": "audio_zh/A1312.mp3"
   },
   {
     "id": "A1313",
@@ -5607,7 +6116,8 @@
     "category": "A13 · Unit 13 Raikan Tetamu",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/bunga_kekwa.mp3"
+    "audio": "audio/bunga_kekwa.mp3",
+    "audio_zh": "audio_zh/A1313.mp3"
   },
   {
     "id": "A1314",
@@ -5618,7 +6128,8 @@
     "category": "A13 · Unit 13 Raikan Tetamu",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/bunga_melur.mp3"
+    "audio": "audio/bunga_melur.mp3",
+    "audio_zh": "audio_zh/A1314.mp3"
   },
   {
     "id": "A1315",
@@ -5629,7 +6140,8 @@
     "category": "A13 · Unit 13 Raikan Tetamu",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/rumah_panjang.mp3"
+    "audio": "audio/rumah_panjang.mp3",
+    "audio_zh": "audio_zh/A1315.mp3"
   },
   {
     "id": "A1316",
@@ -5640,7 +6152,8 @@
     "category": "A13 · Unit 13 Raikan Tetamu",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/tetamu.mp3"
+    "audio": "audio/tetamu.mp3",
+    "audio_zh": "audio_zh/A1316.mp3"
   },
   {
     "id": "A1317",
@@ -5651,7 +6164,8 @@
     "category": "A13 · Unit 13 Raikan Tetamu",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/kekuda.mp3"
+    "audio": "audio/kekuda.mp3",
+    "audio_zh": "audio_zh/A1317.mp3"
   },
   {
     "id": "A1318",
@@ -5662,7 +6176,8 @@
     "category": "A13 · Unit 13 Raikan Tetamu",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/tetupai.mp3"
+    "audio": "audio/tetupai.mp3",
+    "audio_zh": "audio_zh/A1318.mp3"
   },
   {
     "id": "A1319",
@@ -5673,7 +6188,8 @@
     "category": "A13 · Unit 13 Raikan Tetamu",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/kekisi.mp3"
+    "audio": "audio/kekisi.mp3",
+    "audio_zh": "audio_zh/A1319.mp3"
   },
   {
     "id": "A1320",
@@ -5684,7 +6200,8 @@
     "category": "A13 · Unit 13 Raikan Tetamu",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/seni_bina.mp3"
+    "audio": "audio/seni_bina.mp3",
+    "audio_zh": "audio_zh/A1320.mp3"
   },
   {
     "id": "A1401",
@@ -5695,7 +6212,8 @@
     "category": "A14 · Unit 14 Kesenian Bangsa",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/persembahan.mp3"
+    "audio": "audio/persembahan.mp3",
+    "audio_zh": "audio_zh/A1401.mp3"
   },
   {
     "id": "A1402",
@@ -5706,7 +6224,8 @@
     "category": "A14 · Unit 14 Kesenian Bangsa",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/biola.mp3"
+    "audio": "audio/biola.mp3",
+    "audio_zh": "audio_zh/A1402.mp3"
   },
   {
     "id": "A1403",
@@ -5717,7 +6236,8 @@
     "category": "A14 · Unit 14 Kesenian Bangsa",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/akordion.mp3"
+    "audio": "audio/akordion.mp3",
+    "audio_zh": "audio_zh/A1403.mp3"
   },
   {
     "id": "A1404",
@@ -5728,7 +6248,8 @@
     "category": "A14 · Unit 14 Kesenian Bangsa",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/solekan.mp3"
+    "audio": "audio/solekan.mp3",
+    "audio_zh": "audio_zh/A1404.mp3"
   },
   {
     "id": "A1405",
@@ -5739,7 +6260,8 @@
     "category": "A14 · Unit 14 Kesenian Bangsa",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/kostum.mp3"
+    "audio": "audio/kostum.mp3",
+    "audio_zh": "audio_zh/A1405.mp3"
   },
   {
     "id": "A1406",
@@ -5750,7 +6272,8 @@
     "category": "A14 · Unit 14 Kesenian Bangsa",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/persamaan.mp3"
+    "audio": "audio/persamaan.mp3",
+    "audio_zh": "audio_zh/A1406.mp3"
   },
   {
     "id": "A1407",
@@ -5761,7 +6284,8 @@
     "category": "A14 · Unit 14 Kesenian Bangsa",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/perbezaan.mp3"
+    "audio": "audio/perbezaan.mp3",
+    "audio_zh": "audio_zh/A1407.mp3"
   },
   {
     "id": "A1408",
@@ -5772,7 +6296,8 @@
     "category": "A14 · Unit 14 Kesenian Bangsa",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/kraf_tangan.mp3"
+    "audio": "audio/kraf_tangan.mp3",
+    "audio_zh": "audio_zh/A1408.mp3"
   },
   {
     "id": "A1409",
@@ -5783,7 +6308,8 @@
     "category": "A14 · Unit 14 Kesenian Bangsa",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/cenderamata.mp3"
+    "audio": "audio/cenderamata.mp3",
+    "audio_zh": "audio_zh/A1409.mp3"
   },
   {
     "id": "A1410",
@@ -5794,7 +6320,8 @@
     "category": "A14 · Unit 14 Kesenian Bangsa",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/meminati.mp3"
+    "audio": "audio/meminati.mp3",
+    "audio_zh": "audio_zh/A1410.mp3"
   },
   {
     "id": "A1411",
@@ -5805,7 +6332,8 @@
     "category": "A14 · Unit 14 Kesenian Bangsa",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/pertahanan_diri.mp3"
+    "audio": "audio/pertahanan_diri.mp3",
+    "audio_zh": "audio_zh/A1411.mp3"
   },
   {
     "id": "A1412",
@@ -5816,7 +6344,8 @@
     "category": "A14 · Unit 14 Kesenian Bangsa",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/kepantasan.mp3"
+    "audio": "audio/kepantasan.mp3",
+    "audio_zh": "audio_zh/A1412.mp3"
   },
   {
     "id": "A1413",
@@ -5827,7 +6356,8 @@
     "category": "A14 · Unit 14 Kesenian Bangsa",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/ketahanan.mp3"
+    "audio": "audio/ketahanan.mp3",
+    "audio_zh": "audio_zh/A1413.mp3"
   },
   {
     "id": "A1414",
@@ -5838,7 +6368,8 @@
     "category": "A14 · Unit 14 Kesenian Bangsa",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/jurulatih.mp3"
+    "audio": "audio/jurulatih.mp3",
+    "audio_zh": "audio_zh/A1414.mp3"
   },
   {
     "id": "A1415",
@@ -5849,7 +6380,8 @@
     "category": "A14 · Unit 14 Kesenian Bangsa",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/buah_mulut.mp3"
+    "audio": "audio/buah_mulut.mp3",
+    "audio_zh": "audio_zh/A1415.mp3"
   },
   {
     "id": "A1416",
@@ -5860,7 +6392,8 @@
     "category": "A14 · Unit 14 Kesenian Bangsa",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/murah_hati.mp3"
+    "audio": "audio/murah_hati.mp3",
+    "audio_zh": "audio_zh/A1416.mp3"
   },
   {
     "id": "A1417",
@@ -5871,7 +6404,8 @@
     "category": "A14 · Unit 14 Kesenian Bangsa",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/saudara_mara.mp3"
+    "audio": "audio/saudara_mara.mp3",
+    "audio_zh": "audio_zh/A1417.mp3"
   },
   {
     "id": "A1418",
@@ -5882,7 +6416,8 @@
     "category": "A14 · Unit 14 Kesenian Bangsa",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/lauk_pauk.mp3"
+    "audio": "audio/lauk_pauk.mp3",
+    "audio_zh": "audio_zh/A1418.mp3"
   },
   {
     "id": "A1419",
@@ -5893,7 +6428,8 @@
     "category": "A14 · Unit 14 Kesenian Bangsa",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/turun_temurun.mp3"
+    "audio": "audio/turun_temurun.mp3",
+    "audio_zh": "audio_zh/A1419.mp3"
   },
   {
     "id": "A1420",
@@ -5904,7 +6440,8 @@
     "category": "A14 · Unit 14 Kesenian Bangsa",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/rempah_ratus.mp3"
+    "audio": "audio/rempah_ratus.mp3",
+    "audio_zh": "audio_zh/A1420.mp3"
   },
   {
     "id": "A1501",
@@ -5915,7 +6452,8 @@
     "category": "A15 · Unit 15 Pelihara Warisan",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/menggerakkan.mp3"
+    "audio": "audio/menggerakkan.mp3",
+    "audio_zh": "audio_zh/A1501.mp3"
   },
   {
     "id": "A1502",
@@ -5926,7 +6464,8 @@
     "category": "A15 · Unit 15 Pelihara Warisan",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/mengikut_giliran.mp3"
+    "audio": "audio/mengikut_giliran.mp3",
+    "audio_zh": "audio_zh/A1502.mp3"
   },
   {
     "id": "A1503",
@@ -5937,7 +6476,8 @@
     "category": "A15 · Unit 15 Pelihara Warisan",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/akrobatik.mp3"
+    "audio": "audio/akrobatik.mp3",
+    "audio_zh": "audio_zh/A1503.mp3"
   },
   {
     "id": "A1504",
@@ -5948,7 +6488,8 @@
     "category": "A15 · Unit 15 Pelihara Warisan",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/menyaksikan.mp3"
+    "audio": "audio/menyaksikan.mp3",
+    "audio_zh": "audio_zh/A1504.mp3"
   },
   {
     "id": "A1505",
@@ -5959,7 +6500,8 @@
     "category": "A15 · Unit 15 Pelihara Warisan",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/ditimang.mp3"
+    "audio": "audio/ditimang.mp3",
+    "audio_zh": "audio_zh/A1505.mp3"
   },
   {
     "id": "A1506",
@@ -5970,7 +6512,8 @@
     "category": "A15 · Unit 15 Pelihara Warisan",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/pelbagai.mp3"
+    "audio": "audio/pelbagai.mp3",
+    "audio_zh": "audio_zh/A1506.mp3"
   },
   {
     "id": "A1507",
@@ -5981,7 +6524,8 @@
     "category": "A15 · Unit 15 Pelihara Warisan",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/sepak_manggis.mp3"
+    "audio": "audio/sepak_manggis.mp3",
+    "audio_zh": "audio_zh/A1507.mp3"
   },
   {
     "id": "A1508",
@@ -5992,7 +6536,8 @@
     "category": "A15 · Unit 15 Pelihara Warisan",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/bermanfaat.mp3"
+    "audio": "audio/bermanfaat.mp3",
+    "audio_zh": "audio_zh/A1508.mp3"
   },
   {
     "id": "A1509",
@@ -6003,7 +6548,8 @@
     "category": "A15 · Unit 15 Pelihara Warisan",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/memupuk.mp3"
+    "audio": "audio/memupuk.mp3",
+    "audio_zh": "audio_zh/A1509.mp3"
   },
   {
     "id": "A1510",
@@ -6014,7 +6560,8 @@
     "category": "A15 · Unit 15 Pelihara Warisan",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/perpaduan.mp3"
+    "audio": "audio/perpaduan.mp3",
+    "audio_zh": "audio_zh/A1510.mp3"
   },
   {
     "id": "A1601",
@@ -6025,7 +6572,8 @@
     "category": "A16 · Unit 16 Berbudi kepada Alam",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/pencemaran_udara.mp3"
+    "audio": "audio/pencemaran_udara.mp3",
+    "audio_zh": "audio_zh/A1601.mp3"
   },
   {
     "id": "A1602",
@@ -6036,7 +6584,8 @@
     "category": "A16 · Unit 16 Berbudi kepada Alam",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/kekotoran.mp3"
+    "audio": "audio/kekotoran.mp3",
+    "audio_zh": "audio_zh/A1602.mp3"
   },
   {
     "id": "A1603",
@@ -6047,7 +6596,8 @@
     "category": "A16 · Unit 16 Berbudi kepada Alam",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/kerosakan.mp3"
+    "audio": "audio/kerosakan.mp3",
+    "audio_zh": "audio_zh/A1603.mp3"
   },
   {
     "id": "A1604",
@@ -6058,7 +6608,8 @@
     "category": "A16 · Unit 16 Berbudi kepada Alam",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/ditebang.mp3"
+    "audio": "audio/ditebang.mp3",
+    "audio_zh": "audio_zh/A1604.mp3"
   },
   {
     "id": "A1605",
@@ -6069,7 +6620,8 @@
     "category": "A16 · Unit 16 Berbudi kepada Alam",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/menganjurkan.mp3"
+    "audio": "audio/menganjurkan.mp3",
+    "audio_zh": "audio_zh/A1605.mp3"
   },
   {
     "id": "A1606",
@@ -6080,7 +6632,8 @@
     "category": "A16 · Unit 16 Berbudi kepada Alam",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/terpakai.mp3"
+    "audio": "audio/terpakai.mp3",
+    "audio_zh": "audio_zh/A1606.mp3"
   },
   {
     "id": "A1607",
@@ -6091,7 +6644,8 @@
     "category": "A16 · Unit 16 Berbudi kepada Alam",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/baja_kompos.mp3"
+    "audio": "audio/baja_kompos.mp3",
+    "audio_zh": "audio_zh/A1607.mp3"
   },
   {
     "id": "A1608",
@@ -6102,7 +6656,8 @@
     "category": "A16 · Unit 16 Berbudi kepada Alam",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/tadahan_air.mp3"
+    "audio": "audio/tadahan_air.mp3",
+    "audio_zh": "audio_zh/A1608.mp3"
   },
   {
     "id": "A1609",
@@ -6113,7 +6668,8 @@
     "category": "A16 · Unit 16 Berbudi kepada Alam",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/menjimatkan.mp3"
+    "audio": "audio/menjimatkan.mp3",
+    "audio_zh": "audio_zh/A1609.mp3"
   },
   {
     "id": "A1610",
@@ -6124,7 +6680,8 @@
     "category": "A16 · Unit 16 Berbudi kepada Alam",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/berfaedah.mp3"
+    "audio": "audio/berfaedah.mp3",
+    "audio_zh": "audio_zh/A1610.mp3"
   },
   {
     "id": "A1611",
@@ -6135,7 +6692,8 @@
     "category": "A16 · Unit 16 Berbudi kepada Alam",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/tenaga_suria.mp3"
+    "audio": "audio/tenaga_suria.mp3",
+    "audio_zh": "audio_zh/A1611.mp3"
   },
   {
     "id": "A1701",
@@ -6146,7 +6704,8 @@
     "category": "A17 · Unit 17 Indah dan Damai",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/damai.mp3"
+    "audio": "audio/damai.mp3",
+    "audio_zh": "audio_zh/A1701.mp3"
   },
   {
     "id": "A1702",
@@ -6157,7 +6716,8 @@
     "category": "A17 · Unit 17 Indah dan Damai",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/berdengkang.mp3"
+    "audio": "audio/berdengkang.mp3",
+    "audio_zh": "audio_zh/A1702.mp3"
   },
   {
     "id": "A1703",
@@ -6168,7 +6728,8 @@
     "category": "A17 · Unit 17 Indah dan Damai",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/terapung_apung.mp3"
+    "audio": "audio/terapung_apung.mp3",
+    "audio_zh": "audio_zh/A1703.mp3"
   },
   {
     "id": "A1704",
@@ -6179,7 +6740,8 @@
     "category": "A17 · Unit 17 Indah dan Damai",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/terpercik.mp3"
+    "audio": "audio/terpercik.mp3",
+    "audio_zh": "audio_zh/A1704.mp3"
   },
   {
     "id": "A1705",
@@ -6190,7 +6752,8 @@
     "category": "A17 · Unit 17 Indah dan Damai",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/pokok_buluh.mp3"
+    "audio": "audio/pokok_buluh.mp3",
+    "audio_zh": "audio_zh/A1705.mp3"
   },
   {
     "id": "A1706",
@@ -6201,7 +6764,8 @@
     "category": "A17 · Unit 17 Indah dan Damai",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/cendawan.mp3"
+    "audio": "audio/cendawan.mp3",
+    "audio_zh": "audio_zh/A1706.mp3"
   },
   {
     "id": "A1707",
@@ -6212,7 +6776,8 @@
     "category": "A17 · Unit 17 Indah dan Damai",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/kayu_reput.mp3"
+    "audio": "audio/kayu_reput.mp3",
+    "audio_zh": "audio_zh/A1707.mp3"
   },
   {
     "id": "A1708",
@@ -6223,7 +6788,8 @@
     "category": "A17 · Unit 17 Indah dan Damai",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/mendongakkan_kepala.mp3"
+    "audio": "audio/mendongakkan_kepala.mp3",
+    "audio_zh": "audio_zh/A1708.mp3"
   },
   {
     "id": "A1709",
@@ -6234,7 +6800,8 @@
     "category": "A17 · Unit 17 Indah dan Damai",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/pelangi.mp3"
+    "audio": "audio/pelangi.mp3",
+    "audio_zh": "audio_zh/A1709.mp3"
   },
   {
     "id": "A1801",
@@ -6245,7 +6812,8 @@
     "category": "A18 · Unit 18 Sejahterakan Bumi",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/sabut_kelapa.mp3"
+    "audio": "audio/sabut_kelapa.mp3",
+    "audio_zh": "audio_zh/A1801.mp3"
   },
   {
     "id": "A1802",
@@ -6256,7 +6824,8 @@
     "category": "A18 · Unit 18 Sejahterakan Bumi",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/dilupuskan.mp3"
+    "audio": "audio/dilupuskan.mp3",
+    "audio_zh": "audio_zh/A1802.mp3"
   },
   {
     "id": "A1803",
@@ -6267,7 +6836,8 @@
     "category": "A18 · Unit 18 Sejahterakan Bumi",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/menggantikan.mp3"
+    "audio": "audio/menggantikan.mp3",
+    "audio_zh": "audio_zh/A1803.mp3"
   },
   {
     "id": "A1804",
@@ -6278,7 +6848,8 @@
     "category": "A18 · Unit 18 Sejahterakan Bumi",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/lampu_cekap_tenaga.mp3"
+    "audio": "audio/lampu_cekap_tenaga.mp3",
+    "audio_zh": "audio_zh/A1804.mp3"
   },
   {
     "id": "A1805",
@@ -6289,7 +6860,8 @@
     "category": "A18 · Unit 18 Sejahterakan Bumi",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/pembaziran.mp3"
+    "audio": "audio/pembaziran.mp3",
+    "audio_zh": "audio_zh/A1805.mp3"
   },
   {
     "id": "A1806",
@@ -6300,7 +6872,8 @@
     "category": "A18 · Unit 18 Sejahterakan Bumi",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/tenaga_elektrik.mp3"
+    "audio": "audio/tenaga_elektrik.mp3",
+    "audio_zh": "audio_zh/A1806.mp3"
   },
   {
     "id": "A1807",
@@ -6311,7 +6884,8 @@
     "category": "A18 · Unit 18 Sejahterakan Bumi",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/sukarelawan.mp3"
+    "audio": "audio/sukarelawan.mp3",
+    "audio_zh": "audio_zh/A1807.mp3"
   },
   {
     "id": "A1808",
@@ -6322,7 +6896,8 @@
     "category": "A18 · Unit 18 Sejahterakan Bumi",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/kerajaan.mp3"
+    "audio": "audio/kerajaan.mp3",
+    "audio_zh": "audio_zh/A1808.mp3"
   },
   {
     "id": "A1809",
@@ -6333,7 +6908,8 @@
     "category": "A18 · Unit 18 Sejahterakan Bumi",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/pemeliharaan.mp3"
+    "audio": "audio/pemeliharaan.mp3",
+    "audio_zh": "audio_zh/A1809.mp3"
   },
   {
     "id": "A1810",
@@ -6344,7 +6920,8 @@
     "category": "A18 · Unit 18 Sejahterakan Bumi",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/syarikat_swasta.mp3"
+    "audio": "audio/syarikat_swasta.mp3",
+    "audio_zh": "audio_zh/A1810.mp3"
   },
   {
     "id": "A1811",
@@ -6355,7 +6932,8 @@
     "category": "A18 · Unit 18 Sejahterakan Bumi",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/hakisan_pantai.mp3"
+    "audio": "audio/hakisan_pantai.mp3",
+    "audio_zh": "audio_zh/A1811.mp3"
   },
   {
     "id": "A1812",
@@ -6366,7 +6944,8 @@
     "category": "A18 · Unit 18 Sejahterakan Bumi",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/kusut.mp3"
+    "audio": "audio/kusut.mp3",
+    "audio_zh": "audio_zh/A1812.mp3"
   },
   {
     "id": "A1813",
@@ -6377,7 +6956,8 @@
     "category": "A18 · Unit 18 Sejahterakan Bumi",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/berkongsi_kenderaan.mp3"
+    "audio": "audio/berkongsi_kenderaan.mp3",
+    "audio_zh": "audio_zh/A1813.mp3"
   },
   {
     "id": "A1814",
@@ -6388,7 +6968,8 @@
     "category": "A18 · Unit 18 Sejahterakan Bumi",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/diesel.mp3"
+    "audio": "audio/diesel.mp3",
+    "audio_zh": "audio_zh/A1814.mp3"
   },
   {
     "id": "A1815",
@@ -6399,7 +6980,8 @@
     "category": "A18 · Unit 18 Sejahterakan Bumi",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/kesesakan_jalan_raya.mp3"
+    "audio": "audio/kesesakan_jalan_raya.mp3",
+    "audio_zh": "audio_zh/A1815.mp3"
   },
   {
     "id": "A1816",
@@ -6410,7 +6992,8 @@
     "category": "A18 · Unit 18 Sejahterakan Bumi",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/dilaksanakan.mp3"
+    "audio": "audio/dilaksanakan.mp3",
+    "audio_zh": "audio_zh/A1816.mp3"
   },
   {
     "id": "A1817",
@@ -6421,7 +7004,8 @@
     "category": "A18 · Unit 18 Sejahterakan Bumi",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/gaya_hidup.mp3"
+    "audio": "audio/gaya_hidup.mp3",
+    "audio_zh": "audio_zh/A1817.mp3"
   },
   {
     "id": "A1901",
@@ -6432,7 +7016,8 @@
     "category": "A19 · Unit 19 Faedah Bertani",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/mencangkul.mp3"
+    "audio": "audio/mencangkul.mp3",
+    "audio_zh": "audio_zh/A1901.mp3"
   },
   {
     "id": "A1902",
@@ -6443,7 +7028,8 @@
     "category": "A19 · Unit 19 Faedah Bertani",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/menggembur.mp3"
+    "audio": "audio/menggembur.mp3",
+    "audio_zh": "audio_zh/A1902.mp3"
   },
   {
     "id": "A1903",
@@ -6454,7 +7040,8 @@
     "category": "A19 · Unit 19 Faedah Bertani",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/matang.mp3"
+    "audio": "audio/matang.mp3",
+    "audio_zh": "audio_zh/A1903.mp3"
   },
   {
     "id": "A1904",
@@ -6465,7 +7052,8 @@
     "category": "A19 · Unit 19 Faedah Bertani",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/nurseri.mp3"
+    "audio": "audio/nurseri.mp3",
+    "audio_zh": "audio_zh/A1904.mp3"
   },
   {
     "id": "A1905",
@@ -6476,7 +7064,8 @@
     "category": "A19 · Unit 19 Faedah Bertani",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/mengusahakan.mp3"
+    "audio": "audio/mengusahakan.mp3",
+    "audio_zh": "audio_zh/A1905.mp3"
   },
   {
     "id": "A1906",
@@ -6487,7 +7076,8 @@
     "category": "A19 · Unit 19 Faedah Bertani",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/pokok_pinang.mp3"
+    "audio": "audio/pokok_pinang.mp3",
+    "audio_zh": "audio_zh/A1906.mp3"
   },
   {
     "id": "A1907",
@@ -6498,7 +7088,8 @@
     "category": "A19 · Unit 19 Faedah Bertani",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/sirih.mp3"
+    "audio": "audio/sirih.mp3",
+    "audio_zh": "audio_zh/A1907.mp3"
   },
   {
     "id": "A1908",
@@ -6509,7 +7100,8 @@
     "category": "A19 · Unit 19 Faedah Bertani",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/pokok_hiasan.mp3"
+    "audio": "audio/pokok_hiasan.mp3",
+    "audio_zh": "audio_zh/A1908.mp3"
   },
   {
     "id": "A1909",
@@ -6520,7 +7112,8 @@
     "category": "A19 · Unit 19 Faedah Bertani",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/pelepah.mp3"
+    "audio": "audio/pelepah.mp3",
+    "audio_zh": "audio_zh/A1909.mp3"
   },
   {
     "id": "A1910",
@@ -6531,7 +7124,8 @@
     "category": "A19 · Unit 19 Faedah Bertani",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/disemai.mp3"
+    "audio": "audio/disemai.mp3",
+    "audio_zh": "audio_zh/A1910.mp3"
   },
   {
     "id": "A1911",
@@ -6542,7 +7136,8 @@
     "category": "A19 · Unit 19 Faedah Bertani",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/polibeg.mp3"
+    "audio": "audio/polibeg.mp3",
+    "audio_zh": "audio_zh/A1911.mp3"
   },
   {
     "id": "A1912",
@@ -6553,7 +7148,8 @@
     "category": "A19 · Unit 19 Faedah Bertani",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/berpisah.mp3"
+    "audio": "audio/berpisah.mp3",
+    "audio_zh": "audio_zh/A1912.mp3"
   },
   {
     "id": "A2001",
@@ -6564,7 +7160,8 @@
     "category": "A20 · Unit 20 Haiwan yang Berfaedah",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/biri_biri.mp3"
+    "audio": "audio/biri_biri.mp3",
+    "audio_zh": "audio_zh/A2001.mp3"
   },
   {
     "id": "A2002",
@@ -6575,7 +7172,8 @@
     "category": "A20 · Unit 20 Haiwan yang Berfaedah",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/kambing.mp3"
+    "audio": "audio/kambing.mp3",
+    "audio_zh": "audio_zh/A2002.mp3"
   },
   {
     "id": "A2003",
@@ -6586,7 +7184,8 @@
     "category": "A20 · Unit 20 Haiwan yang Berfaedah",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/kandang.mp3"
+    "audio": "audio/kandang.mp3",
+    "audio_zh": "audio_zh/A2003.mp3"
   },
   {
     "id": "A2004",
@@ -6597,7 +7196,8 @@
     "category": "A20 · Unit 20 Haiwan yang Berfaedah",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/burung_merpati.mp3"
+    "audio": "audio/burung_merpati.mp3",
+    "audio_zh": "audio_zh/A2004.mp3"
   },
   {
     "id": "A2005",
@@ -6608,7 +7208,8 @@
     "category": "A20 · Unit 20 Haiwan yang Berfaedah",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/sangkar.mp3"
+    "audio": "audio/sangkar.mp3",
+    "audio_zh": "audio_zh/A2005.mp3"
   },
   {
     "id": "A2006",
@@ -6619,7 +7220,8 @@
     "category": "A20 · Unit 20 Haiwan yang Berfaedah",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/gandum.mp3"
+    "audio": "audio/gandum.mp3",
+    "audio_zh": "audio_zh/A2006.mp3"
   },
   {
     "id": "A2007",
@@ -6630,7 +7232,8 @@
     "category": "A20 · Unit 20 Haiwan yang Berfaedah",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/membela.mp3"
+    "audio": "audio/membela.mp3",
+    "audio_zh": "audio_zh/A2007.mp3"
   },
   {
     "id": "A2008",
@@ -6641,7 +7244,8 @@
     "category": "A20 · Unit 20 Haiwan yang Berfaedah",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/pengalaman.mp3"
+    "audio": "audio/pengalaman.mp3",
+    "audio_zh": "audio_zh/A2008.mp3"
   },
   {
     "id": "A2009",
@@ -6652,7 +7256,8 @@
     "category": "A20 · Unit 20 Haiwan yang Berfaedah",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/kasut_getah.mp3"
+    "audio": "audio/kasut_getah.mp3",
+    "audio_zh": "audio_zh/A2009.mp3"
   },
   {
     "id": "A2010",
@@ -6663,7 +7268,8 @@
     "category": "A20 · Unit 20 Haiwan yang Berfaedah",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/sarung_tangan.mp3"
+    "audio": "audio/sarung_tangan.mp3",
+    "audio_zh": "audio_zh/A2010.mp3"
   },
   {
     "id": "A2011",
@@ -6674,7 +7280,8 @@
     "category": "A20 · Unit 20 Haiwan yang Berfaedah",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/penutup_hidung.mp3"
+    "audio": "audio/penutup_hidung.mp3",
+    "audio_zh": "audio_zh/A2011.mp3"
   },
   {
     "id": "A2012",
@@ -6685,7 +7292,8 @@
     "category": "A20 · Unit 20 Haiwan yang Berfaedah",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/penyapu_lidi.mp3"
+    "audio": "audio/penyapu_lidi.mp3",
+    "audio_zh": "audio_zh/A2012.mp3"
   },
   {
     "id": "A2013",
@@ -6696,7 +7304,8 @@
     "category": "A20 · Unit 20 Haiwan yang Berfaedah",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/reban.mp3"
+    "audio": "audio/reban.mp3",
+    "audio_zh": "audio_zh/A2013.mp3"
   },
   {
     "id": "A2014",
@@ -6707,7 +7316,8 @@
     "category": "A20 · Unit 20 Haiwan yang Berfaedah",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/garing.mp3"
+    "audio": "audio/garing.mp3",
+    "audio_zh": "audio_zh/A2014.mp3"
   },
   {
     "id": "A2015",
@@ -6718,7 +7328,8 @@
     "category": "A20 · Unit 20 Haiwan yang Berfaedah",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/dikisar.mp3"
+    "audio": "audio/dikisar.mp3",
+    "audio_zh": "audio_zh/A2015.mp3"
   },
   {
     "id": "A2016",
@@ -6729,7 +7340,8 @@
     "category": "A20 · Unit 20 Haiwan yang Berfaedah",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/pelanggan_pelanggan.mp3"
+    "audio": "audio/pelanggan_pelanggan.mp3",
+    "audio_zh": "audio_zh/A2016.mp3"
   },
   {
     "id": "A2101",
@@ -6740,7 +7352,8 @@
     "category": "A21 · Unit 21 Sumber Rezeki",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/khasiat.mp3"
+    "audio": "audio/khasiat.mp3",
+    "audio_zh": "audio_zh/A2101.mp3"
   },
   {
     "id": "A2102",
@@ -6751,7 +7364,8 @@
     "category": "A21 · Unit 21 Sumber Rezeki",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/memerah_susu.mp3"
+    "audio": "audio/memerah_susu.mp3",
+    "audio_zh": "audio_zh/A2102.mp3"
   },
   {
     "id": "A2103",
@@ -6762,7 +7376,8 @@
     "category": "A21 · Unit 21 Sumber Rezeki",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/pati_ayam.mp3"
+    "audio": "audio/pati_ayam.mp3",
+    "audio_zh": "audio_zh/A2103.mp3"
   },
   {
     "id": "A2104",
@@ -6773,7 +7388,8 @@
     "category": "A21 · Unit 21 Sumber Rezeki",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/meningkatkan.mp3"
+    "audio": "audio/meningkatkan.mp3",
+    "audio_zh": "audio_zh/A2104.mp3"
   },
   {
     "id": "A2105",
@@ -6784,7 +7400,8 @@
     "category": "A21 · Unit 21 Sumber Rezeki",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/kecerdasan_otak.mp3"
+    "audio": "audio/kecerdasan_otak.mp3",
+    "audio_zh": "audio_zh/A2105.mp3"
   },
   {
     "id": "A2106",
@@ -6795,7 +7412,8 @@
     "category": "A21 · Unit 21 Sumber Rezeki",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/mencegah.mp3"
+    "audio": "audio/mencegah.mp3",
+    "audio_zh": "audio_zh/A2106.mp3"
   },
   {
     "id": "A2107",
@@ -6806,7 +7424,8 @@
     "category": "A21 · Unit 21 Sumber Rezeki",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/penyakit_anemia.mp3"
+    "audio": "audio/penyakit_anemia.mp3",
+    "audio_zh": "audio_zh/A2107.mp3"
   },
   {
     "id": "A2108",
@@ -6817,7 +7436,8 @@
     "category": "A21 · Unit 21 Sumber Rezeki",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/melindungi.mp3"
+    "audio": "audio/melindungi.mp3",
+    "audio_zh": "audio_zh/A2108.mp3"
   },
   {
     "id": "A2109",
@@ -6828,7 +7448,8 @@
     "category": "A21 · Unit 21 Sumber Rezeki",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/produk.mp3"
+    "audio": "audio/produk.mp3",
+    "audio_zh": "audio_zh/A2109.mp3"
   },
   {
     "id": "A2110",
@@ -6839,7 +7460,8 @@
     "category": "A21 · Unit 21 Sumber Rezeki",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/tinja_ayam.mp3"
+    "audio": "audio/tinja_ayam.mp3",
+    "audio_zh": "audio_zh/A2110.mp3"
   },
   {
     "id": "A2111",
@@ -6850,7 +7472,8 @@
     "category": "A21 · Unit 21 Sumber Rezeki",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/pendapatan.mp3"
+    "audio": "audio/pendapatan.mp3",
+    "audio_zh": "audio_zh/A2111.mp3"
   },
   {
     "id": "A2112",
@@ -6861,7 +7484,8 @@
     "category": "A21 · Unit 21 Sumber Rezeki",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/penyodok_tanah.mp3"
+    "audio": "audio/penyodok_tanah.mp3",
+    "audio_zh": "audio_zh/A2112.mp3"
   },
   {
     "id": "A2113",
@@ -6872,7 +7496,8 @@
     "category": "A21 · Unit 21 Sumber Rezeki",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/pongkes.mp3"
+    "audio": "audio/pongkes.mp3",
+    "audio_zh": "audio_zh/A2113.mp3"
   },
   {
     "id": "A2114",
@@ -6883,7 +7508,8 @@
     "category": "A21 · Unit 21 Sumber Rezeki",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/menghalau.mp3"
+    "audio": "audio/menghalau.mp3",
+    "audio_zh": "audio_zh/A2114.mp3"
   },
   {
     "id": "A2201",
@@ -6894,7 +7520,8 @@
     "category": "A22 · Unit 22 Anak yang Taat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/meminta_izin.mp3"
+    "audio": "audio/meminta_izin.mp3",
+    "audio_zh": "audio_zh/A2201.mp3"
   },
   {
     "id": "A2202",
@@ -6905,7 +7532,8 @@
     "category": "A22 · Unit 22 Anak yang Taat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/harta_benda.mp3"
+    "audio": "audio/harta_benda.mp3",
+    "audio_zh": "audio_zh/A2202.mp3"
   },
   {
     "id": "A2203",
@@ -6916,7 +7544,8 @@
     "category": "A22 · Unit 22 Anak yang Taat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/mentaati.mp3"
+    "audio": "audio/mentaati.mp3",
+    "audio_zh": "audio_zh/A2203.mp3"
   },
   {
     "id": "A2204",
@@ -6927,7 +7556,8 @@
     "category": "A22 · Unit 22 Anak yang Taat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/buku_panduan.mp3"
+    "audio": "audio/buku_panduan.mp3",
+    "audio_zh": "audio_zh/A2204.mp3"
   },
   {
     "id": "A2205",
@@ -6938,7 +7568,8 @@
     "category": "A22 · Unit 22 Anak yang Taat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/rutin_harian.mp3"
+    "audio": "audio/rutin_harian.mp3",
+    "audio_zh": "audio_zh/A2205.mp3"
   },
   {
     "id": "A2206",
@@ -6949,7 +7580,8 @@
     "category": "A22 · Unit 22 Anak yang Taat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/sayap.mp3"
+    "audio": "audio/sayap.mp3",
+    "audio_zh": "audio_zh/A2206.mp3"
   },
   {
     "id": "A2207",
@@ -6960,7 +7592,8 @@
     "category": "A22 · Unit 22 Anak yang Taat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/menyapu_ubat.mp3"
+    "audio": "audio/menyapu_ubat.mp3",
+    "audio_zh": "audio_zh/A2207.mp3"
   },
   {
     "id": "A2208",
@@ -6971,7 +7604,8 @@
     "category": "A22 · Unit 22 Anak yang Taat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/membalut_luka.mp3"
+    "audio": "audio/membalut_luka.mp3",
+    "audio_zh": "audio_zh/A2208.mp3"
   },
   {
     "id": "A2209",
@@ -6982,7 +7616,8 @@
     "category": "A22 · Unit 22 Anak yang Taat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/sembuh.mp3"
+    "audio": "audio/sembuh.mp3",
+    "audio_zh": "audio_zh/A2209.mp3"
   },
   {
     "id": "A2210",
@@ -6993,7 +7628,8 @@
     "category": "A22 · Unit 22 Anak yang Taat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/menyerahkan.mp3"
+    "audio": "audio/menyerahkan.mp3",
+    "audio_zh": "audio_zh/A2210.mp3"
   },
   {
     "id": "A2211",
@@ -7004,7 +7640,8 @@
     "category": "A22 · Unit 22 Anak yang Taat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/dilepaskan.mp3"
+    "audio": "audio/dilepaskan.mp3",
+    "audio_zh": "audio_zh/A2211.mp3"
   },
   {
     "id": "A2212",
@@ -7015,7 +7652,8 @@
     "category": "A22 · Unit 22 Anak yang Taat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/gunung_ganang.mp3"
+    "audio": "audio/gunung_ganang.mp3",
+    "audio_zh": "audio_zh/A2212.mp3"
   },
   {
     "id": "A2213",
@@ -7026,7 +7664,8 @@
     "category": "A22 · Unit 22 Anak yang Taat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/hiruk_pikuk.mp3"
+    "audio": "audio/hiruk_pikuk.mp3",
+    "audio_zh": "audio_zh/A2213.mp3"
   },
   {
     "id": "A2214",
@@ -7037,7 +7676,8 @@
     "category": "A22 · Unit 22 Anak yang Taat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/mandi_manda.mp3"
+    "audio": "audio/mandi_manda.mp3",
+    "audio_zh": "audio_zh/A2214.mp3"
   },
   {
     "id": "A2215",
@@ -7048,7 +7688,8 @@
     "category": "A22 · Unit 22 Anak yang Taat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/riuh_rendah.mp3"
+    "audio": "audio/riuh_rendah.mp3",
+    "audio_zh": "audio_zh/A2215.mp3"
   },
   {
     "id": "A2216",
@@ -7059,7 +7700,8 @@
     "category": "A22 · Unit 22 Anak yang Taat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/istana_pasir.mp3"
+    "audio": "audio/istana_pasir.mp3",
+    "audio_zh": "audio_zh/A2216.mp3"
   },
   {
     "id": "A2217",
@@ -7070,7 +7712,8 @@
     "category": "A22 · Unit 22 Anak yang Taat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/dompet.mp3"
+    "audio": "audio/dompet.mp3",
+    "audio_zh": "audio_zh/A2217.mp3"
   },
   {
     "id": "A2218",
@@ -7081,7 +7724,8 @@
     "category": "A22 · Unit 22 Anak yang Taat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/mundar_mandir.mp3"
+    "audio": "audio/mundar_mandir.mp3",
+    "audio_zh": "audio_zh/A2218.mp3"
   },
   {
     "id": "A2219",
@@ -7092,7 +7736,8 @@
     "category": "A22 · Unit 22 Anak yang Taat",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/batu_batan.mp3"
+    "audio": "audio/batu_batan.mp3",
+    "audio_zh": "audio_zh/A2219.mp3"
   },
   {
     "id": "A2301",
@@ -7103,7 +7748,8 @@
     "category": "A23 · Unit 23 Murid yang Baik",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/tertib.mp3"
+    "audio": "audio/tertib.mp3",
+    "audio_zh": "audio_zh/A2301.mp3"
   },
   {
     "id": "A2302",
@@ -7114,7 +7760,8 @@
     "category": "A23 · Unit 23 Murid yang Baik",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/pengawas.mp3"
+    "audio": "audio/pengawas.mp3",
+    "audio_zh": "audio_zh/A2302.mp3"
   },
   {
     "id": "A2303",
@@ -7125,7 +7772,8 @@
     "category": "A23 · Unit 23 Murid yang Baik",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/sijil.mp3"
+    "audio": "audio/sijil.mp3",
+    "audio_zh": "audio_zh/A2303.mp3"
   },
   {
     "id": "A2304",
@@ -7136,7 +7784,8 @@
     "category": "A23 · Unit 23 Murid yang Baik",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/berjanji.mp3"
+    "audio": "audio/berjanji.mp3",
+    "audio_zh": "audio_zh/A2304.mp3"
   },
   {
     "id": "A2305",
@@ -7147,7 +7796,8 @@
     "category": "A23 · Unit 23 Murid yang Baik",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/menjalankan_tugas.mp3"
+    "audio": "audio/menjalankan_tugas.mp3",
+    "audio_zh": "audio_zh/A2305.mp3"
   },
   {
     "id": "A2306",
@@ -7158,7 +7808,8 @@
     "category": "A23 · Unit 23 Murid yang Baik",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/ketua_kelas.mp3"
+    "audio": "audio/ketua_kelas.mp3",
+    "audio_zh": "audio_zh/A2306.mp3"
   },
   {
     "id": "A2307",
@@ -7169,7 +7820,8 @@
     "category": "A23 · Unit 23 Murid yang Baik",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/penolong.mp3"
+    "audio": "audio/penolong.mp3",
+    "audio_zh": "audio_zh/A2307.mp3"
   },
   {
     "id": "A2308",
@@ -7180,7 +7832,8 @@
     "category": "A23 · Unit 23 Murid yang Baik",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/mengunci.mp3"
+    "audio": "audio/mengunci.mp3",
+    "audio_zh": "audio_zh/A2308.mp3"
   },
   {
     "id": "A2309",
@@ -7191,7 +7844,8 @@
     "category": "A23 · Unit 23 Murid yang Baik",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/berbaris.mp3"
+    "audio": "audio/berbaris.mp3",
+    "audio_zh": "audio_zh/A2309.mp3"
   },
   {
     "id": "A2310",
@@ -7202,7 +7856,8 @@
     "category": "A23 · Unit 23 Murid yang Baik",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/teliti.mp3"
+    "audio": "audio/teliti.mp3",
+    "audio_zh": "audio_zh/A2310.mp3"
   },
   {
     "id": "A2311",
@@ -7213,7 +7868,8 @@
     "category": "A23 · Unit 23 Murid yang Baik",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/ceramah.mp3"
+    "audio": "audio/ceramah.mp3",
+    "audio_zh": "audio_zh/A2311.mp3"
   },
   {
     "id": "A2312",
@@ -7224,7 +7880,8 @@
     "category": "A23 · Unit 23 Murid yang Baik",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/hadir.mp3"
+    "audio": "audio/hadir.mp3",
+    "audio_zh": "audio_zh/A2312.mp3"
   },
   {
     "id": "A2313",
@@ -7235,7 +7892,8 @@
     "category": "A23 · Unit 23 Murid yang Baik",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/minta_perhatian.mp3"
+    "audio": "audio/minta_perhatian.mp3",
+    "audio_zh": "audio_zh/A2313.mp3"
   },
   {
     "id": "A2314",
@@ -7246,7 +7904,8 @@
     "category": "A23 · Unit 23 Murid yang Baik",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/kesalahan.mp3"
+    "audio": "audio/kesalahan.mp3",
+    "audio_zh": "audio_zh/A2314.mp3"
   },
   {
     "id": "A2315",
@@ -7257,7 +7916,8 @@
     "category": "A23 · Unit 23 Murid yang Baik",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/menumpang.mp3"
+    "audio": "audio/menumpang.mp3",
+    "audio_zh": "audio_zh/A2315.mp3"
   },
   {
     "id": "A2401",
@@ -7268,7 +7928,8 @@
     "category": "A24 · Unit 24 Tanggungjawab Kita",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/kemudahan_awam.mp3"
+    "audio": "audio/kemudahan_awam.mp3",
+    "audio_zh": "audio_zh/A2401.mp3"
   },
   {
     "id": "A2402",
@@ -7279,7 +7940,8 @@
     "category": "A24 · Unit 24 Tanggungjawab Kita",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/dedikasi.mp3"
+    "audio": "audio/dedikasi.mp3",
+    "audio_zh": "audio_zh/A2402.mp3"
   },
   {
     "id": "A2403",
@@ -7290,7 +7952,8 @@
     "category": "A24 · Unit 24 Tanggungjawab Kita",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/segak.mp3"
+    "audio": "audio/segak.mp3",
+    "audio_zh": "audio_zh/A2403.mp3"
   },
   {
     "id": "A2404",
@@ -7301,7 +7964,8 @@
     "category": "A24 · Unit 24 Tanggungjawab Kita",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/mengawal_lalu_lintas.mp3"
+    "audio": "audio/mengawal_lalu_lintas.mp3",
+    "audio_zh": "audio_zh/A2404.mp3"
   },
   {
     "id": "A2405",
@@ -7312,7 +7976,8 @@
     "category": "A24 · Unit 24 Tanggungjawab Kita",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/undang_undang.mp3"
+    "audio": "audio/undang_undang.mp3",
+    "audio_zh": "audio_zh/A2405.mp3"
   },
   {
     "id": "A2406",
@@ -7323,7 +7988,8 @@
     "category": "A24 · Unit 24 Tanggungjawab Kita",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/bertimbang_rasa.mp3"
+    "audio": "audio/bertimbang_rasa.mp3",
+    "audio_zh": "audio_zh/A2406.mp3"
   },
   {
     "id": "A2407",
@@ -7334,7 +8000,8 @@
     "category": "A24 · Unit 24 Tanggungjawab Kita",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/orang_kelainan_upaya.mp3"
+    "audio": "audio/orang_kelainan_upaya.mp3",
+    "audio_zh": "audio_zh/A2407.mp3"
   },
   {
     "id": "A2408",
@@ -7345,7 +8012,8 @@
     "category": "A24 · Unit 24 Tanggungjawab Kita",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/mengisi_borang.mp3"
+    "audio": "audio/mengisi_borang.mp3",
+    "audio_zh": "audio_zh/A2408.mp3"
   },
   {
     "id": "A2409",
@@ -7356,7 +8024,8 @@
     "category": "A24 · Unit 24 Tanggungjawab Kita",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/menyuap.mp3"
+    "audio": "audio/menyuap.mp3",
+    "audio_zh": "audio_zh/A2409.mp3"
   },
   {
     "id": "A2410",
@@ -7367,7 +8036,8 @@
     "category": "A24 · Unit 24 Tanggungjawab Kita",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/warga_emas.mp3"
+    "audio": "audio/warga_emas.mp3",
+    "audio_zh": "audio_zh/A2410.mp3"
   },
   {
     "id": "A2411",
@@ -7378,7 +8048,8 @@
     "category": "A24 · Unit 24 Tanggungjawab Kita",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/ambil_angin.mp3"
+    "audio": "audio/ambil_angin.mp3",
+    "audio_zh": "audio_zh/A2411.mp3"
   },
   {
     "id": "A2412",
@@ -7389,7 +8060,8 @@
     "category": "A24 · Unit 24 Tanggungjawab Kita",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/berbudi_bahasa.mp3"
+    "audio": "audio/berbudi_bahasa.mp3",
+    "audio_zh": "audio_zh/A2412.mp3"
   },
   {
     "id": "A2413",
@@ -7400,7 +8072,8 @@
     "category": "A24 · Unit 24 Tanggungjawab Kita",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/mengambil_berat.mp3"
+    "audio": "audio/mengambil_berat.mp3",
+    "audio_zh": "audio_zh/A2413.mp3"
   },
   {
     "id": "A2414",
@@ -7411,7 +8084,8 @@
     "category": "A24 · Unit 24 Tanggungjawab Kita",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/melambaikan_tangan.mp3"
+    "audio": "audio/melambaikan_tangan.mp3",
+    "audio_zh": "audio_zh/A2414.mp3"
   },
   {
     "id": "A2415",
@@ -7422,7 +8096,8 @@
     "category": "A24 · Unit 24 Tanggungjawab Kita",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/berfikir.mp3"
+    "audio": "audio/berfikir.mp3",
+    "audio_zh": "audio_zh/A2415.mp3"
   },
   {
     "id": "A2416",
@@ -7433,7 +8108,8 @@
     "category": "A24 · Unit 24 Tanggungjawab Kita",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/menziarahi.mp3"
+    "audio": "audio/menziarahi.mp3",
+    "audio_zh": "audio_zh/A2416.mp3"
   },
   {
     "id": "A2417",
@@ -7444,7 +8120,8 @@
     "category": "A24 · Unit 24 Tanggungjawab Kita",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/tatacara.mp3"
+    "audio": "audio/tatacara.mp3",
+    "audio_zh": "audio_zh/A2417.mp3"
   },
   {
     "id": "A2418",
@@ -7455,7 +8132,8 @@
     "category": "A24 · Unit 24 Tanggungjawab Kita",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/mengganggu.mp3"
+    "audio": "audio/mengganggu.mp3",
+    "audio_zh": "audio_zh/A2418.mp3"
   },
   {
     "id": "A2419",
@@ -7466,6 +8144,7 @@
     "category": "A24 · Unit 24 Tanggungjawab Kita",
     "example_bm": "",
     "example_zh": "",
-    "audio": "audio/rasuah.mp3"
+    "audio": "audio/rasuah.mp3",
+    "audio_zh": "audio_zh/A2419.mp3"
   }
 ]
