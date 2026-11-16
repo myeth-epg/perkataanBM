@@ -1033,6 +1033,12 @@
             <div class="progress-bar" id="progress-bar"></div>
         </div>
 
+        <!-- Assigned Quiz Banner (shown when teacher assigns Quiz 001 / 002...) -->
+        <div id="assigned-quiz-banner" style="display:none; background:linear-gradient(135deg,#e3f2fd,#ede7f6); border:2px solid #5c6bc0; border-radius:14px; padding:10px 14px; margin:8px 0; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px;">
+            <div id="assigned-quiz-text" style="font-weight:800; color:#283593; font-size:0.95em;"></div>
+            <div id="assigned-quiz-actions" style="display:flex; gap:8px; flex-wrap:wrap;"></div>
+        </div>
+
         <!-- Instructions -->
         <div class="instruction-box">
             <div class="instruction-text">请看中文词汇，选出正确的国语 (Bahasa Malaysia)！</div>
@@ -1179,6 +1185,7 @@
                     method: "PATCH",
                     body: JSON.stringify({ last_login: new Date().toISOString() })
                 }).catch(() => {});
+                await loadPendingAssignments(stu.id);
                 finishAuthAndStart();
             } catch (err) {
                 errEl.textContent = "⚠️ 连接失败：" + err.message;
@@ -1194,7 +1201,10 @@
             currentStudentId = null;
             currentUsername = "";
             currentClassName = "";
+            pendingAssignments = [];
+            activeAssignment = null;
             currentUserName = entered || "同学 (Murid)";
+            renderAssignedQuizBanner();
             finishAuthAndStart();
         }
 
@@ -1203,7 +1213,11 @@
             updateUserNameDisplay();
             const modal = document.getElementById('name-modal-overlay');
             if (modal) modal.style.display = 'none';
-            startNewSet();
+            if (pendingAssignments.length > 0) {
+                startAssignedQuiz(0);
+            } else {
+                startNewSet();
+            }
         }
 
         function switchAccount() {
@@ -1211,6 +1225,9 @@
             currentStudentId = null;
             currentUsername = "";
             currentClassName = "";
+            pendingAssignments = [];
+            activeAssignment = null;
+            renderAssignedQuizBanner();
             document.getElementById('login-pin-input').value = "";
             document.getElementById('name-modal-overlay').style.display = 'flex';
             switchAuthTab('login');
@@ -1247,6 +1264,8 @@
         let allVocabulary = [];
         let activePool = [];
         let savedCurrentSet = [];
+        let pendingAssignments = [];
+        let activeAssignment = null;
         let currentIndex = 0;
         let currentQuestion = null;
         let gameActive = false;
@@ -1345,8 +1364,80 @@
             }, 300);
         }
 
+        async function loadPendingAssignments(studentId) {
+            pendingAssignments = [];
+            activeAssignment = null;
+            if (!studentId) { renderAssignedQuizBanner(); return; }
+            try {
+                const rows = await sbFetch(`quiz_assignments?student_id=eq.${studentId}&status=eq.pending&order=assigned_at.asc&select=*,quizzes(*)`);
+                pendingAssignments = (rows || []).filter(r => r.quizzes);
+            } catch (e) {
+                pendingAssignments = [];
+            }
+            renderAssignedQuizBanner();
+        }
+
+        function renderAssignedQuizBanner() {
+            const banner = document.getElementById('assigned-quiz-banner');
+            const txtEl = document.getElementById('assigned-quiz-text');
+            const actEl = document.getElementById('assigned-quiz-actions');
+            if (!banner) return;
+
+            if (activeAssignment) {
+                banner.style.display = 'flex';
+                const q = activeAssignment.quizzes || {};
+                const qLen = activePool.length || q.question_count || 20;
+                txtEl.innerHTML = `📝 正在作答老师测验：<span style="color:#d84315;">${activeAssignment.quiz_code}</span>（共 ${qLen} 题 · 第 ${activeAssignment.attempt_no || 1} 次）`;
+                const others = pendingAssignments.filter(a => a.id !== activeAssignment.id);
+                actEl.innerHTML = others.map((a) => {
+                    const idx = pendingAssignments.findIndex(x => x.id === a.id);
+                    return `<button class="top-btn" style="background:#fff; color:#283593; border-color:#5c6bc0;" onclick="startAssignedQuiz(${idx})">📋 切换 ${a.quiz_code}</button>`;
+                }).join('');
+                return;
+            }
+
+            if (pendingAssignments.length > 0) {
+                banner.style.display = 'flex';
+                txtEl.innerHTML = `📋 你有 <span style="color:#d84315;">${pendingAssignments.length}</span> 份老师派发的测验待完成！`;
+                actEl.innerHTML = pendingAssignments.map((a, idx) =>
+                    `<button class="top-btn" style="background:#5c6bc0; color:#fff; border-color:#3949ab;" onclick="startAssignedQuiz(${idx})">▶️ 开始 ${a.quiz_code}</button>`
+                ).join('');
+            } else {
+                banner.style.display = 'none';
+            }
+        }
+
+        function startAssignedQuiz(idx) {
+            const assign = pendingAssignments[idx];
+            if (!assign || !assign.quizzes) return;
+            activeAssignment = assign;
+            const q = assign.quizzes;
+            const ids = Array.isArray(q.question_ids) ? q.question_ids : [];
+            const idSet = new Set(ids);
+            let pool = allVocabulary.filter(w => idSet.has(w.id) || idSet.has(w.bm));
+            if (pool.length === 0) {
+                const units = Array.isArray(q.units) ? q.units : [];
+                pool = allVocabulary.filter(w => units.includes(w.category));
+            }
+            activePool = shuffle(pool).slice(0, q.question_count || pool.length);
+            savedCurrentSet = [...activePool];
+
+            currentIndex = 0;
+            scoreBetul = 0;
+            scoreSalah = 0;
+            quizStartTime = Date.now();
+            wrongWordsThisSet = [];
+            document.getElementById('score-b').textContent = "0";
+            document.getElementById('score-s').textContent = "0";
+            document.getElementById('celebrate-screen').style.display = 'none';
+            renderAssignedQuizBanner();
+            loadNextQuestion();
+        }
+
         // Start a fresh set of 20 questions
         function startNewSet() {
+            activeAssignment = null;
+            renderAssignedQuizBanner();
             const selectedCat = document.getElementById('category-filter').value;
             let filtered = [];
             if (selectedCat === "ALL") {
@@ -1575,7 +1666,9 @@
             playSound('sfx-correct');
 
             const durationSec = Math.max(1, Math.round((Date.now() - quizStartTime) / 1000));
-            const cat = document.getElementById('category-filter').value;
+            const cat = activeAssignment
+                ? `📝 ${activeAssignment.quiz_code}`
+                : document.getElementById('category-filter').value;
             const record = {
                 student_id: currentStudentId,
                 username: currentUsername || currentUserName,
@@ -1590,10 +1683,10 @@
                 played_at: new Date().toISOString()
             };
             sessionHistory.unshift(record);
-            saveQuizHistory(record);
+            saveQuizHistory(record, activeAssignment);
         }
 
-        async function saveQuizHistory(record) {
+        async function saveQuizHistory(record, finishedAssign) {
             const statusEl = document.getElementById('cloud-save-status');
             if (!currentStudentId) {
                 statusEl.textContent = "💡 游客模式：仅保存在本次页面（登录后可永久记录到云端）";
@@ -1611,7 +1704,27 @@
                     method: "POST",
                     body: JSON.stringify(record)
                 });
-                statusEl.textContent = "✅ 成绩与错题已成功保存至云端学习记录！";
+                if (finishedAssign) {
+                    await sbFetch(`quiz_assignments?id=eq.${finishedAssign.id}`, {
+                        method: "PATCH",
+                        body: JSON.stringify({
+                            status: "completed",
+                            score_correct: record.score_correct,
+                            score_wrong: record.score_wrong,
+                            total_questions: record.total_questions,
+                            accuracy: record.accuracy,
+                            completed_at: new Date().toISOString()
+                        })
+                    });
+                    pendingAssignments = pendingAssignments.filter(a => a.id !== finishedAssign.id);
+                    if (activeAssignment && activeAssignment.id === finishedAssign.id) {
+                        activeAssignment = null;
+                    }
+                    renderAssignedQuizBanner();
+                }
+                statusEl.textContent = finishedAssign
+                    ? `✅ 「${finishedAssign.quiz_code}」已提交并记录至云端！`
+                    : "✅ 成绩与错题已成功保存至云端学习记录！";
                 statusEl.style.background = "#e8f5e9";
                 statusEl.style.color = "#2e7d32";
                 statusEl.style.borderColor = "#a5d6a7";

@@ -381,6 +381,7 @@
         <div class="tabs-row">
             <button class="tab-btn active" id="tab-history" onclick="switchTab('history')">📋 最新答题记录</button>
             <button class="tab-btn" id="tab-students" onclick="switchTab('students')">👩‍🎓 学生账号管理</button>
+            <button class="tab-btn" id="tab-quizzes" onclick="switchTab('quizzes')">📝 测验派发管理</button>
             <button class="tab-btn" id="tab-wrong" onclick="switchTab('wrong')">❌ 高频错题排行榜</button>
         </div>
 
@@ -456,7 +457,64 @@
             </div>
         </div>
 
-        <!-- Tab 3: Most Missed Words -->
+        <!-- Tab 3: Quizzes & Assignments -->
+        <div class="panel" id="panel-quizzes">
+            <!-- Create & Assign Quiz Card -->
+            <div class="controls-bar" style="margin-bottom:16px; flex-direction:column; align-items:stretch; gap:12px;">
+                <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+                    <strong style="color:#60a5fa; font-size:1.05em;">📝 创建并派发测验 (Create & Assign Quiz)</strong>
+                    <span id="quiz-vocab-status" style="font-size:0.85em; color:#94a3b8;">⏳ 正在加载词库...</span>
+                </div>
+
+                <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
+                    <input type="text" class="filter-input" id="quiz-code-input" placeholder="测验编号 (例: Quiz 001)" style="max-width:170px; min-width:140px; font-weight:bold;">
+                    <input type="text" class="filter-input" id="quiz-title-input" placeholder="备注说明 (可选，例: Unit 1-2 听写)" style="min-width:220px;">
+                    <label style="font-size:0.9em; color:#cbd5e1; display:flex; align-items:center; gap:6px;">
+                        题数：
+                        <input type="number" class="filter-input" id="quiz-qcount-input" value="20" min="1" max="100" style="width:80px; min-width:70px; text-align:center;" oninput="updateSelectedUnitsSummary()">
+                    </label>
+                </div>
+
+                <!-- Unit Multi-Select -->
+                <div style="background:#1c1c21; border:1px solid var(--border); border-radius:8px; padding:12px;">
+                    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:10px;">
+                        <strong style="font-size:0.92em; color:#93c5fd;">📚 选择单元 / 组合单元（可多选）：</strong>
+                        <div style="display:flex; gap:8px; flex-wrap:wrap;">
+                            <button class="btn btn-outline" style="padding:4px 10px; font-size:0.8em;" onclick="selectUnitPreset('A')">📘 全选三年级 A1–A24</button>
+                            <button class="btn btn-outline" style="padding:4px 10px; font-size:0.8em;" onclick="selectUnitPreset('B')">📚 全选 Group B</button>
+                            <button class="btn btn-outline" style="padding:4px 10px; font-size:0.8em;" onclick="selectUnitPreset('NONE')">🧹 清空</button>
+                        </div>
+                    </div>
+                    <div id="quiz-units-grid" style="display:grid; grid-template-columns:repeat(auto-fill, minmax(230px, 1fr)); gap:6px; max-height:210px; overflow-y:auto; padding:4px;"></div>
+                    <div id="quiz-units-summary" style="margin-top:8px; font-size:0.86em; color:#fcd34d; font-weight:700;">请至少选择一个单元</div>
+                </div>
+
+                <!-- Target Students -->
+                <div style="background:#1c1c21; border:1px solid var(--border); border-radius:8px; padding:12px;">
+                    <div style="display:flex; gap:14px; flex-wrap:wrap; align-items:center; margin-bottom:8px;">
+                        <strong style="font-size:0.92em; color:#86efac;">👩‍🎓 派发给学生：</strong>
+                        <label style="cursor:pointer; font-size:0.9em;"><input type="radio" name="assign-mode" value="ALL" checked onchange="toggleAssignMode()"> 🌐 全部启用中学生</label>
+                        <label style="cursor:pointer; font-size:0.9em;"><input type="radio" name="assign-mode" value="CLASS" onchange="toggleAssignMode()"> 🏫 指定班级</label>
+                        <select class="filter-select" id="assign-class-select" style="display:none; padding:4px 10px;" onchange="updateAssignPreview()"></select>
+                        <label style="cursor:pointer; font-size:0.9em;"><input type="radio" name="assign-mode" value="PICK" onchange="toggleAssignMode()"> 🎯 手动勾选学生</label>
+                    </div>
+                    <div id="assign-students-picker" style="display:none; grid-template-columns:repeat(auto-fill, minmax(180px, 1fr)); gap:6px; max-height:150px; overflow-y:auto; padding-top:6px; border-top:1px dashed var(--border);"></div>
+                    <div id="assign-target-summary" style="font-size:0.85em; color:#94a3b8; margin-top:4px;"></div>
+                </div>
+
+                <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
+                    <button class="btn btn-success" id="btn-create-quiz" onclick="createAndAssignQuiz()">🚀 创建测验并立即派发</button>
+                    <span id="create-quiz-msg" style="font-size:0.9em; font-weight:bold;"></span>
+                </div>
+            </div>
+
+            <!-- Existing Quizzes List -->
+            <div id="quizzes-list-wrap" style="display:flex; flex-direction:column; gap:14px;">
+                <div class="empty-msg">⏳ 加载测验列表中...</div>
+            </div>
+        </div>
+
+        <!-- Tab 4: Most Missed Words -->
         <div class="panel" id="panel-wrong">
             <div class="table-wrap">
                 <table>
@@ -484,6 +542,9 @@
         let allStudents = [];
         let allHistory = [];
         let filteredHistory = [];
+        let allQuizzes = [];
+        let allAssignments = [];
+        let allVocab = [];
 
         async function sbFetch(path, options = {}) {
             const headers = {
@@ -519,15 +580,31 @@
         }
 
         function switchTab(name) {
-            ['history', 'students', 'wrong'].forEach(t => {
+            ['history', 'students', 'quizzes', 'wrong'].forEach(t => {
                 document.getElementById('tab-' + t).classList.toggle('active', t === name);
                 document.getElementById('panel-' + t).classList.toggle('active', t === name);
             });
         }
 
+        async function loadVocabOnce() {
+            if (allVocab.length > 0) return;
+            const stEl = document.getElementById('quiz-vocab-status');
+            try {
+                const res = await fetch('perkataan_bm_data.json');
+                allVocab = await res.json();
+                stEl.textContent = `✅ 已加载词库 (${allVocab.length} 词)`;
+                stEl.style.color = '#86efac';
+                renderQuizUnitsGrid();
+            } catch (err) {
+                stEl.textContent = '⚠️ 词库加载失败：' + err.message;
+                stEl.style.color = '#f87171';
+            }
+        }
+
         async function loadAllData() {
             const statusEl = document.getElementById('sync-status');
             statusEl.textContent = "⏳ 正在拉取最新数据...";
+            loadVocabOnce();
             try {
                 const [students, history] = await Promise.all([
                     sbFetch("students?select=*&order=created_at.desc"),
@@ -535,8 +612,26 @@
                 ]);
                 allStudents = students || [];
                 allHistory = history || [];
+
+                // Load quizzes & assignments if tables exist
+                try {
+                    const [quizzes, assigns] = await Promise.all([
+                        sbFetch("quizzes?select=*&order=created_at.desc"),
+                        sbFetch("quiz_assignments?select=*&order=assigned_at.desc&limit=1000")
+                    ]);
+                    allQuizzes = quizzes || [];
+                    allAssignments = assigns || [];
+                } catch (qErr) {
+                    allQuizzes = [];
+                    allAssignments = [];
+                    console.warn("Quizzes tables not ready:", qErr.message);
+                }
+
                 populateClassFilter();
+                populateQuizAssignTargets();
+                suggestNextQuizCode();
                 applyFilters();
+                renderQuizzesList();
                 statusEl.textContent = `✅ 已同步 (${new Date().toLocaleTimeString('zh-MY', { hour12: false })})`;
             } catch (err) {
                 statusEl.textContent = "⚠️ 同步失败：" + err.message;
@@ -790,6 +885,315 @@
             document.getElementById('search-input').value = name;
             applyFilters();
             switchTab('history');
+        }
+
+        // ===== QUIZ CREATOR & ASSIGNMENT MANAGEMENT =====
+        function suggestNextQuizCode() {
+            const inp = document.getElementById('quiz-code-input');
+            if (!inp || inp.value.trim()) return;
+            let maxNum = 0;
+            allQuizzes.forEach(q => {
+                const m = String(q.quiz_code || '').match(/(\d+)/);
+                if (m) maxNum = Math.max(maxNum, parseInt(m[1], 10));
+            });
+            inp.value = `Quiz ${String(maxNum + 1).padStart(3, '0')}`;
+        }
+
+        function renderQuizUnitsGrid() {
+            const grid = document.getElementById('quiz-units-grid');
+            if (!grid || allVocab.length === 0) return;
+            const counts = {};
+            const order = [];
+            allVocab.forEach(w => {
+                const cat = w.category || '其他';
+                if (!counts[cat]) { counts[cat] = { count: 0, group: w.group || '' }; order.push(cat); }
+                counts[cat].count++;
+            });
+            // Put A1..A24 first, then Group B
+            order.sort((a, b) => {
+                const ga = counts[a].group.startsWith('A') ? 0 : 1;
+                const gb = counts[b].group.startsWith('A') ? 0 : 1;
+                if (ga !== gb) return ga - gb;
+                if (ga === 0) {
+                    const na = parseInt(counts[a].group.slice(1), 10) || 0;
+                    const nb = parseInt(counts[b].group.slice(1), 10) || 0;
+                    return na - nb;
+                }
+                return 0;
+            });
+            grid.innerHTML = order.map(cat => `
+                <label style="display:flex; align-items:center; gap:6px; font-size:0.84em; background:#27272d; padding:6px 8px; border-radius:6px; border:1px solid #3f3f46; cursor:pointer;">
+                    <input type="checkbox" class="quiz-unit-cb" value="${cat.replace(/"/g, '&quot;')}" data-group="${counts[cat].group}" onchange="updateSelectedUnitsSummary()">
+                    <span style="flex:1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;" title="${cat}">${cat}</span>
+                    <span style="color:#94a3b8; font-size:0.9em;">(${counts[cat].count})</span>
+                </label>
+            `).join('');
+            updateSelectedUnitsSummary();
+        }
+
+        function selectUnitPreset(mode) {
+            document.querySelectorAll('.quiz-unit-cb').forEach(cb => {
+                const grp = cb.dataset.group || '';
+                if (mode === 'A') cb.checked = grp.startsWith('A');
+                else if (mode === 'B') cb.checked = grp === 'B';
+                else cb.checked = false;
+            });
+            updateSelectedUnitsSummary();
+        }
+
+        function getSelectedUnits() {
+            return Array.from(document.querySelectorAll('.quiz-unit-cb:checked')).map(cb => cb.value);
+        }
+
+        function updateSelectedUnitsSummary() {
+            const units = getSelectedUnits();
+            const sumEl = document.getElementById('quiz-units-summary');
+            const qCount = Math.max(1, parseInt(document.getElementById('quiz-qcount-input').value, 10) || 20);
+            if (units.length === 0) {
+                sumEl.textContent = "请至少选择一个单元";
+                sumEl.style.color = "#fcd34d";
+                return;
+            }
+            const pool = allVocab.filter(w => units.includes(w.category));
+            const actual = Math.min(qCount, pool.length);
+            sumEl.textContent = `✅ 已选 ${units.length} 个单元，词库共 ${pool.length} 词 → 本测验将抽取 ${actual} 题`;
+            sumEl.style.color = "#86efac";
+        }
+
+        function populateQuizAssignTargets() {
+            const activeStudents = allStudents.filter(s => s.is_active !== false);
+            const classes = Array.from(new Set(activeStudents.map(s => (s.class_name || '').trim()).filter(Boolean))).sort();
+            const clsSel = document.getElementById('assign-class-select');
+            if (clsSel) {
+                clsSel.innerHTML = classes.map(c => `<option value="${c}">${c}</option>`).join('') || `<option value="">(无班级)</option>`;
+            }
+            const picker = document.getElementById('assign-students-picker');
+            if (picker) {
+                picker.innerHTML = activeStudents.map(s => `
+                    <label style="display:flex; align-items:center; gap:6px; font-size:0.84em; background:#27272d; padding:5px 8px; border-radius:6px; border:1px solid #3f3f46; cursor:pointer;">
+                        <input type="checkbox" class="assign-stu-cb" value="${s.id}" onchange="updateAssignPreview()">
+                        <span>${s.display_name} <span style="color:#94a3b8;">(${s.class_name || '-'})</span></span>
+                    </label>
+                `).join('');
+            }
+            updateAssignPreview();
+        }
+
+        function toggleAssignMode() {
+            const mode = document.querySelector('input[name="assign-mode"]:checked').value;
+            document.getElementById('assign-class-select').style.display = mode === 'CLASS' ? 'inline-block' : 'none';
+            document.getElementById('assign-students-picker').style.display = mode === 'PICK' ? 'grid' : 'none';
+            updateAssignPreview();
+        }
+
+        function getTargetStudents() {
+            const activeStudents = allStudents.filter(s => s.is_active !== false);
+            const mode = document.querySelector('input[name="assign-mode"]:checked').value;
+            if (mode === 'ALL') return activeStudents;
+            if (mode === 'CLASS') {
+                const cls = document.getElementById('assign-class-select').value;
+                return activeStudents.filter(s => (s.class_name || '').trim() === cls);
+            }
+            const pickedIds = new Set(Array.from(document.querySelectorAll('.assign-stu-cb:checked')).map(cb => cb.value));
+            return activeStudents.filter(s => pickedIds.has(s.id));
+        }
+
+        function updateAssignPreview() {
+            const targets = getTargetStudents();
+            const el = document.getElementById('assign-target-summary');
+            if (el) el.textContent = `当前将派发给 ${targets.length} 位启用中的学生`;
+        }
+
+        async function createAndAssignQuiz() {
+            const code = document.getElementById('quiz-code-input').value.trim();
+            const title = document.getElementById('quiz-title-input').value.trim();
+            const qCount = Math.max(1, parseInt(document.getElementById('quiz-qcount-input').value, 10) || 20);
+            const units = getSelectedUnits();
+            const targets = getTargetStudents();
+            const msgEl = document.getElementById('create-quiz-msg');
+            msgEl.textContent = "";
+
+            if (!code) { msgEl.style.color = "#f87171"; msgEl.textContent = "⚠️ 请填写测验编号 (如 Quiz 001)"; return; }
+            if (units.length === 0) { msgEl.style.color = "#f87171"; msgEl.textContent = "⚠️ 请至少选择一个单元"; return; }
+            if (targets.length === 0) { msgEl.style.color = "#f87171"; msgEl.textContent = "⚠️ 没有可派发的学生"; return; }
+
+            const pool = allVocab.filter(w => units.includes(w.category));
+            if (pool.length === 0) { msgEl.style.color = "#f87171"; msgEl.textContent = "⚠️ 所选单元没有词汇"; return; }
+
+            // Shuffle pool and pick question_ids
+            const shuffled = [...pool].sort(() => Math.random() - 0.5);
+            const picked = shuffled.slice(0, Math.min(qCount, shuffled.length));
+            const questionIds = picked.map(w => w.id || w.bm);
+
+            const btn = document.getElementById('btn-create-quiz');
+            btn.disabled = true;
+            btn.textContent = "⏳ 正在创建并派发...";
+            try {
+                const created = await sbFetch("quizzes", {
+                    method: "POST",
+                    headers: { "Prefer": "return=representation" },
+                    body: JSON.stringify({
+                        quiz_code: code,
+                        title: title,
+                        units: units,
+                        question_count: picked.length,
+                        question_ids: questionIds,
+                        is_active: true
+                    })
+                });
+                const quizObj = Array.isArray(created) ? created[0] : created;
+                const assignRows = targets.map(s => ({
+                    quiz_id: quizObj.id,
+                    quiz_code: code,
+                    student_id: s.id,
+                    status: "pending",
+                    attempt_no: 1
+                }));
+                await sbFetch("quiz_assignments", {
+                    method: "POST",
+                    body: JSON.stringify(assignRows)
+                });
+                msgEl.style.color = "#4ade80";
+                msgEl.textContent = `✅ 已创建「${code}」(${picked.length}题) 并派发给 ${targets.length} 位学生！`;
+                document.getElementById('quiz-code-input').value = "";
+                document.getElementById('quiz-title-input').value = "";
+                await loadAllData();
+                suggestNextQuizCode();
+            } catch (err) {
+                msgEl.style.color = "#f87171";
+                msgEl.textContent = "❌ 创建失败（请确认已在 Supabase 创建 quizzes 和 quiz_assignments 表）：" + err.message;
+            } finally {
+                btn.disabled = false;
+                btn.textContent = "🚀 创建测验并立即派发";
+            }
+        }
+
+        async function reassignToStudent(assignmentId, quizCode, stuName, currentAttempt) {
+            if (!confirm(`确定将「${quizCode}」重新派发给「${stuName}」（第 ${(currentAttempt || 1) + 1} 次作答）吗？`)) return;
+            try {
+                await sbFetch(`quiz_assignments?id=eq.${assignmentId}`, {
+                    method: "PATCH",
+                    body: JSON.stringify({
+                        status: "pending",
+                        attempt_no: (currentAttempt || 1) + 1,
+                        assigned_at: new Date().toISOString()
+                    })
+                });
+                await loadAllData();
+            } catch (err) {
+                alert("重派失败：" + err.message);
+            }
+        }
+
+        async function assignQuizToExtraStudent(quizId, quizCode) {
+            const sel = document.getElementById(`add-stu-${quizId}`);
+            if (!sel || !sel.value) return;
+            const stuId = sel.value;
+            const existing = allAssignments.find(a => a.quiz_id === quizId && a.student_id === stuId);
+            try {
+                if (existing) {
+                    await sbFetch(`quiz_assignments?id=eq.${existing.id}`, {
+                        method: "PATCH",
+                        body: JSON.stringify({
+                            status: "pending",
+                            attempt_no: (existing.attempt_no || 1) + 1,
+                            assigned_at: new Date().toISOString()
+                        })
+                    });
+                } else {
+                    await sbFetch("quiz_assignments", {
+                        method: "POST",
+                        body: JSON.stringify({
+                            quiz_id: quizId,
+                            quiz_code: quizCode,
+                            student_id: stuId,
+                            status: "pending",
+                            attempt_no: 1
+                        })
+                    });
+                }
+                await loadAllData();
+            } catch (err) {
+                alert("派发失败：" + err.message);
+            }
+        }
+
+        function renderQuizzesList() {
+            const wrap = document.getElementById('quizzes-list-wrap');
+            if (!wrap) return;
+            if (allQuizzes.length === 0) {
+                wrap.innerHTML = `<div class="table-wrap"><div class="empty-msg">暂无已创建的测验，请在上方创建 Quiz 001（若尚未建表请先在 Supabase 运行建表 SQL）。</div></div>`;
+                return;
+            }
+            const stuMap = {};
+            allStudents.forEach(s => { stuMap[s.id] = s; });
+            const activeStudents = allStudents.filter(s => s.is_active !== false);
+
+            wrap.innerHTML = allQuizzes.map(q => {
+                const assigns = allAssignments.filter(a => a.quiz_id === q.id);
+                const doneCount = assigns.filter(a => a.status === 'completed').length;
+                const unitsArr = Array.isArray(q.units) ? q.units : [];
+                const dt = q.created_at ? new Date(q.created_at).toLocaleString('zh-MY', { hour12: false }) : '-';
+                const rowsHtml = assigns.map(a => {
+                    const stu = stuMap[a.student_id] || { display_name: '(已移除)', class_name: '' };
+                    const isDone = a.status === 'completed';
+                    const statusHtml = isDone
+                        ? `<span class="pill-ok">✅ 已完成</span>`
+                        : `<span class="pill-warn">⏳ 待完成</span>`;
+                    const scoreHtml = isDone && a.total_questions
+                        ? `<strong>${a.score_correct}/${a.total_questions}</strong> <span class="${a.accuracy >= 80 ? 'pill-ok' : 'pill-err'}">${a.accuracy}%</span>`
+                        : `<span style="color:#94a3b8;">—</span>`;
+                    return `
+                        <tr>
+                            <td><strong style="color:#fb923c;">${stu.display_name}</strong> <span style="color:#94a3b8;">(${stu.class_name || '-'})</span></td>
+                            <td>第 ${a.attempt_no || 1} 次</td>
+                            <td>${statusHtml}</td>
+                            <td>${scoreHtml}</td>
+                            <td>
+                                <button class="btn btn-outline" style="padding:3px 9px; font-size:0.8em; color:#93c5fd; border-color:#3b82f6;" onclick="reassignToStudent('${a.id}', '${String(q.quiz_code).replace(/'/g, "\\'")}', '${String(stu.display_name).replace(/'/g, "\\'")}', ${a.attempt_no || 1})">🔁 重派 (Reassign)</button>
+                            </td>
+                        </tr>
+                    `;
+                }).join('');
+
+                const stuOptions = activeStudents.map(s => `<option value="${s.id}">${s.display_name} (${s.class_name || '-'})</option>`).join('');
+
+                return `
+                    <div class="table-wrap" style="padding:14px;">
+                        <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px; margin-bottom:10px;">
+                            <div>
+                                <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+                                    <span style="font-size:1.15em; font-weight:800; color:#60a5fa;">📝 ${q.quiz_code}</span>
+                                    ${q.title ? `<span style="color:#e2e8f0; font-weight:700;">${q.title}</span>` : ''}
+                                    <span class="badge">${q.question_count} 题</span>
+                                    <span class="pill-ok">完成 ${doneCount} / ${assigns.length} 人</span>
+                                </div>
+                                <div style="font-size:0.82em; color:#94a3b8; margin-top:4px;">
+                                    单元：${unitsArr.join(' 、 ')} &nbsp;|&nbsp; 创建于 ${dt}
+                                </div>
+                            </div>
+                            <div style="display:flex; gap:6px; align-items:center;">
+                                <select class="filter-select" id="add-stu-${q.id}" style="padding:4px 8px; font-size:0.84em;">${stuOptions}</select>
+                                <button class="btn btn-primary" style="padding:5px 10px; font-size:0.82em;" onclick="assignQuizToExtraStudent('${q.id}', '${String(q.quiz_code).replace(/'/g, "\\'")}')">➕ 补派/重派</button>
+                            </div>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>学生 (班级)</th>
+                                    <th>作答次数</th>
+                                    <th>状态</th>
+                                    <th>最新成绩</th>
+                                    <th>操作（可针对弱生重派）</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                ${rowsHtml || `<tr><td colspan="5" class="empty-msg">尚未派发给任何学生</td></tr>`}
+                            </tbody>
+                        </table>
+                    </div>
+                `;
+            }).join('');
         }
 
         function renderWrongRanking() {
