@@ -685,7 +685,8 @@
             document.getElementById('stat-rounds').textContent = filteredHistory.length;
             const todayStr = new Date().toISOString().slice(0, 10);
             const todayCount = filteredHistory.filter(h => (h.played_at || '').slice(0, 10) === todayStr).length;
-            document.getElementById('stat-today').textContent = `今日完成 ${todayCount} 组`;
+            const quitCount = filteredHistory.filter(h => ((h.score_correct || 0) + (h.score_wrong || 0)) < (h.total_questions || 20)).length;
+            document.getElementById('stat-today').textContent = `今日 ${todayCount} 组` + (quitCount ? ` · 中途退出 ${quitCount} 次` : '');
 
             const avgAcc = filteredHistory.length
                 ? Math.round(filteredHistory.reduce((s, h) => s + (h.accuracy || 0), 0) / filteredHistory.length)
@@ -707,17 +708,23 @@
                 const clsTag = stu.class_name ? ` <span style="color:#94a3b8;">(${stu.class_name})</span>` : '';
                 const dt = h.played_at ? new Date(h.played_at).toLocaleString('zh-MY', { hour12: false }) : '-';
                 const dur = h.duration_seconds ? `${Math.floor(h.duration_seconds/60)}分${h.duration_seconds%60}秒` : '-';
+                const answered = (h.score_correct || 0) + (h.score_wrong || 0);
+                const totalQ = h.total_questions || 20;
+                const isIncomplete = answered < totalQ;
+                const statusTag = isIncomplete
+                    ? ` <span class="pill-warn" title="学生未答完就退出、刷新或切换单元">⚠️ 中途退出 (${answered}/${totalQ})</span>`
+                    : '';
                 const accClass = h.accuracy >= 80 ? 'pill-ok' : 'pill-warn';
                 const wrongs = Array.isArray(h.wrong_words) ? h.wrong_words : [];
                 const wrongHtml = wrongs.length
                     ? wrongs.map(w => `<span class="pill-err">${w.bm} (${w.chinese})</span>`).join('')
                     : `<span style="color:#4ade80; font-weight:bold;">🌟 全对</span>`;
                 return `
-                    <tr>
+                    <tr style="${isIncomplete ? 'background:rgba(245,158,11,0.06);' : ''}">
                         <td style="white-space:nowrap; color:#cbd5e1;">${dt}</td>
-                        <td><strong style="color:#fb923c;">${h.display_name || h.username}</strong>${clsTag}</td>
+                        <td><strong style="color:#fb923c;">${h.display_name || h.username}</strong>${clsTag}${statusTag}</td>
                         <td>${h.category === 'ALL' ? '全部词汇' : h.category}</td>
-                        <td><strong>${h.score_correct}</strong> / ${h.total_questions} <span style="color:#f87171;">(错${h.score_wrong})</span></td>
+                        <td><strong>${h.score_correct}</strong> / ${totalQ} <span style="color:#f87171;">(错${h.score_wrong})</span></td>
                         <td><span class="${accClass}">${h.accuracy}%</span></td>
                         <td style="white-space:nowrap;">${dur}</td>
                         <td>${wrongHtml}</td>
@@ -1232,17 +1239,21 @@
             }
             const studentMap = {};
             allStudents.forEach(s => { studentMap[s.id] = s; });
-            const headers = ["时间", "学生名字", "班级", "单元", "答对", "总题数", "答错次数", "正确率(%)", "用时(秒)", "错题"];
+            const headers = ["时间", "学生名字", "班级", "状态", "单元", "答对", "总题数", "答错次数", "正确率(%)", "用时(秒)", "错题"];
             const rows = filteredHistory.map(h => {
                 const stu = studentMap[h.student_id] || {};
+                const answered = (h.score_correct || 0) + (h.score_wrong || 0);
+                const totalQ = h.total_questions || 20;
+                const statusLabel = answered < totalQ ? `中途退出 (${answered}/${totalQ})` : "已完成";
                 const wrongs = Array.isArray(h.wrong_words) ? h.wrong_words.map(w => `${w.bm}(${w.chinese})`).join('; ') : '';
                 return [
                     h.played_at ? new Date(h.played_at).toLocaleString('zh-MY', { hour12: false }) : '',
                     h.display_name || h.username,
                     stu.class_name || '',
+                    statusLabel,
                     h.category,
                     h.score_correct,
-                    h.total_questions,
+                    totalQ,
                     h.score_wrong,
                     h.accuracy,
                     h.duration_seconds || 0,

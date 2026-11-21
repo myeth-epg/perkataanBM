@@ -1269,6 +1269,8 @@
         let savedCurrentSet = [];
         let pendingAssignments = [];
         let activeAssignment = null;
+        let currentHistoryRowId = null;
+        let liveSyncPromise = Promise.resolve();
         let currentIndex = 0;
         let currentQuestion = null;
         let gameActive = false;
@@ -1428,6 +1430,7 @@
             currentIndex = 0;
             scoreBetul = 0;
             scoreSalah = 0;
+            currentHistoryRowId = null;
             quizStartTime = Date.now();
             wrongWordsThisSet = [];
             document.getElementById('score-b').textContent = "0";
@@ -1461,6 +1464,7 @@
             currentIndex = 0;
             scoreBetul = 0;
             scoreSalah = 0;
+            currentHistoryRowId = null;
             quizStartTime = Date.now();
             wrongWordsThisSet = [];
             document.getElementById('score-b').textContent = "0";
@@ -1476,6 +1480,7 @@
             currentIndex = 0;
             scoreBetul = 0;
             scoreSalah = 0;
+            currentHistoryRowId = null;
             quizStartTime = Date.now();
             wrongWordsThisSet = [];
             document.getElementById('score-b').textContent = "0";
@@ -1593,6 +1598,7 @@
                 if (!hasMadeMistakeThisRound) {
                     scoreBetul++;
                     document.getElementById('score-b').textContent = scoreBetul;
+                    syncLiveProgress();
                 }
 
                 btn.classList.add('correct');
@@ -1631,6 +1637,7 @@
                     scoreSalah++;
                     document.getElementById('score-s').textContent = scoreSalah;
                     wrongWordsThisSet.push({ bm: currentQuestion.bm, chinese: currentQuestion.chinese });
+                    syncLiveProgress();
                 }
 
                 // Show the exact Chinese meaning of the clicked wrong word!
@@ -1706,6 +1713,61 @@
             saveQuizHistory(record, activeAssignment);
         }
 
+        function buildCurrentRecord() {
+            const answered = scoreBetul + scoreSalah;
+            const acc = answered > 0 ? Math.round((scoreBetul / answered) * 100) : 100;
+            const durationSec = Math.max(1, Math.round((Date.now() - quizStartTime) / 1000));
+            const cat = activeAssignment
+                ? `📝 ${activeAssignment.quiz_code}`
+                : document.getElementById('category-filter').value;
+            return {
+                student_id: currentStudentId,
+                username: currentUsername || currentUserName,
+                display_name: currentUserName,
+                category: cat,
+                score_correct: scoreBetul,
+                score_wrong: scoreSalah,
+                total_questions: activePool.length,
+                accuracy: acc,
+                duration_seconds: durationSec,
+                wrong_words: wrongWordsThisSet,
+                played_at: new Date().toISOString()
+            };
+        }
+
+        function syncLiveProgress() {
+            if (!currentStudentId || activePool.length === 0) return;
+            const snapshot = buildCurrentRecord();
+            liveSyncPromise = liveSyncPromise.then(async () => {
+                try {
+                    if (!currentHistoryRowId) {
+                        const res = await sbFetch("quiz_history", {
+                            method: "POST",
+                            headers: { "Prefer": "return=representation" },
+                            body: JSON.stringify(snapshot)
+                        });
+                        if (Array.isArray(res) && res[0] && res[0].id) {
+                            currentHistoryRowId = res[0].id;
+                        }
+                    } else {
+                        await sbFetch(`quiz_history?id=eq.${currentHistoryRowId}`, {
+                            method: "PATCH",
+                            body: JSON.stringify({
+                                score_correct: snapshot.score_correct,
+                                score_wrong: snapshot.score_wrong,
+                                accuracy: snapshot.accuracy,
+                                duration_seconds: snapshot.duration_seconds,
+                                wrong_words: snapshot.wrong_words,
+                                played_at: snapshot.played_at
+                            })
+                        });
+                    }
+                } catch (e) {
+                    console.warn("Live sync warning:", e.message);
+                }
+            });
+        }
+
         async function saveQuizHistory(record, finishedAssign) {
             const statusEl = document.getElementById('cloud-save-status');
             if (!currentStudentId) {
@@ -1720,10 +1782,34 @@
             statusEl.style.color = "#1565c0";
             statusEl.style.borderColor = "#90caf9";
             try {
-                await sbFetch("quiz_history", {
-                    method: "POST",
-                    body: JSON.stringify(record)
-                });
+                await liveSyncPromise;
+                let savedViaPatch = false;
+                if (currentHistoryRowId) {
+                    try {
+                        const updated = await sbFetch(`quiz_history?id=eq.${currentHistoryRowId}`, {
+                            method: "PATCH",
+                            headers: { "Prefer": "return=representation" },
+                            body: JSON.stringify({
+                                score_correct: record.score_correct,
+                                score_wrong: record.score_wrong,
+                                total_questions: record.total_questions,
+                                accuracy: record.accuracy,
+                                duration_seconds: record.duration_seconds,
+                                wrong_words: record.wrong_words,
+                                played_at: record.played_at
+                            })
+                        });
+                        if (Array.isArray(updated) && updated.length > 0) savedViaPatch = true;
+                    } catch (patchErr) {
+                        savedViaPatch = false;
+                    }
+                }
+                if (!savedViaPatch) {
+                    await sbFetch("quiz_history", {
+                        method: "POST",
+                        body: JSON.stringify(record)
+                    });
+                }
                 if (finishedAssign) {
                     await sbFetch(`quiz_assignments?id=eq.${finishedAssign.id}`, {
                         method: "PATCH",
