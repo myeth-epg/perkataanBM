@@ -978,7 +978,7 @@
             </div>
 
             <div class="control-buttons">
-                <select class="category-select" id="category-filter" onchange="startNewSet()">
+                <select class="category-select" id="category-filter" onchange="onCategoryChange()">
                     <option value="ALL">🌟 全部词汇 (Semua: 679词)</option>
                     <optgroup label="📘 三年级课本生词 (Tahun 3: A1–A24)">
                         <option value="GROUP_A">📘 全部三年级课本 (A1–A24: 349词)</option>
@@ -1025,6 +1025,7 @@
                 <button class="top-btn" id="history-btn" onclick="openHistoryModal()">📊 记录</button>
                 <button class="top-btn" id="sfx-toggle-btn" onclick="toggleSFX()">🔊 音效</button>
                 <button class="top-btn" id="bgm-toggle-btn" onclick="toggleBGM()">🎵 音乐</button>
+                <button class="top-btn" id="quit-btn" onclick="requestQuitQuiz()" style="background:#ffebee; color:#c62828; border-color:#ef9a9a;">🚪 退出</button>
             </div>
         </div>
 
@@ -1099,6 +1100,28 @@
                 <button class="action-round-btn" style="background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);" onclick="startNewSet()">▶️ 开始新的一组 20 题 (Set Baharu)</button>
                 <button class="action-round-btn" style="background: linear-gradient(135deg, #4caf50 0%, #388e3c 100%);" onclick="repeatCurrentSet()">🔄 重温本组 20 题 (Ulang Set Ini)</button>
                 <button class="action-round-btn" style="background: linear-gradient(135deg, #1e88e5 0%, #1565c0 100%);" onclick="openHistoryModal()">📊 我的记录 (Rekod)</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mid-Quiz Quit Warning Modal -->
+    <div id="quit-warn-overlay" style="display:none; position:fixed; inset:0; background:rgba(15,23,42,0.72); z-index:9999; align-items:center; justify-content:center; padding:16px;">
+        <div style="background:#fff; border-radius:20px; max-width:420px; width:100%; padding:24px 22px; text-align:center; box-shadow:0 20px 50px rgba(0,0,0,0.35); border:3px solid #ff9800;">
+            <div style="font-size:2.4em; margin-bottom:6px;">⚠️</div>
+            <h2 style="margin:0 0 8px 0; color:#e65100; font-size:1.35em;">确定要中途退出测验吗？</h2>
+            <p style="margin:0 0 14px 0; color:#555; font-size:0.95em;">你还没完成本组练习，以下是你目前的作答成绩：</p>
+            <div style="background:#fff8e1; border:1.5px solid #ffe082; border-radius:12px; padding:12px; margin-bottom:12px; font-size:1.05em;">
+                <div style="font-weight:800; color:#1565c0; margin-bottom:6px;">当前进度：<span id="quit-progress-text">0 / 20</span></div>
+                <div style="font-weight:800;">
+                    <span style="color:#2e7d32;">✅ 答对：<span id="quit-correct-text">0</span></span>
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <span style="color:#c62828;">❌ 答错：<span id="quit-wrong-text">0</span></span>
+                </div>
+            </div>
+            <div id="quit-cloud-note" style="font-size:0.85em; color:#546e7a; margin-bottom:16px;">☁️ 当前作答进度与错题已实时保存至云端。</div>
+            <div style="display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
+                <button class="action-round-btn" style="background:linear-gradient(135deg,#4caf50,#2e7d32); padding:10px 20px; font-size:0.98em;" onclick="cancelQuitQuiz()">▶️ 继续作答 (Continue)</button>
+                <button class="action-round-btn" style="background:linear-gradient(135deg,#ef5350,#c62828); padding:10px 20px; font-size:0.98em;" onclick="confirmQuitQuiz()">🚪 确定退出 (Quit)</button>
             </div>
         </div>
     </div>
@@ -1271,6 +1294,8 @@
         let activeAssignment = null;
         let currentHistoryRowId = null;
         let liveSyncPromise = Promise.resolve();
+        let lastSelectedCat = "ALL";
+        let pendingQuitAction = null;
         let currentIndex = 0;
         let currentQuestion = null;
         let gameActive = false;
@@ -1445,6 +1470,7 @@
             activeAssignment = null;
             renderAssignedQuizBanner();
             const selectedCat = document.getElementById('category-filter').value;
+            lastSelectedCat = selectedCat;
             let filtered = [];
             if (selectedCat === "ALL") {
                 filtered = [...allVocabulary];
@@ -1904,6 +1930,73 @@
                 `;
             }).join('');
         }
+
+        function isQuizInProgress() {
+            if (!isNameConfirmed || activePool.length === 0) return false;
+            const celeb = document.getElementById('celebrate-screen');
+            if (celeb && celeb.style.display === 'flex') return false;
+            return (scoreBetul + scoreSalah) > 0 && currentIndex < activePool.length;
+        }
+
+        function showQuitWarningModal(action) {
+            pendingQuitAction = action;
+            const answered = scoreBetul + scoreSalah;
+            const total = activePool.length || 20;
+            document.getElementById('quit-progress-text').textContent = `${answered} / ${total}`;
+            document.getElementById('quit-correct-text').textContent = scoreBetul;
+            document.getElementById('quit-wrong-text').textContent = scoreSalah;
+            const noteEl = document.getElementById('quit-cloud-note');
+            if (noteEl) {
+                noteEl.textContent = currentStudentId
+                    ? "☁️ 当前作答进度与错题已实时保存至云端。"
+                    : "💡 当前为游客模式，退出后本次进度不会保存。";
+            }
+            document.getElementById('quit-warn-overlay').style.display = 'flex';
+        }
+
+        function onCategoryChange() {
+            if (isQuizInProgress()) {
+                showQuitWarningModal('switch_cat');
+                return;
+            }
+            startNewSet();
+        }
+
+        function requestQuitQuiz() {
+            if (isQuizInProgress()) {
+                showQuitWarningModal('quit_to_restart');
+                return;
+            }
+            startNewSet();
+        }
+
+        function cancelQuitQuiz() {
+            if (pendingQuitAction === 'switch_cat') {
+                document.getElementById('category-filter').value = lastSelectedCat;
+            }
+            pendingQuitAction = null;
+            document.getElementById('quit-warn-overlay').style.display = 'none';
+        }
+
+        function confirmQuitQuiz() {
+            const act = pendingQuitAction;
+            pendingQuitAction = null;
+            document.getElementById('quit-warn-overlay').style.display = 'none';
+            syncLiveProgress();
+            if (act === 'switch_cat') {
+                startNewSet();
+            } else {
+                startNewSet();
+            }
+        }
+
+        window.addEventListener('beforeunload', (e) => {
+            if (isQuizInProgress()) {
+                syncLiveProgress();
+                e.preventDefault();
+                e.returnValue = '';
+            }
+        });
 
         window.onload = () => {
             initGameData();
