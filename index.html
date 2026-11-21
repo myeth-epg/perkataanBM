@@ -1207,6 +1207,7 @@
                 currentUsername = stu.username;
                 currentUserName = stu.display_name;
                 currentClassName = stu.class_name || "";
+                pendingResumeState = stu.active_quiz_state || null;
                 sbFetch(`students?id=eq.${stu.id}`, {
                     method: "PATCH",
                     body: JSON.stringify({ last_login: new Date().toISOString() })
@@ -1239,7 +1240,9 @@
             updateUserNameDisplay();
             const modal = document.getElementById('name-modal-overlay');
             if (modal) modal.style.display = 'none';
-            if (pendingAssignments.length > 0) {
+            if (pendingResumeState && Array.isArray(pendingResumeState.pool_ids) && pendingResumeState.pool_ids.length > 0 && (pendingResumeState.current_index || 0) < pendingResumeState.pool_ids.length) {
+                resumeIncompleteQuiz(pendingResumeState);
+            } else if (pendingAssignments.length > 0) {
                 startAssignedQuiz(0);
             } else {
                 startNewSet();
@@ -1253,6 +1256,9 @@
             currentClassName = "";
             pendingAssignments = [];
             activeAssignment = null;
+            pendingResumeState = null;
+            isForcedResume = false;
+            setQuizLockUI(false);
             renderAssignedQuizBanner();
             document.getElementById('login-pin-input').value = "";
             document.getElementById('name-modal-overlay').style.display = 'flex';
@@ -1296,6 +1302,8 @@
         let liveSyncPromise = Promise.resolve();
         let lastSelectedCat = "ALL";
         let pendingQuitAction = null;
+        let pendingResumeState = null;
+        let isForcedResume = false;
         let currentIndex = 0;
         let currentQuestion = null;
         let gameActive = false;
@@ -1407,11 +1415,73 @@
             renderAssignedQuizBanner();
         }
 
+        function setQuizLockUI(locked) {
+            const catSel = document.getElementById('category-filter');
+            const quitBtn = document.getElementById('quit-btn');
+            if (catSel) catSel.disabled = !!locked;
+            if (quitBtn) quitBtn.style.display = locked ? 'none' : 'inline-block';
+        }
+
+        function resumeIncompleteQuiz(st) {
+            const vocabMap = {};
+            allVocabulary.forEach(w => {
+                if (w.id) vocabMap[w.id] = w;
+                if (w.bm) vocabMap[w.bm] = w;
+            });
+            let pool = st.pool_ids.map(id => vocabMap[id]).filter(Boolean);
+            if (pool.length === 0) {
+                isForcedResume = false;
+                setQuizLockUI(false);
+                startNewSet();
+                return;
+            }
+            activePool = pool;
+            savedCurrentSet = [...activePool];
+            scoreBetul = st.score_correct || 0;
+            scoreSalah = st.score_wrong || 0;
+            currentIndex = Math.max(st.current_index || 0, scoreBetul + scoreSalah);
+            wrongWordsThisSet = Array.isArray(st.wrong_words) ? st.wrong_words : [];
+            currentHistoryRowId = st.history_row_id || null;
+            quizStartTime = Date.now() - ((st.elapsed_sec || 0) * 1000);
+            isForcedResume = true;
+
+            if (st.assignment_id) {
+                activeAssignment = pendingAssignments.find(a => a.id === st.assignment_id) || {
+                    id: st.assignment_id,
+                    quiz_code: st.quiz_code || "测验",
+                    attempt_no: 1,
+                    quizzes: { question_count: activePool.length }
+                };
+            } else {
+                activeAssignment = null;
+                const catSel = document.getElementById('category-filter');
+                if (catSel && st.category) {
+                    catSel.value = st.category;
+                    lastSelectedCat = st.category;
+                }
+            }
+
+            document.getElementById('score-b').textContent = scoreBetul;
+            document.getElementById('score-s').textContent = scoreSalah;
+            document.getElementById('celebrate-screen').style.display = 'none';
+            setQuizLockUI(true);
+            renderAssignedQuizBanner();
+            loadNextQuestion();
+        }
+
         function renderAssignedQuizBanner() {
             const banner = document.getElementById('assigned-quiz-banner');
             const txtEl = document.getElementById('assigned-quiz-text');
             const actEl = document.getElementById('assigned-quiz-actions');
             if (!banner) return;
+
+            if (isForcedResume) {
+                banner.style.display = 'flex';
+                const label = activeAssignment ? activeAssignment.quiz_code : (document.getElementById('category-filter')?.value || '练习');
+                txtEl.innerHTML = `🔒 检测到上次未完成的测验（<span style="color:#d84315;">${label}</span>），必须全部答完才能开始新测验！`;
+                actEl.innerHTML = '';
+                return;
+            }
 
             if (activeAssignment) {
                 banner.style.display = 'flex';
@@ -1703,6 +1773,9 @@
 
         function nextQuestion() {
             currentIndex++;
+            if (currentStudentId && currentIndex < activePool.length && (scoreBetul + scoreSalah) > 0) {
+                syncLiveProgress();
+            }
             loadNextQuestion();
         }
 
@@ -1764,6 +1837,19 @@
         function syncLiveProgress() {
             if (!currentStudentId || activePool.length === 0) return;
             const snapshot = buildCurrentRecord();
+            const resumePayload = {
+                history_row_id: currentHistoryRowId,
+                assignment_id: activeAssignment ? activeAssignment.id : null,
+                quiz_code: activeAssignment ? activeAssignment.quiz_code : null,
+                category: snapshot.category,
+                pool_ids: activePool.map(w => w.id || w.bm),
+                current_index: currentIndex,
+                score_correct: snapshot.score_correct,
+                score_wrong: snapshot.score_wrong,
+                wrong_words: snapshot.wrong_words,
+                elapsed_sec: snapshot.duration_seconds,
+                updated_at: snapshot.played_at
+            };
             liveSyncPromise = liveSyncPromise.then(async () => {
                 try {
                     if (!currentHistoryRowId) {
@@ -1774,6 +1860,7 @@
                         });
                         if (Array.isArray(res) && res[0] && res[0].id) {
                             currentHistoryRowId = res[0].id;
+                            resumePayload.history_row_id = currentHistoryRowId;
                         }
                     } else {
                         await sbFetch(`quiz_history?id=eq.${currentHistoryRowId}`, {
@@ -1788,6 +1875,10 @@
                             })
                         });
                     }
+                    sbFetch(`students?id=eq.${currentStudentId}`, {
+                        method: "PATCH",
+                        body: JSON.stringify({ active_quiz_state: resumePayload })
+                    }).catch(() => {});
                 } catch (e) {
                     console.warn("Live sync warning:", e.message);
                 }
@@ -1809,6 +1900,13 @@
             statusEl.style.borderColor = "#90caf9";
             try {
                 await liveSyncPromise;
+                isForcedResume = false;
+                pendingResumeState = null;
+                setQuizLockUI(false);
+                sbFetch(`students?id=eq.${currentStudentId}`, {
+                    method: "PATCH",
+                    body: JSON.stringify({ active_quiz_state: null })
+                }).catch(() => {});
                 let savedViaPatch = false;
                 if (currentHistoryRowId) {
                     try {
@@ -1955,6 +2053,11 @@
         }
 
         function onCategoryChange() {
+            if (isForcedResume) {
+                document.getElementById('category-filter').value = lastSelectedCat;
+                alert("🔒 请先完成上次未完成的测验，才能切换单元！");
+                return;
+            }
             if (isQuizInProgress()) {
                 showQuitWarningModal('switch_cat');
                 return;
@@ -1963,6 +2066,10 @@
         }
 
         function requestQuitQuiz() {
+            if (isForcedResume) {
+                alert("🔒 请先完成上次未完成的测验！");
+                return;
+            }
             if (isQuizInProgress()) {
                 showQuitWarningModal('quit_to_restart');
                 return;
